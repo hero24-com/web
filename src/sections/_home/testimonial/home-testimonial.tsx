@@ -6,7 +6,11 @@ import Typography from '@mui/material/Typography';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
+import Carousel, {
+  useCarousel,
+  CarouselDots,
+  CarouselArrows,
+} from 'src/components/carousel';
 
 import { ITestimonialProps } from 'src/types/testimonial';
 
@@ -50,11 +54,13 @@ export default function HomeTestimonial({ testimonials }: Props) {
     <Container
       sx={{
         pt: 8,
-        pb: { xs: 8, md: 10 },
       }}
     >
       <Stack direction="row" alignItems="center" sx={{ mb: 8 }}>
-        <Typography variant="h3" sx={{ textAlign: { xs: 'center', md: 'unset' }, flexGrow: 1 }}>
+        <Typography
+          variant="h3"
+          sx={{ textAlign: { xs: 'center', md: 'unset' }, flexGrow: 1 }}
+        >
           Popular Reviews
         </Typography>
 
