@@ -72,7 +72,7 @@ export default function HomeFAQs() {
       <Grid container spacing={{ md: 3 }} justifyContent="center">
         <Grid xs={12} md={8}>
           <m.div variants={varFade().in}>
-            <Typography variant="h2" sx={{ textAlign: 'center' }}>
+            <Typography variant="h3" sx={{ textAlign: 'center' }}>
               Frequently Asked Questions
             </Typography>
           </m.div>
@@ -115,39 +115,6 @@ export default function HomeFAQs() {
                 </Accordion>
               </m.div>
             ))}
-          </Box>
-
-          <Box
-            sx={{
-              borderWidth: 1,
-              borderRadius: 3,
-              textAlign: 'center',
-              borderStyle: 'dashed',
-              borderColor: (theme) => alpha(theme.palette.grey[500], 0.32),
-              px: { xs: 3, md: 8 },
-              py: { xs: 6, md: 8 },
-            }}
-          >
-            <m.div variants={varFade().inUp}>
-              <Typography variant="h3">Still Have Questions?</Typography>
-            </m.div>
-
-            <m.div variants={varFade().inUp}>
-              <Typography sx={{ mt: 3, mb: 5, color: 'text.secondary' }}>
-                Please describe your case to receive the most accurate advice.
-              </Typography>
-            </m.div>
-
-            <m.div variants={varFade().inUp}>
-              <Button
-                size="large"
-                color="inherit"
-                variant="contained"
-                href="mailto:support@minimals.cc?subject=[Feedback] from Customer"
-              >
-                Contact us
-              </Button>
-            </m.div>
           </Box>
         </Grid>
       </Grid>

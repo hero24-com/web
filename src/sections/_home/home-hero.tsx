@@ -1,8 +1,10 @@
 import { useRef } from 'react';
 
 import Box from '@mui/material/Box';
+import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
@@ -13,11 +15,23 @@ import { paths } from 'src/routes/paths';
 import { useResponsive } from 'src/hooks/use-responsive';
 import { useBoundingClientRect } from 'src/hooks/use-bounding-client-rect';
 
+import { fShortenNumber } from 'src/utils/format-number';
+
 import { bgGradient } from 'src/theme/css';
 import { HEADER } from 'src/layouts/config-layout';
 
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+
+import { AppStoreButton } from 'src/layouts/main/footer';
+
+// ----------------------------------------------------------------------
+
+const SUMMARY = [
+  { value: 100000, label: 'Customer', color: 'warning' },
+  { value: 200000, label: 'Orders', color: 'error' },
+  { value: 2000, label: 'Heros', color: 'success' },
+] as const;
 
 // ----------------------------------------------------------------------
 
@@ -45,7 +59,12 @@ export default function HomeHero() {
       }}
     >
       <Container sx={{ height: 1 }}>
-        <Grid container columnSpacing={3} alignItems="center" sx={{ height: 1 }}>
+        <Grid
+          container
+          columnSpacing={3}
+          alignItems="center"
+          sx={{ height: 1 }}
+        >
           <Grid xs={12} md={5}>
             <Stack
               spacing={5}
@@ -56,45 +75,90 @@ export default function HomeHero() {
                 textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              <Typography variant="h1">
-                Create Your <br /> Website Today with
+              <Typography variant="h3">
+                Löydä Kodin tai yrityksen arjen askareisiin ammattilanen
+                helposti
                 <Box component="span" sx={{ color: 'primary.main' }}>
-                  {` ZONE`}
+                  {` Hero24 appilla.`}
                 </Box>
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-                The ZONE is built on top of MUI, a powerful library that provides flexible,
-                customizable, and easy-to-use components.
+                Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja
+                räätälöitynä juuri sinulle
               </Typography>
 
-              <Button
-                color="inherit"
-                size="large"
-                variant="contained"
-                endIcon={<Iconify icon="carbon:launch" />}
-                target="_blank"
-                rel="noopener"
-                href={paths.figmaPreview}
+              <Stack
+                spacing={3}
+                alignItems="center"
+                direction={{ xs: 'column', md: 'row' }}
               >
-                figma workspace
-              </Button>
+                <Stack
+                  direction="row"
+                  alignItems="center"
+                  sx={{ typography: 'h6' }}
+                >
+                  <Fab size="medium" color="primary" sx={{ mr: 1 }}>
+                    <Iconify width={24} icon="carbon:phone" />
+                  </Fab>
+                  (+358) 94 245 2538
+                </Stack>
+
+                <Stack
+                  direction="row"
+                  alignItems="center"
+                  sx={{ typography: 'h6' }}
+                >
+                  <Fab size="medium" color="info" sx={{ mr: 1 }}>
+                    <Iconify width={24} icon="carbon:email" />
+                  </Fab>
+                  support@hero24.com
+                </Stack>
+              </Stack>
 
               <Stack spacing={3}>
                 <Typography variant="overline" sx={{ opacity: 0.48 }}>
-                  AVAILABLE FOR
+                  AVAILABLE ON
                 </Typography>
-                <Stack direction="row" spacing={2.5}>
-                  {['js', 'ts', 'figma', 'nextjs', 'vite'].map((icon) => (
+                <AppStoreButton />
+              </Stack>
+
+              <Divider sx={{ borderStyle: 'dashed' }} />
+
+              <Stack
+                direction="row"
+                spacing={{ xs: 3, sm: 10 }}
+                justifyContent={{ xs: 'center', md: 'unset' }}
+              >
+                {SUMMARY.map((item) => (
+                  <Stack
+                    key={item.value}
+                    spacing={0.5}
+                    sx={{ position: 'relative' }}
+                  >
                     <Box
-                      key={icon}
-                      component="img"
-                      alt={icon}
-                      src={`/assets/icons/platforms/ic_${icon}.svg`}
-                      sx={{ width: 24, height: 24 }}
+                      sx={{
+                        top: 8,
+                        left: -4,
+                        width: 24,
+                        height: 24,
+                        opacity: 0.24,
+                        borderRadius: '50%',
+                        position: 'absolute',
+                        bgcolor: `${item.color}.main`,
+                      }}
                     />
-                  ))}
-                </Stack>
+                    <Typography variant="h3">
+                      {fShortenNumber(item.value)}+
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{ color: 'text.secondary' }}
+                    >
+                      {item.label}
+                    </Typography>
+                  </Stack>
+                ))}
               </Stack>
             </Stack>
           </Grid>
@@ -108,10 +172,10 @@ export default function HomeHero() {
       {mdUp && (
         <Box
           sx={{
-            maxWidth: 1280,
+            maxWidth: 512,
             position: 'absolute',
-            bottom: { md: '20%', lg: 40 },
-            right: { md: -110, xl: 0 },
+            bottom: { md: '20%', lg: '1%' },
+            right: { md: -100, xl: 300 },
             width: { md: `calc(100% - ${offsetLeft}px)` },
           }}
         >
@@ -119,7 +183,7 @@ export default function HomeHero() {
             visibleByDefault
             disabledEffect
             alt="home hero"
-            src="/assets/images/home/home_hero.png"
+            src="/assets/images/home/home_hero_new.png"
           />
         </Box>
       )}

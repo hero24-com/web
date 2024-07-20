@@ -194,13 +194,13 @@ export const _lastNames = [
 // ----------------------------------------------------------------------
 
 export const _prices = [
-  83.74, 97.14, 68.71, 85.21, 52.17, 25.18, 43.84, 60.98, 98.42, 53.37, 72.75, 56.61, 64.55, 77.32,
-  60.62, 79.81, 93.68, 47.44, 76.24, 92.87, 72.91, 20.54, 94.25, 37.51,
+  69, 199, 44, 44, 44, 44, 44, 59, 39, 69, 69, 54, 69, 44,
+  59, 69, 44, 74, 56, 56, 56, 20.54, 94.25, 37.51,
 ];
 
 export const _ratings = [
-  4.2, 3.7, 4.5, 3.5, 0.5, 3.0, 2.5, 2.8, 4.9, 3.6, 2.5, 1.7, 3.9, 2.8, 4.1, 4.5, 2.2, 3.2, 0.6,
-  1.3, 3.8, 3.8, 3.8, 2.0,
+  5.0, 4.8, 4.7, 5.0, 4.6, 5.0, 5.0, 4.4, 5.0, 5.0, 4.7, 4.3, 4.5, 4.2, 5.0, 4.9, 5.0, 4.6, 4.4,
+  5.0, 4.9, 4.7, 4.8, 5.0,
 ];
 
 export const _ages = [
@@ -369,6 +369,32 @@ export const _tourNames = [
   'Historical Landmarks Expedition',
   'Surfing and Beach Adventure',
   'Nightlife and Entertainment Tour',
+];
+
+// ----------------------------------------------------------------------
+
+export const _serviceNames = [
+  'Ilmastointipalvelut',
+  'Asbestikartoitukset',
+  'Koti siivoukset',
+  "Muuttosiivous",
+  'Toimisto siivoukset',
+  'Remonttisiivous',
+  "Ikkunanpesu",
+  'Kuljetusapu',
+  'Kotiapu',
+  'Sähkötyöt',
+  'Elektroniikkahuolto',
+  'Nikkarointi',
+  'Kodinkonehuolto',
+  'Kantoapu',
+  'Muuttopalvelu',
+  'Putkityöt',
+  "Kiinteistöhuolto ja isännöintipalvelut",
+  'Kylmälaitteet',
+  'Remontit ja rakentaminen',
+  'Pihan muutos- ja rakennustyöt',
+  'Pihatyöt',
 ];
 
 // ----------------------------------------------------------------------

@@ -2,19 +2,17 @@
 
 import { useScroll } from 'framer-motion';
 
-import { _pricingHome } from 'src/_mock';
+import { _services, _testimonials } from 'src/_mock';
 
 import ScrollProgress from 'src/components/scroll-progress';
 
 import HomeHero from '../home-hero';
+import HomeOrderStep from '../home-order-step';
+import HomeService from '../home-service';
 import HomeFAQs from '../home-faqs';
-import HomeNewStart from '../home-new-start';
-import HomeCombination from '../home-combination';
-import HomeForDesigner from '../home-for-designer';
-import HomeAdvertisement from '../home-advertisement';
-import PricingHome from '../../pricing/home/pricing-home';
-import HomeFeatureHighlights from '../home-feature-highlights';
-import HomeFlexibleComponents from '../home-flexible-components';
+import HomeDownloadApp from '../home-download-app';
+import HomeTestimonial from '../testimonial/home-testimonial';
+
 
 // ----------------------------------------------------------------------
 
@@ -27,21 +25,15 @@ export default function HomeView() {
 
       <HomeHero />
 
-      <HomeNewStart />
+      <HomeService services={_services} />
 
-      <HomeFlexibleComponents />
-
-      <HomeFeatureHighlights />
-
-      <HomeForDesigner />
-
-      <PricingHome plans={_pricingHome} />
+      <HomeOrderStep />
 
       <HomeFAQs />
 
-      <HomeCombination />
+      <HomeTestimonial testimonials={_testimonials} />
 
-      <HomeAdvertisement />
+      <HomeDownloadApp />
     </>
   );
 }

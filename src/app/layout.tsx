@@ -21,16 +21,30 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Zone UI Kit',
-  description:
-    'The ZONE is built on top of MUI, a powerful library that provides flexible, customizable, and easy-to-use components.',
-  keywords: 'react,material,kit,application,dashboard,admin,template',
+  title: 'Hero24',
+  description: 'Sankareita arjen haasteisiin',
+  keywords:
+    'hero24,Ilmastointipalvelut,Asbestikartoitukset,Koti siivoukset,Muuttosiivous,Toimisto siivoukset,Remonttisiivous,Ikkunanpesu,Kuljetusapu,Kotiapu,Sähkötyöt,Elektroniikkahuolto,Nikkarointi,Kodinkonehuolto,Kantoapu,Muuttopalvelu,Putkityöt,Kiinteistöhuolto ja isännöintipalvelut,Kylmälaitteet,Remontit ja rakentaminen,Pihan muutos- ja rakennustyöt,Pihatyöt',
   manifest: '/manifest.json',
   icons: [
     { rel: 'icon', url: '/favicon/favicon.ico' },
-    { rel: 'icon', type: 'image/png', sizes: '16x16', url: '/favicon/favicon-16x16.png' },
-    { rel: 'icon', type: 'image/png', sizes: '32x32', url: '/favicon/favicon-32x32.png' },
-    { rel: 'apple-touch-icon', sizes: '180x180', url: '/favicon/apple-touch-icon.png' },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/favicon/favicon-16x16.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/favicon/favicon-32x32.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/favicon/apple-touch-icon.png',
+    },
   ],
 };
 

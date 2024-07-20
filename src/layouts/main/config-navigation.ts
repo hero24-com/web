@@ -107,13 +107,94 @@ export const pageLinks = [
   },
 ];
 
-export const navConfig = [
-  { title: 'Home', path: '/' },
-  { title: 'Components', path: paths.components.root },
+export const serviceLinks = [
   {
-    title: 'Pages',
-    path: paths.pages,
-    children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
+    order: '1',
+    subheader: 'Siivous ja kotiapu',
+    cover: '/assets/images/service/service_3.png',
+    items: [
+      { title: 'Kotisiivous', path: paths.marketing.root },
+      { title: 'Toimistosiivous', path: paths.marketing.services },
+      { title: 'Muuttosiivous', path: paths.marketing.caseStudies },
+      { title: 'Remonttisiivous', path: paths.marketing.caseStudy },
+      { title: 'Ikkunanpesu', path: paths.marketing.posts },
+      { title: 'Kotiapu', path: paths.marketing.post },
+    ],
   },
-  { title: 'Docs', path: paths.docs },
+  {
+    order: '2',
+    subheader: 'Kodinkoneet ja laitteet',
+    cover: '/assets/images/service/service_10.png',
+    items: [
+      { title: 'Kodinkonehuolto', path: paths.travel.root },
+      { title: 'Elektroniikkahuolto', path: paths.travel.tours },
+      { title: 'Kylmälaitteet', path: paths.travel.tour },
+    ],
+  },
+  {
+    order: '3',
+    subheader: 'Muuttopalvelu ja Kantoapu',
+    cover: '/assets/images/service/service_11.png',
+    items: [
+      { title: 'Muuttopalvelu', path: paths.career.root },
+      { title: 'Kantoapu', path: paths.career.jobs },
+      { title: 'Kuljetusapu', path: paths.career.job },
+    ],
+  },
+  {
+    order: '4',
+    subheader: 'Remontointi ja LVIS',
+    cover: '/assets/images/service/service_1.png',
+    items: [
+      { title: 'Ilmastointipalvelut', path: paths.eLearning.root },
+      { title: 'Remontit ja rakentaminen', path: paths.eLearning.courses },
+      { title: 'Sähkötyöt', path: paths.eLearning.course },
+      { title: 'Putkityöt', path: paths.eLearning.posts },
+      { title: 'Nikkarointi', path: paths.eLearning.post },
+      { title: 'Asbestikartoitukset', path: paths.eLearning.about },
+    ],
+  },
+  {
+    order: '5',
+    subheader: 'Pihat ja kiinteistöhuollot',
+    cover: '/assets/images/service/service_20.png',
+    items: [
+      { title: 'Pihatyöt', path: paths.eLearning.root },
+      {
+        title: 'Kiinteistöhuolto ja isännöintipalvelut',
+        path: paths.eLearning.courses,
+      },
+      { title: 'Pihan muutos- ja rakennustyöt', path: paths.eLearning.course },
+    ],
+  },
+  {
+    order: '6',
+    subheader: 'Common',
+    items: [
+      { title: 'Tilaa Sankari', path: paths.blogs.root },
+      { title: 'Litty Sankariksi', path: paths.blogs.root },
+      { title: 'Hero24', path: paths.blogs.root },
+      { title: 'Yhteystietod', path: paths.blogs.root },
+    ],
+  },
+];
+
+export const navConfig = [
+  {
+    title: 'Palvelut',
+    path: paths.services,
+    children: [
+      serviceLinks[0],
+      serviceLinks[1],
+      serviceLinks[2],
+      serviceLinks[3],
+      serviceLinks[5],
+      serviceLinks[4],
+    ],
+  },
+  { title: 'Tilaa Sankari', path: paths.blogs.root },
+  { title: 'Litty Sankariksi', path: paths.blogs.root },
+  { title: 'Hero24', path: paths.blogs.root },
+  { title: 'Yhteystietod', path: paths.blogs.root },
+  { title: 'Blogs', path: paths.blogs.root },
 ];

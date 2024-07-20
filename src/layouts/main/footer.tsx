@@ -2,14 +2,11 @@ import Link from '@mui/material/Link';
 import Masonry from '@mui/lab/Masonry';
 import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
-import TextField from '@mui/material/TextField';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
 import { alpha, styled } from '@mui/material/styles';
 import Stack, { StackProps } from '@mui/material/Stack';
-import InputAdornment from '@mui/material/InputAdornment';
 import Button, { buttonClasses } from '@mui/material/Button';
 
 import { usePathname } from 'src/routes/hooks';
@@ -18,13 +15,12 @@ import { RouterLink } from 'src/routes/components';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import { _socials } from 'src/_mock';
-
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 
 import { NavSubListProps } from './nav/types';
-import { pageLinks, navConfig } from './config-navigation';
+import { serviceLinks, navConfig } from './config-navigation';
+import { paths } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -44,25 +40,18 @@ const StyledAppStoreButton = styled(Button)(({ theme }) => ({
 export default function Footer() {
   const mdUp = useResponsive('up', 'md');
 
-  const pathname = usePathname();
+  const mobileTitle =
+    navConfig.find((i) => i.title === 'Palvelut')?.children || [];
 
-  const mobileList = navConfig.find((i) => i.title === 'Pages')?.children || [];
+  const mobileList = mobileTitle.sort(
+    (listA, listB) => Number(listB.order) - Number(listA.order)
+  );
 
-  const desktopList = pageLinks.sort((listA, listB) => Number(listA.order) - Number(listB.order));
+  const desktopList = serviceLinks.sort(
+    (listA, listB) => Number(listB.order) - Number(listA.order)
+  );
 
   const renderLists = mdUp ? desktopList : mobileList;
-
-  const isHome = pathname === '/';
-
-  const simpleFooter = (
-    <Container sx={{ py: 8, textAlign: 'center' }}>
-      <Logo single />
-
-      <Typography variant="caption" component="div" sx={{ color: 'text.secondary' }}>
-        © 2023. All rights reserved
-      </Typography>
-    </Container>
-  );
 
   const mainFooter = (
     <>
@@ -78,62 +67,24 @@ export default function Footer() {
           <Grid xs={12} md={4}>
             <Stack spacing={{ xs: 3, md: 5 }}>
               <Stack alignItems="flex-start" spacing={3}>
-                <Logo />
+                <Logo single />
 
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  The starting point for your next project based on easy-to-customize Material-UI ©
-                  helps you build apps faster and better.
+                  Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja
+                  räätälöitynä juuri sinulle Ei enää monimutkaisia
+                  tarjouspyyntöjä tai loputtomia puheluita.
                 </Typography>
               </Stack>
 
               <Stack spacing={1} alignItems="flex-start">
                 <Typography variant="h6">Community</Typography>
                 <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Documentation
+                  Case Studies
                 </Link>
 
                 <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Changelog
+                  Blogs
                 </Link>
-
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Contributing
-                </Link>
-              </Stack>
-
-              <Stack spacing={2}>
-                <Stack spacing={1}>
-                  <Typography variant="h6">Let’s stay in touch</Typography>
-                  <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-                    Ubscribe to our newsletter to receive latest articles to your inbox weekly.
-                  </Typography>
-                </Stack>
-
-                <TextField
-                  fullWidth
-                  hiddenLabel
-                  placeholder="Email address"
-                  InputProps={{
-                    endAdornment: (
-                      <InputAdornment position="end">
-                        <Button variant="contained" color="inherit" size="large" sx={{ mr: -1.25 }}>
-                          Subscribe
-                        </Button>
-                      </InputAdornment>
-                    ),
-                  }}
-                />
-              </Stack>
-
-              <Stack spacing={2}>
-                <Typography variant="h6">Social</Typography>
-                <Stack direction="row" alignItems="center">
-                  {_socials.map((social) => (
-                    <IconButton key={social.value} color="primary">
-                      <Iconify icon={social.icon} />
-                    </IconButton>
-                  ))}
-                </Stack>
               </Stack>
 
               <Stack spacing={2}>
@@ -143,9 +94,14 @@ export default function Footer() {
             </Stack>
           </Grid>
 
-          <Grid xs={12} md={6}>
+          <Grid xs={12} md={8}>
             {mdUp ? (
-              <Masonry columns={4} spacing={2} defaultColumns={4} defaultSpacing={2}>
+              <Masonry
+                columns={6}
+                spacing={2}
+                defaultColumns={4}
+                defaultSpacing={2}
+              >
                 {renderLists.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
                 ))}
@@ -171,12 +127,12 @@ export default function Footer() {
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2023. All rights reserved
+            © 2024. All rights reserved
           </Typography>
 
           <Stack direction="row" spacing={3} justifyContent="center">
             <Link variant="caption" sx={{ color: 'text.secondary' }}>
-              Help Center
+              Privacy Policy
             </Link>
 
             <Link variant="caption" sx={{ color: 'text.secondary' }}>
@@ -188,7 +144,7 @@ export default function Footer() {
     </>
   );
 
-  return <footer>{isHome ? simpleFooter : mainFooter}</footer>;
+  return <footer>{mainFooter}</footer>;
 }
 
 // ----------------------------------------------------------------------
@@ -249,7 +205,9 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
         {list.subheader}
         <Iconify
           width={16}
-          icon={listExpand.value ? 'carbon:chevron-down' : 'carbon:chevron-right'}
+          icon={
+            listExpand.value ? 'carbon:chevron-down' : 'carbon:chevron-right'
+          }
           sx={{ ml: 0.5 }}
         />
       </Typography>
@@ -284,32 +242,40 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
 
 // ----------------------------------------------------------------------
 
-function AppStoreButton({ ...other }: StackProps) {
+export function AppStoreButton({ ...other }: StackProps) {
   return (
     <Stack direction="row" flexWrap="wrap" spacing={2} {...other}>
-      <StyledAppStoreButton startIcon={<Iconify icon="ri:apple-fill" width={28} />}>
-        <Stack alignItems="flex-start">
-          <Typography variant="caption" sx={{ opacity: 0.72 }}>
-            Download on the
-          </Typography>
+      <Link component={RouterLink} href={paths.appStoreLink}>
+        <StyledAppStoreButton
+          startIcon={<Iconify icon="ri:apple-fill" width={28} />}
+        >
+          <Stack alignItems="flex-start">
+            <Typography variant="caption" sx={{ opacity: 0.72 }}>
+              Download on the
+            </Typography>
 
-          <Typography variant="h6" sx={{ mt: -0.5 }}>
-            Apple Store
-          </Typography>
-        </Stack>
-      </StyledAppStoreButton>
+            <Typography variant="h6" sx={{ mt: -0.5 }}>
+              Apple Store
+            </Typography>
+          </Stack>
+        </StyledAppStoreButton>
+      </Link>
 
-      <StyledAppStoreButton startIcon={<Iconify icon="logos:google-play-icon" width={28} />}>
-        <Stack alignItems="flex-start">
-          <Typography variant="caption" sx={{ opacity: 0.72 }}>
-            Download from
-          </Typography>
+      <Link component={RouterLink} href={paths.googlePlayLink}>
+        <StyledAppStoreButton
+          startIcon={<Iconify icon="logos:google-play-icon" width={28} />}
+        >
+          <Stack alignItems="flex-start">
+            <Typography variant="caption" sx={{ opacity: 0.72 }}>
+              Download from
+            </Typography>
 
-          <Typography variant="h6" sx={{ mt: -0.5 }}>
-            Google Play
-          </Typography>
-        </Stack>
-      </StyledAppStoreButton>
+            <Typography variant="h6" sx={{ mt: -0.5 }}>
+              Google Play
+            </Typography>
+          </Stack>
+        </StyledAppStoreButton>
+      </Link>
     </Stack>
   );
 }

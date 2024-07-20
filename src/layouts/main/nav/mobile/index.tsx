@@ -63,11 +63,11 @@ export default function NavMobile({ data }: NavProps) {
               fullWidth
               variant="contained"
               color="inherit"
-              href={paths.zoneStore}
+              href={paths.joinHero24}
               target="_blank"
               rel="noopener"
             >
-              Buy Now
+              Litty Sankariksi
             </Button>
           </Stack>
         </Scrollbar>

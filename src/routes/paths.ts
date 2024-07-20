@@ -63,6 +63,15 @@ export const paths = {
       payment: `/e-commerce/account/payment`,
     },
   },
+  // Blogs
+  blogs: {
+    root: '/blogs',
+    blog: {
+      blog1: `/blogs/blog1`,
+      blog2: `/blogs/blog2`,
+      blog3: `/blogs/blog3`,
+    },
+  },
   // Auth
   loginCover: '/auth/login-cover',
   loginBackground: '/auth/login-background',
@@ -102,10 +111,15 @@ export const paths = {
   },
   // Others
   pages: '/pages',
+  services: '/services',
+  joinHero24: '/join',
   docs: 'https://zone-docs.vercel.app',
   license: 'https://material-ui.com/store/license/#i-standard-license',
   minimalStore: 'https://material-ui.com/store/items/minimal-dashboard',
   zoneStore: 'https://mui.com/store/items/zone-landing-page/',
   figmaPreview:
     'https://www.figma.com/file/Zam9QBLhV4pZf5xtNs0Lf8/%5BPreview%5D-Zone_Web.v2.3.0?type=design&node-id=59%3A680507&mode=design&t=GCVeJci5zfUu5WCy-1',
+  appStoreLink: 'https://apps.apple.com/us/app/hero24/id1642167956',
+  googlePlayLink:
+    'https://play.google.com/store/apps/details?id=com.hero24.app&hl=en',
 };
