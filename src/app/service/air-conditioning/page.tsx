@@ -1,4 +1,4 @@
-import AirConditioningView from 'src/sections/_home/service/air-conditioning-view';
+import AirConditioningView from 'src/sections/_home/view/air-conditioning-view';
 
 // ----------------------------------------------------------------------
 

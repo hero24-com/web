@@ -27,7 +27,6 @@ export const paths = {
    // Service
    service: {
     airConditioning: '/air-conditioning',
-    asbestos: '/asbestos',
   },
   // Career
   career: {
@@ -87,6 +86,7 @@ export const paths = {
   forgotPassword: '/auth/forgot-password',
   verify: '/auth/verify',
   // Common
+  offerRequestSent: '/offer-request-sent',
   maintenance: '/maintenance',
   comingsoon: '/coming-soon',
   pricing01: '/pricing-01',

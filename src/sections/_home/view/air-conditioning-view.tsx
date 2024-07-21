@@ -17,11 +17,11 @@ import { SplashScreen } from 'src/components/loading-screen';
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
 import HomeTestimonial from '../testimonial/home-testimonial';
-import HomeServiceListSimilar from './list/home-service-list-similar';
-import HomeServiceDetailsHeader from './details/home-service-details-header';
-import HomeServiceDetailsSummary from './details/home-service-details-summary';
-import HomeServiceDetailsGallery from './details/home-service-details-gallery';
-import HomeServiceDetailsReserveForm from './details/home-service-details-reserve-form';
+import HomeServiceListSimilar from '../service/list/home-service-list-similar';
+import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
+import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
+import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
+import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
 
