@@ -6,11 +6,11 @@ import { _services, _testimonials } from 'src/_mock';
 
 import ScrollProgress from 'src/components/scroll-progress';
 
-import HomeHero from '../home-hero';
-import HomeOrderStep from '../home-order-step';
-import HomeService from '../home-service';
-import HomeFAQs from '../home-faqs';
-import HomeDownloadApp from '../home-download-app';
+import HomeHero from '../landing/home-hero';
+import HomeOrderStep from '../landing/home-order-step';
+import HomeService from '../landing/home-service';
+import HomeFAQs from '../landing/home-faqs';
+import HomeDownloadApp from '../landing/home-download-app';
 import HomeTestimonial from '../testimonial/home-testimonial';
 
 

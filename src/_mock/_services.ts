@@ -83,6 +83,7 @@ export const _services = [...Array(20)].map((_, index) => {
     continent: location,
     tags: _tags.slice(0, 5),
     slug: _mock.serviceName(index),
+    serviceSlug: _mock.serviceSlug(index),
     duration: '3 days 2 nights',
     createdAt: _mock.time(index),
     favorited: _mock.boolean(index),

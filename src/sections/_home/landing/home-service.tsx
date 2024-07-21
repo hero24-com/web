@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 import { IServiceProps } from 'src/types/service';
 
-import HomeServiceItem from './home-service-item';
+import HomeServiceItem from '../service/list/home-service-item';
 
 // ----------------------------------------------------------------------
 

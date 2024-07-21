@@ -10,7 +10,6 @@ import Checkbox from '@mui/material/Checkbox';
 
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
 import { RouterLink } from 'src/routes/components';
 
 import { fCurrency } from 'src/utils/format-number';
@@ -30,7 +29,7 @@ type Props = {
 export default function HomeServiceItem({ service }: Props) {
   const {
     slug,
-    location,
+    serviceSlug,
     price,
     priceSale,
     favorited,
@@ -115,7 +114,7 @@ export default function HomeServiceItem({ service }: Props) {
       />
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
-        <Link component={RouterLink} href={paths.travel.tours} color="inherit">
+        <Link component={RouterLink} href={serviceSlug} color="inherit">
           <TextMaxLine variant="h4" persistent>
             {slug}
           </TextMaxLine>
@@ -134,7 +133,7 @@ export default function HomeServiceItem({ service }: Props) {
           <Button
             variant="contained"
             color="inherit"
-            href={paths.travel.tours}
+            href={serviceSlug}
             rel="noopener"
           >
             Book now

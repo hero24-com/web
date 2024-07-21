@@ -6,6 +6,7 @@ import { ISocialLinks } from './socials';
 export type IServiceProps = {
   id: string;
   slug: string;
+  serviceSlug: string;
   price: number;
   heroUrl: string;
   createdAt: Date;

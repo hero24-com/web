@@ -24,6 +24,11 @@ export const paths = {
     about: '/travel/about',
     contact: '/travel/contact',
   },
+   // Service
+   service: {
+    airConditioning: '/air-conditioning',
+    asbestos: '/asbestos',
+  },
   // Career
   career: {
     root: '/career',

@@ -131,12 +131,12 @@ export default function Footer() {
           </Typography>
 
           <Stack direction="row" spacing={3} justifyContent="center">
-            <Link variant="caption" sx={{ color: 'text.secondary' }}>
-              Privacy Policy
+            <Link href="https://api.hero24.com/terms/fi" target="_blank" rel="noopener" color="inherit" underline="none" variant="caption" sx={{ color: 'text.secondary' }}>
+              Terms of Service (Customer)
             </Link>
 
-            <Link variant="caption" sx={{ color: 'text.secondary' }}>
-              Terms of Service
+            <Link href="https://api.hero24.com/seller_terms/fi" target="_blank" rel="noopener" color="inherit" underline="none" variant="caption" sx={{ color: 'text.secondary' }}>
+              Terms of Service (Seller)
             </Link>
           </Stack>
         </Stack>
