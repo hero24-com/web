@@ -2,6 +2,8 @@
 
 import { useEffect } from 'react';
 
+import { HubspotProvider } from 'next-hubspot';
+
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -9,21 +11,21 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 import { useBoolean } from 'src/hooks/use-boolean';
 
-import { _tours, _socials, _services } from 'src/_mock';
+import { _socials, _services, _testimonials } from 'src/_mock';
 
 import { SplashScreen } from 'src/components/loading-screen';
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
-import ReviewTravel from '../../review/travel/review-travel';
+import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeServiceListSimilar from './list/home-service-list-similar';
-import HomeServiceDetailsHeader from './details/travel-tour-details-header';
-import HomeServiceDetailsSummary from './details/travel-tour-details-summary';
-import HomeServiceDetailsGallery from './details/travel-tour-details-gallery';
-import HomeServiceDetailsReserveForm from './details/travel-tour-details-reserve-form';
+import HomeServiceDetailsHeader from './details/home-service-details-header';
+import HomeServiceDetailsSummary from './details/home-service-details-summary';
+import HomeServiceDetailsGallery from './details/home-service-details-gallery';
+import HomeServiceDetailsReserveForm from './details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
 
-const _mockTour = _tours[0];
+const _mockService = _services[0];
 
 export default function AirConditioningView() {
   const loading = useBoolean(true);
@@ -41,38 +43,38 @@ export default function AirConditioningView() {
   }
 
   return (
-    <>
+    <HubspotProvider>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
           links={[
             { name: 'Home', href: '/' },
-            { name: _mockTour.slug },
+            { name: _mockService.slug },
           ]}
           sx={{ mt: 3, mb: 5 }}
         />
 
-        <HomeServiceDetailsGallery images={_mockTour.gallery} />
+        <HomeServiceDetailsGallery images={_mockService.gallery} />
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
-          <Grid xs={12} md={5} lg={4}>
-            <HomeServiceDetailsReserveForm tour={_mockTour} />
+          <Grid xs={12} md={5} lg={5}>
+            <HomeServiceDetailsReserveForm />
           </Grid>
 
-          <Grid xs={12} md={7} lg={8}>
-            <HomeServiceDetailsHeader tour={_mockTour} />
+          <Grid xs={12} md={7} lg={7}>
+            <HomeServiceDetailsHeader service={_mockService} />
 
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
-            <HomeServiceDetailsSummary tour={_mockTour} />
+            <HomeServiceDetailsSummary service={_mockService} />
           </Grid>
         </Grid>
       </Container>
 
       <Divider sx={{ my: 10 }} />
 
-      <ReviewTravel />
+      <HomeTestimonial testimonials={_testimonials} />
 
       <HomeServiceListSimilar services={_services.slice(-4)} />
-    </>
+    </HubspotProvider>
   );
 }

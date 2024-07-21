@@ -15,7 +15,7 @@ type Props = {
   services: IServiceProps[];
 };
 
-export default function TravelTourListSimilar({ services }: Props) {
+export default function HomeServiceListSimilar({ services }: Props) {
   const mdUp = useResponsive('up', 'md');
 
   return (

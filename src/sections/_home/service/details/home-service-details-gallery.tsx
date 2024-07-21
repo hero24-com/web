@@ -12,7 +12,7 @@ type Props = {
   images: string[];
 };
 
-export default function TravelTourDetailsGallery({ images }: Props) {
+export default function HomeServiceDetailsGallery({ images }: Props) {
   const slides = images.map((slide) => ({
     src: slide,
   }));

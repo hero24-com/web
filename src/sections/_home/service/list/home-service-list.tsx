@@ -1,18 +1,18 @@
 import Box from '@mui/material/Box';
 
-import { ITourProps } from 'src/types/tour';
+import { IServiceProps } from 'src/types/service';
 
 import HomeServiceItem from './home-service-item';
-import TravelTourItemSkeleton from './home-service-item-skeleton';
+import HomeServiceItemSkeleton from './home-service-item-skeleton';
 
 // ----------------------------------------------------------------------
 
 type Props = {
-  tours: ITourProps[];
+  services: IServiceProps[];
   loading?: boolean;
 };
 
-export default function HomeServiceList({ tours, loading }: Props) {
+export default function HomeServiceList({ services, loading }: Props) {
   return (
     <>
       <Box
@@ -27,11 +27,11 @@ export default function HomeServiceList({ tours, loading }: Props) {
           },
         }}
       >
-        {(loading ? [...Array(20)] : tours).map((tour, index) =>
-          tour ? (
-            <HomeServiceItem key={tour.id} service={tour} />
+        {(loading ? [...Array(20)] : services).map((service, index) =>
+          service ? (
+            <HomeServiceItem key={service.id} service={service} />
           ) : (
-            <TravelTourItemSkeleton key={index} />
+            <HomeServiceItemSkeleton key={index} />
           )
         )}
       </Box>

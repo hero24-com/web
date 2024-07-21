@@ -2,35 +2,35 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import { TOUR_SERVICE_OPTIONS } from 'src/_mock';
+import { HOME_SERVICE_OPTIONS } from 'src/_mock';
 
 import Iconify from 'src/components/iconify';
 
-import { ITourProps } from 'src/types/tour';
+import { IServiceProps } from 'src/types/service';
 
 // ----------------------------------------------------------------------
 
 type Props = {
-  tour: ITourProps;
+  service: IServiceProps;
 };
 
-export default function TravelTourDetailsSummary({ tour }: Props) {
+export default function HomeServiceDetailsSummary({ service }: Props) {
   const {
     program,
     services,
     highlights,
     description,
-  } = tour;
+  } = service;
 
   return (
     <Stack spacing={5}>
       <Stack spacing={2}>
-        <Typography variant="h5">Tour Description</Typography>
+        <Typography variant="h5">Service Description</Typography>
         <Typography>{description}</Typography>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h5">Tour Highlights</Typography>
+        <Typography variant="h5">Service Highlights</Typography>
 
         <ul>
           {highlights.map((highlight) => (
@@ -50,7 +50,7 @@ export default function TravelTourDetailsSummary({ tour }: Props) {
             md: 'repeat(2, 1fr)',
           }}
         >
-          {TOUR_SERVICE_OPTIONS.map((service) => (
+          {HOME_SERVICE_OPTIONS.map((service) => (
             <Stack
               key={service.label}
               spacing={1}
@@ -78,7 +78,7 @@ export default function TravelTourDetailsSummary({ tour }: Props) {
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h5">Tour Program</Typography>
+        <Typography variant="h5">Service Program</Typography>
         {program.map((content) => (
           <HighlightItem key={content.label} label={content.label} text={content.text} />
         ))}

@@ -25,7 +25,7 @@ export default function HomeView() {
 
       <HomeHero />
 
-      <HomeService services={_services} />
+      <HomeService />
 
       <HomeOrderStep />
 
