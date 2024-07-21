@@ -23,7 +23,7 @@ export const HOME_SERVICE_OPTIONS = [
   },
 ];
 
-export const _services = [...Array(20)].map((_, index) => {
+export const _services = [...Array(21)].map((_, index) => {
   const location = countries.map((option) => option.label)[index + 1];
 
   const gallery = [...Array(6)].map((__, itemIndex) => _mock.image.service(itemIndex + 2));
