@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useHubspotForm } from 'next-hubspot';
 
 import Box from '@mui/material/Box';
@@ -12,6 +13,17 @@ export default function HomeServiceDetailsReserveForm() {
     formId: '4531c797-8991-44c8-8a66-728658006f6d',
     target: '#hubspot-form-wrapper',
   });
+
+  useEffect(() => {
+    if (loaded && formCreated) {
+      try {
+        console.log('Hubspot form created');
+      } catch (e) {
+        console.warn('Failed to create hubspot form:');
+        console.error(e);
+      }
+    }
+  }, [loaded, formCreated]);
 
   return (
     <Card>
