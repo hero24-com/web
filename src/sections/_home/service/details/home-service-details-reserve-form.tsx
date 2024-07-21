@@ -7,10 +7,14 @@ import Stack from '@mui/material/Stack';
 
 // ----------------------------------------------------------------------
 
-export default function HomeServiceDetailsReserveForm() {
+type Props = {
+  formId: string;
+};
+
+export default function HomeServiceDetailsReserveForm({ formId }: Props) {
   const { loaded, error, formCreated } = useHubspotForm({
     portalId: '143729222',
-    formId: '4531c797-8991-44c8-8a66-728658006f6d',
+    formId: formId,
     target: '#hubspot-form-wrapper',
   });
 
