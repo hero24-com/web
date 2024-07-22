@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Unstable_Grid2';
+import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 
@@ -29,8 +31,20 @@ export default function HomeJoinForm({ formId }: Props) {
   }, []);
 
   return (
-    <Stack spacing={2.5} alignItems="flex-start">
-      <Box id="hubspot-form-wrapper"></Box>
-    </Stack>
+    <Container
+      sx={{
+        overflow: 'hidden',
+        pt: { xs: 5, md: 10 },
+        pb: { xs: 10, md: 15 },
+      }}
+    >
+      <Grid xs={12} md={6} lg={6}>
+        <Typography variant="h3" sx={{ mb: 5 }}>
+          Tule mukaan luomaan parempaa tulevaisuutta!
+        </Typography>
+
+        <Box id="hubspot-form-wrapper"></Box>
+      </Grid>
+    </Container>
   );
 }
