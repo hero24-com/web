@@ -2,7 +2,7 @@
 import 'src/global.css';
 
 // ----------------------------------------------------------------------
-
+import { Analytics } from '@vercel/analytics/react';
 import ThemeProvider from 'src/theme';
 import { primaryFont } from 'src/theme/typography';
 import { LocalizationProvider } from 'src/locales';
@@ -73,6 +73,7 @@ export default function RootLayout({ children }: Props) {
             </ThemeProvider>
           </SettingsProvider>
         </LocalizationProvider>
+        <Analytics />
       </body>
     </html>
   );
