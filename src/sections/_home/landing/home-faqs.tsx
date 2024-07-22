@@ -9,7 +9,9 @@ import Accordion from '@mui/material/Accordion';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary, { accordionSummaryClasses } from '@mui/material/AccordionSummary';
+import AccordionSummary, {
+  accordionSummaryClasses,
+} from '@mui/material/AccordionSummary';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -22,28 +24,20 @@ import { varFade, MotionViewport } from 'src/components/animate';
 
 const CONTENTS = [
   {
-    question: `What's in the product packages?`,
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: `Miten Hero24 toimii?`,
+    answer: `Hero24 yhdistää sinut luotettaviin palveluntarjoajiin, jotka auttavat sinua erilaisissa projekteissa, kuten siivouksessa, LVIS-asennuksissa, muutto- ja kuljetuspalveluissa sekä remontoinnissa.`,
   },
   {
-    question: 'How can I upgrade my product plan?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Miten teen tilauksen?',
+    answer: `1. Rekisteröidy sovelluksessa. 2. Täytä tarjouspyyntölomake sovelluksessa tai nettisivulla. 3. Palveluntarjoaja hyväksyy tilauksesi. 4. Kommunikoi palveluntarjoajan kanssa sovelluksen kautta. 5. Arvostele palvelu työn valmistuttua.`,
   },
   {
-    question: 'Are design assets (Figma, Sketch, Adobe XD) included?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Miten otan yhteyttä Hero24:ään?',
+    answer: `Käytä Help Centeriä nettisivuilla tai sovelluksessa, tai ota yhteyttä asiakaspalveluun chatin tai puhelimen kautta.`,
   },
   {
-    question: 'Does this product support TypeScript?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
-  },
-  {
-    question: 'Can I use this template in commercial projects like a SaaS?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
-  },
-  {
-    question: 'How can I request support?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Miten jätän arvostelun?',
+    answer: `Jätä arvostelu ja tähtiluokitus sovelluksen kautta työn valmistuttua.`,
   },
 ];
 
@@ -73,7 +67,7 @@ export default function HomeFAQs() {
         <Grid xs={12} md={8}>
           <m.div variants={varFade().in}>
             <Typography variant="h3" sx={{ textAlign: 'center' }}>
-              Frequently Asked Questions
+              FAQ
             </Typography>
           </m.div>
 
@@ -91,7 +85,8 @@ export default function HomeFAQs() {
                   <AccordionSummary
                     sx={{
                       minHeight: 64,
-                      borderBottom: (theme) => `dashed 1px ${theme.palette.divider}`,
+                      borderBottom: (theme) =>
+                        `dashed 1px ${theme.palette.divider}`,
                       [`& .${accordionSummaryClasses.content}`]: {
                         p: 0,
                         m: 0,
@@ -107,7 +102,11 @@ export default function HomeFAQs() {
 
                     <Iconify
                       width={24}
-                      icon={expanded === faq.question ? 'carbon:subtract' : 'carbon:add'}
+                      icon={
+                        expanded === faq.question
+                          ? 'carbon:subtract'
+                          : 'carbon:add'
+                      }
                     />
                   </AccordionSummary>
 

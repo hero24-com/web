@@ -72,7 +72,6 @@ export default function Header({ headerOnDark }: Props) {
           variant="contained"
           color="inherit"
           href={paths.joinHero24}
-          target="_blank"
           rel="noopener"
           sx={{
             display: { xs: 'none', md: 'inline-flex' },

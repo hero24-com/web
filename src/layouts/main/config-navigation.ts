@@ -192,7 +192,7 @@ export const navConfig = [
       serviceLinks[4],
     ],
   },
-  { title: 'Tilaa Sankari', path: paths.blogs.root },
-  { title: 'Liity Sankariksi', path: paths.blogs.root },
-  { title: 'Yhteystiedot', path: paths.blogs.root },
+  { title: 'Tilaa Sankari', path: paths.services },
+  { title: 'Liity Sankariksi', path: paths.joinHero24 },
+  { title: 'Yhteystiedot', path: paths.contact },
 ];

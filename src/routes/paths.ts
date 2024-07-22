@@ -24,10 +24,6 @@ export const paths = {
     about: '/travel/about',
     contact: '/travel/contact',
   },
-   // Service
-   service: {
-    airConditioning: '/air-conditioning',
-  },
   // Career
   career: {
     root: '/career',
@@ -118,6 +114,7 @@ export const paths = {
   pages: '/pages',
   services: '/services',
   joinHero24: '/join',
+  contact: '/contact',
   docs: 'https://zone-docs.vercel.app',
   license: 'https://material-ui.com/store/license/#i-standard-license',
   minimalStore: 'https://material-ui.com/store/items/minimal-dashboard',
