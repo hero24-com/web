@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 
-import { HubspotProvider } from 'next-hubspot';
+
 
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
@@ -43,7 +43,7 @@ export default function RefrigerationApplianceView() {
   }
 
   return (
-    <HubspotProvider>
+    <>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
           links={[
@@ -75,6 +75,6 @@ export default function RefrigerationApplianceView() {
       <HomeTestimonial testimonials={_testimonials} />
 
       <HomeServiceListSimilar services={_services.slice(-4)} />
-    </HubspotProvider>
+    </>
   );
 }

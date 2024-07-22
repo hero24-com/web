@@ -2,8 +2,6 @@
 
 import { useEffect } from 'react';
 
-import { HubspotProvider } from 'next-hubspot';
-
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -42,7 +40,7 @@ export default function AsbestosView() {
   }
 
   return (
-    <HubspotProvider>
+    <>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
           links={[{ name: 'Home', href: '/' }, { name: _mockService.slug }]}
@@ -76,6 +74,6 @@ export default function AsbestosView() {
       <HomeTestimonial testimonials={_testimonials} />
 
       <HomeServiceListSimilar services={_services.slice(-4)} />
-    </HubspotProvider>
+    </>
   );
 }

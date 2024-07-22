@@ -2,12 +2,9 @@
 
 import { useEffect } from 'react';
 
-import { HubspotProvider } from 'next-hubspot';
-
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-
 
 import { useBoolean } from 'src/hooks/use-boolean';
 
@@ -43,19 +40,21 @@ export default function CleaningHomeView() {
   }
 
   return (
-    <HubspotProvider>
+    <>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
-          links={[
-            { name: 'Home', href: '/' },
-            { name: _mockService.slug },
-          ]}
+          links={[{ name: 'Home', href: '/' }, { name: _mockService.slug }]}
           sx={{ mt: 3, mb: 5 }}
         />
 
         <HomeServiceDetailsGallery images={_mockService.gallery} />
 
-        <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
+        <Grid
+          container
+          columnSpacing={8}
+          rowSpacing={5}
+          direction="row-reverse"
+        >
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm formId="c9c251a2-ca6e-477b-9a23-642359d822fb" />
           </Grid>
@@ -75,6 +74,6 @@ export default function CleaningHomeView() {
       <HomeTestimonial testimonials={_testimonials} />
 
       <HomeServiceListSimilar services={_services.slice(-4)} />
-    </HubspotProvider>
+    </>
   );
 }
