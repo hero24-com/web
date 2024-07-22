@@ -13,13 +13,12 @@ type Props = {
 };
 
 export default function HomeJoinForm({ formId }: Props) {
-  const { loaded, error, formCreated } = useHubspotForm({
-    portalId: '143729222',
-    formId: formId,
-    target: '#hubspot-form-wrapper',
-  });
-
   useEffect(() => {
+    const { loaded, error, formCreated } = useHubspotForm({
+      portalId: '143729222',
+      formId: formId,
+      target: '#hubspot-form-wrapper',
+    });
     if (loaded && formCreated) {
       try {
         console.log('Hubspot form created');
@@ -28,7 +27,7 @@ export default function HomeJoinForm({ formId }: Props) {
         console.error(e);
       }
     }
-  }, [loaded, formCreated]);
+  }, []);
 
   return (
     <Container

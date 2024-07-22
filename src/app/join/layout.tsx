@@ -1,6 +1,5 @@
 'use client';
 
-import { HubspotProvider } from 'next-hubspot';
 import MainLayout from 'src/layouts/main';
 
 // ----------------------------------------------------------------------
@@ -10,9 +9,5 @@ type Props = {
 };
 
 export default function Layout({ children }: Props) {
-  return (
-    <HubspotProvider>
-      <MainLayout>{children}</MainLayout>
-    </HubspotProvider>
-  );
+  return <MainLayout>{children}</MainLayout>;
 }
