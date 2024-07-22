@@ -78,7 +78,7 @@ export default function Header({ headerOnDark }: Props) {
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          Litty Sankariksi
+          Liity Sankariksi
         </Button>
       </Stack>
 

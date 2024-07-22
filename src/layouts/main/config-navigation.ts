@@ -172,7 +172,7 @@ export const serviceLinks = [
     subheader: 'Common',
     items: [
       { title: 'Tilaa Sankari', path: paths.blogs.root },
-      { title: 'Litty Sankariksi', path: paths.blogs.root },
+      { title: 'Liity Sankariksi', path: paths.blogs.root },
       { title: 'Hero24', path: paths.blogs.root },
       { title: 'Yhteystietod', path: paths.blogs.root },
     ],
@@ -193,8 +193,6 @@ export const navConfig = [
     ],
   },
   { title: 'Tilaa Sankari', path: paths.blogs.root },
-  { title: 'Litty Sankariksi', path: paths.blogs.root },
-  { title: 'Hero24', path: paths.blogs.root },
-  { title: 'Yhteystietod', path: paths.blogs.root },
-  { title: 'Blogs', path: paths.blogs.root },
+  { title: 'Liity Sankariksi', path: paths.blogs.root },
+  { title: 'Yhteystiedot', path: paths.blogs.root },
 ];

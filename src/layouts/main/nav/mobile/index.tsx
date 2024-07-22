@@ -67,7 +67,7 @@ export default function NavMobile({ data }: NavProps) {
               target="_blank"
               rel="noopener"
             >
-              Litty Sankariksi
+              Liity Sankariksi
             </Button>
           </Stack>
         </Scrollbar>
