@@ -25,8 +25,8 @@ import { AppStoreButton } from 'src/layouts/main/footer';
 // ----------------------------------------------------------------------
 
 const SUMMARY = [
-  { value: 100000, label: 'Customer', color: 'warning' },
-  { value: 200000, label: 'Orders', color: 'error' },
+  { value: 100000, label: 'Asiakas', color: 'warning' },
+  { value: 200000, label: 'Tilaus', color: 'error' },
   { value: 2000, label: 'Heros', color: 'success' },
 ] as const;
 
@@ -115,7 +115,7 @@ export default function HomeHero() {
 
               <Stack spacing={3}>
                 <Typography variant="overline" sx={{ opacity: 0.48 }}>
-                  AVAILABLE ON
+                  Lataa sovellus
                 </Typography>
                 <AppStoreButton />
               </Stack>

@@ -56,7 +56,7 @@ export default function PresetsOptions({ value, onChange }: Props) {
   return (
     <Box sx={{ px: 3 }}>
       <Typography variant="subtitle2" sx={{ py: 3 }}>
-        Presets
+        Värit
       </Typography>
 
       <RadioGroup
@@ -88,7 +88,12 @@ type OptionItemProps = {
   secondaryColor: string;
 };
 
-function OptionItem({ colorName, selected, primaryColor, secondaryColor }: OptionItemProps) {
+function OptionItem({
+  colorName,
+  selected,
+  primaryColor,
+  secondaryColor,
+}: OptionItemProps) {
   return (
     <Paper
       variant={selected ? 'elevation' : 'outlined'}
@@ -101,7 +106,9 @@ function OptionItem({ colorName, selected, primaryColor, secondaryColor }: Optio
         }),
       }}
     >
-      <CardActionArea sx={{ borderRadius: BOX_BORDER_RADIUS, color: primaryColor }}>
+      <CardActionArea
+        sx={{ borderRadius: BOX_BORDER_RADIUS, color: primaryColor }}
+      >
         <StyledBoxWrap>
           <StyledBoxPrimary sx={{ bgcolor: primaryColor }}>
             <StyledBoxSecondary

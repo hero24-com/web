@@ -76,19 +76,8 @@ export default function Footer() {
                 </Typography>
               </Stack>
 
-              <Stack spacing={1} alignItems="flex-start">
-                <Typography variant="h6">Community</Typography>
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Case Studies
-                </Link>
-
-                <Link variant="body2" sx={{ color: 'text.primary' }}>
-                  Blogs
-                </Link>
-              </Stack>
-
               <Stack spacing={2}>
-                <Typography variant="h6">Apps</Typography>
+                <Typography variant="h6">Sovellus</Typography>
                 <AppStoreButton />
               </Stack>
             </Stack>
@@ -131,12 +120,28 @@ export default function Footer() {
           </Typography>
 
           <Stack direction="row" spacing={3} justifyContent="center">
-            <Link href="https://api.hero24.com/terms/fi" target="_blank" rel="noopener" color="inherit" underline="none" variant="caption" sx={{ color: 'text.secondary' }}>
-              Terms of Service (Customer)
+            <Link
+              href="https://api.hero24.com/terms/fi"
+              target="_blank"
+              rel="noopener"
+              color="inherit"
+              underline="none"
+              variant="caption"
+              sx={{ color: 'text.secondary' }}
+            >
+              Käyttöehdot (Asiakas)
             </Link>
 
-            <Link href="https://api.hero24.com/seller_terms/fi" target="_blank" rel="noopener" color="inherit" underline="none" variant="caption" sx={{ color: 'text.secondary' }}>
-              Terms of Service (Seller)
+            <Link
+              href="https://api.hero24.com/seller_terms/fi"
+              target="_blank"
+              rel="noopener"
+              color="inherit"
+              underline="none"
+              variant="caption"
+              sx={{ color: 'text.secondary' }}
+            >
+              Käyttöehdot (Hero)
             </Link>
           </Stack>
         </Stack>

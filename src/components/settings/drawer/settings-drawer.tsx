@@ -28,7 +28,7 @@ export default function SettingsDrawer() {
       sx={{ py: 2, pr: 1, pl: 2.5 }}
     >
       <Typography variant="h6" sx={{ flexGrow: 1 }}>
-        Settings
+        Asetukset
       </Typography>
 
       <Tooltip title="Reset">
@@ -50,7 +50,10 @@ export default function SettingsDrawer() {
       title="Mode"
       selected={settings.themeMode === 'dark'}
       onClick={() =>
-        settings.onUpdate('themeMode', settings.themeMode === 'dark' ? 'light' : 'dark')
+        settings.onUpdate(
+          'themeMode',
+          settings.themeMode === 'dark' ? 'light' : 'dark'
+        )
       }
       icons={['carbon:asleep', 'carbon:asleep-filled']}
     />
@@ -58,10 +61,13 @@ export default function SettingsDrawer() {
 
   const renderDirection = (
     <BaseOptions
-      title="Direction"
+      title="Suunta"
       selected={settings.themeDirection === 'rtl'}
       onClick={() =>
-        settings.onUpdate('themeDirection', settings.themeDirection === 'rtl' ? 'ltr' : 'rtl')
+        settings.onUpdate(
+          'themeDirection',
+          settings.themeDirection === 'rtl' ? 'ltr' : 'rtl'
+        )
       }
       icons={['carbon:align-horizontal-right', 'carbon:align-horizontal-left']}
     />
@@ -71,7 +77,10 @@ export default function SettingsDrawer() {
     <PresetsOptions
       value={settings.themeColorPresets}
       onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
-        settings.onUpdate('themeColorPresets', (event.target as HTMLInputElement).value)
+        settings.onUpdate(
+          'themeColorPresets',
+          (event.target as HTMLInputElement).value
+        )
       }
     />
   );

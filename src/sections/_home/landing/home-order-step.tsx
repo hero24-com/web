@@ -21,7 +21,8 @@ const STEPS = [
   },
   {
     title: 'Joustava maksu',
-    description: 'Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa.',
+    description:
+      'Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa.',
     icon: '/assets/icons/ic_transparency.svg',
   },
   {
@@ -44,7 +45,7 @@ export default function HomeOrderStep() {
     >
       <Container>
         <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          For Customers
+          Asiakkaille
         </Typography>
 
         <Typography variant="h3" sx={{ my: 3 }}>
@@ -76,8 +77,7 @@ export default function HomeOrderStep() {
               <Typography
                 variant="overline"
                 sx={{ mt: 4, display: 'block', color: 'text.disabled' }}
-              >
-              </Typography>
+              ></Typography>
 
               <Typography variant="h5" sx={{ mt: 2, mb: 1 }}>
                 {value.title}

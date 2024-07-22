@@ -22,7 +22,7 @@ export default function HomeDownloadApp() {
               textAlign: { xs: 'center', md: 'unset' },
             }}
           >
-            <Typography variant="h2"> Download App </Typography>
+            <Typography variant="h2"> Lataa sovellus </Typography>
 
             <Typography sx={{ color: 'text.secondary', mt: 3, mb: 8 }}>
               Lataa Hero24-sovellus nyt ja löydä omat palvelusankarisi – tai
