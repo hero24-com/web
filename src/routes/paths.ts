@@ -1,6 +1,31 @@
 // ----------------------------------------------------------------------
 
 export const paths = {
+  // Services
+  services: {
+    root: '/services',
+    airConditioning: '/services/air-conditioning',
+    asbestos: '/services/asbestos',
+    cleaningHome: '/services/cleaning-home',
+    cleaningMoving: '/services/cleaning-moving',
+    cleaningOffice: '/services/cleaning-office',
+    cleaningRenovation: '/services/cleaning-renovation',
+    cleaningWindow: '/services/cleaning-window',
+    delivery: '/services/delivery',
+    domesticHelp: '/services/domestic-help',
+    electrician: '/services/electrician',
+    electronicAppliance: '/services/electronic-appliance',
+    handyman: '/services/handyman',
+    homeAppliance: '/services/home-appliance',
+    movingLifting: '/services/moving-lifting',
+    movingService: '/services/moving-service',
+    plumber: '/services/plumber',
+    propertyMaintenance: '/services/property-maintenance',
+    refrigerationAppliance: '/services/refrigeration-appliance',
+    renovation: '/services/renovation',
+    yardModification: '/services/yard-modification',
+    yardWork: '/services/yard-work',
+  },
   // Marketing
   marketing: {
     root: '/marketing',
@@ -110,9 +135,9 @@ export const paths = {
     player: '/components/player',
     textMaxLine: '/components/text-max-line',
   },
+
   // Others
   pages: '/pages',
-  services: '/services',
   joinHero24: '/join',
   contact: '/contact',
   docs: 'https://zone-docs.vercel.app',

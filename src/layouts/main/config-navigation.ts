@@ -1,7 +1,6 @@
 import { paths } from 'src/routes/paths';
 
 // ----------------------------------------------------------------------
-
 export const pageLinks = [
   {
     order: '1',
@@ -113,12 +112,12 @@ export const serviceLinks = [
     subheader: 'Siivous ja kotiapu',
     cover: '/assets/images/service/service_3.png',
     items: [
-      { title: 'Kotisiivous', path: paths.marketing.root },
-      { title: 'Toimistosiivous', path: paths.marketing.services },
-      { title: 'Muuttosiivous', path: paths.marketing.caseStudies },
-      { title: 'Remonttisiivous', path: paths.marketing.caseStudy },
-      { title: 'Ikkunanpesu', path: paths.marketing.posts },
-      { title: 'Kotiapu', path: paths.marketing.post },
+      { title: 'Kotisiivous', path: paths.services.cleaningHome },
+      { title: 'Toimistosiivous', path: paths.services.cleaningOffice },
+      { title: 'Muuttosiivous', path: paths.services.cleaningMoving },
+      { title: 'Remonttisiivous', path: paths.services.cleaningRenovation },
+      { title: 'Ikkunanpesu', path: paths.services.cleaningWindow },
+      { title: 'Kotiapu', path: paths.services.domesticHelp },
     ],
   },
   {
@@ -126,9 +125,12 @@ export const serviceLinks = [
     subheader: 'Kodinkoneet ja laitteet',
     cover: '/assets/images/service/service_10.png',
     items: [
-      { title: 'Kodinkonehuolto', path: paths.travel.root },
-      { title: 'Elektroniikkahuolto', path: paths.travel.tours },
-      { title: 'Kylmälaitteet', path: paths.travel.tour },
+      { title: 'Kodinkonehuolto', path: paths.services.homeAppliance },
+      {
+        title: 'Elektroniikkahuolto',
+        path: paths.services.electronicAppliance,
+      },
+      { title: 'Kylmälaitteet', path: paths.services.refrigerationAppliance },
     ],
   },
   {
@@ -136,9 +138,9 @@ export const serviceLinks = [
     subheader: 'Muuttopalvelu ja Kantoapu',
     cover: '/assets/images/service/service_11.png',
     items: [
-      { title: 'Muuttopalvelu', path: paths.career.root },
-      { title: 'Kantoapu', path: paths.career.jobs },
-      { title: 'Kuljetusapu', path: paths.career.job },
+      { title: 'Muuttopalvelu', path: paths.services.movingService },
+      { title: 'Kantoapu', path: paths.services.movingLifting },
+      { title: 'Kuljetusapu', path: paths.services.delivery },
     ],
   },
   {
@@ -146,12 +148,12 @@ export const serviceLinks = [
     subheader: 'Remontointi ja LVIS',
     cover: '/assets/images/service/service_1.png',
     items: [
-      { title: 'Ilmastointipalvelut', path: paths.eLearning.root },
-      { title: 'Remontit ja rakentaminen', path: paths.eLearning.courses },
-      { title: 'Sähkötyöt', path: paths.eLearning.course },
-      { title: 'Putkityöt', path: paths.eLearning.posts },
-      { title: 'Nikkarointi', path: paths.eLearning.post },
-      { title: 'Asbestikartoitukset', path: paths.eLearning.about },
+      { title: 'Ilmastointipalvelut', path: paths.services.airConditioning },
+      { title: 'Remontit ja rakentaminen', path: paths.services.renovation },
+      { title: 'Sähkötyöt', path: paths.services.electrician },
+      { title: 'Putkityöt', path: paths.services.plumber },
+      { title: 'Nikkarointi', path: paths.services.handyman },
+      { title: 'Asbestikartoitukset', path: paths.services.asbestos },
     ],
   },
   {
@@ -159,22 +161,24 @@ export const serviceLinks = [
     subheader: 'Pihat ja kiinteistöhuollot',
     cover: '/assets/images/service/service_20.png',
     items: [
-      { title: 'Pihatyöt', path: paths.eLearning.root },
+      { title: 'Pihatyöt', path: paths.services.yardWork },
       {
         title: 'Kiinteistöhuolto ja isännöintipalvelut',
-        path: paths.eLearning.courses,
+        path: paths.services.propertyMaintenance,
       },
-      { title: 'Pihan muutos- ja rakennustyöt', path: paths.eLearning.course },
+      {
+        title: 'Pihan muutos- ja rakennustyöt',
+        path: paths.services.yardModification,
+      },
     ],
   },
   {
     order: '6',
     subheader: 'Common',
     items: [
-      { title: 'Tilaa Sankari', path: paths.blogs.root },
-      { title: 'Liity Sankariksi', path: paths.blogs.root },
-      { title: 'Hero24', path: paths.blogs.root },
-      { title: 'Yhteystietod', path: paths.blogs.root },
+      { title: 'Tilaa Sankari', path: paths.services.root },
+      { title: 'Liity Sankariksi', path: paths.joinHero24 },
+      { title: 'Yhteystietod', path: paths.contact },
     ],
   },
 ];
@@ -182,17 +186,17 @@ export const serviceLinks = [
 export const navConfig = [
   {
     title: 'Palvelut',
-    path: paths.services,
+    path: paths.services.root,
     children: [
       serviceLinks[0],
       serviceLinks[1],
       serviceLinks[2],
       serviceLinks[3],
-      serviceLinks[5],
       serviceLinks[4],
+      serviceLinks[5],
     ],
   },
-  { title: 'Tilaa Sankari', path: paths.services },
+  { title: 'Tilaa Sankari', path: paths.services.root },
   { title: 'Liity Sankariksi', path: paths.joinHero24 },
-  { title: 'Yhteystiedot', path: paths.contact },
+  { title: 'Yhteystietod', path: paths.contact },
 ];
