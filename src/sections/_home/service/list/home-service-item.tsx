@@ -114,7 +114,7 @@ export default function HomeServiceItem({ service }: Props) {
       />
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
-        <Link component={RouterLink} href={`/service/${serviceSlug}`} color="inherit">
+        <Link component={RouterLink} href={`/services/${serviceSlug}`} color="inherit">
           <TextMaxLine variant="h4" persistent>
             {slug}
           </TextMaxLine>
@@ -133,7 +133,7 @@ export default function HomeServiceItem({ service }: Props) {
           <Button
             variant="contained"
             color="inherit"
-            href={`/service/${serviceSlug}`}
+            href={`/services/${serviceSlug}`}
             rel="noopener"
           >
             Book now
