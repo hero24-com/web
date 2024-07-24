@@ -195,7 +195,7 @@ export const _lastNames = [
 
 export const _prices = [
   69, 199, 44, 44, 44, 44, 44, 59, 39, 69, 69, 54, 69, 44,
-  59, 69, 44, 74, 56, 56, 56, 20.54, 94.25, 37.51,
+  59, 69, 44, 74, 56, 56, 56, 44
 ];
 
 export const _ratings = [
@@ -366,6 +366,7 @@ export const _tourNames = [
   'Remontit ja rakentaminen',
   'Pihan muutos- ja rakennustyöt',
   'Pihatyöt',
+  'Etsitkö muuta palvelua?',
 ];
 
 // ----------------------------------------------------------------------
@@ -392,6 +393,7 @@ export const _serviceNames = [
   'Remontit ja rakentaminen',
   'Pihan muutos- ja rakennustyöt',
   'Pihatyöt',
+  'Etsitkö muuta palvelua?',
 ];
 
 // ----------------------------------------------------------------------
@@ -418,6 +420,7 @@ export const _serviceSlug = [
   'renovation',
   'yard-modification',
   'yard-work',
+  'open-order',
 ];
 
 // ----------------------------------------------------------------------
@@ -580,6 +583,7 @@ export const _serviceSentences1 = [
   'Keittiö- ja kylpyhuoneremontit: Toteutamme unelmiesi keittiön ja kylpyhuoneen.',
   'Pihan muutos- ja rakennustyöt 1',
   'Nurmikon leikkaus: Pidämme nurmikkosi siistinä ja hyvinvoivana.',
+  'Meiltä löytyy laaja valikoima eri palveluita.',
 ];
 
 // ----------------------------------------------------------------------
@@ -606,6 +610,7 @@ export const _serviceSentences2 = [
   'Lattia- ja seinäremontit: Uudistamme lattiat ja seinät ammattitaidolla.',
   'Pihan muutos- ja rakennustyöt 2',
   'Pensasaidan leikkaus: Muotoilemme ja hoidamme pensasaidat ammattitaidolla.',
+  'Täytä lomake ja kerro tarpeesi',
 ];
 
 // ----------------------------------------------------------------------
@@ -632,6 +637,7 @@ export const _serviceSentences3 = [
   'Muut remonttipalvelut: Kaikki pienet ja suuret remontit tarpeidesi mukaan.',
   'Pihan muutos- ja rakennustyöt 3',
   'Syksyn lehdenpoisto: Puhdistamme pihasi syksyn lehdistä nopeasti ja tehokkaasti.',
+  'Niin autamme sinua löytämään sen!',
 ];
 
 // ----------------------------------------------------------------------
@@ -658,6 +664,7 @@ export const _reasons1 = [
   'Kokeneet ammattilaiset: Varmistamme korkealaatuisen ja turvallisen työn.',
   'Pihan muutos- ja rakennustyöt 1',
   'Kokeneet pihatyöntekijät: Varmistamme korkealaatuisen ja huolellisen työn.',
+  'Meiltä löytyy laaja valikoima eri palveluita.',
 ];
 
 // ----------------------------------------------------------------------
@@ -684,6 +691,7 @@ export const _reasons2 = [
   'Nopea ja luotettava palvelu: Reagoimme nopeasti ja hoidamme työn tehokkaasti.',
   'Pihan muutos- ja rakennustyöt 2',
   'Nopea ja luotettava palvelu: Reagoimme nopeasti ja hoidamme työn tehokkaasti.',
+  'Täytä lomake ja kerro tarpeesi',
 ];
 
 // ----------------------------------------------------------------------
@@ -710,6 +718,7 @@ export const _reasons3 = [
   'Asiakastyytyväisyys: Tyytyväiset asiakkaat ovat toimintamme perusta.',
   'Pihan muutos- ja rakennustyöt 3',
   'Asiakastyytyväisyys: Tyytyväiset asiakkaat ovat toimintamme perusta.',
+  'Niin autamme sinua löytämään sen!',
 ];
 
 // ----------------------------------------------------------------------
@@ -717,9 +726,9 @@ export const _reasons3 = [
 export const _descriptions = [
   'Tarjoamme kattavia ja luotettavia ilmanvaihtojärjestelmien asennus- ja huoltopalveluja, jotta kotisi ilma pysyy raikkaana ja terveellisenä. Asiantuntevat ammattilaisemme hoitavat kaiken tarvittavan, jotta sinä voit nauttia puhtaasta sisäilmasta.',
   'Asbestikartoitukset',
-  'Koti siivoukset',
+  'Tarjoamme kattavia ja luotettavia siivouspalveluja, jotta kotisi pysyy puhtaana ja viihtyisänä. Asiantuntevat siivoojamme hoitavat kaiken tarvittavan, jotta sinä voit keskittyä muihin tärkeisiin asioihin.',
   'Tarjoamme kattavia ja luotettavia siivouspalveluja, jotka tekevät muuttamisesta helppoa ja stressitöntä. Asiantuntevat siivoojamme huolehtivat, että vanha ja uusi koti ovat moitteettoman puhtaita.',
-  'Toimisto siivoukset',
+  'Tarjoamme kattavia ja luotettavia siivouspalveluja, jotta kotisi pysyy puhtaana ja viihtyisänä. Asiantuntevat siivoojamme hoitavat kaiken tarvittavan, jotta sinä voit keskittyä muihin tärkeisiin asioihin.',
   'Remonttisiivous',
   'Tarjoamme kattavia ja luotettavia ikkunanpesupalveluja, jotta kotisi ja toimitilasi ikkunat pysyvät kirkkaan puhtaina. Asiantuntevat pesijämme hoitavat kaiken tarvittavan, jotta sinä voit nauttia kirkkaista näkymistä.',
   'kuljetuspalveluiden sivulle! Tarjoamme kattavia ja luotettavia kuljetuspalveluja, jotta tavarasi liikkuvat turvallisesti ja ajallaan. Asiantuntevat kuljettajamme hoitavat kaiken tarvittavan, jotta sinä voit keskittyä muihin asioihin.',
@@ -736,6 +745,7 @@ export const _descriptions = [
   'Tarjoamme kattavia ja luotettavia remonttipalveluja, jotta kotisi ja toimitilasi pysyvät parhaassa mahdollisessa kunnossa. Asiantuntevat ammattilaisemme hoitavat kaikki remonttitarpeesi, jotta sinä voit keskittyä muihin asioihin.',
   'Pihan muutos- ja rakennustyöt',
   'Tarjoamme kattavia ja luotettavia pihatöitä, jotta pihasi pysyy siistinä ja viihtyisänä ympäri vuoden. Asiantuntevat ammattilaisemme hoitavat kaiken tarvittavan, jotta sinä voit nauttia kauniista pihasta ilman vaivaa.',
+  'Etsitkö muuta palvelua? Meiltä löytyy laaja valikoima eri palveluita. Täytä lomake ja kerro tarpeesi, niin autamme sinua löytämään sen!',
 ];
 
 // ----------------------------------------------------------------------

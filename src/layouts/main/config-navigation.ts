@@ -174,7 +174,7 @@ export const serviceLinks = [
   },
   {
     order: '6',
-    subheader: 'Common',
+    subheader: 'Muuta',
     items: [
       { title: 'Tilaa Sankari', path: paths.services.root },
       { title: 'Liity Sankariksi', path: paths.joinHero24 },

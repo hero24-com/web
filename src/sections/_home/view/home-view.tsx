@@ -9,7 +9,6 @@ import ScrollProgress from 'src/components/scroll-progress';
 import HomeHero from '../landing/home-hero';
 import HomeOrderStep from '../landing/home-order-step';
 import HomeService from '../landing/home-service';
-import HomeFAQs from '../landing/home-faqs';
 import HomeDownloadApp from '../landing/home-download-app';
 import HomeTestimonial from '../testimonial/home-testimonial';
 
@@ -28,8 +27,6 @@ export default function HomeView() {
       <HomeService />
 
       <HomeOrderStep />
-
-      <HomeFAQs />
 
       <HomeTestimonial testimonials={_testimonials} />
 

@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 // ----------------------------------------------------------------------
 
@@ -27,5 +29,12 @@ export default function HomeServiceDetailsReserveForm({ formId }: Props) {
     });
   }, []);
 
-  return <Box id="hubspot-form-wrapper"></Box>;
+  return (
+    <Grid>
+      <Typography variant="h4" component="h1" sx={{ mt: 1, mb: 6 }}>
+        Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
+      </Typography>
+      <Box id="hubspot-form-wrapper"></Box>
+    </Grid>
+  );
 }

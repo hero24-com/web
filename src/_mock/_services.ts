@@ -29,9 +29,10 @@ export const HOME_SERVICE_OPTIONS = [
   { value: 'Remontit ja rakentaminen', label: 'Remontit ja rakentaminen' },
   { value: 'Pihan muutos- ja rakennustyöt', label: 'Pihan muutos- ja rakennustyöt' },
   { value: 'Pihatyöt', label: 'Pihatyöt' },
+  { value: 'Etsitkö muuta palvelua?', label: 'Etsitkö muuta palvelua?' },
 ];
 
-export const _services = [...Array(21)].map((_, index) => {
+export const _services = [...Array(22)].map((_, index) => {
   const location = countries.map((option) => option.label)[index + 1];
 
   const gallery = [...Array(6)].map((__, itemIndex) => _mock.image.service(itemIndex + 2));

@@ -116,7 +116,7 @@ export default function Footer() {
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2024. All rights reserved
+            © 2024. Hero24
           </Typography>
 
           <Stack direction="row" spacing={3} justifyContent="center">

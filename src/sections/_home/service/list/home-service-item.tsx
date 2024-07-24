@@ -1,14 +1,9 @@
-import { useState, useCallback } from 'react';
-
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
-import Checkbox from '@mui/material/Checkbox';
-
-import { alpha, useTheme } from '@mui/material/styles';
 
 import { RouterLink } from 'src/routes/components';
 
@@ -27,26 +22,8 @@ type Props = {
 };
 
 export default function HomeServiceItem({ service }: Props) {
-  const {
-    slug,
-    serviceSlug,
-    price,
-    priceSale,
-    favorited,
-    ratingNumber,
-    coverUrl,
-  } = service;
-
-  const theme = useTheme();
-
-  const [favorite, setFavorite] = useState(favorited);
-
-  const handleChangeFavorite = useCallback(
-    (event: React.ChangeEvent<HTMLInputElement>) => {
-      setFavorite(event.target.checked);
-    },
-    []
-  );
+  const { slug, serviceSlug, price, priceSale, ratingNumber, coverUrl } =
+    service;
 
   return (
     <Card>
@@ -89,25 +66,16 @@ export default function HomeServiceItem({ service }: Props) {
           )}
           {fCurrency(price)}*
         </Stack>
-
-        <Checkbox
-          color="error"
-          checked={favorite}
-          onChange={handleChangeFavorite}
-          icon={<Iconify icon="carbon:favorite" />}
-          checkedIcon={<Iconify icon="carbon:favorite-filled" />}
-          sx={{ color: 'common.white' }}
-        />
       </Stack>
 
-      <Image
-        alt={slug}
-        src={coverUrl}
-        ratio="1/1"
-      />
+      <Image alt={slug} src={coverUrl} ratio="1/1" />
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
-        <Link component={RouterLink} href={`/services/${serviceSlug}`} color="inherit">
+        <Link
+          component={RouterLink}
+          href={`/services/${serviceSlug}`}
+          color="inherit"
+        >
           <TextMaxLine variant="h4" persistent>
             {slug}
           </TextMaxLine>

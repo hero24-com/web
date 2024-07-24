@@ -30,10 +30,10 @@ export default function NavList({ data }: NavListProps) {
 
   const active = useActiveLink(data.path, !!data.children);
 
-  const mainList = data.children ? data.children.filter((list) => list.subheader !== 'Common') : [];
+  const mainList = data.children ? data.children.filter((list) => list.subheader !== 'Muuta') : [];
 
   const commonList = data.children
-    ? data.children.find((list) => list.subheader === 'Common')
+    ? data.children.find((list) => list.subheader === 'Muuta')
     : null;
 
   useEffect(() => {
@@ -128,7 +128,7 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
 
   const coverPath = items.length ? items[0].path : '';
 
-  const commonList = subheader === 'Common';
+  const commonList = subheader === 'Muuta';
 
   return (
     <Stack spacing={2}>

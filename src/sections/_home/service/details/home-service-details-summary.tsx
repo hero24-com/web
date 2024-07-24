@@ -52,7 +52,7 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h6">Käytettävissä olevat palvelut</Typography>
+        <Typography variant="h6">Muita palveluita</Typography>
 
         <Box
           rowGap={2}

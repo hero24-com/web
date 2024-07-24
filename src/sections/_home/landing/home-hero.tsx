@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -20,14 +21,13 @@ import { HEADER } from 'src/layouts/config-layout';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 
-import { AppStoreButton } from 'src/layouts/main/footer';
 
 // ----------------------------------------------------------------------
 
 const SUMMARY = [
-  { value: 100000, label: 'Asiakas', color: 'warning' },
+  { value: 50000, label: 'Asiakas', color: 'warning' },
   { value: 200000, label: 'Tilaus', color: 'error' },
-  { value: 2000, label: 'Heros', color: 'success' },
+  { value: 500, label: 'Heros', color: 'success' },
 ] as const;
 
 // ----------------------------------------------------------------------
@@ -73,17 +73,27 @@ export default function HomeHero() {
               }}
             >
               <Typography variant="h3">
-                Löydä Kodin tai yrityksen arjen askareisiin ammattilanen
-                helposti
                 <Box component="span" sx={{ color: 'primary.main' }}>
-                  {` Hero24 appilla.`}
+                  {`Hero24 `}
                 </Box>
+                - Yhdistää ammattilaiset ja asiakkaat yhdestä paikasta
               </Typography>
 
-              <Typography sx={{ color: 'text.secondary' }}>
-                Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja
-                räätälöitynä juuri sinulle
+              <Typography>
+                Etsi ja palkkaa huipputason ammattilaisia kaikkiin asumisen ja
+                kiinteistöhallinnan tarpeisiin yhdestä paikasta.
               </Typography>
+
+              <Typography>
+                100% tyytyväisyystakuu ja vakuutettuina – kaikki palvelut
+                räätälöitynä juuri sinulle.
+              </Typography>
+
+              <Stack spacing={3} sx={{ mb: 5, width: '100%' }}>
+                <Button variant="contained" color="inherit" size="large">
+                  Valitse palvelu
+                </Button>
+              </Stack>
 
               <Stack
                 spacing={3}
@@ -111,13 +121,6 @@ export default function HomeHero() {
                   </Fab>
                   support@hero24.com
                 </Stack>
-              </Stack>
-
-              <Stack spacing={3}>
-                <Typography variant="overline" sx={{ opacity: 0.48 }}>
-                  Lataa sovellus
-                </Typography>
-                <AppStoreButton />
               </Stack>
 
               <Divider sx={{ borderStyle: 'dashed' }} />

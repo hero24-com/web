@@ -33,7 +33,7 @@ export default function OfferRequestSentView() {
         <Typography variant="h3">Tarjouspyyntösi on lähetetty!</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          Saat vahvistusviestin tilauksen tiedoilla.
+          Sinuun ollaan pian yhteydessä.
         </Typography>
       </Stack>
 
