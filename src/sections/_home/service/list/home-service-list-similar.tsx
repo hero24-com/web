@@ -33,7 +33,7 @@ export default function HomeServiceListSimilar({ services }: Props) {
             mb: { xs: 8, md: 10 },
           }}
         >
-          <Typography variant="h3">Recommended Services</Typography>
+          <Typography variant="h3">Suositellut palvelut</Typography>
         </Stack>
 
         <Box
