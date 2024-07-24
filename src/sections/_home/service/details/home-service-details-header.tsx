@@ -1,9 +1,6 @@
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import Link from 'next/link';
-
-import { _socials } from 'src/_mock';
 
 import Iconify from 'src/components/iconify';
 
@@ -16,7 +13,7 @@ type Props = {
 };
 
 export default function HomeServiceDetailsHeader({ service }: Props) {
-  const { slug, ratingNumber, totalReviews, price, priceSale } = service;
+  const { slug } = service;
 
   return (
     <>

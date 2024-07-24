@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
 
 // ----------------------------------------------------------------------
 
@@ -28,9 +27,5 @@ export default function HomeContactForm({ formId }: Props) {
     });
   }, []);
 
-  return (
-    <Stack spacing={2.5} alignItems="flex-start">
-      <Box id="hubspot-form-wrapper"></Box>
-    </Stack>
-  );
+  return <Box id="hubspot-form-wrapper"></Box>;
 }
