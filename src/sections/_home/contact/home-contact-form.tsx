@@ -34,9 +34,7 @@ export default function HomeContactForm({ formId }: Props) {
   return (
     <Card>
       <Stack spacing={3} sx={{ p: 3 }}>
-        <Typography variant="h4">
-          Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
-        </Typography>
+        <Typography variant="h4">Yhteystiedot</Typography>
       </Stack>
 
       <Divider sx={{ borderStyle: 'dashed' }} />

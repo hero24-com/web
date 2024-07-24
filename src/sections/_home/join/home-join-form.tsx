@@ -43,7 +43,7 @@ export default function HomeJoinForm({ formId }: Props) {
       <Card>
         <Stack spacing={3} sx={{ p: 3 }}>
           <Typography variant="h4">
-            Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
+            Tule mukaan luomaan parempaa tulevaisuutta!
           </Typography>
         </Stack>
 
