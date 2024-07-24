@@ -35,33 +35,19 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
 
       <Stack spacing={2}>
         <Typography variant="h5">Palvelumme sisältävät</Typography>
-
         <ul>
-          {highlights1.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
-          ))}
-          {highlights2.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
-          ))}
-          {highlights3.map((highlight) => (
-            <li key={highlight}>{highlight}</li>
-          ))}
+          <li>{highlights1}</li>
+          <li>{highlights2}</li>
+          <li>{highlights3}</li>
         </ul>
       </Stack>
 
       <Stack spacing={2}>
         <Typography variant="h5">Miksi valita Hero24?</Typography>
-
         <ul>
-          {reasons1.map((reason) => (
-            <li key={reason}>{reason}</li>
-          ))}
-          {reasons2.map((reason) => (
-            <li key={reason}>{reason}</li>
-          ))}
-          {reasons3.map((reason) => (
-            <li key={reason}>{reason}</li>
-          ))}
+          <li>{reasons1}</li>
+          <li>{reasons2}</li>
+          <li>{reasons3}</li>
         </ul>
       </Stack>
 

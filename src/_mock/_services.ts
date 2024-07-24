@@ -36,14 +36,6 @@ export const _services = [...Array(21)].map((_, index) => {
 
   const gallery = [...Array(6)].map((__, itemIndex) => _mock.image.service(itemIndex + 2));
 
-  const highlights1 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences1(itemIndex));
-  const highlights2 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences2(itemIndex));
-  const highlights3 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences3(itemIndex));
-
-  const reasons1 = [...Array(1)].map((__, itemIndex) => _mock.reasons1(itemIndex));
-  const reasons2 = [...Array(1)].map((__, itemIndex) => _mock.reasons2(itemIndex));
-  const reasons3 = [...Array(1)].map((__, itemIndex) => _mock.reasons3(itemIndex));
-
   const heroUrl = [
     '/assets/images/service/service_post_hero.jpg',
     '/assets/images/service/service_post_01.jpg',
@@ -93,12 +85,12 @@ export const _services = [...Array(21)].map((_, index) => {
     location,
     services,
     serviceGuide,
-    highlights1,
-    highlights2,
-    highlights3,
-    reasons1,
-    reasons2,
-    reasons3,
+    highlights1: _mock.serviceSentences1(index),
+    highlights2: _mock.serviceSentences2(index),
+    highlights3: _mock.serviceSentences3(index),
+    reasons1: _mock.reasons1(index),
+    reasons2: _mock.reasons2(index),
+    reasons3: _mock.reasons3(index),
     continent: location,
     tags: _tags.slice(0, 5),
     slug: _mock.serviceName(index),
