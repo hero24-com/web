@@ -10,6 +10,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
+import { paths } from 'src/routes/paths';
+
 import { useResponsive } from 'src/hooks/use-responsive';
 import { useBoundingClientRect } from 'src/hooks/use-bounding-client-rect';
 
@@ -20,7 +22,6 @@ import { HEADER } from 'src/layouts/config-layout';
 
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
-
 
 // ----------------------------------------------------------------------
 
@@ -90,7 +91,13 @@ export default function HomeHero() {
               </Typography>
 
               <Stack spacing={3} sx={{ mb: 5, width: '100%' }}>
-                <Button variant="contained" color="inherit" size="large">
+                <Button
+                  variant="contained"
+                  color="inherit"
+                  href={paths.joinHero24}
+                  size="large"
+                  rel="noopener"
+                >
                   Valitse palvelu
                 </Button>
               </Stack>
