@@ -25,7 +25,7 @@ export default function HomeContactInfo() {
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:mobile" />
         <Stack spacing={0.5}>
-          <Typography variant="h6">(+358) 94 245 2538</Typography>
+          <Typography variant="h6">09 42452538</Typography>
         </Stack>
       </Stack>
 
