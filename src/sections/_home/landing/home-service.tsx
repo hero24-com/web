@@ -9,21 +9,24 @@ import HomeServiceList from '../service/list/home-service-list';
 // ----------------------------------------------------------------------
 
 export default function HomeService() {
-  return ( 
+  return (
     <Container
       sx={{
         py: { xs: 5, md: 10 },
       }}
     >
       <Stack spacing={3} sx={{ textAlign: 'center', py: { xs: 5, md: 10 } }}>
-        <Typography variant="h3">Palvelut kotiin, kiinteistöille ja yrityksille</Typography>
+        <Typography variant="h3">
+          Palvelut kotiin, kiinteistöille ja yrityksille
+        </Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          {`Hero24in kautta kodin kaikki palvelut helposti ympäri Suomea!`}
+          Hero24 kautta kaikki kodin ja kiinteistön palvelut helposti ympäri
+          Suomea!
         </Typography>
       </Stack>
 
-        <HomeServiceList services={_services} />
+      <HomeServiceList services={_services} />
     </Container>
   );
 }

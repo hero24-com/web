@@ -18,9 +18,9 @@ import CountUp from 'src/components/count-up';
 const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index));
 
 const SUMMARY = [
-  { name: 'Asiakas', number: 100000 },
+  { name: 'Asiakas', number: 50000 },
   { name: 'Tilaus', number: 200000 },
-  { name: 'Heros', number: 2000 },
+  { name: 'Heros', number: 500 },
 ];
 
 // ----------------------------------------------------------------------

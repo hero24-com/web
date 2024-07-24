@@ -25,7 +25,8 @@ export default function HomeServiceView() {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            {`Hero24in kautta kodin kaikki palvelut helposti ympäri Suomea!`}
+            Hero24 kautta kaikki kodin ja kiinteistön palvelut helposti ympäri
+            Suomea!
           </Typography>
         </Stack>
 

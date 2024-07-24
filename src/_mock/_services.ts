@@ -105,7 +105,7 @@ export const _services = [...Array(22)].map((_, index) => {
     description: _mock.description(index),
     ratingNumber: _mock.number.rating(index),
     totalReviews: _mock.number.nativeL(index),
-    priceSale: (index === 2 && 89.99) || (index === 5 && 69.99) || 0,
+    priceSale: 0,
     available: {
       start: add(new Date(), { months: 2 }),
       end: add(new Date(), { months: 4 }),

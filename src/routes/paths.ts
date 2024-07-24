@@ -25,6 +25,7 @@ export const paths = {
     renovation: '/services/renovation',
     yardModification: '/services/yard-modification',
     yardWork: '/services/yard-work',
+    openOrder: '/services/open-order',
   },
   // Marketing
   marketing: {

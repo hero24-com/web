@@ -7,8 +7,8 @@ type InputValue = string | number | null;
 
 function getLocaleCode() {
   return {
-    code: 'en-US',
-    currency: 'USD',
+    code: 'fi-FI',
+    currency: 'EUR',
   };
 }
 
