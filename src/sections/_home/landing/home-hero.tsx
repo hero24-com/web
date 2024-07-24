@@ -94,7 +94,7 @@ export default function HomeHero() {
                 <Button
                   variant="contained"
                   color="inherit"
-                  href={paths.joinHero24}
+                  href={paths.services.root}
                   size="large"
                   rel="noopener"
                 >
