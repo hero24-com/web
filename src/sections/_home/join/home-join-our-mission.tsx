@@ -15,7 +15,7 @@ const VISIONS1 = [
   {
     description: 'Tarvittavia työkaluja ja välineitä',
   },
-  { description: 'Puhtaat paperit ja asianmukaiset vakuutukset' },
+  { description: 'Y-tunnuksen ja vastuuvakuutuksen tai voit käyttää meidän vastuuvakuutusta ja tai nostaa palkkion verokortilla' },
   { description: 'Hyvää suomen tai englannin kielen taitoa' },
 ];
 

@@ -97,7 +97,7 @@ export default function HomeServiceItem({ service }: Props) {
             href={`/services/${serviceSlug}`}
             rel="noopener"
           >
-            Book now
+            Varaa nyt
           </Button>
         </Stack>
 

@@ -1,9 +1,7 @@
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import Iconify from 'src/components/iconify';
 import SvgColor from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
@@ -64,7 +62,7 @@ export default function HomeOrderStep() {
           }}
         >
           {STEPS.map((value, index) => (
-            <div key={value.title}>
+            <div key={index}>
               <SvgColor
                 src={value.icon}
                 sx={{

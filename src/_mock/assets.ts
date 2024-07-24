@@ -542,15 +542,15 @@ export const _taskNames = [
 // ----------------------------------------------------------------------
 
 export const _sentences = [
-  'Hei, aivan loistavaa palvelua, taitava sähkömies, luotettava, asiantuntema ja erittäin hyvä asiakaspalvelu. Sain todella paljon apua neljän tunnin työn aikana ja kaikki tarvitsemat sähkötyöt tuli tehtyä ripeästi, siististi ja turvallisesti. Iso kiitos hänelle!',
-  'Job went smooth and finished in the given time frame',
-  'Olin hyvin tyytyväinen Varmalta saamaani palveluun, työ hoidettiin ammattitaitoisesti ja ystävällisesti ja esitettyjen toiveiden mukaisesti.',
   'Kaikki meni erittäin hyvin. Muuttomiehet olivat asiantuntevia ja kaikki saatiin tehtyä suunnitellussa ajassa.',
   'Kiitos paljon teille ja pojat olivät ystävällisiä ja ahkerät annan 100 piste',
+  'Job went smooth and finished in the given time frame',
+  'Olin hyvin tyytyväinen Varmalta saamaani palveluun, työ hoidettiin ammattitaitoisesti ja ystävällisesti ja esitettyjen toiveiden mukaisesti.',
   'Täysi 10. Maalarimme (Ahonen) teki mitä sovittin. Työn laatu erinomainen. Tehtyään työnsä korjasi roskat ja siivosi jälkensä. Täydellistä. Kiitos. Raija Koivisto',
   'Hyvä siivous homma, tosi hyvä kommunikoimaan vastasi kaikkiin kysymyksiin nopeasti. Suosittelen kaikille!',
   'Very friendly and took quickly in contact with me. Cleaned fast and with attention to detail! I recommend! ',
   'Great experience, good communication about the process and very happy with the results of the paint job.',
+  'Hei, aivan loistavaa palvelua, taitava sähkömies, luotettava, asiantuntema ja erittäin hyvä asiakaspalvelu. Sain todella paljon apua neljän tunnin työn aikana ja kaikki tarvitsemat sähkötyöt tuli tehtyä ripeästi, siististi ja turvallisesti. Iso kiitos hänelle!',
   'Pesukoneen asennus sujui erittäin hyvin ja ammattitaitoisesti. Asentaja oli todella tarkka työstään ja ystävällinen.',
   'Todella hyvää työtä. Homma hoitui kätevästi ja työn jälki mahtavaa! Kiitos!',
   'Laadukasta asiakaspalvelua, asentaja piti ajantasalla milloin on tulossa ja sai työn tehtyä ajallaan.',

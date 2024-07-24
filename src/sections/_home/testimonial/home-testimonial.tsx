@@ -61,7 +61,7 @@ export default function HomeTestimonial({ testimonials }: Props) {
           variant="h3"
           sx={{ textAlign: { xs: 'center', md: 'unset' }, flexGrow: 1 }}
         >
-          Suosittuja arvosteluja
+          Tuhansia aitoja arvosteluja asiakkailta, keskiarvo yli 4.5/5 tähteä
         </Typography>
 
         {mdUp && (

@@ -52,8 +52,7 @@ export default function HomeDownloadApp() {
                 }}
               />
               <Typography variant="h6">
-                Scan QR code to
-                <br /> install on your device
+                Skannaa QR koodi ja asenna sovellus puhelimeen
               </Typography>
             </Stack>
 

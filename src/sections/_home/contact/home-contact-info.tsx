@@ -17,24 +17,35 @@ export default function HomeContactInfo() {
       {mdUp && (
         <Image
           alt="marketing contact"
-          src="/assets/illustrations/illustration_marketing_contact.svg"
-          sx={{ maxWidth: 380 }}
+          src="/assets/contact.jpg"
+          sx={{ mb: 5 }}
         />
       )}
 
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:mobile" />
         <Stack spacing={0.5}>
-          <Typography variant="h6">09 42452538</Typography>
+          <Typography variant="h6">Tel: 09 42452538</Typography>
         </Stack>
       </Stack>
 
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:email" />
         <Stack spacing={0.5}>
-          <Link color="inherit" variant="body2" href="mailto:support@hero24.com">
-            <Typography variant="h6">support@hero24.com</Typography>
+          <Link
+            color="inherit"
+            variant="body2"
+            href="mailto:support@hero24.com"
+          >
+            <Typography variant="h6">Email: support@hero24.com</Typography>
           </Link>
+        </Stack>
+      </Stack>
+
+      <Stack spacing={2} alignItems="flex-start" direction="row">
+        <Iconify width={28} icon="carbon:home" />
+        <Stack spacing={0.5}>
+          <Typography variant="h6">Y-tunnus: 3346521-8</Typography>
         </Stack>
       </Stack>
     </Stack>

@@ -26,9 +26,9 @@ import Iconify from 'src/components/iconify';
 // ----------------------------------------------------------------------
 
 const SUMMARY = [
-  { value: 50000, label: 'Asiakas', color: 'warning' },
-  { value: 200000, label: 'Tilaus', color: 'error' },
-  { value: 500, label: 'Heros', color: 'success' },
+  { value: 50000, label: 'Asiakkaita', color: 'warning' },
+  { value: 200000, label: 'Tilauksia', color: 'error' },
+  { value: 500, label: 'Sankareita', color: 'success' },
 ] as const;
 
 // ----------------------------------------------------------------------
@@ -80,12 +80,12 @@ export default function HomeHero() {
                 - Yhdistää ammattilaiset ja asiakkaat yhdestä paikasta
               </Typography>
 
-              <Typography>
-                Etsi ja palkkaa huipputason ammattilaisia kaikkiin asumisen ja
+              <Typography variant="h6">
+                Valitse huipputason ammattilaisia kaikkiin asumisen ja
                 kiinteistöhallinnan tarpeisiin yhdestä paikasta.
               </Typography>
 
-              <Typography>
+              <Typography variant="h6">
                 100% tyytyväisyystakuu ja vakuutettuina – kaikki palvelut
                 räätälöitynä juuri sinulle.
               </Typography>

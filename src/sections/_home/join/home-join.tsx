@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
+import SvgColor from 'src/components/svg-color';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -18,9 +19,36 @@ import CountUp from 'src/components/count-up';
 const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index));
 
 const SUMMARY = [
-  { name: 'Asiakas', number: 50000 },
-  { name: 'Tilaus', number: 200000 },
-  { name: 'Heros', number: 500 },
+  { name: 'Asiakkaita', number: 50000 },
+  { name: 'Tilauksia', number: 200000 },
+  { name: 'Sankareita', number: 500 },
+];
+
+const STEPS = [
+  {
+    title: 'Joustavat asiakkaat',
+    description:
+      'Saat asiakkaita silloin, kun itse haluat, ja voit valita projekteista, jotka parhaiten vastaavat osaamistasi.',
+    icon: '/assets/icons/ic_customer_service.svg',
+  },
+  {
+    title: 'Nopea palkkio',
+    description:
+      'Palkkiosi maksetaan jopa samana päivänä, jotta voit keskittyä työsi tekemiseen ilman huolta rahavirroista.',
+    icon: '/assets/icons/ic_secure_payment.svg',
+  },
+  {
+    title: 'Valitse työskentelytapasi',
+    description:
+      'Oma yritys tai Hero24laskutuspalvelu, joka tarjoaa verokortilla työkorvauslaskelman ja vastuuvakuutuksen.',
+    icon: '/assets/icons/ic_transparency.svg',
+  },
+  {
+    title: 'Joustavat hinnoitteluvaihtoehdot',
+    description:
+      'Hinnoittele työsi urakkahinnan, tuntihinnan, neliöhinnan tai omalla tavallasi – miten sinulle parhaiten sopii.',
+    icon: '/assets/icons/ic_reputation.svg',
+  },
 ];
 
 // ----------------------------------------------------------------------
@@ -35,22 +63,29 @@ export default function HomeJoin() {
         py: 5,
       }}
     >
-      <Stack
-        spacing={3}
+      <Box
         sx={{
-          mx: 'auto',
-          maxWidth: 560,
           textAlign: 'center',
           pb: { xs: 5, md: 10 },
         }}
       >
-        <Typography variant="h1">Liity kumppaniksi</Typography>
-        <Typography sx={{ color: 'text.secondary' }}>
-          Lähde mukaan muuttamaan maailmaa Hero24. kumppanina! Kun liityt
-          tiimiimme, sinulla on mahdollisuus näyttää taitosi, kohdata uusia
-          haasteita ja tarjota parasta mahdollista palvelua asiakkaillemme.
-        </Typography>
-      </Stack>
+        <Stack
+          spacing={3}
+          sx={{
+            mx: 'auto',
+            maxWidth: 560,
+            textAlign: 'center',
+          }}
+        >
+          <Typography variant="h1">Liity kumppaniksi</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+            Liity Hero24 ja vie liiketoimintasi uudelle tasolle! Kun astut
+            osaksi Hero24:ää, avautuu sinulle ainutlaatuinen mahdollisuus
+            esitellä taitosi, ottaa vastaan uusia haasteita ja tarjota
+            asiakkaillemme ensiluokkaista palvelua.
+          </Typography>
+        </Stack>
+      </Box>
 
       <Grid container spacing={3}>
         {(smUp ? IMAGES : IMAGES.slice(0, 1)).map((img, index) => (
@@ -100,6 +135,52 @@ export default function HomeJoin() {
             </Typography>
           </Stack>
         ))}
+      </Box>
+
+      <Box
+        sx={{
+          textAlign: 'center',
+        }}
+      >
+        <Container>
+          <Box
+            sx={{
+              display: 'grid',
+              my: { xs: 8, md: 10 },
+              gap: { xs: 8, md: 5 },
+              gridTemplateColumns: {
+                xs: 'repeat(1, 1fr)',
+                md: 'repeat(4, 1fr)',
+              },
+            }}
+          >
+            {STEPS.map((value, index) => (
+              <div key={index}>
+                <SvgColor
+                  src={value.icon}
+                  sx={{
+                    width: 80,
+                    height: 80,
+                    mx: 'auto',
+                    color: 'primary.main',
+                  }}
+                />
+                <Typography
+                  variant="overline"
+                  sx={{ mt: 4, display: 'block', color: 'text.disabled' }}
+                ></Typography>
+
+                <Typography variant="h5" sx={{ mt: 2, mb: 1 }}>
+                  {value.title}
+                </Typography>
+
+                <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                  {value.description}
+                </Typography>
+              </div>
+            ))}
+          </Box>
+        </Container>
       </Box>
     </Container>
   );

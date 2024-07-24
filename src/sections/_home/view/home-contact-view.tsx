@@ -30,7 +30,7 @@ export default function HomeContactView() {
 
         <Grid xs={12} md={6} lg={6}>
           <Typography variant="h3" sx={{ mb: 5 }}>
-            Yhteystietod
+            Yhteystiedot
           </Typography>
 
           <HomeContactForm formId="07b5414f-78ce-419f-b143-fdf43fb1bdb9" />

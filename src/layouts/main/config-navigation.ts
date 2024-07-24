@@ -178,7 +178,7 @@ export const serviceLinks = [
     items: [
       { title: 'Tilaa Sankari', path: paths.services.root },
       { title: 'Liity Sankariksi', path: paths.joinHero24 },
-      { title: 'Yhteystietod', path: paths.contact },
+      { title: 'Yhteystiedot', path: paths.contact },
     ],
   },
 ];
@@ -198,5 +198,5 @@ export const navConfig = [
   },
   { title: 'Tilaa Sankari', path: paths.services.root },
   { title: 'Liity Sankariksi', path: paths.joinHero24 },
-  { title: 'Yhteystietod', path: paths.contact },
+  { title: 'Yhteystiedot', path: paths.contact },
 ];
