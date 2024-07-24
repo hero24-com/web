@@ -2,7 +2,9 @@ import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import Card from '@mui/material/Card';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 
 // ----------------------------------------------------------------------
 
@@ -30,11 +32,18 @@ export default function HomeServiceDetailsReserveForm({ formId }: Props) {
   }, []);
 
   return (
-    <Grid>
-      <Typography variant="h4" component="h1" sx={{ mt: 1, mb: 6 }}>
-        Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
-      </Typography>
-      <Box id="hubspot-form-wrapper"></Box>
-    </Grid>
+    <Card>
+      <Stack spacing={3} sx={{ p: 3 }}>
+        <Typography variant="h4">
+          Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
+        </Typography>
+      </Stack>
+
+      <Divider sx={{ borderStyle: 'dashed' }} />
+
+      <Stack spacing={3} sx={{ p: 3 }}>
+        <Box id="hubspot-form-wrapper"></Box>
+      </Stack>
+    </Card>
   );
 }

@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import Stack from '@mui/material/Stack';
+import Divider from '@mui/material/Divider';
 
 // ----------------------------------------------------------------------
 
@@ -27,5 +31,19 @@ export default function HomeContactForm({ formId }: Props) {
     });
   }, []);
 
-  return <Box id="hubspot-form-wrapper"></Box>;
+  return (
+    <Card>
+      <Stack spacing={3} sx={{ p: 3 }}>
+        <Typography variant="h4">
+          Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!
+        </Typography>
+      </Stack>
+
+      <Divider sx={{ borderStyle: 'dashed' }} />
+
+      <Stack spacing={3} sx={{ p: 3 }}>
+        <Box id="hubspot-form-wrapper"></Box>
+      </Stack>
+    </Card>
+  );
 }
