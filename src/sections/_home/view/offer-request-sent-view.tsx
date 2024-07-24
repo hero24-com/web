@@ -30,10 +30,10 @@ export default function OfferRequestSentView() {
       </m.div>
 
       <Stack spacing={1} sx={{ my: 5 }}>
-        <Typography variant="h3">Your offer request is sent!</Typography>
+        <Typography variant="h3">Tarjouspyyntösi on lähetetty!</Typography>
 
         <Typography sx={{ color: 'text.secondary' }}>
-          You will be receiving a confirmation email with order details.
+          Saat vahvistusviestin tilauksen tiedoilla.
         </Typography>
       </Stack>
 
