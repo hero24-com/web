@@ -8,19 +8,27 @@ import { _tags } from './assets';
 // ----------------------------------------------------------------------
 
 export const HOME_SERVICE_OPTIONS = [
-  { value: 'Audio guide', label: 'Audio guide' },
-  { value: 'Food and drinks', label: 'Food and drinks' },
-  { value: 'Lunch', label: 'Lunch' },
-  { value: 'Private tour', label: 'Private tour' },
-  { value: 'Special activities', label: 'Special activities' },
-  { value: 'Entrance fees', label: 'Entrance fees' },
-  { value: 'Gratuities', label: 'Gratuities' },
-  { value: 'Pick-up and drop off', label: 'Pick-up and drop off' },
-  { value: 'Professional guide', label: 'Professional guide' },
-  {
-    value: 'Transport by air-conditioned',
-    label: 'Transport by air-conditioned',
-  },
+  { value: 'Ilmastointipalvelut', label: 'Ilmastointipalvelut' },
+  { value: 'Asbestikartoitukset', label: 'Asbestikartoitukset' },
+  { value: 'Koti siivoukset', label: 'Koti siivoukset' },
+  { value: 'Muuttosiivous', label: 'Muuttosiivous' },
+  { value: 'Toimisto siivoukset', label: 'Toimisto siivoukset' },
+  { value: 'Remonttisiivous', label: 'Remonttisiivous' },
+  { value: 'Ikkunanpesu', label: 'Ikkunanpesu' },
+  { value: 'Kuljetusapu', label: 'Kuljetusapu' },
+  { value: 'Kotiapu', label: 'Kotiapu' },
+  { value: 'Sähkötyöt', label: 'Sähkötyöt' },
+  { value: 'Elektroniikkahuolto', label: 'Elektroniikkahuolto' },
+  { value: 'Nikkarointi', label: 'Nikkarointi' },
+  { value: 'Kodinkonehuolto', label: 'Kodinkonehuolto' },
+  { value: 'Kantoapu', label: 'Kantoapu' },
+  { value: 'Muuttopalvelu', label: 'Muuttopalvelu' },
+  { value: 'Putkityöt', label: 'Putkityöt' },
+  { value: 'Kiinteistöhuolto ja isännöintipalvelut', label: 'Kiinteistöhuolto ja isännöintipalvelut' },
+  { value: 'Kylmälaitteet', label: 'Kylmälaitteet' },
+  { value: 'Remontit ja rakentaminen', label: 'Remontit ja rakentaminen' },
+  { value: 'Pihan muutos- ja rakennustyöt', label: 'Pihan muutos- ja rakennustyöt' },
+  { value: 'Pihatyöt', label: 'Pihatyöt' },
 ];
 
 export const _services = [...Array(21)].map((_, index) => {
@@ -28,7 +36,13 @@ export const _services = [...Array(21)].map((_, index) => {
 
   const gallery = [...Array(6)].map((__, itemIndex) => _mock.image.service(itemIndex + 2));
 
-  const highlights = [...Array(6)].map((__, itemIndex) => _mock.sentence(itemIndex));
+  const highlights1 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences1(itemIndex));
+  const highlights2 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences2(itemIndex));
+  const highlights3 = [...Array(1)].map((__, itemIndex) => _mock.serviceSentences3(itemIndex));
+
+  const reasons1 = [...Array(1)].map((__, itemIndex) => _mock.reasons1(itemIndex));
+  const reasons2 = [...Array(1)].map((__, itemIndex) => _mock.reasons2(itemIndex));
+  const reasons3 = [...Array(1)].map((__, itemIndex) => _mock.reasons3(itemIndex));
 
   const heroUrl = [
     '/assets/images/service/service_post_hero.jpg',
@@ -79,7 +93,12 @@ export const _services = [...Array(21)].map((_, index) => {
     location,
     services,
     serviceGuide,
-    highlights,
+    highlights1,
+    highlights2,
+    highlights3,
+    reasons1,
+    reasons2,
+    reasons3,
     continent: location,
     tags: _tags.slice(0, 5),
     slug: _mock.serviceName(index),

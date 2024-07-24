@@ -22,7 +22,12 @@ export type IServiceProps = {
   languages: string[];
   ratingNumber: number;
   totalReviews: number;
-  highlights: string[];
+  highlights1: string[];
+  highlights2: string[];
+  highlights3: string[];
+  reasons1: string[];
+  reasons2: string[];
+  reasons3: string[];
   serviceGuide: IAuthorProps;
   shareLinks: ISocialLinks;
   available: {

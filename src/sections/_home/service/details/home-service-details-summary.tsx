@@ -16,31 +16,57 @@ type Props = {
 
 export default function HomeServiceDetailsSummary({ service }: Props) {
   const {
-    program,
     services,
-    highlights,
     description,
+    highlights1,
+    highlights2,
+    highlights3,
+    reasons1,
+    reasons2,
+    reasons3,
   } = service;
 
   return (
     <Stack spacing={5}>
       <Stack spacing={2}>
-        <Typography variant="h5">Service Description</Typography>
+        <Typography variant="h5">Kuvaus</Typography>
         <Typography>{description}</Typography>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h5">Service Highlights</Typography>
+        <Typography variant="h5">Palvelumme sisältävät</Typography>
 
         <ul>
-          {highlights.map((highlight) => (
+          {highlights1.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+          {highlights2.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+          {highlights3.map((highlight) => (
             <li key={highlight}>{highlight}</li>
           ))}
         </ul>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h6"> Services</Typography>
+        <Typography variant="h5">Miksi valita Hero24?</Typography>
+
+        <ul>
+          {reasons1.map((reason) => (
+            <li key={reason}>{reason}</li>
+          ))}
+          {reasons2.map((reason) => (
+            <li key={reason}>{reason}</li>
+          ))}
+          {reasons3.map((reason) => (
+            <li key={reason}>{reason}</li>
+          ))}
+        </ul>
+      </Stack>
+
+      <Stack spacing={2}>
+        <Typography variant="h6">Käytettävissä olevat palvelut</Typography>
 
         <Box
           rowGap={2}
@@ -76,44 +102,6 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
           ))}
         </Box>
       </Stack>
-
-      <Stack spacing={2}>
-        <Typography variant="h5">Service Program</Typography>
-        {program.map((content) => (
-          <HighlightItem key={content.label} label={content.label} text={content.text} />
-        ))}
-      </Stack>
-    </Stack>
-  );
-}
-
-// ----------------------------------------------------------------------
-
-type HighlightItemProps = {
-  label: string;
-  text: string;
-};
-
-function HighlightItem({ label, text }: HighlightItemProps) {
-  return (
-    <Stack spacing={1}>
-      <Typography
-        variant="subtitle1"
-        sx={{ color: 'primary.main', display: 'flex', alignItems: 'center' }}
-      >
-        <Box
-          component="span"
-          sx={{
-            width: 12,
-            height: 2,
-            borderRadius: 1,
-            bgcolor: 'currentColor',
-            mr: 1.5,
-          }}
-        />
-        {label}
-      </Typography>
-      <Typography>{text}</Typography>
     </Stack>
   );
 }

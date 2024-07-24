@@ -1,13 +1,9 @@
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-
-import { fShortenNumber } from 'src/utils/format-number';
+import Link from 'next/link';
 
 import { _socials } from 'src/_mock';
-
-import { fCurrency } from 'src/utils/format-number';
 
 import Iconify from 'src/components/iconify';
 
@@ -41,34 +37,18 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
       </Stack>
 
       <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>
-        <Stack spacing={0.5} direction="row" alignItems="center">
-          <Iconify icon="carbon:star-filled" sx={{ color: 'warning.main' }} />
-
-          <Box sx={{ typography: 'h6' }}>
-            {Number.isInteger(ratingNumber)
-              ? `${ratingNumber}.0`
-              : ratingNumber}
-          </Box>
-
-          <Link variant="body2" sx={{ color: 'text.secondary' }}>
-            ({fShortenNumber(totalReviews)} reviews)
-          </Link>
+        <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+          <Fab size="medium" color="primary" sx={{ mr: 1 }}>
+            <Iconify width={24} icon="carbon:phone" />
+          </Fab>
+          (+358) 94 245 2538
         </Stack>
 
-        <Stack direction="row" alignItems="center" sx={{ typography: 'body2' }}>
-          <Iconify icon="carbon:money" sx={{ mr: 0.5 }} />
-          {priceSale > 0 && (
-            <Box
-              sx={{
-                color: 'grey.500',
-                textDecoration: 'line-through',
-                mr: 0.5,
-              }}
-            >
-              {fCurrency(priceSale)}*
-            </Box>
-          )}
-          {fCurrency(price)}*
+        <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+          <Fab size="medium" color="info" sx={{ mr: 1 }}>
+            <Iconify width={24} icon="carbon:email" />
+          </Fab>
+          support@hero24.com
         </Stack>
       </Stack>
     </>

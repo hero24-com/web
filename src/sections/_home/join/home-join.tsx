@@ -45,14 +45,10 @@ export default function HomeJoin() {
         }}
       >
         <Typography variant="h1">Liity kumppaniksi</Typography>
-
-        <Typography variant="h6" sx={{ color: 'text.secondary' }}>
-          Lähde mukaan muuttamaan maailmaa Hero24
-        </Typography>
         <Typography sx={{ color: 'text.secondary' }}>
-          kumppanina! Kun liityt tiimiimme, sinulla on mahdollisuus näyttää
-          taitosi, kohdata uusia haasteita ja tarjota parasta mahdollista
-          palvelua asiakkaillemme.
+          Lähde mukaan muuttamaan maailmaa Hero24. kumppanina! Kun liityt
+          tiimiimme, sinulla on mahdollisuus näyttää taitosi, kohdata uusia
+          haasteita ja tarjota parasta mahdollista palvelua asiakkaillemme.
         </Typography>
       </Stack>
 

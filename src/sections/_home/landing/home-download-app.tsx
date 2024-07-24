@@ -70,11 +70,6 @@ export default function HomeDownloadApp() {
             sx={{
               maxWidth: 384,
               marginLeft: '20%',
-              filter: (theme) =>
-                `drop-shadow(0 48px 80px ${alpha(
-                  theme.palette.common.black,
-                  0.24
-                )})`,
             }}
           />
         </Grid>

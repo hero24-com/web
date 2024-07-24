@@ -104,13 +104,6 @@ export default function HomeServiceItem({ service }: Props) {
         alt={slug}
         src={coverUrl}
         ratio="1/1"
-        sx={{
-          filter: (theme) =>
-            `drop-shadow(0 48px 80px ${alpha(
-              theme.palette.common.black,
-              0.24
-            )})`,
-        }}
       />
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>

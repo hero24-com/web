@@ -32,7 +32,7 @@ export default function HomeContactInfo() {
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:email" />
         <Stack spacing={0.5}>
-          <Link color="inherit" variant="body2" href="mailto:hello@example.com">
+          <Link color="inherit" variant="body2" href="mailto:support@hero24.com">
             <Typography variant="h6">support@hero24.com</Typography>
           </Link>
         </Stack>
