@@ -17,7 +17,7 @@ export default function HomeContactInfo() {
       {mdUp && (
         <Image
           alt="marketing contact"
-          src="/assets/contact.jpg"
+          src="/assets/contact.webp"
           sx={{ mb: 5 }}
         />
       )}

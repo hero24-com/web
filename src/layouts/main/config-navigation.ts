@@ -110,7 +110,7 @@ export const serviceLinks = [
   {
     order: '1',
     subheader: 'Siivous ja kotiapu',
-    cover: '/assets/images/service/service_3.png',
+    cover: '/assets/images/service/service_3.webp',
     items: [
       { title: 'Kotisiivous', path: paths.services.cleaningHome },
       { title: 'Toimistosiivous', path: paths.services.cleaningOffice },
@@ -123,7 +123,7 @@ export const serviceLinks = [
   {
     order: '2',
     subheader: 'Kodinkoneet ja laitteet',
-    cover: '/assets/images/service/service_10.png',
+    cover: '/assets/images/service/service_13.webp',
     items: [
       { title: 'Kodinkonehuolto', path: paths.services.homeAppliance },
       {
@@ -136,7 +136,7 @@ export const serviceLinks = [
   {
     order: '3',
     subheader: 'Muuttopalvelu ja Kantoapu',
-    cover: '/assets/images/service/service_11.png',
+    cover: '/assets/images/service/service_11.webp',
     items: [
       { title: 'Muuttopalvelu', path: paths.services.movingService },
       { title: 'Kantoapu', path: paths.services.movingLifting },
@@ -146,7 +146,7 @@ export const serviceLinks = [
   {
     order: '4',
     subheader: 'Remontointi ja LVIS',
-    cover: '/assets/images/service/service_1.png',
+    cover: '/assets/images/service/service_10.webp',
     items: [
       { title: 'Ilmastointipalvelut', path: paths.services.airConditioning },
       { title: 'Remontit ja rakentaminen', path: paths.services.renovation },
@@ -159,7 +159,7 @@ export const serviceLinks = [
   {
     order: '5',
     subheader: 'Pihat ja kiinteistöhuollot',
-    cover: '/assets/images/service/service_20.png',
+    cover: '/assets/images/service/service_20.webp',
     items: [
       { title: 'Pihatyöt', path: paths.services.yardWork },
       {

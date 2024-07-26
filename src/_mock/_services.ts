@@ -38,11 +38,11 @@ export const _services = [...Array(22)].map((_, index) => {
   const gallery = [...Array(5)].map((__, itemIndex) => _mock.image.service(itemIndex));
 
   const heroUrl = [
-    '/assets/images/service/service_post_hero.jpg',
-    '/assets/images/service/service_post_01.jpg',
-    '/assets/images/service/service_post_02.jpg',
-    '/assets/images/service/service_post_03.jpg',
-    '/assets/images/service/service_post_04.jpg',
+    '/assets/images/service/service_01.webp',
+    '/assets/images/service/service_02.webp',
+    '/assets/images/service/service_03.webp',
+    '/assets/images/service/service_04.webp',
+    '/assets/images/service/service_05.webp',
   ][index];
 
   const program = [...Array(3)].map((__, itemIndex) => ({
