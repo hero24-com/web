@@ -1,7 +1,5 @@
 'use client';
 
-
-
 import HomeJoin from '../join/home-join';
 import HomeJoinOurMission from '../join/home-join-our-mission';
 import HomeJoinForm from '../join/home-join-form';

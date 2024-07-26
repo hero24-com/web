@@ -24,7 +24,7 @@ export const metadata = {
   title: 'Hero24',
   description: 'Sankareita arjen haasteisiin',
   keywords:
-    'hero24,Ilmastointipalvelut,Asbestikartoitukset,Koti siivoukset,Muuttosiivous,Toimisto siivoukset,Remonttisiivous,Ikkunanpesu,Kuljetusapu,Kotiapu,Sähkötyöt,Elektroniikkahuolto,Nikkarointi,Kodinkonehuolto,Kantoapu,Muuttopalvelu,Putkityöt,Kiinteistöhuolto ja isännöintipalvelut,Kylmälaitteet,Remontit ja rakentaminen,Pihan muutos- ja rakennustyöt,Pihatyöt',
+    'hero24,Ilmastointipalvelut,Asbestikartoitukset,Kotisiivous,Muuttosiivous,Toimisto siivoukset,Remonttisiivous,Ikkunanpesu,Kuljetusapu,Kotiapu,Sähkötyöt,Elektroniikkahuolto,Nikkarointi,Kodinkonehuolto,Kantoapu,Muuttopalvelu,Putkityöt,Kiinteistöhuolto ja isännöintipalvelut,Kylmälaitteet,Remontit ja rakentaminen,Pihan muutos- ja rakennustyöt,Pihatyöt',
   manifest: '/manifest.json',
   icons: [
     { rel: 'icon', url: '/favicon/favicon.ico' },

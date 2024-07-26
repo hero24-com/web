@@ -349,7 +349,7 @@ export const _productNames = [
 export const _tourNames = [
   'Ilmastointipalvelut',
   'Asbestikartoitukset',
-  'Koti siivoukset',
+  'Kotisiivous',
   'Muuttosiivous',
   'Toimisto siivoukset',
   'Remonttisiivous',
@@ -376,9 +376,9 @@ export const _tourNames = [
 export const _serviceNames = [
   'Ilmastointityöt',
   'Asbestikartoitus',
-  'Koti siivoukset',
+  'Kotisiivous',
   'Muuttosiivous',
-  'Yrityssiivous toimistosiivous',
+  'Toimistosiivous',
   'Remonttisiivous',
   'Ikkunanpesu',
   'Kuljetuspalvelut',
@@ -403,9 +403,9 @@ export const _serviceNames = [
 export const _serviceSlug = [
   'ilmastointityot',
   'asbestikartoitus',
-  'koti-siivoukset',
+  'kotisiivous',
   'muuttosiivous',
-  'yrityssiivous-toimistosiivous',
+  'toimistosiivous',
   'remonttisiivous',
   'ikkunanpesu',
   'kuljetuspalvelut',

@@ -1,0 +1,121 @@
+'use client';
+
+import Stack from '@mui/material/Stack';
+import Tooltip from '@mui/material/Tooltip';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Unstable_Grid2';
+import Typography from '@mui/material/Typography';
+
+import { useResponsive } from 'src/hooks/use-responsive';
+
+import { _smartHome } from 'src/_mock';
+
+import Iconify from 'src/components/iconify';
+
+import SmartHomePricingHeader from './smart-home-pricing-header';
+import SmartHomePricingContentMobile from './smart-home-pricing-content-mobile';
+import SmartHomePricingContentDesktop from './smart-home-pricing-content-desktop';
+
+// ----------------------------------------------------------------------
+
+export default function SmartHomePricing() {
+  const mdUp = useResponsive('up', 'md');
+
+  return (
+    <Container
+      sx={{
+        pt: { xs: 13, md: 16 },
+        pb: { xs: 10, md: 15 },
+      }}
+    >
+      <Typography variant="h3" align="center" paragraph>
+        Heti alkuun palvelupaketit
+      </Typography>
+
+      <Typography
+        align="center"
+        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary' }}
+      >
+        Valitse sinulle sopiva Älykäs Huoleton koti -palvelupaketti, ja anna
+        kodin kunnostuksen, huollon ja ylläpidon olla meidän huolehtimamme!
+      </Typography>
+
+      <Grid container alignItems="flex-end">
+        {mdUp && (
+          <Grid xs={12} md={3} sx={{ pb: 5 }}>
+            <Typography variant="overline" sx={{ color: 'primary.main' }}>
+              Ominaisuus
+            </Typography>
+          </Grid>
+        )}
+
+        {_smartHome.map((plan) => (
+          <Grid
+            key={plan.license}
+            xs={12}
+            md={3}
+            sx={{
+              mb: { xs: 4, md: 0 },
+              borderRadius: { xs: 2, md: 0 },
+              boxShadow: (theme) => ({ xs: theme.customShadows.z16, md: 0 }),
+            }}
+          >
+            <SmartHomePricingHeader plan={plan} />
+            {!mdUp && <SmartHomePricingContentMobile plan={plan} />}
+          </Grid>
+        ))}
+      </Grid>
+
+      {mdUp && (
+        <Grid container>
+          <Grid
+            xs={12}
+            md={3}
+            sx={{
+              borderTop: (theme) => `solid 1px ${theme.palette.divider}`,
+            }}
+          >
+            {_smartHome[0].options.map((option) => (
+              <Stack
+                key={option.title}
+                direction="row"
+                alignItems="center"
+                justifyContent="space-between"
+                sx={{
+                  height: 72,
+                  borderBottom: (theme) => `solid 1px ${theme.palette.divider}`,
+                }}
+              >
+                <Typography variant="subtitle2">{option.title}</Typography>
+
+                <Tooltip title={option.tootip} placement="right" arrow>
+                  <div>
+                    <Iconify
+                      icon="carbon:information"
+                      sx={{ color: 'text.secondary' }}
+                    />
+                  </div>
+                </Tooltip>
+              </Stack>
+            ))}
+          </Grid>
+
+          {_smartHome.map((plan) => (
+            <Grid
+              key={plan.license}
+              xs={12}
+              md={3}
+              sx={{
+                borderTop: (theme) => ({
+                  md: `solid 1px ${theme.palette.divider}`,
+                }),
+              }}
+            >
+              <SmartHomePricingContentDesktop plan={plan} />
+            </Grid>
+          ))}
+        </Grid>
+      )}
+    </Container>
+  );
+}

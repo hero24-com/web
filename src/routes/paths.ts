@@ -8,7 +8,7 @@ export const paths = {
     asbestos: '/asbestikartoitus',
     cleaningHome: '/koti-siivoukset',
     cleaningMoving: '/muuttosiivous',
-    cleaningOffice: '/yrityssiivous-toimistosiivous',
+    cleaningOffice: '/toimistosiivous',
     cleaningRenovation: '/remonttisiivous',
     cleaningWindow: '/ikkunanpesu',
     delivery: '/kuljetuspalvelut',
@@ -139,6 +139,7 @@ export const paths = {
 
   // Others
   pages: '/pages',
+  smartHome: '/huolenton-alykoti',
   joinHero24: '/liity-sankariksi',
   contact: '/yhteystiedot',
   docs: 'https://zone-docs.vercel.app',

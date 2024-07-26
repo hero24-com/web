@@ -14,3 +14,4 @@ export * from './_products';
 export * from './_blog';
 export * from './_caseStudies';
 export * from './_services';
+export * from './_smartHome';

@@ -68,14 +68,12 @@ export default function HomeServiceItem({ service }: Props) {
         </Stack>
       </Stack>
 
-      <Image alt={slug} src={coverUrl} ratio="1/1" />
+      <Link component={RouterLink} href={`/${serviceSlug}`} color="inherit">
+        <Image alt={slug} src={coverUrl} ratio="1/1" />
+      </Link>
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
-        <Link
-          component={RouterLink}
-          href={`/${serviceSlug}`}
-          color="inherit"
-        >
+        <Link component={RouterLink} href={`/${serviceSlug}`} color="inherit">
           <TextMaxLine variant="h4" persistent>
             {slug}
           </TextMaxLine>

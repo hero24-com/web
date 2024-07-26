@@ -89,7 +89,7 @@ export default function HomeJoinOurVision() {
                     sx={{
                       p: 4,
                       mt: 4,
-                      width: { md: 'calc(45%)' },
+                      width: { md: 'calc(50% - 16px)' },
                       ...(firstVision && {
                         top: { md: 0 },
                         left: { md: 0 },
@@ -184,7 +184,7 @@ export default function HomeJoinOurVision() {
                     sx={{
                       p: 4,
                       mt: 4,
-                      width: { md: 'calc(45%)' },
+                      width: { md: 'calc(50% - 16px)' },
                       ...(firstVision && {
                         top: { md: 0 },
                         left: { md: 0 },
