@@ -73,7 +73,7 @@ export default function HomeServiceItem({ service }: Props) {
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
         <Link
           component={RouterLink}
-          href={`/services/${serviceSlug}`}
+          href={`/${serviceSlug}`}
           color="inherit"
         >
           <TextMaxLine variant="h4" persistent>
@@ -94,7 +94,7 @@ export default function HomeServiceItem({ service }: Props) {
           <Button
             variant="contained"
             color="inherit"
-            href={`/services/${serviceSlug}`}
+            href={`/${serviceSlug}`}
             rel="noopener"
           >
             Varaa nyt
