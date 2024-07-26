@@ -8,7 +8,7 @@ const TITLE = [
   'Technology Nixon',
   'Turn Key Smart',
   'Digital Shose',
-  'Action Car',
+  'Action Cars',
   'The Zone UI',
   'Minimal UI',
   'Network Firefox',
