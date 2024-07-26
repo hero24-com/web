@@ -9,7 +9,7 @@ export const paths = {
     cleaningHome: '/koti-siivoukset',
     cleaningMoving: '/muuttosiivous',
     cleaningOffice: '/yrityssiivous-toimistosiivous',
-    cleaningRenovation: '/siivouspalvelut',
+    cleaningRenovation: '/remonttisiivous',
     cleaningWindow: '/ikkunanpesu',
     delivery: '/kuljetuspalvelut',
     domesticHelp: '/kotiapu',

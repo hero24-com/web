@@ -13,7 +13,7 @@ export const HOME_SERVICE_OPTIONS = [
   { value: 'Koti siivoukset', label: 'Koti siivoukset' },
   { value: 'Muuttosiivous', label: 'Muuttosiivous' },
   { value: 'Yrityssiivous toimistosiivous', label: 'Yrityssiivous toimistosiivous' },
-  { value: 'Siivouspalvelut', label: 'Siivouspalvelut' },
+  { value: 'Remonttisiivous', label: 'Remonttisiivous' },
   { value: 'Ikkunanpesu', label: 'Ikkunanpesu' },
   { value: 'Kuljetuspalvelut', label: 'Kuljetuspalvelut' },
   { value: 'Kotiapu', label: 'Kotiapu' },
