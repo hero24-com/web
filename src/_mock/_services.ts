@@ -8,7 +8,7 @@ import { _tags } from './assets';
 // ----------------------------------------------------------------------
 
 export const HOME_SERVICE_OPTIONS = [
-  { value: 'Ilmastointityot', label: 'Ilmastointityot' },
+  { value: 'Ilmastointityöt', label: 'Ilmastointityöt' },
   { value: 'Asbestikartoitus', label: 'Asbestikartoitus' },
   { value: 'Koti siivoukset', label: 'Koti siivoukset' },
   { value: 'Muuttosiivous', label: 'Muuttosiivous' },
@@ -17,7 +17,7 @@ export const HOME_SERVICE_OPTIONS = [
   { value: 'Ikkunanpesu', label: 'Ikkunanpesu' },
   { value: 'Kuljetuspalvelut', label: 'Kuljetuspalvelut' },
   { value: 'Kotiapu', label: 'Kotiapu' },
-  { value: 'Sahkoasennukset', label: 'Sahkoasennukset' },
+  { value: 'Sähköasennukset', label: 'Sähköasennukset' },
   { value: 'Elektroniikkahuolto', label: 'Elektroniikkahuolto' },
   { value: 'Asennuspalvelut', label: 'Asennuspalvelut' },
   { value: 'Kodinkonehuolto', label: 'Kodinkonehuolto' },

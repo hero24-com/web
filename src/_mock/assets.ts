@@ -194,36 +194,38 @@ export const _lastNames = [
 // ----------------------------------------------------------------------
 
 export const _prices = [
-  69, 199, 44, 44, 44, 44, 44, 59, 39, 69, 69, 54, 69, 44,
-  59, 69, 44, 74, 56, 56, 56, 44
+  69, 199, 44, 44, 44, 44, 44, 59, 39, 69, 69, 54, 69, 44, 59, 69, 44, 74, 56,
+  56, 56, 44,
 ];
 
 export const _ratings = [
-  5.0, 4.8, 4.7, 5.0, 4.6, 5.0, 5.0, 4.4, 5.0, 5.0, 4.7, 4.3, 4.5, 4.2, 5.0, 4.9, 5.0, 4.6, 4.4,
-  5.0, 4.9, 4.7, 4.8, 5.0,
+  5.0, 4.8, 4.7, 5.0, 4.6, 5.0, 5.0, 4.4, 5.0, 5.0, 4.7, 4.3, 4.5, 4.2, 5.0,
+  4.9, 5.0, 4.6, 4.4, 5.0, 4.9, 4.7, 4.8, 5.0,
 ];
 
 export const _ages = [
-  30, 26, 59, 47, 29, 46, 18, 56, 39, 19, 45, 18, 46, 56, 38, 41, 44, 48, 32, 45, 42, 60, 33, 57,
+  30, 26, 59, 47, 29, 46, 18, 56, 39, 19, 45, 18, 46, 56, 38, 41, 44, 48, 32,
+  45, 42, 60, 33, 57,
 ];
 
 export const _percents = [
-  10.1, 13.6, 28.2, 42.1, 37.2, 18.5, 40.1, 94.8, 91.4, 53.0, 25.4, 62.9, 86.6, 62.4, 35.4, 17.6,
-  52.0, 6.8, 95.3, 26.6, 69.9, 92.1, 46.2, 85.6,
+  10.1, 13.6, 28.2, 42.1, 37.2, 18.5, 40.1, 94.8, 91.4, 53.0, 25.4, 62.9, 86.6,
+  62.4, 35.4, 17.6, 52.0, 6.8, 95.3, 26.6, 69.9, 92.1, 46.2, 85.6,
 ];
 
 export const _nativeS = [
-  11, 10, 7, 10, 12, 5, 10, 1, 8, 8, 10, 11, 12, 8, 4, 11, 8, 9, 4, 9, 2, 6, 3, 7,
+  11, 10, 7, 10, 12, 5, 10, 1, 8, 8, 10, 11, 12, 8, 4, 11, 8, 9, 4, 9, 2, 6, 3,
+  7,
 ];
 
 export const _nativeM = [
-  497, 763, 684, 451, 433, 463, 951, 194, 425, 435, 807, 521, 538, 839, 394, 269, 453, 821, 364,
-  849, 804, 776, 263, 239,
+  497, 763, 684, 451, 433, 463, 951, 194, 425, 435, 807, 521, 538, 839, 394,
+  269, 453, 821, 364, 849, 804, 776, 263, 239,
 ];
 
 export const _nativeL = [
-  9911, 1947, 9124, 6984, 8488, 2034, 3364, 8401, 8996, 5271, 8478, 1139, 8061, 3035, 6733, 3952,
-  2405, 3127, 6843, 4672, 6995, 6053, 5192, 9686,
+  9911, 1947, 9124, 6984, 8488, 2034, 3364, 8401, 8996, 5271, 8478, 1139, 8061,
+  3035, 6733, 3952, 2405, 3127, 6843, 4672, 6995, 6053, 5192, 9686,
 ];
 
 // ----------------------------------------------------------------------
@@ -348,10 +350,10 @@ export const _tourNames = [
   'Ilmastointipalvelut',
   'Asbestikartoitukset',
   'Koti siivoukset',
-  "Muuttosiivous",
+  'Muuttosiivous',
   'Toimisto siivoukset',
   'Remonttisiivous',
-  "Ikkunanpesu",
+  'Ikkunanpesu',
   'Kuljetusapu',
   'Kotiapu',
   'Sähkötyöt',
@@ -361,7 +363,7 @@ export const _tourNames = [
   'Kantoapu',
   'Muuttopalvelu',
   'Putkityöt',
-  "Kiinteistöhuolto ja isännöintipalvelut",
+  'Kiinteistöhuolto ja isännöintipalvelut',
   'Kylmälaitteet',
   'Remontit ja rakentaminen',
   'Pihan muutos- ja rakennustyöt',
@@ -372,23 +374,23 @@ export const _tourNames = [
 // ----------------------------------------------------------------------
 
 export const _serviceNames = [
-  'Ilmastointityot',
+  'Ilmastointityöt',
   'Asbestikartoitus',
   'Koti siivoukset',
-  "Muuttosiivous",
+  'Muuttosiivous',
   'Yrityssiivous toimistosiivous',
   'Siivouspalvelut',
-  "Ikkunanpesu",
+  'Ikkunanpesu',
   'Kuljetuspalvelut',
   'Kotiapu',
-  'Sahkoasennukset',
+  'Sähköasennukset',
   'Elektroniikkahuolto',
   'Asennuspalvelut',
   'Kodinkonehuolto',
   'Kantoapu',
   'Muutto',
   'Putkityöt',
-  "Kiinteistöhuolto ja isännöintipalvelut",
+  'Kiinteistöhuolto ja isännöintipalvelut',
   'Kylmälaitteiden Asennus',
   'Remontit ja rakentaminen',
   'Pihan muutos- ja rakennustyöt',
@@ -402,10 +404,10 @@ export const _serviceSlug = [
   'ilmastointityot',
   'asbestikartoitus',
   'koti-siivoukset',
-  "muuttosiivous",
+  'muuttosiivous',
   'yrityssiivous-toimistosiivous',
   'siivouspalvelut',
-  "ikkunanpesu",
+  'ikkunanpesu',
   'kuljetuspalvelut',
   'kotiapu',
   'sahkoasennukset',
@@ -415,7 +417,7 @@ export const _serviceSlug = [
   'kantoapu',
   'muutto',
   'putkityot',
-  "kiinteistohuolto",
+  'kiinteistohuolto',
   'kylmalaitteiden-asennus',
   'remontti',
   'piha-rakentaminen',
@@ -556,7 +558,7 @@ export const _sentences = [
   'Laadukasta asiakaspalvelua, asentaja piti ajantasalla milloin on tulossa ja sai työn tehtyä ajallaan.',
   'Niko hoito homma erittäin hyvin ja ammattimaisesti. Iso suositus kaikille jos haluaa osaavan kaverin',
   'Mukava ja ammattitaitoinen asentaja. Joutui tulemaan toiste, kun pyykinpesukoneen poistoputki ei asennuksen jälkeen ollutkaan riittävän tiukalla, vaan vedet tulivat putken ulkopuolelle. Toinen käynti järjestyi jo samalle päivälle ja homma saatiin kuntoon. Oppimiskäynti asentajallekin, kuten myös asiakkaalle, kannattaa tehdä testihuuhtelu ja testityhjennys ennen asennuskäynniltä poistumista.',
-  "Hienosti toimi sovitusti. Minun puhelimessa tämä applikaatio ei valitettavasti toimi kunnolla esin kuvien lisäämisen suhteen. Tämä puhelin One plus nord ja tällä mallilla ongelmia myös muiden sovellusten toimivuuden kanssa.",
+  'Hienosti toimi sovitusti. Minun puhelimessa tämä applikaatio ei valitettavasti toimi kunnolla esin kuvien lisäämisen suhteen. Tämä puhelin One plus nord ja tällä mallilla ongelmia myös muiden sovellusten toimivuuden kanssa.',
 ];
 
 // ----------------------------------------------------------------------
@@ -757,7 +759,7 @@ export const _descriptions_en = [
   "Make your move stress-free with our specialized moving cleaning services. We deep clean your old or new home, ensuring it's pristine and ready for the next occupants or for you to move in.",
   'Maintain a productive work environment with our comprehensive office cleaning services. Our professional cleaners ensure your workspace is clean, organized, and free of clutter, boosting employee morale and productivity.',
   'After a renovation, leave the mess to us. Our renovation cleaning services tackle dust, debris, and construction residues, leaving your newly renovated space spotless and ready to enjoy.',
-  "Enjoy crystal clear views with our professional window cleaning services. We clean both interior and exterior windows, ensuring streak-free and sparkling results every time.",
+  'Enjoy crystal clear views with our professional window cleaning services. We clean both interior and exterior windows, ensuring streak-free and sparkling results every time.',
   'Need something delivered? Our reliable delivery services ensure your packages and goods arrive safely and on time, whether it is local or long-distance.',
   'Simplify your daily life with our domestic help services. From housekeeping to meal preparation, our trusted and experienced staff are here to assist you with various household tasks.',
   'Our certified electricians are available for all your electrical needs. From installations to repairs and maintenance, we ensure your electrical systems are safe and functional.',
@@ -767,7 +769,7 @@ export const _descriptions_en = [
   'Make your move easier with our moving and lifting services. Our experienced movers handle heavy lifting, packing, and transportation, ensuring a smooth and stress-free move.',
   'Whether you are relocating locally or long-distance, our comprehensive moving services cover everything from packing to transportation, ensuring your belongings reach their new destination safely.',
   'Our licensed plumbers are ready to solve all your plumbing issues. From leaks and blockages to installations and repairs, we provide efficient and reliable plumbing solutions.',
-  "Keep your property in top condition with our property maintenance services. We handle everything from routine inspections to repairs and landscaping, ensuring your property remains well-maintained and attractive.",
+  'Keep your property in top condition with our property maintenance services. We handle everything from routine inspections to repairs and landscaping, ensuring your property remains well-maintained and attractive.',
   'Ensure your refrigeration appliances are in peak condition with our expert repair and maintenance services. We handle fridges, freezers, and more, ensuring your food stays fresh.',
   'Transform your space with our professional renovation services. From design to construction, we manage every aspect of your renovation project, delivering results that exceed your expectations.',
   'Enhance your outdoor space with our yard modification services. We provide landscaping, hardscaping, and garden design services to create a beautiful and functional yard.',
