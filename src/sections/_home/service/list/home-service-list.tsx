@@ -9,10 +9,9 @@ import HomeServiceItemSkeleton from './home-service-item-skeleton';
 
 type Props = {
   services: IServiceProps[];
-  loading?: boolean;
 };
 
-export default function HomeServiceList({ services, loading }: Props) {
+export default function HomeServiceList({ services }: Props) {
   return (
     <>
       <Box
@@ -27,7 +26,7 @@ export default function HomeServiceList({ services, loading }: Props) {
           },
         }}
       >
-        {(loading ? [...Array(20)] : services).map((service, index) =>
+        {services.map((service, index) =>
           service ? (
             <HomeServiceItem key={service.id} service={service} />
           ) : (
