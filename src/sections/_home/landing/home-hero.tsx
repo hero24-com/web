@@ -49,7 +49,7 @@ export default function HomeHero() {
       sx={{
         ...bgGradient({
           color: alpha(theme.palette.background.default, 0.9),
-          imgUrl: '/assets/background/overlay_1.jpg',
+          imgUrl: '/assets/background/overlay_1.webp',
         }),
         overflow: 'hidden',
         position: 'relative',

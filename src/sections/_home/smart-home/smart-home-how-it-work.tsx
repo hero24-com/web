@@ -56,7 +56,7 @@ export default function SmartHomeHowItWork() {
       sx={{
         ...bgGradient({
           color: alpha(theme.palette.grey[900], 0.8),
-          imgUrl: '/assets/background/overlay_2.jpg',
+          imgUrl: '/assets/background/overlay_2.webp',
         }),
         color: 'common.white',
         py: { xs: 10, md: 15 },
