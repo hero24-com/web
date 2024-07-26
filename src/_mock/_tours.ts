@@ -18,8 +18,8 @@ export const TOUR_SERVICE_OPTIONS = [
   { value: 'Pick-up and drop off', label: 'Pick-up and drop off' },
   { value: 'Professional guide', label: 'Professional guide' },
   {
-    value: 'Transport by air-conditioned',
-    label: 'Transport by air-conditioned',
+    value: 'Transport by air conditioned',
+    label: 'Transport by air conditioned',
   },
 ];
 
