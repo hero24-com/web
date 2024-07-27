@@ -35,7 +35,7 @@ export const HOME_SERVICE_OPTIONS = [
 export const _services = [...Array(22)].map((_, index) => {
   const location = countries.map((option) => option.label)[index + 1];
 
-  const gallery = [...Array(5)].map((__, itemIndex) => _mock.image.service(itemIndex));
+  const gallery = [...Array(15)].map((__, itemIndex) => _mock.image.service(itemIndex + 5));
 
   const heroUrl = [
     '/assets/images/service/service_01.webp',
