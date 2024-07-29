@@ -16,7 +16,7 @@ import CountUp from 'src/components/count-up';
 
 // ----------------------------------------------------------------------
 
-const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index));
+const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index + 14));
 
 const SUMMARY = [
   { name: 'Asiakkaita', number: 50000 },
