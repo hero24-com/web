@@ -32,7 +32,6 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
         >
           {slug}
         </Typography>
-        <Alert severity="success">Tilaa nyt. Maksa miten haluat.</Alert>
       </Stack>
 
       <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>
@@ -49,6 +48,22 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
           </Fab>
           support@hero24.com
         </Stack>
+      </Stack>
+      <Stack
+        spacing={3}
+        direction={{ xs: 'column', md: 'row' }}
+        sx={{
+          mt: 3,
+        }}
+      >
+        <Alert
+          sx={{
+            width: '100%',
+          }}
+          severity="info"
+        >
+          Tilaa nyt. Maksa miten haluat.
+        </Alert>
       </Stack>
     </>
   );
