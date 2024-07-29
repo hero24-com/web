@@ -1,6 +1,7 @@
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
+import Alert from '@mui/material/Alert';
 
 import Iconify from 'src/components/iconify';
 
@@ -31,6 +32,7 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
         >
           {slug}
         </Typography>
+        <Alert severity="success">Tilaa nyt. Maksa miten haluat.</Alert>
       </Stack>
 
       <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>
