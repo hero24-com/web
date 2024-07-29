@@ -28,7 +28,7 @@ export default function OpenOrderView() {
           sx={{ mt: 3, mb: 5 }}
         />
 
-        <HomeServiceDetailsGallery images={_mockService.gallery} />
+        <HomeServiceDetailsGallery images={_mockService.gallery22} />
 
         <Grid
           container

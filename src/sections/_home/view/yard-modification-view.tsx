@@ -28,7 +28,7 @@ export default function YardModificationView() {
           sx={{ mt: 3, mb: 5 }}
         />
 
-        <HomeServiceDetailsGallery images={_mockService.gallery} />
+        <HomeServiceDetailsGallery images={_mockService.gallery20} />
 
         <Grid
           container

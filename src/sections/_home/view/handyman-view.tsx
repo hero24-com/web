@@ -28,7 +28,7 @@ export default function HandymanView() {
           sx={{ mt: 3, mb: 5 }}
         />
 
-        <HomeServiceDetailsGallery images={_mockService.gallery} />
+        <HomeServiceDetailsGallery images={_mockService.gallery12} />
 
         <Grid
           container

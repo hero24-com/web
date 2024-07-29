@@ -24,18 +24,22 @@ export const HOME_SERVICE_OPTIONS = [
   { value: 'Kantoapu', label: 'Kantoapu' },
   { value: 'Muuttopalvelu', label: 'Muuttopalvelu' },
   { value: 'Putkityöt', label: 'Putkityöt' },
-  { value: 'Kiinteistöhuolto ja isännöintipalvelut', label: 'Kiinteistöhuolto ja isännöintipalvelut' },
+  {
+    value: 'Kiinteistöhuolto ja isännöintipalvelut',
+    label: 'Kiinteistöhuolto ja isännöintipalvelut',
+  },
   { value: 'Kylmälaitteet', label: 'Kylmälaitteet' },
   { value: 'Remontit ja rakentaminen', label: 'Remontit ja rakentaminen' },
-  { value: 'Pihan muutos- ja rakennustyöt', label: 'Pihan muutos- ja rakennustyöt' },
+  {
+    value: 'Pihan muutos- ja rakennustyöt',
+    label: 'Pihan muutos- ja rakennustyöt',
+  },
   { value: 'Pihatyöt', label: 'Pihatyöt' },
   { value: 'Etsitkö muuta palvelua?', label: 'Etsitkö muuta palvelua?' },
 ];
 
 export const _services = [...Array(22)].map((_, index) => {
   const location = countries.map((option) => option.label)[index + 1];
-
-  const gallery = [...Array(5)].map((__, itemIndex) => _mock.image.gallery(itemIndex));
 
   const heroUrl = [
     '/assets/images/service/service_01.webp',
@@ -81,11 +85,76 @@ export const _services = [...Array(22)].map((_, index) => {
   return {
     id: _mock.id(index),
     heroUrl,
-    gallery,
     program,
     location,
     services,
     serviceGuide,
+    gallery1: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex)
+    ),
+    gallery2: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 5)
+    ),
+    gallery3: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 10)
+    ),
+    gallery4: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 15)
+    ),
+    gallery5: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 20)
+    ),
+    gallery6: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 25)
+    ),
+    gallery7: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 30)
+    ),
+    gallery8: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 35)
+    ),
+    gallery9: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 40)
+    ),
+    gallery10: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 45)
+    ),
+    gallery11: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 50)
+    ),
+    gallery12: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 55)
+    ),
+    gallery13: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 60)
+    ),
+    gallery14: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 65)
+    ),
+    gallery15: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 70)
+    ),
+    gallery16: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 75)
+    ),
+    gallery17: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 80)
+    ),
+    gallery18: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 85)
+    ),
+    gallery19: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 90)
+    ),
+    gallery20: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 95)
+    ),
+    gallery21: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 100)
+    ),
+    gallery22: [...Array(5)].map((__, itemIndex) =>
+      _mock.image.gallery(itemIndex + 105)
+    ),
     highlights1: _mock.serviceSentences1(index),
     highlights2: _mock.serviceSentences2(index),
     highlights3: _mock.serviceSentences3(index),

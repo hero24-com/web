@@ -28,7 +28,7 @@ export default function HomeApplianceView() {
           sx={{ mt: 3, mb: 5 }}
         />
 
-        <HomeServiceDetailsGallery images={_mockService.gallery} />
+        <HomeServiceDetailsGallery images={_mockService.gallery13} />
 
         <Grid
           container
