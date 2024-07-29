@@ -85,6 +85,7 @@ export const _mock = {
     avatar: (index: number) => `/assets/images/avatar/avatar_${index + 1}.jpg`,
     travel: (index: number) => `/assets/images/travel/travel_${index + 1}.jpg`,
     service: (index: number) => `/assets/images/service/service_${index + 1}.webp`,
+    gallery: (index: number) => `/assets/images/gallery/gallery_${index + 1}.webp`,
     company: (index: number) => `/assets/images/company/company_${index + 1}.png`,
     product: (index: number) => `/assets/images/z_product/product_${index + 1}.png`,
     portrait: (index: number) => `/assets/images/portrait/portrait_${index + 1}.jpg`,
