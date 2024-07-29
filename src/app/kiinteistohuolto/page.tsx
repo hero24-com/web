@@ -3,7 +3,7 @@ import PropertyMaintenanceView from 'src/sections/_home/view/property-maintenanc
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Property Maintenance | Hero24',
+  title: 'Kiinteistöhuolto ja isännöintipalvelut | Hero24',
 };
 
 export default function PropertyMaintenancePage() {

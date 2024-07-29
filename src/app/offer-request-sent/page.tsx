@@ -3,7 +3,7 @@ import OfferRequestSentView from 'src/sections/_home/view/offer-request-sent-vie
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Offer Request Sent | Hero24',
+  title: 'Tarjouspyyntösi on lähetetty | Hero24',
 };
 
 export default function Pricing01Page() {

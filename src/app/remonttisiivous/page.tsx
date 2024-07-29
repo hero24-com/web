@@ -3,7 +3,7 @@ import CleaningRenovationView from 'src/sections/_home/view/cleaning-renovation-
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Cleaning Renovation | Hero24',
+  title: 'Remonttisiivous | Hero24',
 };
 
 export default function CleaningRenovationPage() {

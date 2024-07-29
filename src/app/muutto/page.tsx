@@ -3,7 +3,7 @@ import MovingServiceView from 'src/sections/_home/view/moving-service-view';
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Moving Service | Hero24',
+  title: 'Muutto | Hero24',
 };
 
 export default function MovingServicePage() {

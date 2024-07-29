@@ -391,7 +391,7 @@ export const _serviceNames = [
   'Muutto',
   'Putkityöt',
   'Kiinteistöhuolto ja isännöintipalvelut',
-  'Kylmälaitteiden Asennus',
+  'Kylmälaitteiden asennus',
   'Remontit ja rakentaminen',
   'Pihan muutos- ja rakennustyöt',
   'Pihatyöt',

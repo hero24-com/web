@@ -3,7 +3,7 @@ import ElectronicApplianceView from 'src/sections/_home/view/electronic-applianc
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Electronic Appliance | Hero24',
+  title: 'Elektroniikkahuolto | Hero24',
 };
 
 export default function ElectronicAppliancePage() {

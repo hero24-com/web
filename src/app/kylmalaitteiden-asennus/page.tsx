@@ -3,7 +3,7 @@ import RefrigerationApplianceView from 'src/sections/_home/view/refrigeration-ap
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'Refrigeration Appliance | Hero24',
+  title: 'Kylmälaitteiden asennus | Hero24',
 };
 
 export default function RefrigerationAppliancePage() {
