@@ -1,7 +1,3 @@
-import { ISocialLinks } from './socials';
-
-// ----------------------------------------------------------------------
-
 export type IServiceProps = {
   id: string;
   slug: string;
@@ -41,14 +37,12 @@ export type IServiceProps = {
   description: string;
   languages: string[];
   ratingNumber: number;
-  totalReviews: number;
   highlights1: string;
   highlights2: string;
   highlights3: string;
   reasons1: string;
   reasons2: string;
   reasons3: string;
-  shareLinks: ISocialLinks;
   available: {
     start: Date;
     end: Date;
