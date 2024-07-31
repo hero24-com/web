@@ -16,7 +16,6 @@ export const _categories = [
 export const _testimonials = [...Array(15)].map((_, index) => ({
   id: _mock.id(index),
   name: _mock.fullName(index),
-  role: _mock.role(index),
   avatarUrl: _mock.image.avatar(index),
   createdAt: _mock.time(index),
   ratingNumber: 5,
@@ -59,16 +58,6 @@ const LAT_LONG = [
   [-12.5, 18.5],
   [20.96, 26.27],
 ];
-
-export const _offices = ['Jordan', 'Canada', 'Portugal'].map((office, index) => ({
-  id: _mock.id(index),
-  country: office,
-  address: _mock.fullAddress(index),
-  phoneNumber: _mock.phoneNumber(index),
-  email: _mock.email(index),
-  photo: _mock.image.travel(index + 4),
-  latlng: LAT_LONG[index],
-}));
 
 // ----------------------------------------------------------------------
 

@@ -3,7 +3,6 @@ import { add } from 'date-fns';
 import { countries } from 'src/assets/data';
 
 import { _mock } from './_mock';
-import { _tags } from './assets';
 
 // ----------------------------------------------------------------------
 
@@ -63,32 +62,12 @@ export const _services = [...Array(22)].map((_, index) => {
       'Transport by air-conditioned',
     ];
 
-  const serviceGuide = {
-    verified: true,
-    role: _mock.role(index),
-    name: _mock.fullName(index),
-    avatarUrl: _mock.image.avatar(index),
-    quotes: 'Member since Mar 15, 2021',
-    phoneNumber: _mock.phoneNumber(index),
-    ratingNumber: _mock.number.rating(index),
-    totalReviews: _mock.number.nativeL(index),
-    about:
-      'Integer tincidunt. Nullam dictum felis eu pede mollis pretium. Maecenas ullamcorper, dui et placerat feugiat, eros pede varius nisi, condimentum viverra felis nunc et lorem.',
-    shareLinks: {
-      facebook: `facebook/user-name`,
-      instagram: `instagram/user-name`,
-      linkedin: `linkedin/user-name`,
-      twitter: `twitter/user-name`,
-    },
-  };
-
   return {
     id: _mock.id(index),
     heroUrl,
     program,
     location,
     services,
-    serviceGuide,
     gallery1: [...Array(5)].map((__, itemIndex) =>
       _mock.image.gallery(itemIndex)
     ),
@@ -162,7 +141,6 @@ export const _services = [...Array(22)].map((_, index) => {
     reasons2: _mock.reasons2(index),
     reasons3: _mock.reasons3(index),
     continent: location,
-    tags: _tags.slice(0, 5),
     slug: _mock.serviceName(index),
     serviceSlug: _mock.serviceSlug(index),
     duration: '3 days 2 nights',
@@ -173,7 +151,6 @@ export const _services = [...Array(22)].map((_, index) => {
     coverUrl: _mock.image.service(index),
     description: _mock.description(index),
     ratingNumber: _mock.number.rating(index),
-    totalReviews: _mock.number.nativeL(index),
     priceSale: 0,
     available: {
       start: add(new Date(), { months: 2 }),

@@ -1,4 +1,3 @@
-import { IAuthorProps } from './author';
 import { ISocialLinks } from './socials';
 
 // ----------------------------------------------------------------------
@@ -49,7 +48,6 @@ export type IServiceProps = {
   reasons1: string;
   reasons2: string;
   reasons3: string;
-  serviceGuide: IAuthorProps;
   shareLinks: ISocialLinks;
   available: {
     start: Date;
@@ -59,28 +57,4 @@ export type IServiceProps = {
     label: string;
     text: string;
   }[];
-};
-
-export type IServiceCheckoutProps = {
-  billingAddress: {
-    firstName: string;
-    lastName: string;
-    fullAddress: string;
-    fullAddress2: string;
-  };
-  shippingAddress: {
-    firstName: string;
-    lastName: string;
-    fullAddress: string;
-    fullAddress2: string;
-  };
-  paymentMethods: {
-    methods: string;
-    card: {
-      cardNumber: string;
-      cardHolder: string;
-      expirationDate: string;
-      ccv: string;
-    };
-  };
 };
