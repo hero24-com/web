@@ -6,7 +6,7 @@ export const paths = {
     root: '/tilaa-sankari',
     airConditioning: '/ilmastointityot',
     asbestos: '/asbestikartoitus',
-    cleaningHome: '/koti-siivoukset',
+    cleaningHome: '/kotisiivous',
     cleaningMoving: '/muuttosiivous',
     cleaningOffice: '/toimistosiivous',
     cleaningRenovation: '/remonttisiivous',
