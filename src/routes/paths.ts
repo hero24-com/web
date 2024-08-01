@@ -35,6 +35,7 @@ export const paths = {
   // Others
   smartHome: '/huolenton-alykoti',
   joinHero24: '/liity-sankariksi',
+  ownCustomer: '/laskuta-omia-asiakkaita',
   contact: '/yhteystiedot',
   appStoreLink: 'https://apps.apple.com/us/app/hero24/id1642167956',
   googlePlayLink:

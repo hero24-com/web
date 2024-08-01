@@ -19,8 +19,8 @@ export default function HomeServiceView() {
           py: { xs: 5, md: 10 },
         }}
       >
-        <Stack spacing={3} sx={{ textAlign: 'center', py: { xs: 5, md: 10 } }}>
-          <Typography variant="h3">
+        <Stack spacing={3} sx={{ textAlign: 'center', pb: { xs: 5, md: 10 } }}>
+          <Typography variant="h2">
             Palvelut kotiin, kiinteistöille ja yrityksille
           </Typography>
 

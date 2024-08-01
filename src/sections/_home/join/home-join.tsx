@@ -60,7 +60,7 @@ export default function HomeJoin() {
     <Container
       sx={{
         overflow: 'hidden',
-        py: 5,
+        py: { xs: 5, md: 10 },
       }}
     >
       <Box
@@ -73,11 +73,11 @@ export default function HomeJoin() {
           spacing={3}
           sx={{
             mx: 'auto',
-            maxWidth: 560,
+            maxWidth: 720,
             textAlign: 'center',
           }}
         >
-          <Typography variant="h1">Liity kumppaniksi</Typography>
+          <Typography variant="h2">Liity kumppaniksi</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             Liity Hero24 ja vie liiketoimintasi uudelle tasolle! Kun astut
             osaksi Hero24:ää, avautuu sinulle ainutlaatuinen mahdollisuus

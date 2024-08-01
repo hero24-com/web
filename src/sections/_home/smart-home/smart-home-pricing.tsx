@@ -24,17 +24,16 @@ export default function SmartHomePricing() {
   return (
     <Container
       sx={{
-        pt: { xs: 13, md: 16 },
-        pb: { xs: 10, md: 15 },
+        py: { xs: 5, md: 10 },
       }}
     >
-      <Typography variant="h3" align="center" paragraph>
+      <Typography variant="h2" align="center" paragraph>
         Heti alkuun palvelupaketit
       </Typography>
 
       <Typography
         align="center"
-        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary' }}
+        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary', }}
       >
         Valitse sinulle sopiva Älykäs Huoleton koti -palvelupaketti, ja anna
         kodin kunnostuksen, huollon ja ylläpidon olla meidän huolehtimamme!

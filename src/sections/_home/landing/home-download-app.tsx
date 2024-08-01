@@ -14,7 +14,7 @@ import { AppStoreButton } from 'src/layouts/main/footer';
 
 export default function HomeDownloadApp() {
   return (
-    <Container sx={{ py: { xs: 8, md: 15 } }}>
+    <Container sx={{ py: { xs: 8, md: 10 } }}>
       <Grid container spacing={3} justifyContent={{ lg: 'space-between' }}>
         <Grid xs={12} md={6} lg={6}>
           <Stack
@@ -58,7 +58,7 @@ export default function HomeDownloadApp() {
 
             <Divider sx={{ my: 5, width: 1, borderStyle: 'dashed' }} />
 
-            <AppStoreButton direction={{ xs: 'column', sm: 'row' }} />
+            <AppStoreButton />
           </Stack>
         </Grid>
 
@@ -68,7 +68,7 @@ export default function HomeDownloadApp() {
             src="/assets/images/home/home_hero_new.png"
             sx={{
               maxWidth: 384,
-              marginLeft: '20%',
+              marginLeft: { xs: '8%', md: '35%' },
             }}
           />
         </Grid>
