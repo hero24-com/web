@@ -2,7 +2,7 @@
 
 export const _smartHome = [
   {
-    license: 'Basic+',
+    license: 'Premium',
     caption: '12kk:ta kerralla sen jälkeen toistuvasti voimassa:',
     price: '19.90',
     icon: '/assets/icons/pricing/ic_plan_basic02.svg',
@@ -110,7 +110,7 @@ export const _smartHome = [
     ],
   },
   {
-    license: 'Premium',
+    license: 'Gold',
     caption: '12kk:ta kerralla sen jälkeen toistuvasti voimassa:',
     price: '39',
     icon: '/assets/icons/pricing/ic_plan_starter02.svg',

@@ -13,7 +13,7 @@ type Props = {
 };
 
 export default function SmartHomePricingHeader({ plan }: Props) {
-  const proLicense = plan.license === 'Premium';
+  const proLicense = plan.license === 'Gold';
 
   return (
     <Stack

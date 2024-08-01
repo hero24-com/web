@@ -15,9 +15,9 @@ type Props = {
 };
 
 export default function SmartHomePricingContentDesktop({ plan }: Props) {
-  const startLicense = plan.license === 'Basic+';
+  const startLicense = plan.license === 'Premium';
 
-  const proLicense = plan.license === 'Premium';
+  const proLicense = plan.license === 'Gold';
 
   const businessLicense = plan.license === 'Platinum';
 
@@ -72,8 +72,8 @@ export default function SmartHomePricingContentDesktop({ plan }: Props) {
           target="_blank"
           rel="noopener"
         >
-          {startLicense && 'Start Basic Plan'}
-          {proLicense && 'Start Premium Plan'}
+          {startLicense && 'Start Premium Plan'}
+          {proLicense && 'Start Gold Plan'}
           {businessLicense && 'Start Platinum Plan'}
         </Button>
       </Stack>
