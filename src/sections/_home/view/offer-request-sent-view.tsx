@@ -1,5 +1,7 @@
 'use client';
 
+import Script from 'next/script';
+import { useEffect } from 'react';
 import { m } from 'framer-motion';
 
 import Box from '@mui/material/Box';
@@ -16,6 +18,20 @@ import HomeTestimonial from '../testimonial/home-testimonial';
 // ----------------------------------------------------------------------
 
 export default function OfferRequestSentView() {
+  useEffect(() => {
+    <Script
+      dangerouslySetInnerHTML={{
+        __html: `
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
+            'value': 1.0,
+            'currency': 'EUR'
+          });
+        `,
+      }}
+    ></Script>;
+  }, []);
+
   return (
     <Container
       component={MotionContainer}
