@@ -46,7 +46,7 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
           <Fab size="medium" color="info" sx={{ mr: 1 }}>
             <Iconify width={24} icon="carbon:email" />
           </Fab>
-          support@hero24.com
+          support@hero24.app
         </Stack>
       </Stack>
       <Stack
