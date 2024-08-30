@@ -35,9 +35,9 @@ export default function HomeContactInfo() {
           <Link
             color="inherit"
             variant="body2"
-            href="mailto:support@hero24.app"
+            href="mailto:support@hero24.com"
           >
-            <Typography variant="h6">Email: support@hero24.app</Typography>
+            <Typography variant="h6">Email: support@hero24.com</Typography>
           </Link>
         </Stack>
       </Stack>
