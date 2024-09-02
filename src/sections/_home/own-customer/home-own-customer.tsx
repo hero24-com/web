@@ -49,7 +49,10 @@ export default function HomeOwnCustomer() {
             textAlign: 'center',
           }}
         >
-          <Typography variant="h2">Laskuta omia asiakkaita?</Typography>
+          <Typography variant="h2">
+            Liity Hero24-alustalle – Tarjoa palveluja, laskuta helposti ja
+            tarjoa vakuutukset
+          </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
             Hero24 ei ole vain asiakkaille – se on myös täydellinen alusta
             ammattilaisille, olitpa sitten yritys tai yksityishenkilö. Me
