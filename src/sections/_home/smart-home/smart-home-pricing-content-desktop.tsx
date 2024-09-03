@@ -65,7 +65,7 @@ export default function SmartHomePricingContentDesktop({ plan }: Props) {
       >
         <Button
           size="large"
-          variant={proLicense ? 'contained' : 'outlined'}
+          variant={startLicense ? 'contained' : 'outlined'}
           color="inherit"
           sx={{ mx: 'auto' }}
           href={subscribeLink}

@@ -97,7 +97,7 @@ export default function SmartHomePricingContentMobile({ plan }: Props) {
       <Button
         fullWidth
         size="large"
-        variant={proLicense ? 'contained' : 'outlined'}
+        variant={startLicense ? 'contained' : 'outlined'}
         color="inherit"
         href={subscribeLink}
         target="_blank"
