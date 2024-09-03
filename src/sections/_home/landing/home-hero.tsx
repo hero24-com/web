@@ -179,9 +179,9 @@ export default function HomeHero() {
       {mdUp && (
         <Box
           sx={{
-            maxWidth: 512,
+            maxWidth: 400,
             position: 'absolute',
-            bottom: { md: '20%', lg: '1%' },
+            bottom: { md: '20%', lg: '10%' },
             right: { md: -100, xl: 300 },
             width: { md: `calc(100% - ${offsetLeft}px)` },
           }}
