@@ -11,8 +11,7 @@ export const _smartHome = [
     options: [
       {
         title: 'Kaikista palveluista -10%',
-        tootip:
-          'infoon, Saat automaattisesti kaikista töistä -10%',
+        tootip: 'Saat automaattisesti kaikista töistä -10%',
         disabled: false,
       },
       {
