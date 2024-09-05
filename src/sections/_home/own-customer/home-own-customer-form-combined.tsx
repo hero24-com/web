@@ -12,14 +12,14 @@ import HomeOwnCustomerForm from './home-own-customer-form';
 const TABS = [
   {
     value: 'join',
-    label: 'Join Now',
+    label: 'Liity nyt',
     component: (
       <HomeOwnCustomerForm formId="e050bc45-bb41-4735-b8f6-54acace87a07" />
     ),
   },
   {
     value: 'invoice',
-    label: 'Invoice Customer',
+    label: 'Laskuta asiakasta',
     component: (
       <HomeOwnCustomerForm formId="8c4a0191-b23f-471e-bace-24bf84e349d1" />
     ),
