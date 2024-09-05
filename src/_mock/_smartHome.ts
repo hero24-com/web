@@ -3,7 +3,8 @@
 export const _smartHome = [
   {
     license: 'Premium',
-    caption: '12kk:ta kerralla sen jälkeen toistuvasti voimassa:',
+    caption:
+      'Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti kaikista huolettoman asumisen eduista! Tilaus 12 kuukaudeksi ja jatkuu toistuvana voimassa sen jälkeen',
     price: '19.90',
     icon: '/assets/icons/ic_agreement.svg',
     buy: 'https://buy.stripe.com/8wM17I7lt1Zr59KaFV',
@@ -81,7 +82,7 @@ export const _smartHome = [
         title: 'Ilmainen puhelin- tai videokonsultaatio ennen tilausta',
         tootip:
           'Saat Hero24:n puolesta ammattilaisen tekemän puhelin- tai videokonsultaatio ennen tilausta',
-        disabled: true,
+        disabled: false,
       },
     ],
   },
