@@ -10,9 +10,9 @@ export const _smartHome = [
     buy: 'https://buy.stripe.com/8wM17I7lt1Zr59KaFV',
     options: [
       {
-        title: 'Kaikista töistä -10%',
+        title: 'Kaikista palveluista -10%',
         tootip:
-          'vain työ osuus, materiaalit normaali alennuksin/hinnaston mukaan',
+          'infoon, Saat automaattisesti kaikista töistä -10%',
         disabled: false,
       },
       {
