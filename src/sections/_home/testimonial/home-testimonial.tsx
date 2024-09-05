@@ -53,7 +53,7 @@ export default function HomeTestimonial({ testimonials }: Props) {
   return (
     <Container
       sx={{
-        py: { xs: 8 },
+        pt: { xs: 8 },
       }}
     >
       <Stack direction="row" alignItems="center" sx={{ mb: 8 }}>
