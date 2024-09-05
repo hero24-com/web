@@ -27,24 +27,31 @@ export default function SmartHomePricing() {
         py: { xs: 5, md: 10 },
       }}
     >
-      <Typography variant="h2" align="center" paragraph>
-        Huoleton Asuminen Hero24 – Miksi Valita Meidät?
-      </Typography>
-
-      <Typography
-        align="center"
-        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary' }}
+      <Stack
+        spacing={3}
+        sx={{
+          pb: { xs: 5, md: 10 },
+          mx: 'auto',
+          maxWidth: 800,
+          textAlign: 'center',
+        }}
       >
-        Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se on
-        käytännön tapa elää. Me tarjoamme sinulle kokonaisvaltaisen ratkaisun,
-        joka tekee kodin huollosta ja ylläpidosta vaivatonta, tehokasta ja
-        stressitöntä. Meidän palvelumme on suunniteltu erityisesti sinulle, joka
-        arvostat rauhallista ja mukavaa asumista ilman huoltoa vaativia
-        ongelmia. Premium-tilaajana saat lisäksi ainutlaatuisia etuja, kuten
-        alennuksia, nopeampaa palvelua, laajan vakuutuksen ja ilmaisia
-        konsultaatioita/arviokäyntejä, jotka tekevät asumisestasi vieläkin
-        huolettomampaa.
-      </Typography>
+        <Typography variant="h2" paragraph>
+          Huoleton Asuminen Hero24 – Miksi Valita Meidät?
+        </Typography>
+
+        <Typography align="center" sx={{ color: 'text.secondary' }}>
+          Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se
+          on käytännön tapa elää. Me tarjoamme sinulle kokonaisvaltaisen
+          ratkaisun, joka tekee kodin huollosta ja ylläpidosta vaivatonta,
+          tehokasta ja stressitöntä. Meidän palvelumme on suunniteltu
+          erityisesti sinulle, joka arvostat rauhallista ja mukavaa asumista
+          ilman huoltoa vaativia ongelmia. Premium-tilaajana saat lisäksi
+          ainutlaatuisia etuja, kuten alennuksia, nopeampaa palvelua, laajan
+          vakuutuksen ja ilmaisia konsultaatioita/arviokäyntejä, jotka tekevät
+          asumisestasi vieläkin huolettomampaa.
+        </Typography>
+      </Stack>
 
       <Grid container alignItems="flex-end">
         {mdUp && (

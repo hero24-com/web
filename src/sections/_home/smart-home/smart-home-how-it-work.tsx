@@ -72,7 +72,7 @@ export default function SmartHomeHowItWork() {
             mt: 3,
             mx: 'auto',
             opacity: 0.72,
-            maxWidth: 720,
+            maxWidth: 800,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
           }}

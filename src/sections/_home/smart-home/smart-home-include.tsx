@@ -50,7 +50,7 @@ export default function SmartHomeInclude() {
         sx={{
           mt: 3,
           mx: 'auto',
-          maxWidth: 720,
+          maxWidth: 800,
           color: 'text.secondary',
           mb: { xs: 8, md: 10 },
         }}
@@ -68,7 +68,7 @@ export default function SmartHomeInclude() {
           gridTemplateColumns: {
             xs: 'repeat(1, 1fr)',
             sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
+            md: 'repeat(2, 1fr)',
           },
         }}
       >

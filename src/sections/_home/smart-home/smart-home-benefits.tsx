@@ -58,7 +58,7 @@ export default function SmartHomeBenefits() {
             mt: 3,
             mx: 'auto',
             opacity: 0.72,
-            maxWidth: 720,
+            maxWidth: 800,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
           }}
@@ -91,7 +91,7 @@ export default function SmartHomeBenefits() {
           {mdUp && (
             <Image
               alt="benefits"
-              src="/assets/illustrations/illustration_benefits.svg"
+              src="/assets/illustrations/illustration_maintenance.svg"
             />
           )}
 

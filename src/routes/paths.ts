@@ -36,6 +36,7 @@ export const paths = {
   smartHome: '/huoleton-asuminen',
   joinHero24: '/liity-sankariksi',
   ownCustomer: '/laskuta-omia-asiakkaita',
+  realEstateMaintenance: '/kiinteiston-huoltopalvelut-taloyhtioille',
   contact: '/yhteystiedot',
   appStoreLink: 'https://apps.apple.com/us/app/hero24/id1642167956',
   googlePlayLink:

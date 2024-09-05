@@ -63,7 +63,7 @@ export default function HomeJoinOurVision() {
           <Grid xs={12} md={6} lg={4}>
             <Image
               alt="vision"
-              src="/assets/illustrations/illustration_benefits.svg"
+              src="/assets/illustrations/illustration_teams.svg"
             />
           </Grid>
 

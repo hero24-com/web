@@ -15,7 +15,7 @@ import CountUp from 'src/components/count-up';
 
 // ----------------------------------------------------------------------
 
-const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index + 10));
+const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index + 16));
 
 const SUMMARY = [
   { name: 'Asiakkaita', number: 50000 },
@@ -25,7 +25,7 @@ const SUMMARY = [
 
 // ----------------------------------------------------------------------
 
-export default function HomeOwnCustomer() {
+export default function RealEstateMaintenance() {
   const smUp = useResponsive('up', 'sm');
 
   return (
@@ -50,16 +50,15 @@ export default function HomeOwnCustomer() {
           }}
         >
           <Typography variant="h2">
-            Liity Hero24-alustalle – Tarjoa palveluja, laskuta helposti ja
-            tarjoa vakuutukset
+            Kiinteistön Huoltopalvelut – Mitkä Korjaus- ja Kunnossapitovastuut
+            Kuuluvat Taloyhtiölle ja Osakkaalle?
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            Hero24 ei ole vain asiakkaille – se on myös täydellinen alusta
-            ammattilaisille, olitpa sitten yritys tai yksityishenkilö. Me
-            tarjoamme sinulle mahdollisuuden keskittyä omaan osaamiseesi, kun
-            hoidamme paperityöt ja vakuutusasiat puolestasi. Jos sinulla on oma
-            asiakas ja haluat tarjota laskutus- ja vakuutuspalveluja, Hero24 on
-            ratkaisu juuri sinulle.
+            Taloyhtiön huolto- ja kunnossapitovastuut jakautuvat tarkasti
+            osakkaiden ja yhtiön kesken. Tällöin on tärkeää ymmärtää, mitkä
+            huolto- ja korjaustehtävät kuuluvat yhtiön vastuulle ja mitkä
+            osakkaalle. Tässä artikkelissa selvennämme näitä vastuita ja
+            tarjoamme esimerkkejä yleisimmistä huolto- ja korjaustarpeista.
           </Typography>
         </Stack>
       </Box>

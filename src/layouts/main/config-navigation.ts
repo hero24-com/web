@@ -73,7 +73,12 @@ export const serviceLinks = [
     items: [
       { title: 'Tilaa Sankari', path: paths.services.root },
       { title: 'Liity Sankariksi', path: paths.joinHero24 },
-      { title: 'Laskuta omia asiakkaita?', path: paths.ownCustomer },
+      { title: 'Huoleton asuminen', path: paths.smartHome },
+      {
+        title: 'Huoltopalvelut Taloyhtiöille',
+        path: paths.realEstateMaintenance,
+      },
+      { title: 'Laskuta omia asiakkaita', path: paths.ownCustomer },
       { title: 'Etsitkö muuta palvelua?', path: paths.services.openOrder },
       { title: 'Yhteystiedot', path: paths.contact },
     ],
@@ -94,8 +99,8 @@ export const navConfig = [
     ],
   },
   { title: 'Tilaa sankari', path: paths.services.root },
-  { title: 'Liity sankariksi', path: paths.joinHero24 },
   { title: 'Huoleton asuminen', path: paths.smartHome },
-  { title: 'Laskuta omia asiakkaita?', path: paths.ownCustomer },
+  { title: 'Huoltopalvelut Taloyhtiöille', path: paths.realEstateMaintenance },
+  { title: 'Laskuta omia asiakkaita', path: paths.ownCustomer },
   { title: 'Yhteystiedot', path: paths.contact },
 ];

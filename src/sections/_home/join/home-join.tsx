@@ -73,7 +73,7 @@ export default function HomeJoin() {
           spacing={3}
           sx={{
             mx: 'auto',
-            maxWidth: 720,
+            maxWidth: 800,
             textAlign: 'center',
           }}
         >
