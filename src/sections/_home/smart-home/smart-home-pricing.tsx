@@ -28,15 +28,14 @@ export default function SmartHomePricing() {
       }}
     >
       <Typography variant="h2" align="center" paragraph>
-        Heti alkuun palvelupaketit
+        Premium pakettien kuvan päivitys, nyt 3 palkkia
       </Typography>
 
       <Typography
         align="center"
-        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary', }}
+        sx={{ mb: { xs: 5, md: 8 }, color: 'text.secondary' }}
       >
-        Valitse sinulle sopiva Älykäs Huoleton koti -palvelupaketti, ja anna
-        kodin kunnostuksen, huollon ja ylläpidon olla meidän huolehtimamme!
+        Heti alkuun palvelupaketit
       </Typography>
 
       <Grid container alignItems="flex-end">

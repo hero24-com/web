@@ -103,9 +103,9 @@ export default function SmartHomePricingContentMobile({ plan }: Props) {
         target="_blank"
         rel="noopener"
       >
-        {startLicense && 'Start Premium Plan'}
-        {proLicense && 'Start Gold Plan'}
-        {businessLicense && 'Start Platinum Plan'}
+        {startLicense && 'Tilaa huoleton asuminen'}
+        {proLicense && 'Tilaa huoleton asuminen'}
+        {businessLicense && 'Tilaa huoleton asuminen'}
       </Button>
     </Stack>
   );

@@ -33,7 +33,7 @@ export const paths = {
   page404: '/error/404',
   page500: '/error/500',
   // Others
-  smartHome: '/huolenton-alykoti',
+  smartHome: '/huoleton-asuminen',
   joinHero24: '/liity-sankariksi',
   ownCustomer: '/laskuta-omia-asiakkaita',
   contact: '/yhteystiedot',

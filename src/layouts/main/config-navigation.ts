@@ -95,7 +95,7 @@ export const navConfig = [
   },
   { title: 'Tilaa sankari', path: paths.services.root },
   { title: 'Liity sankariksi', path: paths.joinHero24 },
-  { title: 'Huoleton älykoti', path: paths.smartHome },
+  { title: 'Huoleton asuminen', path: paths.smartHome },
   { title: 'Laskuta omia asiakkaita?', path: paths.ownCustomer },
   { title: 'Yhteystiedot', path: paths.contact },
 ];

@@ -5,9 +5,15 @@ export const _smartHome = [
     license: 'Premium',
     caption: '12kk:ta kerralla sen jälkeen toistuvasti voimassa:',
     price: '19.90',
-    icon: '/assets/icons/pricing/ic_plan_basic02.svg',
+    icon: '/assets/icons/ic_agreement.svg',
     buy: 'https://buy.stripe.com/8wM17I7lt1Zr59KaFV',
     options: [
+      {
+        title: 'Kaikista töistä -10%',
+        tootip:
+          'vain työ osuus, materiaalit normaali alennuksin/hinnaston mukaan',
+        disabled: false,
+      },
       {
         title:
           'Alennuksia ja erityis tarjouksia töistä ja materiaaleista ja nopeampi toimitus tilaustavaroissa',
@@ -29,32 +35,35 @@ export const _smartHome = [
         title:
           '4 ilmaista kotikäyntiä vuodessa kartoituksen ja ehdotusten tekemiseksi',
         tootip:
-          'Ensimmäinen aika buukataan sen jälkeen kun tilaus tehty, tässä saadaan jo tosi paljon hyvää dataa asukkaasta ja kodista',
+          'Saat vuodessa veloituksetta haluamasi ammattilaisen paikalle arvioimaan ja konsultoimaan kotiasi/kiinteistöäsi',
         disabled: false,
       },
       {
         title: '5% krediittiä takaisin kaikista ostoista joka kuukausi',
-        tootip: '5% krediittiä takaisin kaikista ostoista joka kuukausi',
+        tootip:
+          'Saat jokaisesta ostosta 5% arvoista krediittiä mihin tahansa haluamaasi Hero24 palveluun, mikä vähennetään seuraavasta hankinnasta',
         disabled: false,
       },
       {
-        title: 'Nimetty varahenkilö ongelmatilanteissa ',
-        tootip: 'Nimetty varahenkilö ongelmatilanteissa ',
+        title: 'Nimetty varahenkilö ongelmatilanteissa',
+        tootip:
+          'Jokaiselle työllesi on varattu varahenkilö, jos sattuu jotakin, että pitää vaihtaa sankaria',
+        disabled: false,
+      },
+      {
+        title: 'Extra Hero24 1M€ vakuutus keikoille',
+        tootip:
+          'Saat Hero24 järjestämän extra vakuutuksen kaikille töillesi, mikä kattaa myös sankarin vakuutuksen lisäksi',
+        disabled: false,
+      },
+      {
+        title: 'Nimetty varahenkilö ongelmatilanteissa',
+        tootip: 'Nimetty varahenkilö ongelmatilanteissa',
         disabled: false,
       },
       {
         title: 'Extra Hero24 1M€ vakuutus keikoille',
         tootip: 'Extra Hero24 1M€ vakuutus keikoille',
-        disabled: false,
-      },
-      {
-        title: 'Nimetty varahenkilö ongelmatilanteissa H',
-        tootip: 'Nimetty varahenkilö ongelmatilanteissa H',
-        disabled: false,
-      },
-      {
-        title: 'Extra Hero24 1M€ vakuutus keikoille H',
-        tootip: 'Extra Hero24 1M€ vakuutus keikoille H',
         disabled: false,
       },
       {
@@ -64,12 +73,14 @@ export const _smartHome = [
       },
       {
         title: 'Peruutusoikeus 24h mistä tahansa syystä',
-        tootip: 'Peruutusoikeus 24h mistä tahansa syystä',
+        tootip:
+          '24 tuntia ennen työtä voit perua työn veloituksetta, poislukien erikseen tehdyt sopimukset',
         disabled: false,
       },
       {
         title: 'Ilmainen puhelin- tai videokonsultaatio ennen tilausta',
-        tootip: 'Ilmainen puhelin- tai videokonsultaatio ennen tilausta',
+        tootip:
+          'Saat Hero24:n puolesta ammattilaisen tekemän puhelin- tai videokonsultaatio ennen tilausta',
         disabled: true,
       },
     ],

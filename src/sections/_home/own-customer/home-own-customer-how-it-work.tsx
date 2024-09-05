@@ -18,8 +18,8 @@ import { bgGradient } from 'src/theme/css';
 const TIMELINES = [
   {
     step: 'STEP 1',
-    title: 'Täytä lomake',
-    description: 'Anna meille tiedot työstäsi ja henkilöstäsi.',
+    title: 'Täytä lomakkeen tiedot valitse palvelut',
+    description: 'Valitse sinulle sopivat palvelut mitä halaut käyttää, niitä voit myöhemmin lisätä tai poistaa.',
   },
   {
     step: 'STEP 2',
