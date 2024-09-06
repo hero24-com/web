@@ -90,8 +90,9 @@ export default function SmartHomeBenefits() {
 
           {mdUp && (
             <Image
-              alt="benefits"
-              src="/assets/illustrations/illustration_maintenance.svg"
+              alt="smart home"
+              src="/assets/images/home/smart-home.webp"
+              sx={{ borderRadius: 1 }}
             />
           )}
 
