@@ -20,7 +20,7 @@ const TIMELINES = [
     step: 'STEP 1',
     title: 'Konsultaatio ja suunnittelu',
     description:
-      'Asiantuntijamme tekevät kattavan kartoituksen kodistasi ja tarpeistasi, jonka perusteella suunnittelemme juuri sinulle sopiva palvelut. ',
+      'Asiantuntijamme tekevät kattavan kartoituksen kodistasi ja tarpeistasi, jonka perusteella suunnittelemme juuri sinulle sopivat palvelut. ',
   },
   {
     step: 'STEP 2',

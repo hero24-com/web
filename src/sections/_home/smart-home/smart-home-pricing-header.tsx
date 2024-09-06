@@ -1,8 +1,8 @@
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import Image from 'src/components/image';
 import Label from 'src/components/label';
+import SvgColor from 'src/components/svg-color';
 
 import { ISmartHomeProps } from 'src/types/smart-home';
 
@@ -63,7 +63,15 @@ export default function SmartHomePricingHeader({ plan }: Props) {
         </Typography>
       </Stack>
 
-      <Image alt={plan.icon} src={plan.icon} sx={{ width: 80, height: 80 }} />
+      <SvgColor
+        src={plan.icon}
+        sx={{
+          width: 64,
+          height: 64,
+          mx: 'auto',
+          bgcolor: 'primary.main',
+        }}
+      />
 
       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
         {plan.caption}

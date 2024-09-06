@@ -72,9 +72,9 @@ export default function SmartHomePricingContentDesktop({ plan }: Props) {
           target="_blank"
           rel="noopener"
         >
-          {startLicense && 'Tilaa huoleton asuminen'}
-          {proLicense && 'Tilaa huoleton asuminen'}
-          {businessLicense && 'Tilaa huoleton asuminen'}
+          {startLicense && 'Tilaa huoleton asuminen Premium'}
+          {proLicense && 'Tilaa huoleton asuminen Gold'}
+          {businessLicense && 'Tilaa huoleton asuminen Platinum'}
         </Button>
       </Stack>
     </Box>
