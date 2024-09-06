@@ -51,6 +51,16 @@ export default function SmartHomePricing() {
           vakuutuksen ja ilmaisia konsultaatioita/arviokäyntejä, jotka tekevät
           asumisestasi vieläkin huolettomampaa.
         </Typography>
+
+        <Typography
+          variant="overline"
+          align="center"
+          sx={{ color: 'primary.main' }}
+        >
+          Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti
+          kaikista huolettoman asumisen eduista! Tilaus 12 kuukaudeksi ja jatkuu
+          toistuvana voimassa sen jälkeen
+        </Typography>
       </Stack>
 
       <Grid container alignItems="flex-end">

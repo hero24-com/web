@@ -3,8 +3,6 @@
 export const _smartHome = [
   {
     license: 'Premium',
-    caption:
-      'Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti kaikista huolettoman asumisen eduista! Tilaus 12 kuukaudeksi ja jatkuu toistuvana voimassa sen jälkeen',
     price: '19.90',
     icon: '/assets/icons/pricing/ic_plan_premium03.svg',
     buy: 'https://buy.stripe.com/8wM17I7lt1Zr59KaFV',

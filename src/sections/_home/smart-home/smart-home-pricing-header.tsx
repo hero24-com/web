@@ -35,10 +35,6 @@ export default function SmartHomePricingHeader({ plan }: Props) {
         </Label>
       )}
 
-      <Typography variant="overline" sx={{ color: 'text.secondary' }}>
-        {plan.license}
-      </Typography>
-
       <Stack
         direction="row"
         alignItems="center"
@@ -72,10 +68,6 @@ export default function SmartHomePricingHeader({ plan }: Props) {
           bgcolor: 'primary.main',
         }}
       />
-
-      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        {plan.caption}
-      </Typography>
     </Stack>
   );
 }
