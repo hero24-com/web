@@ -62,14 +62,14 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
             md: 'repeat(2, 1fr)',
           }}
         >
-          {HOME_SERVICE_OPTIONS.map((service) => (
+          {HOME_SERVICE_OPTIONS.map((serviceOption) => (
             <Stack
-              key={service.label}
+              key={serviceOption.label}
               spacing={1}
               direction="row"
               alignItems="center"
               sx={{
-                ...(services.includes(service.label) && {
+                ...(services.includes(serviceOption.label) && {
                   color: 'text.disabled',
                 }),
               }}
@@ -78,12 +78,12 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
                 icon="carbon:checkmark"
                 sx={{
                   color: 'primary.main',
-                  ...(services.includes(service.label) && {
+                  ...(services.includes(serviceOption.label) && {
                     color: 'text.disabled',
                   }),
                 }}
               />
-              {service.label}
+              {serviceOption.label}
             </Stack>
           ))}
         </Box>
