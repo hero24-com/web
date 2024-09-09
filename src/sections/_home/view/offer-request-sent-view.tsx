@@ -11,6 +11,7 @@ import Typography from '@mui/material/Typography';
 import { _testimonials } from 'src/_mock';
 
 import { varBounce, MotionContainer } from 'src/components/animate';
+
 import HomeService from '../landing/home-service';
 import HomeTestimonial from '../testimonial/home-testimonial';
 
@@ -29,7 +30,7 @@ export default function OfferRequestSentView() {
           });
         `,
         }}
-      ></Script>
+       />
       <Container
         component={MotionContainer}
         sx={{

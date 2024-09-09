@@ -1,3 +1,5 @@
+import type { ISmartHomeProps } from 'src/types/smart-home';
+
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
@@ -9,8 +11,6 @@ import { useBoolean } from 'src/hooks/use-boolean';
 import { _smartHome } from 'src/_mock';
 
 import Iconify from 'src/components/iconify';
-
-import { ISmartHomeProps } from 'src/types/smart-home';
 
 // ----------------------------------------------------------------------
 

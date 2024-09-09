@@ -1,11 +1,9 @@
+import type { IServiceProps } from 'src/types/service';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-
-import { useResponsive } from 'src/hooks/use-responsive';
-
-import { IServiceProps } from 'src/types/service';
 
 import HomeServiceItem from './home-service-item';
 
@@ -16,8 +14,6 @@ type Props = {
 };
 
 export default function HomeServiceListSimilar({ services }: Props) {
-  const mdUp = useResponsive('up', 'md');
-
   return (
     <Box sx={{ bgcolor: 'background.neutral' }}>
       <Container

@@ -1,5 +1,7 @@
-import { Theme } from '@mui/material/styles';
-import { CheckboxProps, checkboxClasses } from '@mui/material/Checkbox';
+import type { Theme } from '@mui/material/styles';
+import type { CheckboxProps} from '@mui/material/Checkbox';
+
+import { checkboxClasses } from '@mui/material/Checkbox';
 
 // ----------------------------------------------------------------------
 

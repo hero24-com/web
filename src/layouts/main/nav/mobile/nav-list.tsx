@@ -7,7 +7,8 @@ import { useBoolean } from 'src/hooks/use-boolean';
 import { NavSectionVertical } from 'src/components/nav-section';
 
 import NavItem from './nav-item';
-import { NavListProps } from '../types';
+
+import type { NavListProps } from '../types';
 
 // ----------------------------------------------------------------------
 

@@ -1,9 +1,11 @@
+import type { Theme, SxProps } from '@mui/material/styles';
+import type { CountUpProps as ReactCountUpProps } from 'react-countup';
+
 import { useRef } from 'react';
+import ReactCountUp from 'react-countup';
 import { useInView } from 'framer-motion';
-import ReactCountUp, { CountUpProps as ReactCountUpProps } from 'react-countup';
 
 import Box from '@mui/material/Box';
-import { Theme, SxProps } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 

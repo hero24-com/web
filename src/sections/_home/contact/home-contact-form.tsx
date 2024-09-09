@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 
@@ -24,12 +24,12 @@ export default function HomeContactForm({ formId }: Props) {
         // @ts-ignore
         window.hbspt.forms.create({
           portalId: '143729222',
-          formId: formId,
+          formId,
           target: '#hubspot-form-wrapper',
         });
       }
     });
-  }, []);
+  }, [formId]);
 
   return (
     <Card>
@@ -40,7 +40,7 @@ export default function HomeContactForm({ formId }: Props) {
       <Divider sx={{ borderStyle: 'dashed' }} />
 
       <Stack spacing={3} sx={{ p: 3 }}>
-        <Box id="hubspot-form-wrapper"></Box>
+        <Box id="hubspot-form-wrapper" />
       </Stack>
     </Card>
   );

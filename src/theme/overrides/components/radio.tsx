@@ -1,5 +1,7 @@
-import { Theme } from '@mui/material/styles';
-import { RadioProps, radioClasses } from '@mui/material/Radio';
+import type { Theme } from '@mui/material/styles';
+import type { RadioProps} from '@mui/material/Radio';
+
+import { radioClasses } from '@mui/material/Radio';
 
 // ----------------------------------------------------------------------
 

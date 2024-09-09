@@ -1,9 +1,11 @@
 'use client';
 
+import type { ThemeOptions} from '@mui/material/styles';
+
 import { useMemo } from 'react';
 
 import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeOptions, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
 
 import { useSettingsContext } from 'src/components/settings';
 

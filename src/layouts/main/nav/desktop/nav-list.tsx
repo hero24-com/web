@@ -19,7 +19,8 @@ import Label from 'src/components/label';
 import Image from 'src/components/image';
 
 import NavItem from './nav-item';
-import { NavListProps, NavSubListProps } from '../types';
+
+import type { NavListProps, NavSubListProps } from '../types';
 
 // ----------------------------------------------------------------------
 

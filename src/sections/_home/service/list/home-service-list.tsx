@@ -1,6 +1,6 @@
-import Box from '@mui/material/Box';
+import type { IServiceProps } from 'src/types/service';
 
-import { IServiceProps } from 'src/types/service';
+import Box from '@mui/material/Box';
 
 import HomeServiceItem from './home-service-item';
 import HomeServiceItemSkeleton from './home-service-item-skeleton';
@@ -13,8 +13,7 @@ type Props = {
 
 export default function HomeServiceList({ services }: Props) {
   return (
-    <>
-      <Box
+    <Box
         sx={{
           columnGap: 3,
           display: 'grid',
@@ -34,6 +33,5 @@ export default function HomeServiceList({ services }: Props) {
           )
         )}
       </Box>
-    </>
   );
 }

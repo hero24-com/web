@@ -1,4 +1,6 @@
-import Iconify, { IconifyProps } from '../iconify';
+import Iconify from '../iconify';
+
+import type { IconifyProps } from '../iconify';
 
 // ----------------------------------------------------------------------
 

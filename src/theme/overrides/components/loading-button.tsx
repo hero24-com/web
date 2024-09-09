@@ -1,5 +1,7 @@
-import { Theme } from '@mui/material/styles';
-import { LoadingButtonProps, loadingButtonClasses } from '@mui/lab/LoadingButton';
+import type { Theme } from '@mui/material/styles';
+import type { LoadingButtonProps} from '@mui/lab/LoadingButton';
+
+import { loadingButtonClasses } from '@mui/lab/LoadingButton';
 
 // ----------------------------------------------------------------------
 

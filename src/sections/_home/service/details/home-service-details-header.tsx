@@ -1,11 +1,11 @@
+import type { IServiceProps } from 'src/types/service';
+
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
 import Alert from '@mui/material/Alert';
+import Typography from '@mui/material/Typography';
 
 import Iconify from 'src/components/iconify';
-
-import { IServiceProps } from 'src/types/service';
 
 // ----------------------------------------------------------------------
 

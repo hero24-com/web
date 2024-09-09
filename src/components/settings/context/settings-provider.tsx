@@ -5,8 +5,9 @@ import { useMemo, useState, useCallback } from 'react';
 
 import { useLocalStorage } from 'src/hooks/use-local-storage';
 
-import { SettingsValueProps } from '../types';
 import { SettingsContext } from './settings-context';
+
+import type { SettingsValueProps } from '../types';
 
 // ----------------------------------------------------------------------
 

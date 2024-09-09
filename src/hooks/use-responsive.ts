@@ -1,5 +1,7 @@
+import type { Breakpoint } from '@mui/material/styles';
+
+import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme, Breakpoint } from '@mui/material/styles';
 
 // ----------------------------------------------------------------------
 

@@ -1,3 +1,5 @@
+import type { ITestimonialProps } from 'src/types/testimonial';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
@@ -11,8 +13,6 @@ import Carousel, {
   CarouselDots,
   CarouselArrows,
 } from 'src/components/carousel';
-
-import { ITestimonialProps } from 'src/types/testimonial';
 
 import TestimonialItem from './home-testimonial-item';
 

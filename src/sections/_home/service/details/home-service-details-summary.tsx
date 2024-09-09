@@ -1,3 +1,5 @@
+import type { IServiceProps } from 'src/types/service';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -5,8 +7,6 @@ import Typography from '@mui/material/Typography';
 import { HOME_SERVICE_OPTIONS } from 'src/_mock';
 
 import Iconify from 'src/components/iconify';
-
-import { IServiceProps } from 'src/types/service';
 
 // ----------------------------------------------------------------------
 

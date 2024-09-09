@@ -75,7 +75,7 @@ export default function HomeOrderStep() {
               <Typography
                 variant="overline"
                 sx={{ mt: 4, display: 'block', color: 'text.disabled' }}
-              ></Typography>
+               />
 
               <Typography variant="h5" sx={{ mt: 2, mb: 1 }}>
                 {value.title}

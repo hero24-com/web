@@ -1,5 +1,7 @@
+import type { ListItemButtonProps } from '@mui/material/ListItemButton';
+
 import Typography from '@mui/material/Typography';
-import ListItemButton, { ListItemButtonProps } from '@mui/material/ListItemButton';
+import ListItemButton from '@mui/material/ListItemButton';
 
 import Iconify from '../../iconify';
 

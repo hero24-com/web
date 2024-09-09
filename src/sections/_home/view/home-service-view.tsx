@@ -1,13 +1,13 @@
 'use client';
 
-import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
+import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 import { _services, _testimonials } from 'src/_mock';
 
-import HomeServiceList from '../service/list/home-service-list';
 import HomeTestimonial from '../testimonial/home-testimonial';
+import HomeServiceList from '../service/list/home-service-list';
 
 // ----------------------------------------------------------------------
 

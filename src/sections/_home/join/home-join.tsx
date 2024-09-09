@@ -3,7 +3,6 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
-import SvgColor from 'src/components/svg-color';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -13,6 +12,7 @@ import { _mock } from 'src/_mock';
 
 import Image from 'src/components/image';
 import CountUp from 'src/components/count-up';
+import SvgColor from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
 
@@ -168,7 +168,7 @@ export default function HomeJoin() {
                 <Typography
                   variant="overline"
                   sx={{ mt: 4, display: 'block', color: 'text.disabled' }}
-                ></Typography>
+                 />
 
                 <Typography variant="h5" sx={{ mt: 2, mb: 1 }}>
                   {value.title}

@@ -1,8 +1,10 @@
+import type { IServiceProps } from 'src/types/service';
+
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 
 import { RouterLink } from 'src/routes/components';
@@ -12,8 +14,6 @@ import { fCurrency } from 'src/utils/format-number';
 import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
 import TextMaxLine from 'src/components/text-max-line';
-
-import { IServiceProps } from 'src/types/service';
 
 // ----------------------------------------------------------------------
 

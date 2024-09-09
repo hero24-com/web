@@ -1,7 +1,9 @@
+import type { CardProps } from '@mui/material/Card';
+
+import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Skeleton from '@mui/material/Skeleton';
-import Card, { CardProps } from '@mui/material/Card';
 
 // ----------------------------------------------------------------------
 

@@ -1,10 +1,10 @@
+import type { ISmartHomeProps } from 'src/types/smart-home';
+
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 import Label from 'src/components/label';
 import SvgColor from 'src/components/svg-color';
-
-import { ISmartHomeProps } from 'src/types/smart-home';
 
 // ----------------------------------------------------------------------
 

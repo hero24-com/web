@@ -1,14 +1,17 @@
+import type { StackProps } from '@mui/material/Stack';
+
 import Link from '@mui/material/Link';
 import Masonry from '@mui/lab/Masonry';
+import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Collapse from '@mui/material/Collapse';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, styled } from '@mui/material/styles';
-import Stack, { StackProps } from '@mui/material/Stack';
 import Button, { buttonClasses } from '@mui/material/Button';
 
+import { paths } from 'src/routes/paths';
 import { usePathname } from 'src/routes/hooks';
 import { RouterLink } from 'src/routes/components';
 
@@ -18,9 +21,9 @@ import { useResponsive } from 'src/hooks/use-responsive';
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 
-import { NavSubListProps } from './nav/types';
-import { serviceLinks, navConfig } from './config-navigation';
-import { paths } from 'src/routes/paths';
+import { navConfig, serviceLinks } from './config-navigation';
+
+import type { NavSubListProps } from './nav/types';
 
 // ----------------------------------------------------------------------
 

@@ -16,8 +16,9 @@ import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
 
 import NavList from './nav-list';
-import { NavProps } from '../types';
 import { NAV } from '../../../config-layout';
+
+import type { NavProps } from '../types';
 
 // ----------------------------------------------------------------------
 
