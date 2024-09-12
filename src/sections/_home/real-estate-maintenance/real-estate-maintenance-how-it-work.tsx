@@ -143,7 +143,7 @@ export default function RealEstateMaintenanceHowItWork() {
 
                 {value.description11 && (
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     sx={{
                       opacity: 0.72,
                       ...(index % 2 && {
@@ -159,7 +159,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
@@ -176,7 +176,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
@@ -200,7 +200,7 @@ export default function RealEstateMaintenanceHowItWork() {
 
                 {value.description21 && (
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     sx={{
                       opacity: 0.72,
                       ...(index % 2 && {
@@ -216,7 +216,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
@@ -233,7 +233,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
@@ -257,7 +257,7 @@ export default function RealEstateMaintenanceHowItWork() {
 
                 {value.description31 && (
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     sx={{
                       opacity: 0.72,
                       ...(index % 2 && {
@@ -273,7 +273,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
@@ -290,7 +290,7 @@ export default function RealEstateMaintenanceHowItWork() {
                   <>
                     <br />
                     <Typography
-                      variant="body1"
+                      variant="body2"
                       sx={{
                         opacity: 0.72,
                         ...(index % 2 && {
