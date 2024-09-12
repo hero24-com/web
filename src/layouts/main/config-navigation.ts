@@ -99,7 +99,7 @@ export const navConfig = [
     ],
   },
   { title: 'Tilaa sankari', path: paths.services.root },
-  { title: 'Huoleton asuminen', path: paths.smartHome },
+  { title: 'Huoleton asuminen', path: paths.smartHome, showIcon: true },
   { title: 'Huoltopalvelut Taloyhtiöille', path: paths.realEstateMaintenance },
   { title: 'Laskuta omia asiakkaita', path: paths.ownCustomer },
   { title: 'Yhteystiedot', path: paths.contact },

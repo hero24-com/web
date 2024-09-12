@@ -13,7 +13,7 @@ import type { NavItemProps, NavItemStateProps } from '../types';
 // ----------------------------------------------------------------------
 
 const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
-  ({ title, path, open, active, subItem, hasChild, externalLink, ...other }, ref) => {
+  ({ title, path, showIcon, open, active, subItem, hasChild, externalLink, ...other }, ref) => {
     const renderContent = (
       <StyledNavItem
         disableRipple
@@ -25,6 +25,8 @@ const NavItem = forwardRef<HTMLDivElement, NavItemProps>(
         {...other}
       >
         {title}
+
+        {showIcon && <Iconify width={20} icon="material-symbols:workspace-premium" sx={{ ml: 0.5 }} />}
 
         {hasChild && <Iconify width={16} icon="carbon:chevron-down" sx={{ ml: 0.75 }} />}
       </StyledNavItem>

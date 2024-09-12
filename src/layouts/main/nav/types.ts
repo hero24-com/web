@@ -6,6 +6,7 @@ import type { ListItemButtonProps } from '@mui/material/ListItemButton';
 export type NavItemBaseProps = {
   title: string;
   path: string;
+  showIcon?: boolean;
   children?: {
     subheader: string;
     isNew?: boolean;

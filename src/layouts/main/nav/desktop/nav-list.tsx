@@ -59,6 +59,7 @@ export default function NavList({ data }: NavListProps) {
         //
         title={data.title}
         path={data.path}
+        showIcon={data.showIcon}
         //
         active={active}
         hasChild={!!data.children}
