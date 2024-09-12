@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-
 // ----------------------------------------------------------------------
 
 const SERVICES_FOR_SHAREHOLDER = [
@@ -21,20 +20,17 @@ const SERVICES_FOR_SHAREHOLDER = [
   {
     number: '3',
     title: 'Kodinkoneet',
-    description:
-      'Saunan kiuas, uuni ja muut kodinkoneet ovat osakkaan vastuulla.',
+    description: 'Saunan kiuas, uuni ja muut kodinkoneet ovat osakkaan vastuulla.',
   },
   {
     number: '4',
     title: 'Sähkötöiden Hoito',
-    description:
-      'Lamppujen, sulakkeiden ja pistorasioiden vaihto on osakkaan tehtävä.',
+    description: 'Lamppujen, sulakkeiden ja pistorasioiden vaihto on osakkaan tehtävä.',
   },
   {
     number: '5',
     title: 'Verhotangot ja Kalusteet',
-    description:
-      'Verhotangot, kaapistot ja muut kiinteät kalusteet ovat osakkaan vastuulla.',
+    description: 'Verhotangot, kaapistot ja muut kiinteät kalusteet ovat osakkaan vastuulla.',
   },
   {
     number: '6',
@@ -78,8 +74,7 @@ const SERVICES_FOR_COMPANY = [
   {
     number: '6',
     title: 'Tuholaistorjunta',
-    description:
-      'Taloyhtiö hoitaa tuholaisten, kuten rottien ja hiirien hävityksen.',
+    description: 'Taloyhtiö hoitaa tuholaisten, kuten rottien ja hiirien hävityksen.',
   },
 ];
 
@@ -127,16 +122,13 @@ export default function RealEstateMaintenanceResponsibility() {
       >
         {SERVICES_FOR_SHAREHOLDER.map((value) => (
           <div key={value.title}>
-            <Typography variant="h1">{value.number}</Typography>
+            <Typography variant="h2">{value.number}</Typography>
 
             <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
               {value.title}
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary' }}>
-              {' '}
-              {value.description}{' '}
-            </Typography>
+            <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
           </div>
         ))}
       </Box>
@@ -165,16 +157,13 @@ export default function RealEstateMaintenanceResponsibility() {
       >
         {SERVICES_FOR_COMPANY.map((value) => (
           <div key={value.title}>
-            <Typography variant="h1">{value.number}</Typography>
+            <Typography variant="h2">{value.number}</Typography>
 
             <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
               {value.title}
             </Typography>
 
-            <Typography sx={{ color: 'text.secondary' }}>
-              {' '}
-              {value.description}{' '}
-            </Typography>
+            <Typography sx={{ color: 'text.secondary' }}> {value.description} </Typography>
           </div>
         ))}
       </Box>

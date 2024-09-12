@@ -28,11 +28,11 @@ const TIMELINES = [
     step: '2. Kiinteistön Ylläpito',
     title1: 'Yleiset Huoltotoimenpiteet',
     description11:
-      'Siivous: Yhteisten tilojen säännöllinen siivous ja puhtaanapito (käytävät, rappukäytävät, hissit, ulkoalueet).',
+      'Siivous: Yhteisten tilojen säännöllinen siivous ja puhtaanapito (käytävät, rappukäytävät, hissit, ulkoalueet). Erikoissiivoukset - Kausittaiset ja tapahtumien jälkeiset siivoukset.',
     description12:
-      'Jätehuolto: Jätteiden keräys ja lajittelu, roskakatosten tyhjennys, kierrätyspisteiden huolto.',
+      'Jätehuolto: Jätteiden keräys ja lajittelu, Roskakatosten tyhjennys, Kierrätyspisteiden huolto ja jätehuollon optimointi.',
     description13:
-      'Viherrakentaminen: Pihan ja puutarhan hoito, istutusten ja nurmikon kunnossapito, lehtien haravointi ja kausihuolto.',
+      'Viherrakentaminen ja Pihatyöt: Pihan ja puutarhan hoito - Istutusten ja nurmikon kunnossapito, lehtien haravointi, kausihuolto. Piharakenteet - Korjaukset ja huollot, kuten laatoitukset ja porttien ylläpito.',
     title2: 'Hätähuolto',
     description21:
       'Putkistohäiriöt: Putkivuotojen korjaus, viemärin tukosten avaaminen, vuotavien hanien ja wc-istuimien korjaus.',
@@ -41,8 +41,7 @@ const TIMELINES = [
     description23:
       'Lämmitysjärjestelmän Huolto: Lämmityslaitteiden tarkastus ja säätö, lämmitysjärjestelmän korjaukset.',
     title3: 'Lumenpoisto ja Talvikunnossapito',
-    description31:
-      'Lumenpoisto: Lumenauraus ja -sulatus pihalta, ajoteiltä ja kulkuväyliltä.',
+    description31: 'Lumenpoisto: Lumenauraus ja -sulatus pihalta, ajoteiltä ja kulkuväyliltä.',
     description32:
       'Liukkaudenestotoimenpiteet: Jäänestoliuosten levitys, liukkauden torjunta ulkoalueilla.',
     description33:
@@ -51,37 +50,32 @@ const TIMELINES = [
   {
     step: '3. Sähköinen Huoltokirja',
     description11:
-      'Huoltotöiden Seuranta: Sähköinen huoltokirja tarjoaa reaaliaikaisen seurannan huoltotöistä, ongelmien dokumentoinnista ja toimenpiteistä.',
+      'Huoltotöiden Seuranta: Reaaliaikainen seuranta huoltotöistä, ongelmien dokumentoinnista ja toimenpiteistä.',
     description12:
       'Tarkastusraportit: Yksityiskohtaiset raportit huoltotöistä, havaituista ongelmista ja korjauksista. Raportit auttavat hallitusta ja isännöitsijöitä seuraamaan kiinteistön kuntoa ja tekemään informoituja päätöksiä.',
-  },
-  {
-    step: '4. Isännöintipalvelut',
-    description11:
-      'Kiinteistöhallinta: Kiinteistön ylläpidon suunnittelu, valvonta ja koordinointi.',
-    description12:
-      'Asukassuhteet: Asukaskyselyiden ja -valitusten käsittely, tiedottaminen ja vuorovaikutus asukkaiden kanssa.',
     description13:
       'Talouden Hallinta: Budjetointi, taloussuunnittelu, kirjanpito ja raportointi talouden hallinnan tueksi.',
   },
   {
-    step: '5. Asukkaiden Palvelut',
-    title1: 'Tukipalvelut Asukkaille',
+    step: '4. Asukkaiden Tukipalvelut',
     description11:
-      'Häiriö- ja korjausilmoitukset: Huoltotöiden koordinointi ja ilmoitusten käsittely asukkailta.',
+      'Tukipalvelut Asukkaille: Häiriö- ja Korjausilmoitukset: Huoltotöiden koordinointi ja ilmoitusten käsittely asukkailta. Pika-apu: Nopeat toimenpiteet kiireellisiin ongelmatilanteisiin.',
+  },
+  {
+    step: '5. Remontti- ja Kunnossapitopalvelut',
+    description11:
+      'Pienet ja Suuret Remontit: Kylpyhuone- ja Keittiöremontit: Täydellinen remonttipalvelu alkaen suunnittelusta ja materiaalivalinnoista viimeistelyyn. Sisä- ja Ulkoseinien Maalaus: Maalauspalvelut, seinäkorjaukset ja pinnoitus.',
     description12:
-      'Kodinhoito: Avustaminen kodin pienissä huolto- ja korjaustöissä, kuten laitteiden käyttöön liittyvissä kysymyksissä.',
+      'Rakennus- ja Korjaustyöt: Rakennuskorjaukset: Korjaukset ja parannukset rakennuksessa, mukaan lukien rakenteelliset korjaukset. Sisätilojen Parannukset: Huoneistoremontit, lattian asennus, ovien ja ikkunoiden vaihto.',
+  },
+  {
+    step: '6. Lisäpalvelut',
+    description11:
+      'Energia- ja Vesimittarien Tarkastukset: Säännölliset tarkastukset ja huolto energian ja veden kulutuksen optimointiin.',
   },
 ];
 
-const COLORS = [
-  'primary',
-  'secondary',
-  'info',
-  'success',
-  'warning',
-  'error',
-] as const;
+const COLORS = ['primary', 'secondary', 'info', 'success', 'warning', 'error'] as const;
 
 // ----------------------------------------------------------------------
 
@@ -109,18 +103,12 @@ export default function RealEstateMaintenanceHowItWork() {
             textAlign: { xs: 'center', md: 'unset' },
           }}
         >
-          <Typography
-            variant="h2"
-            sx={{ textAlign: 'center', mb: { xs: 4 } }}
-          >
-            Hero24 – Kattavat ja Luotettavat Palvelut Asunto-Osakeyhtiöille
+          <Typography variant="h2" sx={{ textAlign: 'center', mb: { xs: 4 } }}>
+            Hero24 Kiinteistön Yleisimmät Huoltopalvelut Taloyhtiöille.
           </Typography>
 
           <Typography sx={{ color: 'text.secondary', textAlign: 'center' }}>
-            Hero24 tarjoaa täydelliset huolto- ja ylläpitopalvelut
-            asunto-osakeyhtiöille, jotta kiinteistön hallinta olisi
-            mahdollisimman vaivatonta ja tehokasta. Tarjoamme kokonaisratkaisun,
-            joka kattaa kaikki kiinteistöhallinnan tarpeet 24/7.
+            Tarjoamme myös monia muita palveluita tarpeen mukaan.
           </Typography>
         </Stack>
 
@@ -140,148 +128,180 @@ export default function RealEstateMaintenanceHowItWork() {
               </TimelineSeparator>
 
               <TimelineContent sx={{ pb: { xs: 3, md: 5 } }}>
-                <Typography
-                  variant="overline"
-                  sx={{ color: `${COLORS[index]}.main` }}
-                >
+                <Typography variant="overline" sx={{ color: `${COLORS[index]}.main` }}>
                   {value.step}
                 </Typography>
 
-                <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
-                  {value.title1}
-                </Typography>
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description11}
-                </Typography>
-
+                <br />
                 <br />
 
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description12}
-                </Typography>
+                {value.title1 && (
+                  <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
+                    {value.title1}
+                  </Typography>
+                )}
 
-                <br />
+                {value.description11 && (
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      opacity: 0.72,
+                      ...(index % 2 && {
+                        ml: 'auto',
+                      }),
+                    }}
+                  >
+                    {value.description11}
+                  </Typography>
+                )}
 
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description13}
-                </Typography>
+                {value.description12 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description12}
+                    </Typography>
+                  </>
+                )}
 
-                <br />
+                {value.description13 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description13}
+                    </Typography>
+                  </>
+                )}
 
-                <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
-                  {value.title2}
-                </Typography>
+                {value.title2 && (
+                  <>
+                    <br />
+                    <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
+                      {value.title2}
+                    </Typography>
+                  </>
+                )}
 
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description21}
-                </Typography>
+                {value.description21 && (
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      opacity: 0.72,
+                      ...(index % 2 && {
+                        ml: 'auto',
+                      }),
+                    }}
+                  >
+                    {value.description21}
+                  </Typography>
+                )}
 
-                <br />
+                {value.description22 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description22}
+                    </Typography>
+                  </>
+                )}
 
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description22}
-                </Typography>
+                {value.description23 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description23}
+                    </Typography>
+                  </>
+                )}
 
-                <br />
+                {value.title3 && (
+                  <>
+                    <br />
+                    <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
+                      {value.title3}
+                    </Typography>
+                  </>
+                )}
 
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description23}
-                </Typography>
+                {value.description31 && (
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      opacity: 0.72,
+                      ...(index % 2 && {
+                        ml: 'auto',
+                      }),
+                    }}
+                  >
+                    {value.description31}
+                  </Typography>
+                )}
 
-                <br />
+                {value.description32 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description32}
+                    </Typography>
+                  </>
+                )}
 
-                <Typography variant="h5" sx={{ mt: 0.5, mb: 1 }}>
-                  {value.title3}
-                </Typography>
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description31}
-                </Typography>
-
-                <br />
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description32}
-                </Typography>
-
-                <br />
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    opacity: 0.72,
-                    ...(index % 2 && {
-                      ml: 'auto',
-                    }),
-                  }}
-                >
-                  {value.description33}
-                </Typography>
+                {value.description33 && (
+                  <>
+                    <br />
+                    <Typography
+                      variant="body1"
+                      sx={{
+                        opacity: 0.72,
+                        ...(index % 2 && {
+                          ml: 'auto',
+                        }),
+                      }}
+                    >
+                      {value.description33}
+                    </Typography>
+                  </>
+                )}
               </TimelineContent>
             </TimelineItem>
           ))}

@@ -54,7 +54,7 @@ export default function RealEstateMaintenanceCost({ sx, ...other }: BoxProps) {
           spacing={3}
           sx={{
             mb: 5,
-            maxWidth: 800,
+            maxWidth: 900,
             mx: { xs: 'auto', md: 'unset' },
             textAlign: { xs: 'center', md: 'unset' },
           }}
@@ -64,10 +64,9 @@ export default function RealEstateMaintenanceCost({ sx, ...other }: BoxProps) {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Kiinteistön huoltopalvelujen hinnoittelu vaihtelee useiden
-            tekijöiden mukaan. Ymmärrämme, että kustannusten arviointi voi olla
-            haastavaa, joten tässä selitämme, mitkä asiat vaikuttavat hintaan:
-            Suomea!
+            Kiinteistön huoltopalvelujen hinnoittelu vaihtelee useiden tekijöiden mukaan.
+            Ymmärrämme, että kustannusten arviointi voi olla haastavaa, joten tässä selitämme, mitkä
+            asiat vaikuttavat hintaan:
           </Typography>
         </Stack>
 

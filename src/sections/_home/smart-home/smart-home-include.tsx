@@ -50,7 +50,7 @@ export default function SmartHomeInclude() {
         sx={{
           mt: 3,
           mx: 'auto',
-          maxWidth: 800,
+          maxWidth: 900,
           color: 'text.secondary',
           mb: { xs: 8, md: 10 },
         }}

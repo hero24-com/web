@@ -36,7 +36,6 @@ export default function RealEstateMaintenanceForm({ formId }: Props) {
     <Container
       sx={{
         overflow: 'hidden',
-        pt: { xs: 5, md: 10 },
         pb: { xs: 10, md: 15 },
       }}
     >

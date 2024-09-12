@@ -58,7 +58,7 @@ export default function SmartHomeBenefits() {
             mt: 3,
             mx: 'auto',
             opacity: 0.72,
-            maxWidth: 800,
+            maxWidth: 900,
             textAlign: 'center',
             mb: { xs: 8, md: 10 },
           }}

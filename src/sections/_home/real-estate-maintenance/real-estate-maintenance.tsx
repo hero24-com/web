@@ -45,20 +45,28 @@ export default function RealEstateMaintenance() {
           spacing={3}
           sx={{
             mx: 'auto',
-            maxWidth: 800,
+            maxWidth: 900,
             textAlign: 'center',
           }}
         >
           <Typography variant="h2">
-            Kiinteistön Huoltopalvelut – Mitkä Korjaus- ja Kunnossapitovastuut
-            Kuuluvat Taloyhtiölle ja Osakkaalle?
+            Hero24 – Kattavat ja Luotettavat Palvelut Asunto-Osakeyhtiöille
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            Taloyhtiön huolto- ja kunnossapitovastuut jakautuvat tarkasti
-            osakkaiden ja yhtiön kesken. Tällöin on tärkeää ymmärtää, mitkä
-            huolto- ja korjaustehtävät kuuluvat yhtiön vastuulle ja mitkä
-            osakkaalle. Tässä artikkelissa selvennämme näitä vastuita ja
-            tarjoamme esimerkkejä yleisimmistä huolto- ja korjaustarpeista.
+            Hero24 tarjoaa täydelliset huolto- ja ylläpitopalvelut asunto-osakeyhtiöille, jotta
+            kiinteistön hallinta olisi mahdollisimman vaivatonta ja tehokasta. Tarjoamme
+            kokonaisratkaisun, joka kattaa kaikki kiinteistöhallinnan tarpeet 24/7.
+          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+            Hero24 on luotettava kumppani asunto-osakeyhtiöille kiinteistönhuollon kaikissa
+            tarpeissa. Tarjoamme säännöllistä huoltoa, kiireellisiä korjauksia sekä suuria
+            remonttiprojekteja Uudellamaalla, Varsinais-Suomessa, Pirkanmaalla, Keski-Suomessa ja
+            Päijät-Hämeessä. Ammattitaitoinen henkilökuntamme varmistaa, että kiinteistöt pysyvät
+            turvallisina ja viihtyisinä ympäri vuoden. Joustava palvelumme kattaa kaiken, mitä
+            taloyhtiösi tarvitsee toimivaan arkeen.
+          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>
+            Ota yhteyttä ja pyydä tarjous, niin suunnitellaan tarpeisiisi sopiva palveluratkaisu!
           </Typography>
         </Stack>
       </Box>
@@ -66,11 +74,7 @@ export default function RealEstateMaintenance() {
       <Grid container spacing={3}>
         {(smUp ? IMAGES : IMAGES.slice(0, 1)).map((img, index) => (
           <Grid key={img} xs={12} sm={6} md={index === 0 ? 6 : 2}>
-            <Image
-              alt={img}
-              src={img}
-              sx={{ height: 350, borderRadius: 2, width: 1 }}
-            />
+            <Image alt={img} src={img} sx={{ height: 350, borderRadius: 2, width: 1 }} />
           </Grid>
         ))}
       </Grid>

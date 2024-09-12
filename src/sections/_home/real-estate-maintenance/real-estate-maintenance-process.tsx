@@ -14,25 +14,22 @@ const COLORS = ['primary', 'success'] as const;
 
 const STEPS = [
   {
-    name: 'Kilpailuta Useita Yhtiöitä',
+    name: 'Vähennysoikeus',
     description:
-      'Pyydä tarjoukset useilta alueesi yrityksiltä ja vertaile niitä huolellisesti.',
-    icon: '/assets/icons/ic_popularity.svg',
+      ' Vähennysoikeus kattaa osan huoltopalveluiden työosuudesta, ja vuonna 2024 maksimimäärä on 3 500 € per henkilö vuodessa.',
+    icon: '/assets/icons/ic_money.svg',
   },
   {
-    name: 'Laadun Arviointi',
+    name: 'Vähennys',
     description:
-      'Hintaa ei kannata valita ainoaksi kriteeriksi. Luotettavuus, kokemus ja palvelun laatu ovat yhtä tärkeitä tekijöitä.',
-    icon: '/assets/icons/ic_reputation.svg',
+      'Vähennys on jopa 60 % työn osuudesta, mikä voi merkittävästi pienentää kustannuksia.',
+    icon: '/assets/icons/ic_report.svg',
   },
 ];
 
 // ----------------------------------------------------------------------
 
-export default function RealEstateMaintenanceProcess({
-  sx,
-  ...other
-}: BoxProps) {
+export default function RealEstateMaintenanceProcess({ sx, ...other }: BoxProps) {
   return (
     <Box
       component="section"
@@ -48,20 +45,15 @@ export default function RealEstateMaintenanceProcess({
           spacing={3}
           sx={{
             mb: 5,
-            maxWidth: 800,
+            maxWidth: 900,
             mx: { xs: 'auto', md: 'unset' },
             textAlign: { xs: 'center', md: 'unset' },
           }}
         >
-          <Typography variant="h2">
-            Kotitalousvähennys Kiinteistön Huollossa
-          </Typography>
+          <Typography variant="h2">Kotitalousvähennys Kiinteistön Huollossa</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
             Hyödynnä kotitalousvähennys kiinteistön huoltokustannuksista.
-            Vähennysoikeus kattaa osan huoltopalveluiden työosuudesta, ja vuonna
-            2024 maksimimäärä on 3 500 € per henkilö vuodessa. Vähennys on jopa
-            60 % työn osuudesta, mikä voi merkittävästi pienentää kustannuksia.
           </Typography>
         </Stack>
 
@@ -116,16 +108,10 @@ function ServiceItem({ item, index }: ServiceItemProps) {
         }}
       />
 
-      <Typography
-        component="h6"
-        variant="h5"
-        sx={{ mt: 3, textAlign: 'right' }}
-      >
+      <Typography component="h6" variant="h5" sx={{ mt: 3, textAlign: 'right' }}>
         {item.name}
       </Typography>
-      <Typography sx={{ mt: 3, textAlign: 'left' }}>
-        {item.description}
-      </Typography>
+      <Typography sx={{ mt: 3, textAlign: 'left' }}>{item.description}</Typography>
     </Card>
   );
 }

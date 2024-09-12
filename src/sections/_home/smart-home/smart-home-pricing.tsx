@@ -32,7 +32,7 @@ export default function SmartHomePricing() {
         sx={{
           pb: { xs: 5, md: 10 },
           mx: 'auto',
-          maxWidth: 800,
+          maxWidth: 900,
           textAlign: 'center',
         }}
       >
