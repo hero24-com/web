@@ -118,7 +118,6 @@ function Logo({ single = false, sx }: LogoProps) {
       <Box
         sx={{
           width: single ? 64 : 75,
-          marginTop: single ? 0 : 0.5,
           lineHeight: 0,
           cursor: 'pointer',
           display: 'inline-flex',
