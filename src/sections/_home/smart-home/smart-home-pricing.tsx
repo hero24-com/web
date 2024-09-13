@@ -41,25 +41,18 @@ export default function SmartHomePricing() {
         </Typography>
 
         <Typography align="center" sx={{ color: 'text.secondary' }}>
-          Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se
-          on käytännön tapa elää. Me tarjoamme sinulle kokonaisvaltaisen
-          ratkaisun, joka tekee kodin huollosta ja ylläpidosta vaivatonta,
-          tehokasta ja stressitöntä. Meidän palvelumme on suunniteltu
-          erityisesti sinulle, joka arvostat rauhallista ja mukavaa asumista
-          ilman huoltoa vaativia ongelmia. Premium-tilaajana saat lisäksi
-          ainutlaatuisia etuja, kuten alennuksia, nopeampaa palvelua, laajan
-          vakuutuksen ja ilmaisia konsultaatioita/arviokäyntejä, jotka tekevät
+          Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se on käytännön tapa
+          elää. Me tarjoamme sinulle kokonaisvaltaisen ratkaisun, joka tekee kodin huollosta ja
+          ylläpidosta vaivatonta, tehokasta ja stressitöntä. Meidän palvelumme on suunniteltu
+          erityisesti sinulle, joka arvostat rauhallista ja mukavaa asumista ilman huoltoa vaativia
+          ongelmia. Premium-tilaajana saat lisäksi ainutlaatuisia etuja, kuten alennuksia, nopeampaa
+          palvelua, laajan vakuutuksen ja ilmaisia konsultaatioita/arviokäyntejä, jotka tekevät
           asumisestasi vieläkin huolettomampaa.
         </Typography>
 
-        <Typography
-          variant="overline"
-          align="center"
-          sx={{ color: 'primary.main' }}
-        >
-          Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti
-          kaikista huolettoman asumisen eduista! Tilaus 12 kuukaudeksi ja jatkuu
-          toistuvana voimassa sen jälkeen
+        <Typography variant="overline" align="center" sx={{ color: 'primary.main' }}>
+          Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti kaikista huolettoman
+          asumisen eduista!
         </Typography>
       </Stack>
 
@@ -113,10 +106,7 @@ export default function SmartHomePricing() {
 
                 <Tooltip title={option.tootip} placement="left" arrow>
                   <div>
-                    <Iconify
-                      icon="carbon:information"
-                      sx={{ color: 'text.secondary' }}
-                    />
+                    <Iconify icon="carbon:information" sx={{ color: 'text.secondary' }} />
                   </div>
                 </Tooltip>
               </Stack>

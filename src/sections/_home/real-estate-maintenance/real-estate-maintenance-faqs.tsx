@@ -23,9 +23,9 @@ const FAQs = [
     question: '24/7 Palvelu',
     answer: (
       <Typography>
-        Hero24 tarjoaa ympärivuorokautista huoltoa ja asiakaspalvelua. Olemme
-        valmiina reagoimaan kiireellisiin tilanteisiin milloin tahansa, mikä
-        takaa kiinteistön jatkuvan ja keskeytymättömän toiminnan.
+        Hero24 tarjoaa ympärivuorokautista huoltoa ja asiakaspalvelua. Olemme valmiina reagoimaan
+        kiireellisiin tilanteisiin milloin tahansa, mikä takaa kiinteistön jatkuvan ja
+        keskeytymättömän toiminnan.
       </Typography>
     ),
   },
@@ -33,9 +33,8 @@ const FAQs = [
     question: 'Kattava Palvelukokonaisuus',
     answer: (
       <Typography>
-        Meidän palvelumme kattavat kaikki kiinteistönhuollon tarpeet yhdellä
-        sopimuksella. Tämä poistaa tarvetta useille eri palveluntarjoajille ja
-        yksinkertaistaa hallintaa.
+        Meidän palvelumme kattavat kaikki kiinteistönhuollon tarpeet yhdellä sopimuksella. Tämä
+        poistaa tarvetta useille eri palveluntarjoajille ja yksinkertaistaa hallintaa.
       </Typography>
     ),
   },
@@ -43,9 +42,8 @@ const FAQs = [
     question: 'Joustavuus ja Räätälöitävyys',
     answer: (
       <Typography>
-        Tarjoamme joustavat huoltosopimusvaihtoehdot, jotka voidaan räätälöidä
-        vastaamaan tarkasti teidän tarpeitanne. Tämä varmistaa, että maksatte
-        vain siitä, mitä todella tarvitsette.
+        Tarjoamme joustavat huoltosopimusvaihtoehdot, jotka voidaan räätälöidä vastaamaan tarkasti
+        teidän tarpeitanne. Tämä varmistaa, että maksatte vain siitä, mitä todella tarvitsette.
       </Typography>
     ),
   },
@@ -53,9 +51,8 @@ const FAQs = [
     question: 'Innovatiivinen Teknologia',
     answer: (
       <Typography>
-        Käytämme sähköistä huoltokirjaa, joka parantaa palveluiden laatua ja
-        tehokkuutta. Tämä mahdollistaa huoltotöiden reaaliaikaisen seurannan ja
-        tarkan dokumentoinnin.
+        Käytämme sähköistä huoltokirjaa, joka parantaa palveluiden laatua ja tehokkuutta. Tämä
+        mahdollistaa huoltotöiden reaaliaikaisen seurannan ja tarkan dokumentoinnin.
       </Typography>
     ),
   },
@@ -63,10 +60,9 @@ const FAQs = [
     question: 'Asiakastyytyväisyys',
     answer: (
       <Typography>
-        Tavoitteenamme on korkealaatuinen asiakaspalvelu ja asukkaiden
-        tyytyväisyys. Suunnittelemme ja toteutamme huolto- ja
-        ylläpitotoimenpiteet, jotka vastaavat asukkaiden ja hallituksen tarpeita
-        ja odotuksia.
+        Tavoitteenamme on korkealaatuinen asiakaspalvelu ja asukkaiden tyytyväisyys. Suunnittelemme
+        ja toteutamme huolto- ja ylläpitotoimenpiteet, jotka vastaavat asukkaiden ja hallituksen
+        tarpeita ja odotuksia.
       </Typography>
     ),
   },
@@ -74,9 +70,8 @@ const FAQs = [
     question: 'Kokemus ja Asiantuntemus',
     answer: (
       <Typography>
-        Monivuotinen kokemus kiinteistöhallinnan ja huollon alalla takaa, että
-        tiedämme, miten eri tilanteet ja ongelmat hoidetaan tehokkaasti ja
-        ammattimaisesti.
+        Monivuotinen kokemus kiinteistöhallinnan ja huollon alalla takaa, että tiedämme, miten eri
+        tilanteet ja ongelmat hoidetaan tehokkaasti ja ammattimaisesti.
       </Typography>
     ),
   },
@@ -113,18 +108,12 @@ export default function RealEstateMaintenanceFAQs({ sx, ...other }: BoxProps) {
             </Typography>
 
             <Iconify
-              icon={
-                expanded === faq.question
-                  ? 'eva:minus-outline'
-                  : 'eva:plus-outline'
-              }
+              icon={expanded === faq.question ? 'eva:minus-outline' : 'eva:plus-outline'}
               sx={{ transform: 'translateY(4px)' }}
             />
           </AccordionSummary>
 
-          <AccordionDetails sx={{ color: 'text.secondary' }}>
-            {faq.answer}
-          </AccordionDetails>
+          <AccordionDetails sx={{ color: 'text.secondary' }}>{faq.answer}</AccordionDetails>
         </Accordion>
       ))}
     </Box>
@@ -145,7 +134,7 @@ export default function RealEstateMaintenanceFAQs({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={8}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ textAlign: 'center' }}>
-                Myyntiargumentit
+                Miksi valita Hero24
               </Typography>
             </AnimatedDiv>
 

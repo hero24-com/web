@@ -18,17 +18,17 @@ export default function RealEstateMaintenanceView() {
     <>
       <RealEstateMaintenance />
 
-      <RealEstateMaintenanceForm formId="3faf4020-8d54-4856-98f1-0cc29c21461e" />
+      <RealEstateMaintenanceForm formId="bab64ad0-fe75-4655-a616-4df7539bd794" />
 
       <RealEstateMaintenanceHowItWork />
+
+      <RealEstateMaintenanceFAQs />
 
       <RealEstateMaintenanceResponsibility />
 
       <RealEstateMaintenanceCost />
 
       <RealEstateMaintenanceProcess />
-
-      <RealEstateMaintenanceFAQs />
 
       <HomeTestimonial testimonials={_testimonials} />
     </>
