@@ -201,7 +201,9 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                         sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
                       />
                     </Link>
-                    {feature.label}
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      {feature.label}
+                    </Link>
                   </Box>
                 </AnimatedDiv>
               ))}
@@ -245,7 +247,9 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                         sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
                       />
                     </Link>
-                    {feature.label}
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      {feature.label}
+                    </Link>
                   </Box>
                 </AnimatedDiv>
               ))}
@@ -305,7 +309,9 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                         sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
                       />
                     </Link>
-                    {feature.label}
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      {feature.label}
+                    </Link>
                   </Box>
                 </AnimatedDiv>
               ))}
@@ -349,7 +355,9 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                         sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
                       />
                     </Link>
-                    {feature.label}
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      {feature.label}
+                    </Link>
                   </Box>
                 </AnimatedDiv>
               ))}
@@ -409,7 +417,9 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                         sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
                       />
                     </Link>
-                    {feature.label}
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      {feature.label}
+                    </Link>
                   </Box>
                 </AnimatedDiv>
               ))}
