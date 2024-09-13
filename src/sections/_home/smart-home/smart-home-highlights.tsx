@@ -2,10 +2,13 @@ import type { BoxProps } from '@mui/material/Box';
 
 import { m } from 'framer-motion';
 
+import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+
+import { RouterLink } from 'src/routes/components';
 
 import Image from 'src/components/image';
 import { varFade, MotionViewport } from 'src/components/animate';
@@ -16,14 +19,17 @@ const HIGHLIGHT_FEATURES_1 = [
   {
     label: 'Pihatyöt: Nurmikon hoito, istutukset ja kausihuollot',
     icon: '/assets/images/service/service_21.webp',
+    link: '/pihatyot',
   },
   {
     label: 'Kiinteistöhuolto ja Isännöinti: Ylläpito ja hallinta',
     icon: '/assets/images/service/service_17.webp',
+    link: '/kiinteistohuolto',
   },
   {
     label: 'Pihan Muutos- ja Rakennustyöt: Rakennelmat ja parannukset',
     icon: '/assets/images/service/service_20.webp',
+    link: '/piha-rakentaminen',
   },
 ];
 
@@ -31,26 +37,32 @@ const HIGHLIGHT_FEATURES_2 = [
   {
     label: 'Ilmastointipalvelut: Asennus ja huolto',
     icon: '/assets/images/service/service_1.webp',
+    link: '/ilmastointityot',
   },
   {
     label: 'Remontit ja Rakentaminen: Laajat ja pienet projektit',
     icon: '/assets/images/service/service_19.webp',
+    link: '/remontti',
   },
   {
     label: 'Sähkötyöt: Asennukset ja korjaukset',
     icon: '/assets/images/service/service_10.webp',
+    link: '/sahkoasennukset',
   },
   {
     label: 'Putkityöt: Korjaukset ja huollot',
     icon: '/assets/images/service/service_16.webp',
+    link: '/putkityot',
   },
   {
     label: 'Nikkarointi: Puutyöt ja pienet korjaukset',
     icon: '/assets/images/service/service_12.webp',
+    link: '/kodinkonehuolto',
   },
   {
     label: 'Asbestikartoitukset: Terveys- ja turvallisuuskartoitus',
     icon: '/assets/images/service/service_2.webp',
+    link: '/asbestikartoitus',
   },
 ];
 
@@ -58,14 +70,17 @@ const HIGHLIGHT_FEATURES_3 = [
   {
     label: 'Muuttopalvelu: Sujuva muuttoapua',
     icon: '/assets/images/service/service_15.webp',
+    link: '/muutto',
   },
   {
     label: 'Kantoapu: Huonekalujen kantaminen',
     icon: '/assets/images/service/service_14.webp',
+    link: '/kantoapu',
   },
   {
     label: 'Kuljetusapu: Tavaroiden kuljetus',
     icon: '/assets/images/service/service_8.webp',
+    link: '/kuljetuspalvelut',
   },
 ];
 
@@ -73,26 +88,32 @@ const HIGHLIGHT_FEATURES_4 = [
   {
     label: 'Kotisiivous: Säännöllinen ja erikoissiivous',
     icon: '/assets/images/service/service_3.webp',
+    link: '/kotisiivous',
   },
   {
     label: 'Toimistosiivous: Liike- ja toimistotilojen siivous',
     icon: '/assets/images/service/service_5.webp',
+    link: '/toimistosiivous',
   },
   {
     label: 'Muuttosiivous: Siivous ennen ja jälkeen muuton',
     icon: '/assets/images/service/service_4.webp',
+    link: '/muuttosiivous',
   },
   {
     label: 'Remonttisiivous: Rakennus- ja remonttisiivous',
     icon: '/assets/images/service/service_6.webp',
+    link: '/remonttisiivous',
   },
   {
     label: 'Ikkunanpesu: Ikkunoiden puhdistus',
     icon: '/assets/images/service/service_7.webp',
+    link: '/ikkunanpesu',
   },
   {
     label: 'Kotiapu: Yleinen kotiapu ja avustaminen',
     icon: '/assets/images/service/service_9.webp',
+    link: '/kotiapu',
   },
 ];
 
@@ -100,14 +121,17 @@ const HIGHLIGHT_FEATURES_5 = [
   {
     label: 'Kodinkonehuolto: Koneiden korjaus ja huolto',
     icon: '/assets/images/service/service_13.webp',
+    link: '/kodinkonehuolto',
   },
   {
     label: 'Elektroniikkahuolto: Elektronisten laitteiden korjaus',
     icon: '/assets/images/service/service_11.webp',
+    link: '/elektroniikkahuolto',
   },
   {
     label: 'Kylmälaitteet: Jäähdytys- ja pakastinlaitteiden huolto',
     icon: '/assets/images/service/service_18.webp',
+    link: '/kylmalaitteiden-asennus',
   },
 ];
 
@@ -170,11 +194,13 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                       flexDirection: 'column',
                     }}
                   >
-                    <Image
-                      alt={feature.icon}
-                      src={feature.icon}
-                      sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
-                    />
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      <Image
+                        alt={feature.icon}
+                        src={feature.icon}
+                        sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
+                      />
+                    </Link>
                     {feature.label}
                   </Box>
                 </AnimatedDiv>
@@ -212,11 +238,13 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                       flexDirection: 'column',
                     }}
                   >
-                    <Image
-                      alt={feature.icon}
-                      src={feature.icon}
-                      sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
-                    />
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      <Image
+                        alt={feature.icon}
+                        src={feature.icon}
+                        sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
+                      />
+                    </Link>
                     {feature.label}
                   </Box>
                 </AnimatedDiv>
@@ -270,11 +298,13 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                       flexDirection: 'column',
                     }}
                   >
-                    <Image
-                      alt={feature.icon}
-                      src={feature.icon}
-                      sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
-                    />
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      <Image
+                        alt={feature.icon}
+                        src={feature.icon}
+                        sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
+                      />
+                    </Link>
                     {feature.label}
                   </Box>
                 </AnimatedDiv>
@@ -312,11 +342,13 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                       flexDirection: 'column',
                     }}
                   >
-                    <Image
-                      alt={feature.icon}
-                      src={feature.icon}
-                      sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
-                    />
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      <Image
+                        alt={feature.icon}
+                        src={feature.icon}
+                        sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
+                      />
+                    </Link>
                     {feature.label}
                   </Box>
                 </AnimatedDiv>
@@ -370,11 +402,13 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
                       flexDirection: 'column',
                     }}
                   >
-                    <Image
-                      alt={feature.icon}
-                      src={feature.icon}
-                      sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
-                    />
+                    <Link component={RouterLink} href={feature.link} color="inherit">
+                      <Image
+                        alt={feature.icon}
+                        src={feature.icon}
+                        sx={{ borderRadius: 2, maxHeight: 115, objectFit: 'cover' }}
+                      />
+                    </Link>
                     {feature.label}
                   </Box>
                 </AnimatedDiv>
