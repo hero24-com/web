@@ -11,30 +11,23 @@ import HomeOwnCustomerForm from './home-own-customer-form';
 
 const TABS = [
   {
-    value: 'join',
-    label: 'Liity nyt',
-    component: (
-      <HomeOwnCustomerForm formId="e050bc45-bb41-4735-b8f6-54acace87a07" />
-    ),
-  },
-  {
     value: 'invoice',
     label: 'Laskuta asiakasta',
-    component: (
-      <HomeOwnCustomerForm formId="8c4a0191-b23f-471e-bace-24bf84e349d1" />
-    ),
+    component: <HomeOwnCustomerForm formId="8c4a0191-b23f-471e-bace-24bf84e349d1" />,
+  },
+  {
+    value: 'join',
+    label: 'Liity nyt (ennen laskutusta asiakkaalle)',
+    component: <HomeOwnCustomerForm formId="e050bc45-bb41-4735-b8f6-54acace87a07" />,
   },
 ];
 
 export default function HomeOwnCustomerFormCombined() {
-  const [currentTab, setCurrentTab] = useState('join');
+  const [currentTab, setCurrentTab] = useState('invoice');
 
-  const handleChangeTab = useCallback(
-    (event: React.SyntheticEvent, newValue: string) => {
-      setCurrentTab(newValue);
-    },
-    []
-  );
+  const handleChangeTab = useCallback((event: React.SyntheticEvent, newValue: string) => {
+    setCurrentTab(newValue);
+  }, []);
 
   return (
     <Container
@@ -43,16 +36,13 @@ export default function HomeOwnCustomerFormCombined() {
         pb: { xs: 10, md: 15 },
       }}
     >
-      <Tabs value={currentTab} onChange={handleChangeTab}>
+      <Tabs id="own-customer-form" value={currentTab} onChange={handleChangeTab}>
         {TABS.map((tab) => (
           <Tab key={tab.value} value={tab.value} label={tab.label} />
         ))}
       </Tabs>
 
-      {TABS.map(
-        (tab) =>
-          tab.value === currentTab && <Box key={tab.value}>{tab.component}</Box>
-      )}
+      {TABS.map((tab) => tab.value === currentTab && <Box key={tab.value}>{tab.component}</Box>)}
     </Container>
   );
 }

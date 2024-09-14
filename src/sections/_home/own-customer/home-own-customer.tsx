@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -50,28 +51,38 @@ export default function HomeOwnCustomer() {
           }}
         >
           <Typography variant="h2">
-            Liity Hero24-alustalle – Tarjoa palveluja, laskuta helposti ja
-            tarjoa vakuutukset
+            Liity Hero24-alustalle – Tarjoa palveluja, laskuta helposti ja tarjoa vakuutukset
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>
-            Hero24 ei ole vain asiakkaille – se on myös täydellinen alusta
-            ammattilaisille, olitpa sitten yritys tai yksityishenkilö. Me
-            tarjoamme sinulle mahdollisuuden keskittyä omaan osaamiseesi, kun
-            hoidamme paperityöt ja vakuutusasiat puolestasi. Jos sinulla on oma
-            asiakas ja haluat tarjota laskutus- ja vakuutuspalveluja, Hero24 on
-            ratkaisu juuri sinulle.
+            Hero24 ei ole vain asiakkaille – se on myös täydellinen alusta ammattilaisille, olitpa
+            sitten yritys tai yksityishenkilö. Me tarjoamme sinulle mahdollisuuden keskittyä omaan
+            osaamiseesi, kun hoidamme paperityöt ja vakuutusasiat puolestasi. Jos sinulla on oma
+            asiakas ja haluat tarjota laskutus- ja vakuutuspalveluja, Hero24 on ratkaisu juuri
+            sinulle.
           </Typography>
+          <Typography variant="overline" sx={{ color: 'primary.main' }}>
+            Kun olet liittynyt, voit laskuttaa asiakasta tästä
+          </Typography>
+          <Button
+            href="#own-customer-form"
+            size="large"
+            color="inherit"
+            variant="contained"
+            sx={{
+              mx: 'auto',
+              maxWidth: 300,
+              textAlign: 'center',
+            }}
+          >
+            Laskuta asiakasta
+          </Button>
         </Stack>
       </Box>
 
       <Grid container spacing={3}>
         {(smUp ? IMAGES : IMAGES.slice(0, 1)).map((img, index) => (
           <Grid key={img} xs={12} sm={6} md={index === 0 ? 6 : 2}>
-            <Image
-              alt={img}
-              src={img}
-              sx={{ height: 350, borderRadius: 2, width: 1 }}
-            />
+            <Image alt={img} src={img} sx={{ height: 350, borderRadius: 2, width: 1 }} />
           </Grid>
         ))}
       </Grid>
