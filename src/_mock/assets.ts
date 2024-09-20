@@ -40,7 +40,7 @@ export const _tags = [
   `Kiinteistöhuolto`,
   `Remontit`,
   `Pihan muutos- ja rakennustyöt`,
-  `Ikkunanpesu`,
+  `Remontit`,
   `Rakentaminen`,
 ];
 
