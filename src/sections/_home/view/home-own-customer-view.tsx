@@ -1,13 +1,13 @@
 'use client';
 
-import { _testimonials, _caseStudies } from 'src/_mock';
+import { _caseStudies, _testimonials } from 'src/_mock';
 
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeOwnCustomer from '../own-customer/home-own-customer';
 import HomeOwnCustomerInclude from '../own-customer/home-own-customer-include';
 import HomeOwnCustomerHowItWork from '../own-customer/home-own-customer-how-it-work';
 import HomeOwnCustomerFormCombined from '../own-customer/home-own-customer-form-combined';
-import HomeCaseStudies from '../landing/home-case-studies';
 
 // ----------------------------------------------------------------------
 

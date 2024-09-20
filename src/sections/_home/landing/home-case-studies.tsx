@@ -2,11 +2,10 @@ import type { BoxProps } from '@mui/material/Box';
 import type { Theme, SxProps } from '@mui/material/styles';
 import type { ICaseStudyProps } from 'src/types/case-study';
 
-import { useTheme } from '@mui/material/styles';
-
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import { useTheme } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
@@ -144,7 +143,7 @@ function SmallItem({ item, isSquare, sx }: ItemProps) {
         overflow: 'hidden',
         position: 'relative',
         img: {
-          transition: (theme) =>
+          transition: () =>
             theme.transitions.create(['transform'], {
               easing: theme.transitions.easing.sharp,
               duration: theme.transitions.duration.shorter,

@@ -2,7 +2,7 @@
 
 import { useScroll } from 'framer-motion';
 
-import { _testimonials, _caseStudies } from 'src/_mock';
+import { _caseStudies, _testimonials } from 'src/_mock';
 
 import ScrollProgress from 'src/components/scroll-progress';
 

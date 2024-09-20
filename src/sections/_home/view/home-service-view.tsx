@@ -4,11 +4,11 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import { _services, _testimonials, _caseStudies } from 'src/_mock';
+import { _services, _caseStudies, _testimonials } from 'src/_mock';
 
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeServiceList from '../service/list/home-service-list';
-import HomeCaseStudies from '../landing/home-case-studies';
 
 // ----------------------------------------------------------------------
 

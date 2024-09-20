@@ -1,7 +1,8 @@
 'use client';
 
-import { _testimonials, _caseStudies } from 'src/_mock';
+import { _caseStudies, _testimonials } from 'src/_mock';
 
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import RealEstateMaintenance from '../real-estate-maintenance/real-estate-maintenance';
 import RealEstateMaintenanceCost from '../real-estate-maintenance/real-estate-maintenance-cost';
@@ -10,7 +11,6 @@ import RealEstateMaintenanceForm from '../real-estate-maintenance/real-estate-ma
 import RealEstateMaintenanceProcess from '../real-estate-maintenance/real-estate-maintenance-process';
 import RealEstateMaintenanceHowItWork from '../real-estate-maintenance/real-estate-maintenance-how-it-work';
 import RealEstateMaintenanceResponsibility from '../real-estate-maintenance/real-estate-maintenance-responsibility';
-import HomeCaseStudies from '../landing/home-case-studies';
 
 // ----------------------------------------------------------------------
 

@@ -1,12 +1,12 @@
 'use client';
 
-import { _testimonials, _caseStudies } from 'src/_mock';
+import { _caseStudies, _testimonials } from 'src/_mock';
 
 import HomeJoin from '../join/home-join';
 import HomeJoinForm from '../join/home-join-form';
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeJoinOurMission from '../join/home-join-our-mission';
-import HomeCaseStudies from '../landing/home-case-studies';
 
 // ----------------------------------------------------------------------
 
