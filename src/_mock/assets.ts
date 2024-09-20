@@ -35,6 +35,17 @@ export const _booleans = [
 
 // ----------------------------------------------------------------------
 
+export const _tags = [
+  `Ikkunanpesu`,
+  `Kiinteistöhuolto`,
+  `Remontit`,
+  `Pihan muutos- ja rakennustyöt`,
+  `Ikkunanpesu`,
+  `Rakentaminen`,
+];
+
+// ----------------------------------------------------------------------
+
 export const _fullNames = [
   'Sabrina',
   'Sari',
@@ -390,3 +401,14 @@ export const _descriptions = [
   'Tarjoamme kattavia ja luotettavia pihatöitä, jotta pihasi pysyy siistinä ja viihtyisänä ympäri vuoden. Asiantuntevat ammattilaisemme hoitavat kaiken tarvittavan, jotta sinä voit nauttia kauniista pihasta ilman vaivaa.',
   'Etsitkö muuta palvelua? Meiltä löytyy laaja valikoima eri palveluita. Täytä lomake ja kerro tarpeesi, niin autamme sinua löytämään sen!',
 ];
+
+// ----------------------------------------------------------------------
+
+export const _feedback = [
+  '',
+  'Julia pyysi tarjousta terassin rakentamisesta, ja sovimme arviokäynnin samalle viikolle. Hän sai nopeasti budjettiinsa sopivan tarjouksen, jonka hyväksyi. Sankari rakensi terassin ripeästi ja tarkasti. Julia kommentoi: "Ammattimaista työtä, ystävällinen henkilökunta. Sujuva palvelu, kiitos! Suosittelen vahvasti!"',
+  '',
+  '',
+  'Kohde vaikutti ensiksi hieman hankalalta mutta saatin asiakkaan kanssa yhdessä tehty hyvät työsuunnitelmat ja sitä myöten myös lopputulos oli erittäin hieno. Omalla tavalla erityistä tässä oli tosiaan tuo asia että kyseinen huone on ollu vaille lopputöitä pitkään aika ja nyt se saatin kuntoon, siitä asiakas oli eritystukisopimuksissa kiitollinen.',
+];
+

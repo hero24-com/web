@@ -50,9 +50,8 @@ export const _mock = {
   image: {
     cover: (index: number) => `/assets/images/cover/cover_${index + 1}.jpg`,
     avatar: (index: number) => `/assets/images/avatar/avatar_${index + 1}.jpg`,
-    service: (index: number) =>
-      `/assets/images/service/service_${index + 1}.webp`,
-    gallery: (index: number) =>
-      `/assets/images/gallery/gallery_${index + 1}.webp`,
+    service: (index: number) => `/assets/images/service/service_${index + 1}.webp`,
+    gallery: (index: number) => `/assets/images/gallery/gallery_${index + 1}.webp`,
+    marketing: (index: number) => `/assets/images/marketing/marketing-${index + 1}.webp`,
   },
 };

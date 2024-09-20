@@ -1,6 +1,6 @@
 'use client';
 
-import { _testimonials } from 'src/_mock';
+import { _testimonials, _caseStudies } from 'src/_mock';
 
 import HomeTestimonial from '../testimonial/home-testimonial';
 import RealEstateMaintenance from '../real-estate-maintenance/real-estate-maintenance';
@@ -10,8 +10,11 @@ import RealEstateMaintenanceForm from '../real-estate-maintenance/real-estate-ma
 import RealEstateMaintenanceProcess from '../real-estate-maintenance/real-estate-maintenance-process';
 import RealEstateMaintenanceHowItWork from '../real-estate-maintenance/real-estate-maintenance-how-it-work';
 import RealEstateMaintenanceResponsibility from '../real-estate-maintenance/real-estate-maintenance-responsibility';
+import HomeCaseStudies from '../landing/home-case-studies';
 
 // ----------------------------------------------------------------------
+
+const caseStudies = _caseStudies.slice(0, 6);
 
 export default function RealEstateMaintenanceView() {
   return (
@@ -29,6 +32,8 @@ export default function RealEstateMaintenanceView() {
       <RealEstateMaintenanceCost />
 
       <RealEstateMaintenanceProcess />
+
+      <HomeCaseStudies caseStudies={caseStudies} />
 
       <HomeTestimonial testimonials={_testimonials} />
     </>

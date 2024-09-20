@@ -8,14 +8,17 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
-import { _testimonials } from 'src/_mock';
+import { _testimonials, _caseStudies } from 'src/_mock';
 
 import { varBounce, MotionContainer } from 'src/components/animate';
 
 import HomeService from '../landing/home-service';
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 
 // ----------------------------------------------------------------------
+
+const caseStudies = _caseStudies.slice(0, 6);
 
 export default function OfferRequestSentView() {
   return (
@@ -52,6 +55,8 @@ export default function OfferRequestSentView() {
         </Stack>
 
         <HomeService />
+
+        <HomeCaseStudies caseStudies={caseStudies} />
 
         <HomeTestimonial testimonials={_testimonials} />
       </Container>
