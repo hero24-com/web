@@ -4,10 +4,11 @@ import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 
-import { _services, _testimonials } from 'src/_mock';
+import { _services, _testimonials, _caseStudies } from 'src/_mock';
 
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
+import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
@@ -18,6 +19,7 @@ import HomeServiceDetailsReserveForm from '../service/details/home-service-detai
 // ----------------------------------------------------------------------
 
 const _mockService = _services[13];
+const caseStudies = _caseStudies.slice(0, 6);
 
 export default function MovingLiftingView() {
   return (
@@ -30,12 +32,7 @@ export default function MovingLiftingView() {
 
         <HomeServiceDetailsGallery images={_mockService.gallery14} />
 
-        <Grid
-          container
-          columnSpacing={8}
-          rowSpacing={5}
-          direction="row-reverse"
-        >
+        <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm formId="4531c797-8991-44c8-8a66-728658006f6d" />
           </Grid>
@@ -53,6 +50,8 @@ export default function MovingLiftingView() {
       <Divider sx={{ my: 10 }} />
 
       <HomeTestimonial testimonials={_testimonials} />
+
+      <HomeCaseStudies caseStudies={caseStudies} />
 
       <HomeServiceListSimilar services={_services.slice(-4)} />
     </>

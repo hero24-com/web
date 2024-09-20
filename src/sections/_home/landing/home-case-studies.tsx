@@ -29,7 +29,7 @@ export default function HomeCaseStudies({ caseStudies, sx, ...other }: Props) {
     >
       <Container>
         <Stack spacing={3} sx={{ textAlign: { xs: 'center', md: 'unset' } }}>
-          <Typography variant="h2">Viitteet</Typography>
+          <Typography variant="h2">Referenssit asiakkailta</Typography>
         </Stack>
 
         <Grid spacing={3} container alignItems="center" sx={{ py: { xs: 5, md: 10 } }}>
