@@ -4,7 +4,7 @@ import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 
-import { _services, _testimonials, _caseStudies } from 'src/_mock';
+import { _services, _caseStudies, _testimonials } from 'src/_mock';
 
 import CustomBreadcrumbs from 'src/components/custom-breadcrumbs';
 
