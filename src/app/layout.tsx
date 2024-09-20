@@ -3,6 +3,7 @@ import 'src/global.css';
 
 // ----------------------------------------------------------------------
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import ThemeProvider from 'src/theme';
 import { primaryFont } from 'src/theme/typography';
 import { LocalizationProvider } from 'src/locales';
@@ -78,6 +79,7 @@ export default function RootLayout({ children }: Props) {
           </SettingsProvider>
         </LocalizationProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
