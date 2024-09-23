@@ -35,7 +35,7 @@ export const _booleans = [
 
 // ----------------------------------------------------------------------
 
-export const _citiesFinland = [
+export const _citiesFinlandArea1 = [
   'Helsinki',
   'Espoo',
   'Vantaa',
@@ -54,6 +54,9 @@ export const _citiesFinland = [
   'Raasepori',
   'Hanko',
   'Karkkila',
+];
+
+export const _citiesFinlandArea2 = [
   'Turku',
   'Salo',
   'Kaarina',
@@ -78,6 +81,9 @@ export const _citiesFinland = [
   'Vehmaa',
   'Kustavi',
   'Pyhäranta',
+];
+
+export const _citiesFinlandArea3 = [
   'Tampere',
   'Nokia',
   'Ylöjärvi',
@@ -98,6 +104,9 @@ export const _citiesFinland = [
   'Vesilahti',
   'Pälkäne',
   'Juupajoki',
+];
+
+export const _citiesFinlandArea4 = [
   'Jyväskylä',
   'Äänekoski',
   'Jämsä',
@@ -120,6 +129,9 @@ export const _citiesFinland = [
   'Hankasalmi',
   'Joutsa',
   'Leivonmäki',
+];
+
+export const _citiesFinlandArea5 = [
   'Lahti',
   'Heinola',
   'Hollola',
@@ -132,7 +144,7 @@ export const _citiesFinland = [
   'Hartola',
 ];
 
-export const _citiesSpain = [
+export const _citiesSpainArea1 = [
   'Málaga',
   'Marbella',
   'Fuengirola',

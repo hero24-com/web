@@ -18,7 +18,14 @@ import { RouterLink } from 'src/routes/components';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import { _citiesSpain, _citiesFinland } from 'src/_mock';
+import {
+  _citiesSpainArea1,
+  _citiesFinlandArea1,
+  _citiesFinlandArea2,
+  _citiesFinlandArea3,
+  _citiesFinlandArea4,
+  _citiesFinlandArea5,
+} from 'src/_mock';
 
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
@@ -106,13 +113,13 @@ export default function Footer() {
 
       <Container>
         <Grid container spacing={3} justifyContent={{ md: 'space-between' }} sx={{ py: 3 }}>
-          <Grid xs={6} md={10}>
+          <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Finland
+              Uusimaa
             </Typography>
             {mdUp ? (
-              <Masonry columns={6} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {_citiesFinland.map((value) => (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesFinlandArea1.map((value) => (
                   <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
                     {value}
                   </Typography>
@@ -120,7 +127,7 @@ export default function Footer() {
               </Masonry>
             ) : (
               <Stack spacing={1.5}>
-                {_citiesFinland.map((value) => (
+                {_citiesFinlandArea1.map((value) => (
                   <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
                     {value}
                   </Typography>
@@ -128,13 +135,13 @@ export default function Footer() {
               </Stack>
             )}
           </Grid>
-          <Grid xs={6} md={2}>
+          <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Spain
+              Varsinais-Suomi
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
-                {_citiesSpain.map((value) => (
+                {_citiesFinlandArea2.map((value) => (
                   <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
                     {value}
                   </Typography>
@@ -142,7 +149,95 @@ export default function Footer() {
               </Masonry>
             ) : (
               <Stack spacing={1.5}>
-                {_citiesSpain.map((value) => (
+                {_citiesFinlandArea2.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Stack>
+            )}
+          </Grid>
+          <Grid xs={4} md={2}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Pirkanmaa
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesFinlandArea3.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesFinlandArea3.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Stack>
+            )}
+          </Grid>
+          <Grid xs={4} md={2}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Keski-Suomi
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesFinlandArea4.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesFinlandArea4.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Stack>
+            )}
+          </Grid>
+          <Grid xs={4} md={2}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Päijät-Häme
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesFinlandArea5.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesFinlandArea5.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Stack>
+            )}
+          </Grid>
+          <Grid xs={4} md={2}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Costa del Sol (Etelä-Espanjassa, Aurinkorannikko)
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesSpainArea1.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesSpainArea1.map((value) => (
                   <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
                     {value}
                   </Typography>
