@@ -18,6 +18,8 @@ import { RouterLink } from 'src/routes/components';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
 
+import { _citiesSpain, _citiesFinland } from 'src/_mock';
+
 import Logo from 'src/components/logo';
 import Iconify from 'src/components/iconify';
 
@@ -43,12 +45,9 @@ const StyledAppStoreButton = styled(Button)(({ theme }) => ({
 export default function Footer() {
   const mdUp = useResponsive('up', 'md');
 
-  const mobileTitle =
-    navConfig.find((i) => i.title === 'Palvelut')?.children || [];
+  const mobileTitle = navConfig.find((i) => i.title === 'Palvelut')?.children || [];
 
-  const mobileList = mobileTitle.sort(
-    (listA, listB) => Number(listB.order) - Number(listA.order)
-  );
+  const mobileList = mobileTitle.sort((listA, listB) => Number(listB.order) - Number(listA.order));
 
   const desktopList = serviceLinks.sort(
     (listA, listB) => Number(listB.order) - Number(listA.order)
@@ -73,9 +72,8 @@ export default function Footer() {
                 <Logo single />
 
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja
-                  räätälöitynä juuri sinulle Ei enää monimutkaisia
-                  tarjouspyyntöjä tai loputtomia puheluita.
+                  Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja räätälöitynä juuri
+                  sinulle Ei enää monimutkaisia tarjouspyyntöjä tai loputtomia puheluita.
                 </Typography>
               </Stack>
 
@@ -88,12 +86,7 @@ export default function Footer() {
 
           <Grid xs={12} md={8}>
             {mdUp ? (
-              <Masonry
-                columns={6}
-                spacing={2}
-                defaultColumns={4}
-                defaultSpacing={2}
-              >
+              <Masonry columns={6} spacing={2} defaultColumns={4} defaultSpacing={2}>
                 {renderLists.map((list) => (
                   <ListDesktop key={list.subheader} list={list} />
                 ))}
@@ -102,6 +95,57 @@ export default function Footer() {
               <Stack spacing={1.5}>
                 {renderLists.map((list) => (
                   <ListMobile key={list.subheader} list={list} />
+                ))}
+              </Stack>
+            )}
+          </Grid>
+        </Grid>
+      </Container>
+
+      <Divider />
+
+      <Container>
+        <Grid container spacing={3} justifyContent={{ md: 'space-between' }} sx={{ py: 3 }}>
+          <Grid xs={6} md={10}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Finland
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={6} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesFinland.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesFinland.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Stack>
+            )}
+          </Grid>
+          <Grid xs={6} md={2}>
+            <Typography variant="h6" sx={{ pb: 3 }}>
+              Spain
+            </Typography>
+            {mdUp ? (
+              <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
+                {_citiesSpain.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
+                ))}
+              </Masonry>
+            ) : (
+              <Stack spacing={1.5}>
+                {_citiesSpain.map((value) => (
+                  <Typography key={value} variant="caption" sx={{ color: 'text.secondary' }}>
+                    {value}
+                  </Typography>
                 ))}
               </Stack>
             )}
@@ -145,6 +189,30 @@ export default function Footer() {
               sx={{ color: 'text.secondary' }}
             >
               Käyttöehdot (Hero)
+            </Link>
+
+            <Link
+              href="https://api.hero24.com/privacy/fi"
+              target="_blank"
+              rel="noopener"
+              color="inherit"
+              underline="none"
+              variant="caption"
+              sx={{ color: 'text.secondary' }}
+            >
+              Yksityisyys (FI)
+            </Link>
+
+            <Link
+              href="https://api.hero24.com/privacy/en"
+              target="_blank"
+              rel="noopener"
+              color="inherit"
+              underline="none"
+              variant="caption"
+              sx={{ color: 'text.secondary' }}
+            >
+              Privacy (EN)
             </Link>
           </Stack>
         </Stack>
@@ -213,9 +281,7 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
         {list.subheader}
         <Iconify
           width={16}
-          icon={
-            listExpand.value ? 'carbon:chevron-down' : 'carbon:chevron-right'
-          }
+          icon={listExpand.value ? 'carbon:chevron-down' : 'carbon:chevron-right'}
           sx={{ ml: 0.5 }}
         />
       </Typography>
@@ -254,9 +320,7 @@ export function AppStoreButton({ ...other }: StackProps) {
   return (
     <Stack direction="row" flexWrap="wrap" spacing={2} {...other}>
       <Link component={RouterLink} href={paths.appStoreLink}>
-        <StyledAppStoreButton
-          startIcon={<Iconify icon="ri:apple-fill" width={28} />}
-        >
+        <StyledAppStoreButton startIcon={<Iconify icon="ri:apple-fill" width={28} />}>
           <Stack alignItems="flex-start">
             <Typography variant="caption" sx={{ opacity: 0.72 }}>
               Download on the
@@ -270,9 +334,7 @@ export function AppStoreButton({ ...other }: StackProps) {
       </Link>
 
       <Link component={RouterLink} href={paths.googlePlayLink}>
-        <StyledAppStoreButton
-          startIcon={<Iconify icon="logos:google-play-icon" width={28} />}
-        >
+        <StyledAppStoreButton startIcon={<Iconify icon="logos:google-play-icon" width={28} />}>
           <Stack alignItems="flex-start">
             <Typography variant="caption" sx={{ opacity: 0.72 }}>
               Download from
