@@ -18,6 +18,7 @@ import {
   _serviceSentences1,
   _serviceSentences2,
   _serviceSentences3,
+  _stripePaymentLink,
 } from './assets';
 
 // ----------------------------------------------------------------------
@@ -29,6 +30,7 @@ export const _mock = {
   // Text
   serviceSlug: (index: number) => _serviceSlug[index],
   serviceName: (index: number) => _serviceNames[index],
+  stripePaymentLink: (index: number) => _stripePaymentLink[index],
   sentence: (index: number) => _sentences[index],
   serviceSentences1: (index: number) => _serviceSentences1[index],
   serviceSentences2: (index: number) => _serviceSentences2[index],

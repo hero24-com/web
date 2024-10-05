@@ -1,5 +1,6 @@
 import type { IServiceProps } from 'src/types/service';
 
+import Button from '@mui/material/Button';
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Alert from '@mui/material/Alert';
@@ -14,7 +15,7 @@ type Props = {
 };
 
 export default function HomeServiceDetailsHeader({ service }: Props) {
-  const { slug } = service;
+  const { slug, stripePaymentLink } = service;
 
   return (
     <>
@@ -25,13 +26,19 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
           mb: 3,
         }}
       >
-        <Typography
-          variant="h3"
-          component="h1"
-          sx={{ flexGrow: 1, pr: { md: 10 } }}
-        >
+        <Typography variant="h3" component="h1" sx={{ flexGrow: 1, pr: { md: 10 } }}>
           {slug}
         </Typography>
+        <Button
+          variant="contained"
+          color="inherit"
+          href={stripePaymentLink}
+          size="large"
+          target="_blank"
+          rel="noopener"
+        >
+          Varaa nyt - verkkokauppa
+        </Button>
       </Stack>
 
       <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>

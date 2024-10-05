@@ -320,6 +320,33 @@ export const _serviceSlug = [
 
 // ----------------------------------------------------------------------
 
+export const _stripePaymentLink = [
+  'https://book.stripe.com/fZeaIieNVeMd9q09G2',
+  'https://book.stripe.com/9AQbMmgW36fHdGgaK7',
+  'https://book.stripe.com/00geYy5dleMd45G3hG',
+  'https://book.stripe.com/8wM4jU49h8nPdGg5pP',
+  'https://book.stripe.com/3cs17I6hp47z8lWg4u',
+  'https://book.stripe.com/7sIbMm49h0Vn59Kf0r',
+  'https://book.stripe.com/7sI5nY7lt33vdGgf0s',
+  'https://book.stripe.com/6oEg2C9tB9rTby86tX',
+  'https://book.stripe.com/7sI8Aa8px9rT7hScSm',
+  'https://book.stripe.com/8wM7w65dl0Vn9q09Gb',
+  'https://book.stripe.com/5kA5nY35d1Zr7hS6u2',
+  'https://book.stripe.com/28obMm8px47z31C6u0',
+  'https://book.stripe.com/bIY7w67lt6fH1Xyg4B',
+  'https://book.stripe.com/9AQ17IeNV6fH1Xy5pZ',
+  'https://book.stripe.com/aEU3fQaxF1Zr6dOf0A',
+  'https://book.stripe.com/14k3fQ0X5bA17hS05H',
+  'https://book.stripe.com/dR6dUu6hp0VneKk05I',
+  'https://book.stripe.com/4gweYybBJcE559K4lZ',
+  'https://book.stripe.com/28o2bM9tB5bD8lW8Cg',
+  'https://book.stripe.com/4gwaIifRZ33vdGgbOt',
+  'https://book.stripe.com/28odUu5dl47z59K9Gm',
+  'https://www.hero24.com/koti-palvelu',
+];
+
+// ----------------------------------------------------------------------
+
 export const _sentences = [
   'Kaikki meni erittäin hyvin. Muuttomiehet olivat asiantuntevia ja kaikki saatiin tehtyä suunnitellussa ajassa.',
   'Kiitos paljon teille ja pojat olivät ystävällisiä ja ahkerät annan 100 piste',

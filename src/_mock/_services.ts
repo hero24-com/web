@@ -3,6 +3,7 @@ import { add } from 'date-fns';
 import { countries } from 'src/assets/data';
 
 import { _mock } from './_mock';
+import { _stripePaymentLink } from './assets';
 
 // ----------------------------------------------------------------------
 
@@ -143,6 +144,7 @@ export const _services = [...Array(22)].map((_, index) => {
     continent: location,
     slug: _mock.serviceName(index),
     serviceSlug: _mock.serviceSlug(index),
+    stripePaymentLink: _mock.stripePaymentLink(index),
     duration: '3 days 2 nights',
     createdAt: _mock.time(index),
     favorited: _mock.boolean(index),

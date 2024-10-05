@@ -43,6 +43,7 @@ export type IServiceProps = {
   reasons1: string;
   reasons2: string;
   reasons3: string;
+  stripePaymentLink: string;
   available: {
     start: Date;
     end: Date;
