@@ -28,7 +28,7 @@ export default function HomeContactView() {
         </Grid>
 
         <Grid xs={12} md={6} lg={6}>
-          <HomeContactForm formId="07b5414f-78ce-419f-b143-fdf43fb1bdb9" />
+          <HomeContactForm formId="52d15246-e113-4771-9f9a-faef9f6c4187" />
         </Grid>
       </Grid>
     </Container>
