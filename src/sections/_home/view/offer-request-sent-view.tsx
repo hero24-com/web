@@ -27,7 +27,7 @@ export default function OfferRequestSentView() {
         dangerouslySetInnerHTML={{
           __html: `
           gtag('event', 'conversion', {
-            'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
+            'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
             'value': 1.0,
             'currency': 'EUR'
           });
