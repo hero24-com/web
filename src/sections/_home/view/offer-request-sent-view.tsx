@@ -27,13 +27,13 @@ export default function OfferRequestSentView() {
         dangerouslySetInnerHTML={{
           __html: `
           gtag('event', 'conversion', {
-            'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
+            'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
             'value': 1.0,
             'currency': 'EUR'
           });
         `,
         }}
-       />
+      />
       <Container
         component={MotionContainer}
         sx={{
@@ -49,9 +49,7 @@ export default function OfferRequestSentView() {
         <Stack spacing={1} sx={{ my: 5 }}>
           <Typography variant="h3">Tarjouspyyntösi on lähetetty!</Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
-            Sinuun ollaan pian yhteydessä.
-          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>Sinuun ollaan pian yhteydessä.</Typography>
         </Stack>
 
         <HomeService />
