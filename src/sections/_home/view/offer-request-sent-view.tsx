@@ -23,11 +23,24 @@ const caseStudies = _caseStudies.slice(0, 6);
 export default function OfferRequestSentView() {
   return (
     <>
+      {/* Old ads account - verified */}
       <Script
         dangerouslySetInnerHTML={{
           __html: `
           gtag('event', 'conversion', {
             'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
+            'value': 1.0,
+            'currency': 'EUR'
+          });
+        `,
+        }}
+      />
+      {/* New ads account - not verified */}
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+          gtag('event', 'conversion', {
+            'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
             'value': 1.0,
             'currency': 'EUR'
           });
