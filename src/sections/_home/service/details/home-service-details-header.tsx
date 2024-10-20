@@ -1,6 +1,4 @@
 import type { IServiceProps } from 'src/types/service';
-
-import Button from '@mui/material/Button';
 import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Alert from '@mui/material/Alert';
@@ -15,7 +13,7 @@ type Props = {
 };
 
 export default function HomeServiceDetailsHeader({ service }: Props) {
-  const { slug, stripePaymentLink } = service;
+  const { slug } = service;
 
   return (
     <>
@@ -26,19 +24,22 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
           mb: 3,
         }}
       >
-        <Typography variant="h3" component="h1" sx={{ flexGrow: 1, pr: { md: 10 } }}>
-          {slug}
-        </Typography>
-        <Button
-          variant="contained"
-          color="inherit"
-          href={stripePaymentLink}
-          size="large"
-          target="_blank"
-          rel="noopener"
-        >
-          Varaa nyt - verkkokauppa
-        </Button>
+        <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+          <Typography variant="h4" component="h1" sx={{ flexGrow: 1, pr: { md: 10 } }}>
+            {slug}
+          </Typography>
+        </Stack>
+
+        <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+          <Alert
+            sx={{
+              width: '100%',
+            }}
+            severity="info"
+          >
+            Tilaa nyt. Maksa miten haluat.
+          </Alert>
+        </Stack>
       </Stack>
 
       <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>
@@ -55,22 +56,6 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
           </Fab>
           support@hero24.com
         </Stack>
-      </Stack>
-      <Stack
-        spacing={3}
-        direction={{ xs: 'column', md: 'row' }}
-        sx={{
-          mt: 3,
-        }}
-      >
-        <Alert
-          sx={{
-            width: '100%',
-          }}
-          severity="info"
-        >
-          Tilaa nyt. Maksa miten haluat.
-        </Alert>
       </Stack>
     </>
   );
