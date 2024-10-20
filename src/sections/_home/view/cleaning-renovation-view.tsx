@@ -12,9 +12,9 @@ import HomeCaseStudies from '../landing/home-case-studies';
 import HomeTestimonial from '../testimonial/home-testimonial';
 import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
-import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
 import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
+import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------

@@ -1,18 +1,18 @@
 import { useState } from 'react';
 
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import Stack from '@mui/material/Stack';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import Dialog from '@mui/material/Dialog';
+import { blue } from '@mui/material/colors';
+import ListItem from '@mui/material/ListItem';
 import DialogTitle from '@mui/material/DialogTitle';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import ListItemButton from '@mui/material/ListItemButton';
 
 import Iconify from 'src/components/iconify';
-import { blue } from '@mui/material/colors';
 
 // ----------------------------------------------------------------------
 
@@ -22,9 +22,7 @@ type PaymentLink = {
 };
 
 type Props = {
-  paymentLinks: PaymentLink[];  // Update the expected type to match the data structure
-  open?: boolean;
-  onClose?: (value: string) => void;
+  paymentLinks: PaymentLink[];
 };
 
 export default function HomeServicePaymentLink({ paymentLinks }: Props) {
