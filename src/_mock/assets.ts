@@ -545,7 +545,36 @@ export const _stripePaymentLink = [
     value: 'https://book.stripe.com/4gwaIifRZ33vdGgbOt',
     label: 'Pihan muutos- ja rakennustyöt 56€/h',
   },
+  {
+    value: 'https://book.stripe.com/8wM9EedJRbA1cCc8Fz',
+    label: 'Pihan muutos- ja rakennustyöt 59€/h (with a trimmer)',
+  },
+  {
+    value: 'https://book.stripe.com/8wM3fQ0X51ZreKkdZS',
+    label: 'Pihan muutos- ja rakennustyöt 59€/h (with a hedge trimmer)',
+  },
+  {
+    value: 'https://book.stripe.com/5kA6s2eNVeMd8lW9JB',
+    label: 'Pihan muutos- ja rakennustyöt 89€/h (with a lawnmover)',
+  },
+  {
+    value: 'https://book.stripe.com/bIYbMm49hgUl31C3lg',
+    label: 'Pihan muutos- ja rakennustyöt 89€/h (with a lawnmover, trimmer and hedge trimmer)',
+  },
   { value: 'https://book.stripe.com/28odUu5dl47z59K9Gm', label: 'Pihatyöt 56€/h' },
+  { value: 'https://book.stripe.com/eVa2bM8px33vfOocVR', label: 'Pihatyöt 59€/h (with a trimmer)' },
+  {
+    value: 'https://book.stripe.com/7sIbMmdJR5bD7hSbRO',
+    label: 'Pihatyöt 59€/h (with a hedge trimmer)',
+  },
+  {
+    value: 'https://book.stripe.com/dR68Aa7lteMdeKk6xv',
+    label: 'Pihatyöt 89€/h (with a lawnmover)',
+  },
+  {
+    value: 'https://book.stripe.com/dR6aIiaxFavX59K6xw',
+    label: 'Pihatyöt 89€/h (with a lawnmover, trimmer and hedge trimmer)',
+  },
   { value: 'https://www.hero24.com/koti-palvelu', label: 'Etsitkö muuta palvelua?' },
 ];
 
