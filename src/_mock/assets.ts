@@ -324,59 +324,216 @@ export const _stripePaymentLink = [
   { value: 'https://book.stripe.com/fZeaIieNVeMd9q09G2', label: 'Ilmastointityöt 69€/h' },
   { value: 'https://book.stripe.com/9AQbMmgW36fHdGgaK7', label: 'Asbestikartoitus 199€/h' },
   { value: 'https://book.stripe.com/00geYy5dleMd45G3hG', label: 'Kotisiivous 44€/h' },
-  { value: 'https://book.stripe.com/fZe7w69tB5bD31C07u', label: 'Kotisiivous 44€/h (Allergia siivous)' },
-  { value: 'https://book.stripe.com/8wM5nY35ddI945G4nL', label: 'Kotisiivous 44€/h (Raivaussiivous)' },
-  { value: 'https://book.stripe.com/28o8AaeNV5bD1XycUi', label: 'Kotisiivous 48€/h (lattian vahaus)' },
-  { value: 'https://book.stripe.com/28o17IeNV47zfOo7zV', label: 'Kotisiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)' },
+  {
+    value: 'https://book.stripe.com/fZe7w69tB5bD31C07u',
+    label: 'Kotisiivous 44€/h (Allergia siivous)',
+  },
+  {
+    value: 'https://book.stripe.com/8wM5nY35ddI945G4nL',
+    label: 'Kotisiivous 44€/h (Raivaussiivous)',
+  },
+  {
+    value: 'https://book.stripe.com/28o8AaeNV5bD1XycUi',
+    label: 'Kotisiivous 48€/h (lattian vahaus)',
+  },
+  {
+    value: 'https://book.stripe.com/28o17IeNV47zfOo7zV',
+    label: 'Kotisiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)',
+  },
   { value: 'https://book.stripe.com/8wM4jU49h8nPdGg5pP', label: 'Muuttosiivous 44€/h' },
-  { value: 'https://book.stripe.com/fZe17I6hp5bDau48E4', label: 'Muuttosiivous 44€/h (Allergia siivous)' },
-  { value: 'https://book.stripe.com/28obMm9tB8nP1Xy5rT', label: 'Muuttosiivous 44€/h (Raivaussiivous)' },
-  { value: 'https://book.stripe.com/eVa8AadJR6fHeKk4nQ', label: 'Muuttosiivous 48€/h (lattian vahaus)' },
-  { value: 'https://book.stripe.com/6oE4jU0X5gUl1XyaMb', label: 'Muuttosiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)' },
+  {
+    value: 'https://book.stripe.com/fZe17I6hp5bDau48E4',
+    label: 'Muuttosiivous 44€/h (Allergia siivous)',
+  },
+  {
+    value: 'https://book.stripe.com/28obMm9tB8nP1Xy5rT',
+    label: 'Muuttosiivous 44€/h (Raivaussiivous)',
+  },
+  {
+    value: 'https://book.stripe.com/eVa8AadJR6fHeKk4nQ',
+    label: 'Muuttosiivous 48€/h (lattian vahaus)',
+  },
+  {
+    value: 'https://book.stripe.com/6oE4jU0X5gUl1XyaMb',
+    label: 'Muuttosiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)',
+  },
   { value: 'https://book.stripe.com/3cs17I6hp47z8lWg4u', label: 'Toimistosiivous 44€/h' },
-  { value: 'https://book.stripe.com/fZe2bMdJRdI97hS8E8', label: 'Toimistosiivous 44€/h (Allergia siivous)' },
-  { value: 'https://book.stripe.com/5kA03E8px1ZrgSsf2x', label: 'Toimistosiivous 44€/h (Raivaussiivous)' },
-  { value: 'https://book.stripe.com/3csg2CdJR47z59KcUq', label: 'Toimistosiivous 48€/h (lattian vahaus)' },
-  { value: 'https://book.stripe.com/bIY7w67lt9rT31C1bF', label: 'Toimistosiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)' },
+  {
+    value: 'https://book.stripe.com/fZe2bMdJRdI97hS8E8',
+    label: 'Toimistosiivous 44€/h (Allergia siivous)',
+  },
+  {
+    value: 'https://book.stripe.com/5kA03E8px1ZrgSsf2x',
+    label: 'Toimistosiivous 44€/h (Raivaussiivous)',
+  },
+  {
+    value: 'https://book.stripe.com/3csg2CdJR47z59KcUq',
+    label: 'Toimistosiivous 48€/h (lattian vahaus)',
+  },
+  {
+    value: 'https://book.stripe.com/bIY7w67lt9rT31C1bF',
+    label: 'Toimistosiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)',
+  },
   { value: 'https://book.stripe.com/7sIbMm49h0Vn59Kf0r', label: 'Remonttisiivous 44€/h' },
-  { value: 'https://book.stripe.com/eVa9Ee49h0VneKk4nW', label: 'Remonttisiivous 44€/h (Allergia siivous)' },
-  { value: 'https://book.stripe.com/00g4jU5dlbA1au4aMl', label: 'Remonttisiivous 44€/h (Raivaussiivous)' },
-  { value: 'https://book.stripe.com/6oE7w6gW3cE5fOo8Ee', label: 'Remonttisiivous 48€/h (lattian vahaus)' },
-  { value: 'https://book.stripe.com/fZe7w6bBJ5bD1Xy2fN', label: 'Remonttisiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)' },
+  {
+    value: 'https://book.stripe.com/eVa9Ee49h0VneKk4nW',
+    label: 'Remonttisiivous 44€/h (Allergia siivous)',
+  },
+  {
+    value: 'https://book.stripe.com/00g4jU5dlbA1au4aMl',
+    label: 'Remonttisiivous 44€/h (Raivaussiivous)',
+  },
+  {
+    value: 'https://book.stripe.com/6oE7w6gW3cE5fOo8Ee',
+    label: 'Remonttisiivous 48€/h (lattian vahaus)',
+  },
+  {
+    value: 'https://book.stripe.com/fZe7w6bBJ5bD1Xy2fN',
+    label: 'Remonttisiivous 48€/h (Allergia siivous tai Lattian vahaus tai Raivaussiivous)',
+  },
   { value: 'https://book.stripe.com/7sI5nY7lt33vdGgf0s', label: 'Ikkunanpesu 44€/h' },
-  { value: 'https://book.stripe.com/00g9Ee8px5bDcCc3jV', label: 'Ikkunanpesu 44€/h (Ikkunoita yli 4m korkeudeussa)' },
-  { value: 'https://book.stripe.com/6oEg2C9tB9rTby86tX', label: 'Kuljetuspalvelut 59€/h (1 kantaja + pakettiauto (yli 10m3))' },
-  { value: 'https://book.stripe.com/00g5nY9tB33v1XyaMo', label: 'Kuljetuspalvelut 69€/h (1 kantaja + XL pakettiauto (yli 13m3))' },
-  { value: 'https://book.stripe.com/28o17I6hp33v59KcUx', label: 'Kuljetuspalvelut 79€/h (1 kantaja + kuorma-auto (20m3) perälautanostimella)' },
-  { value: 'https://book.stripe.com/bIYaIicFN5bDfOo7Ae', label: 'Kuljetuspalvelut 89€/h (1 kantaja + kuorma-auto (yli 30m3) ja perälautanostimella)' },
-  { value: 'https://book.stripe.com/dR65nYeNV1ZrfOodYD', label: 'Kuljetuspalvelut 84€/h (2 kantajaa + pakettiauto (yli 10m3))' },
-  { value: 'https://book.stripe.com/3cs17IbBJ5bDby81bS', label: 'Kuljetuspalvelut 94€/h (2 kantajaa + XL pakettiauto (yli 13m3))' },
-  { value: 'https://book.stripe.com/7sIcQqbBJfQh6dO3k1', label: 'Kuljetuspalvelut 99€/h (2 kantajaa + kuorma-auto (20m3) ja perälautanostimella)' },
-  { value: 'https://book.stripe.com/7sI9Ee7ltgUlfOo3k2', label: 'Kuljetuspalvelut 104€/h (2 kantajaa + kuorma-auto (yli 30m3) ja perälautanostimella)' },
+  {
+    value: 'https://book.stripe.com/00g9Ee8px5bDcCc3jV',
+    label: 'Ikkunanpesu 44€/h (Ikkunoita yli 4m korkeudeussa)',
+  },
+  {
+    value: 'https://book.stripe.com/6oEg2C9tB9rTby86tX',
+    label: 'Kuljetuspalvelut 59€/h (1 kantaja + pakettiauto (yli 10m3))',
+  },
+  {
+    value: 'https://book.stripe.com/00g5nY9tB33v1XyaMo',
+    label: 'Kuljetuspalvelut 69€/h (1 kantaja + XL pakettiauto (yli 13m3))',
+  },
+  {
+    value: 'https://book.stripe.com/28o17I6hp33v59KcUx',
+    label: 'Kuljetuspalvelut 79€/h (1 kantaja + kuorma-auto (20m3) perälautanostimella)',
+  },
+  {
+    value: 'https://book.stripe.com/bIYaIicFN5bDfOo7Ae',
+    label: 'Kuljetuspalvelut 89€/h (1 kantaja + kuorma-auto (yli 30m3) ja perälautanostimella)',
+  },
+  {
+    value: 'https://book.stripe.com/dR65nYeNV1ZrfOodYD',
+    label: 'Kuljetuspalvelut 84€/h (2 kantajaa + pakettiauto (yli 10m3))',
+  },
+  {
+    value: 'https://book.stripe.com/3cs17IbBJ5bDby81bS',
+    label: 'Kuljetuspalvelut 94€/h (2 kantajaa + XL pakettiauto (yli 13m3))',
+  },
+  {
+    value: 'https://book.stripe.com/7sIcQqbBJfQh6dO3k1',
+    label: 'Kuljetuspalvelut 99€/h (2 kantajaa + kuorma-auto (20m3) ja perälautanostimella)',
+  },
+  {
+    value: 'https://book.stripe.com/7sI9Ee7ltgUlfOo3k2',
+    label: 'Kuljetuspalvelut 104€/h (2 kantajaa + kuorma-auto (yli 30m3) ja perälautanostimella)',
+  },
   { value: 'https://book.stripe.com/7sI8Aa8px9rT7hScSm', label: 'Kotiapu 39€/h' },
   { value: 'https://book.stripe.com/8wM7w65dl0Vn9q09Gb', label: 'Sähköasennukset 69€/h' },
   { value: 'https://book.stripe.com/5kA5nY35d1Zr7hS6u2', label: 'Elektroniikkahuolto 69€/h' },
   { value: 'https://book.stripe.com/28obMm8px47z31C6u0', label: 'Asennuspalvelut 54€/h' },
   { value: 'https://book.stripe.com/bIY7w67lt6fH1Xyg4B', label: 'Kodinkonehuolto 69€/h' },
-  { value: 'https://book.stripe.com/9AQ17IeNV6fH1Xy5pZ', label: 'Kantoapu (1 henkilö) 44€/h' },
-  { value: 'https://book.stripe.com/5kAaIicFNavX1Xy2gL', label: 'Kantoapu (1 henkilö, erityisen painava yli 40kg) 44€/h' },
-  { value: 'https://book.stripe.com/3cs7w649hbA131C1cJ', label: 'Kantoapu (1 henkilö, jos tarvitaan kantoliinat) 44€/h' },
-  { value: 'https://book.stripe.com/3cscQq35d6fH0Tu7B8', label: 'Kantoapu (1 henkilö, jos tarvitaan nokkakärryt) 44€/h' },
-  { value: 'https://book.stripe.com/fZeeYygW3dI9gSsaNl', label: 'Kantoapu (1 henkilö, jos tarvitaan työkaluja) 44€/h' },
-  { value: 'https://book.stripe.com/9AQbMm7lt6fH31C8Fa', label: 'Kantoapu (1 henkilö, jos tarvitaan työkaluja, kantoliinat, nokkakärryt) 44€/h' },
-  { value: 'https://book.stripe.com/cN24jUdJRcE5eKkf3C', label: 'Kantoapu (2 henkilöä) 78€/h' },
-  { value: 'https://book.stripe.com/28odUucFN8nP59K6x7', label: 'Kantoapu (2 henkilöä, erityisen painava yli 40kg) 88€/h' },
-  { value: 'https://book.stripe.com/28o03E49hcE57hS7Bc', label: 'Kantoapu (2 henkilöä, jos tarvitaan kantoliinat) 88€/h' },
-  { value: 'https://book.stripe.com/aEUeYy49h6fH31C3kX', label: 'Kantoapu (2 henkilöä, jos tarvitaan nokkakärryt) 88€/h' },
-  { value: 'https://book.stripe.com/8wM03E7lt6fH45G5t6', label: 'Kantoapu (2 henkilöä, jos tarvitaan työkaluja) 88€/h' },
-  { value: 'https://book.stripe.com/5kAcQqeNVeMd59Kg7L', label: 'Kantoapu (2 henkilöä, jos tarvitaan työkaluja, kantoliinat, nokkakärryt) 98€/h' },
-  { value: 'https://book.stripe.com/3cscQq9tBeMd8lW08O', label: 'Kantoapu (3 henkilöä) 117€/h' },
-  { value: 'https://book.stripe.com/4gw3fQ6hp1Zr1Xyf3J', label: 'Kantoapu (3 henkilöä, erityisen painava yli 40kg) 132€/h' },
-  { value: 'https://book.stripe.com/4gw4jUfRZavXby83l2', label: 'Kantoapu (3 henkilöä, jos tarvitaan kantoliinat) 132€/h' },
-  { value: 'https://book.stripe.com/3csdUudJR9rTau4bRz', label: 'Kantoapu (3 henkilöä, jos tarvitaan nokkakärryt) 132€/h' },
-  { value: 'https://book.stripe.com/eVag2CbBJeMd31C2h0', label: 'Kantoapu (3 henkilöä, jos tarvitaan työkaluja) 132€/h' },
-  { value: 'https://book.stripe.com/28o03E35dfQheKk5td', label: 'Kantoapu (3 henkilöä, jos tarvitaan työkaluja, kantoliinat, nokkakärryt) 132€/h' },
-  { value: 'https://book.stripe.com/aEU3fQaxF1Zr6dOf0A', label: 'Muutto 59€/h' },
+  { value: 'https://book.stripe.com/9AQ17IeNV6fH1Xy5pZ', label: 'Kantoapu 44€/h (1 henkilö)' },
+  {
+    value: 'https://book.stripe.com/5kAaIicFNavX1Xy2gL',
+    label: 'Kantoapu 44€/h (1 henkilö, erityisen painava yli 40kg)',
+  },
+  {
+    value: 'https://book.stripe.com/3cs7w649hbA131C1cJ',
+    label: 'Kantoapu 44€/h (1 henkilö, jos tarvitaan kantoliinat)',
+  },
+  {
+    value: 'https://book.stripe.com/3cscQq35d6fH0Tu7B8',
+    label: 'Kantoapu 44€/h (1 henkilö, jos tarvitaan nokkakärryt)',
+  },
+  {
+    value: 'https://book.stripe.com/fZeeYygW3dI9gSsaNl',
+    label: 'Kantoapu 44€/h (1 henkilö, jos tarvitaan työkaluja)',
+  },
+  {
+    value: 'https://book.stripe.com/9AQbMm7lt6fH31C8Fa',
+    label: 'Kantoapu 44€/h (1 henkilö, jos tarvitaan työkaluja, kantoliinat, nokkakärryt)',
+  },
+  { value: 'https://book.stripe.com/cN24jUdJRcE5eKkf3C', label: 'Kantoapu 78€/h (2 henkilöä)' },
+  {
+    value: 'https://book.stripe.com/28odUucFN8nP59K6x7',
+    label: 'Kantoapu 88€/h (2 henkilöä, erityisen painava yli 40kg)',
+  },
+  {
+    value: 'https://book.stripe.com/28o03E49hcE57hS7Bc',
+    label: 'Kantoapu 88€/h (2 henkilöä, jos tarvitaan kantoliinat)',
+  },
+  {
+    value: 'https://book.stripe.com/aEUeYy49h6fH31C3kX',
+    label: 'Kantoapu 88€/h (2 henkilöä, jos tarvitaan nokkakärryt)',
+  },
+  {
+    value: 'https://book.stripe.com/8wM03E7lt6fH45G5t6',
+    label: 'Kantoapu 88€/h (2 henkilöä, jos tarvitaan työkaluja)',
+  },
+  {
+    value: 'https://book.stripe.com/5kAcQqeNVeMd59Kg7L',
+    label: 'Kantoapu 98€/h (2 henkilöä, jos tarvitaan työkaluja, kantoliinat, nokkakärryt)',
+  },
+  { value: 'https://book.stripe.com/3cscQq9tBeMd8lW08O', label: 'Kantoapu 117€/h (3 henkilöä)' },
+  {
+    value: 'https://book.stripe.com/4gw3fQ6hp1Zr1Xyf3J',
+    label: 'Kantoapu 132€/h (3 henkilöä, erityisen painava yli 40kg)',
+  },
+  {
+    value: 'https://book.stripe.com/4gw4jUfRZavXby83l2',
+    label: 'Kantoapu 132€/h (3 henkilöä, jos tarvitaan kantoliinat)',
+  },
+  {
+    value: 'https://book.stripe.com/3csdUudJR9rTau4bRz',
+    label: 'Kantoapu 132€/h (3 henkilöä, jos tarvitaan nokkakärryt)',
+  },
+  {
+    value: 'https://book.stripe.com/eVag2CbBJeMd31C2h0',
+    label: 'Kantoapu 132€/h (3 henkilöä, jos tarvitaan työkaluja)',
+  },
+  {
+    value: 'https://book.stripe.com/28o03E35dfQheKk5td',
+    label: 'Kantoapu 132€/h (3 henkilöä, jos tarvitaan työkaluja, kantoliinat, nokkakärryt)',
+  },
+  {
+    value: 'https://book.stripe.com/aEU3fQaxF1Zr6dOf0A',
+    label:
+      'Muutto 59€/h (1 kantaja + pakettiauto (yli 10m3), Esim tavaran kuljetus tai pienten yksiöiden muutot)',
+  },
+  {
+    value: 'https://book.stripe.com/3cs4jU7lt1Zr9q05te',
+    label: 'Muutto 69€/h (1 kantaja + XL pakettiauto (yli 13m3), Esim 40-65m3 asuntojen muutot)',
+  },
+  {
+    value: 'https://book.stripe.com/eVacQqeNV47z31C5tf',
+    label:
+      'Muutto 79€/h (1 kantaja + kuorma-auto (20m3) perälautanostimella, Esim rullakot, eurolavat ja alle 80m3 asunnot)',
+  },
+  {
+    value: 'https://book.stripe.com/5kA8Aa35dgUldGg2h4',
+    label:
+      'Muutto 89€/h (1 kantaja + kuorma-auto (yli 30m3) ja perälautanostimella, Esim rullakot, eurolavat ja alle 100 m3 asunnot)',
+  },
+  {
+    value: 'https://book.stripe.com/5kAeYycFN5bDgSs08X',
+    label:
+      'Muutto 84€/h (2 kantajaa + pakettiauto (yli 10m3), Esim tavaran kuljetus tai pienten yksiöiden muutot)',
+  },
+  {
+    value: 'https://book.stripe.com/aEU3fQ5dlfQhdGgdZO',
+    label: 'Muutto 94€/h (2 kantajaa + XL pakettiauto (yli 13m3), Esim 40-65m3 asuntojen muutot)',
+  },
+  {
+    value: 'https://book.stripe.com/00g5nY9tBcE5fOof3T',
+    label:
+      'Muutto 99€/h (2 kantajaa + kuorma-auto (20m3) ja perälautanostimella, Esim rullakot, eurolavat ja alle 80m3 asunnot)',
+  },
+  {
+    value: 'https://book.stripe.com/aEU03EfRZeMd59K5tk',
+    label:
+      'Muutto 104€/h (2 kantajaa + kuorma-auto (yli 30m3) ja perälautanostimella, Esim rullakot, eurolavat ja alle 100 m3 asunnot)',
+  },
   { value: 'https://book.stripe.com/14k3fQ0X5bA17hS05H', label: 'Putkityöt 69€/h' },
   {
     value: 'https://book.stripe.com/dR6dUu6hp0VneKk05I',
