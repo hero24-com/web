@@ -29,6 +29,7 @@ export const paths = {
   },
   // Common
   offerRequestSent: '/offer-request-sent',
+  joinRequestSent: '/join-request-sent',
   maintenance: '/maintenance',
   page404: '/error/404',
   page500: '/error/500',

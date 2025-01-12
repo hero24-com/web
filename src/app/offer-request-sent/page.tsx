@@ -6,6 +6,6 @@ export const metadata = {
   title: 'Tarjouspyyntösi on lähetetty | Hero24',
 };
 
-export default function Pricing01Page() {
+export default function OfferRequestSentPage() {
   return <OfferRequestSentView />;
 }
