@@ -35,7 +35,7 @@ export default function ElectronicApplianceView() {
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="e1dc3f5f-ce6f-4b46-9f0c-ff4461661828" />
+            <HomeServiceDetailsReserveForm formId="dac966ac-06e4-4fa2-b082-38866de0560e" />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>

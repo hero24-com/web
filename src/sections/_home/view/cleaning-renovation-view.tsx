@@ -33,14 +33,9 @@ export default function CleaningRenovationView() {
 
         <HomeServiceDetailsGallery images={_mockService.gallery6} />
 
-        <Grid
-          container
-          columnSpacing={8}
-          rowSpacing={5}
-          direction="row-reverse"
-        >
+        <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="e7b264ad-e12d-4377-bd0b-62b64d995abf" />
+            <HomeServiceDetailsReserveForm formId="0659895d-0e33-4331-9886-a4f1334271d8" />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>

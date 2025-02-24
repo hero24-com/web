@@ -13,12 +13,12 @@ const TABS = [
   {
     value: 'invoice',
     label: 'Laskuta asiakasta',
-    component: <HomeOwnCustomerForm formId="8c4a0191-b23f-471e-bace-24bf84e349d1" />,
+    component: <HomeOwnCustomerForm formId="9b6ec2fa-36cb-4607-8034-16ddf1736097" />,
   },
   {
     value: 'join',
     label: 'Liity nyt (ennen laskutusta asiakkaalle)',
-    component: <HomeOwnCustomerForm formId="e050bc45-bb41-4735-b8f6-54acace87a07" />,
+    component: <HomeOwnCustomerForm formId="7b69f0a5-5fd1-456d-90af-74b630ad358c" />,
   },
 ];
 
