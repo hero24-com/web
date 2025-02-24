@@ -50,6 +50,7 @@ export function useHubspotForm(formId: string) {
     }
 
     // Cleanup function
+    // eslint-disable-next-line consistent-return
     return () => {
       // Clear any existing timeout
       if (timeoutRef.current) {
