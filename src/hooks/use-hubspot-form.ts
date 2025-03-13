@@ -66,6 +66,12 @@ export function useHubspotForm(
 
         // Add subject line if provided
         if (options?.subject) {
+          // Add subject as a hidden field in the form configuration
+          formConfig.hiddenFields = {
+            subject: options.subject,
+          };
+
+          // Also try to set it on form submit as a fallback
           formConfig.onFormSubmit = function ($form: HubSpotFormObject) {
             // Ensure subject is not undefined
             const subject = options.subject || '';
