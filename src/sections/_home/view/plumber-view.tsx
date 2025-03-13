@@ -14,7 +14,6 @@ import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
 import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
 import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
-import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
@@ -35,17 +34,22 @@ export default function PlumberView() {
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="2619325e-6ada-4b84-8e8b-8f8827dbac26" />
+            <HomeServiceDetailsReserveForm
+              formId="2619325e-6ada-4b84-8e8b-8f8827dbac26"
+              subject="Uusi tarjouspyyntö - Putkityöt"
+            />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>
             <HomeServiceDetailsHeader service={_mockService} />
 
+            {/* Payment link section disabled
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
             <HomeServicePaymentLink paymentLinks={_mockService.stripePaymentLink16} />
 
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
+            */}
 
             <HomeServiceDetailsSummary service={_mockService} />
           </Grid>

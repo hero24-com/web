@@ -14,7 +14,6 @@ import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
 import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
 import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
-import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
@@ -35,17 +34,22 @@ export default function YardModificationView() {
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="d8a9b6a4-6b4b-4556-b6d8-06303d820309" />
+            <HomeServiceDetailsReserveForm
+              formId="d8a9b6a4-6b4b-4556-b6d8-06303d820309"
+              subject="Uusi tarjouspyyntö - Pihan muutos- ja rakennustyöt"
+            />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>
             <HomeServiceDetailsHeader service={_mockService} />
 
+            {/* Payment link section disabled
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
             <HomeServicePaymentLink paymentLinks={_mockService.stripePaymentLink20} />
 
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
+            */}
 
             <HomeServiceDetailsSummary service={_mockService} />
           </Grid>

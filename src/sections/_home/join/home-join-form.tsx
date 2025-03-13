@@ -14,7 +14,9 @@ type Props = {
 };
 
 export default function HomeJoinForm({ formId }: Props) {
-  const uniqueFormId = useHubspotForm(formId);
+  const uniqueFormId = useHubspotForm(formId, {
+    subject: 'Liittymispyyntö - Tule mukaan',
+  });
 
   return (
     <Container

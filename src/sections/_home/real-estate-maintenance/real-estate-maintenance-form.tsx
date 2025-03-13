@@ -14,7 +14,9 @@ type Props = {
 };
 
 export default function RealEstateMaintenanceForm({ formId }: Props) {
-  const uniqueFormId = useHubspotForm(formId);
+  const uniqueFormId = useHubspotForm(formId, {
+    subject: 'Yhteydenottopyyntö - Kiinteistönhuolto',
+  });
 
   return (
     <Container

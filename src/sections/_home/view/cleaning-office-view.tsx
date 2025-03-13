@@ -14,7 +14,6 @@ import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
 import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
 import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
-import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
@@ -35,17 +34,22 @@ export default function CleaningOfficeView() {
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="466adda6-ccca-48ed-a9d6-38e2fcd6ef4a" />
+            <HomeServiceDetailsReserveForm
+              formId="466adda6-ccca-48ed-a9d6-38e2fcd6ef4a"
+              subject="Uusi tarjouspyyntö - Toimistosiivouspalvelut"
+            />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>
             <HomeServiceDetailsHeader service={_mockService} />
 
+            {/* Payment link section disabled
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
             <HomeServicePaymentLink paymentLinks={_mockService.stripePaymentLink5} />
 
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
+            */}
 
             <HomeServiceDetailsSummary service={_mockService} />
           </Grid>

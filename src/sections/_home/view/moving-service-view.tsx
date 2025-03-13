@@ -14,7 +14,6 @@ import HomeServiceListSimilar from '../service/list/home-service-list-similar';
 import HomeServiceDetailsHeader from '../service/details/home-service-details-header';
 import HomeServiceDetailsSummary from '../service/details/home-service-details-summary';
 import HomeServiceDetailsGallery from '../service/details/home-service-details-gallery';
-import HomeServicePaymentLink from '../service/details/home-service-details-payment-link';
 import HomeServiceDetailsReserveForm from '../service/details/home-service-details-reserve-form';
 
 // ----------------------------------------------------------------------
@@ -35,17 +34,22 @@ export default function MovingServiceView() {
 
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
-            <HomeServiceDetailsReserveForm formId="93eeb3a9-ee48-482a-b01f-e79f937f23f2" />
+            <HomeServiceDetailsReserveForm
+              formId="93eeb3a9-ee48-482a-b01f-e79f937f23f2"
+              subject="Uusi tarjouspyyntö - Muuttopalvelu"
+            />
           </Grid>
 
           <Grid xs={12} md={7} lg={7}>
             <HomeServiceDetailsHeader service={_mockService} />
 
+            {/* Payment link section disabled
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
 
             <HomeServicePaymentLink paymentLinks={_mockService.stripePaymentLink15} />
 
             <Divider sx={{ borderStyle: 'dashed', my: 5 }} />
+            */}
 
             <HomeServiceDetailsSummary service={_mockService} />
           </Grid>

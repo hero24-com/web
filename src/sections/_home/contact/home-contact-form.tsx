@@ -13,7 +13,9 @@ type Props = {
 };
 
 export default function HomeContactForm({ formId }: Props) {
-  const uniqueFormId = useHubspotForm(formId);
+  const uniqueFormId = useHubspotForm(formId, {
+    subject: 'Yhteydenottopyyntö - Yhteystiedot',
+  });
 
   return (
     <Card>

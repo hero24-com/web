@@ -11,10 +11,20 @@ import { useHubspotForm } from 'src/hooks/use-hubspot-form';
 
 type Props = {
   formId: string;
+  /**
+   * Custom subject line for the form submission
+   * @default "Asiakastiedot - Oma asiakas"
+   */
+  subject?: string;
 };
 
-export default function HomeOwnCustomerForm({ formId }: Props) {
-  const uniqueFormId = useHubspotForm(formId);
+export default function HomeOwnCustomerForm({
+  formId,
+  subject = 'Asiakastiedot - Oma asiakas',
+}: Props) {
+  const uniqueFormId = useHubspotForm(formId, {
+    subject,
+  });
 
   return (
     <Container

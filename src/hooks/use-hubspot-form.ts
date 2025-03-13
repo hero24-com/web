@@ -1,11 +1,29 @@
 import { useRef, useMemo, useEffect } from 'react';
 
 /**
+ * Type definition for HubSpot form jQuery object
+ */
+interface HubSpotFormObject {
+  find: (selector: string) => {
+    val: (value: string) => void;
+  };
+}
+
+/**
  * Custom hook to manage HubSpot form initialization
  * @param formId - The HubSpot form ID
+ * @param options - Additional options for the form
+ * @param options.subject - Custom subject line for form submissions
+ * @param options.formTitle - Custom title for the form
  * @returns The unique form target ID
  */
-export function useHubspotForm(formId: string) {
+export function useHubspotForm(
+  formId: string,
+  options?: {
+    subject?: string;
+    formTitle?: string;
+  }
+) {
   const uniqueFormId = useMemo(() => `hubspot-form-${formId}`, [formId]);
   const formInitialized = useRef(false);
   const formInstance = useRef<any>(null);
@@ -39,12 +57,29 @@ export function useHubspotForm(formId: string) {
     function createForm() {
       // @ts-expect-error - HubSpot types not available
       if (window.hbspt) {
-        // @ts-expect-error - HubSpot types not available
-        formInstance.current = window.hbspt.forms.create({
+        // Prepare form configuration
+        const formConfig: Record<string, any> = {
           portalId: '145849212',
           formId,
           target: `#${uniqueFormId}`,
-        });
+        };
+
+        // Add subject line if provided
+        if (options?.subject) {
+          formConfig.onFormSubmit = function ($form: HubSpotFormObject) {
+            // Ensure subject is not undefined
+            const subject = options.subject || '';
+            $form.find("input[name='subject']").val(subject);
+          };
+        }
+
+        // Add form title if provided
+        if (options?.formTitle) {
+          formConfig.inlineMessage = options.formTitle;
+        }
+
+        // @ts-expect-error - HubSpot types not available
+        formInstance.current = window.hbspt.forms.create(formConfig);
         formInitialized.current = true;
       }
     }
@@ -74,7 +109,7 @@ export function useHubspotForm(formId: string) {
         formInstance.current = null;
       }, 100);
     };
-  }, [formId, uniqueFormId]);
+  }, [formId, uniqueFormId, options]);
 
   return uniqueFormId;
 }
