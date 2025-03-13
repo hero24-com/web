@@ -57,20 +57,6 @@ export function useHubspotForm(
     function createForm() {
       // @ts-expect-error - HubSpot types not available
       if (window.hbspt) {
-        // If subject is provided, try to add it to the URL query parameters
-        if (options?.subject) {
-          // This will help HubSpot prefill the form
-          const currentUrl = new URL(window.location.href);
-          currentUrl.searchParams.set('subject', options.subject);
-          try {
-            // Update URL without reloading the page
-            window.history.replaceState({}, '', currentUrl.toString());
-            console.log('Added subject to URL query parameters');
-          } catch (error) {
-            console.error('Error updating URL:', error);
-          }
-        }
-
         // Prepare form configuration
         const formConfig: Record<string, any> = {
           portalId: '145849212',
@@ -80,94 +66,124 @@ export function useHubspotForm(
 
         // Add subject line if provided
         if (options?.subject) {
-          // Add debug logging
-          console.log('Setting subject line:', options.subject);
+          // Try multiple approaches to set the subject line
 
-          // Add subject as a hidden field in the form configuration
+          // 1. Set as hidden fields with various names that HubSpot might recognize
           formConfig.hiddenFields = {
+            // Standard field names
             subject: options.subject,
+            email_subject: options.subject,
+
+            // Try HubSpot specific field names
+            hs_email_subject: options.subject,
+            notification_subject: options.subject,
+
+            // Try with form name prefix
+            [`${formId}_subject`]: options.subject,
+
+            // Try with common prefixes
+            form_subject: options.subject,
+            message_subject: options.subject,
           };
 
-          // Add field mapping to ensure the subject is set
-          formConfig.fieldMappings = [
-            {
-              name: 'subject',
-              value: options.subject,
-            },
-          ];
-
-          // Use the prefill feature
-          formConfig.prePopulate = {
+          // 2. Set up a context property that might be used by HubSpot
+          formConfig.context = {
             subject: options.subject,
+            emailSubject: options.subject,
+            notificationSubject: options.subject,
           };
 
-          // Also set up a more reliable way to set the subject after form is ready
+          // 3. Add onFormReady handler to set any subject fields that might exist
           formConfig.onFormReady = function ($form: any) {
-            console.log('Form ready, attempting to set subject:', options.subject);
+            try {
+              // Try to find and set any field that might be used for the subject
+              const possibleFieldNames = [
+                'subject',
+                'email_subject',
+                'hs_email_subject',
+                'notification_subject',
+                'form_subject',
+                'message_subject',
+              ];
 
-            // Use setTimeout to ensure the form is fully loaded
-            setTimeout(() => {
-              try {
-                // Try to find the subject field by name
-                const subjectField = $form.find('input[name="subject"]');
-                if (subjectField && subjectField.length) {
-                  console.log('Found subject field by name, setting value');
-                  subjectField.val(options.subject || '');
-                  subjectField.change(); // Trigger change event
-                }
-
-                // If that doesn't work, try to find it by a potential ID pattern
-                // Note: You may need to inspect the actual form to get the correct ID pattern
-                else {
-                  console.log('Looking for subject field by ID pattern');
-                  // Look for input fields that might contain 'subject' in their ID
-                  const inputs = document.querySelectorAll('input[id*="subject"]');
-                  console.log('Found potential subject fields:', inputs.length);
-                  if (inputs && inputs.length > 0) {
-                    for (let i = 0; i < inputs.length; i += 1) {
-                      const input = inputs[i] as HTMLInputElement;
-                      console.log('Setting value on field:', input.id);
-                      input.value = options.subject || '';
-
-                      // Trigger change event
-                      const event = new Event('change', { bubbles: true });
-                      input.dispatchEvent(event);
-                    }
+              possibleFieldNames.forEach((fieldName) => {
+                try {
+                  const field = $form.find(`input[name="${fieldName}"]`);
+                  if (field && field.length) {
+                    field.val(options.subject || '');
+                    field.change(); // Trigger change event
                   }
+                } catch (error) {
+                  // Ignore errors for individual field attempts
+                }
+              });
+
+              // Also try to set a data attribute on the form that HubSpot might use
+              try {
+                const formElement = $form.get(0);
+                if (formElement) {
+                  formElement.setAttribute('data-subject', options.subject || '');
+                  formElement.setAttribute('data-email-subject', options.subject || '');
+                  formElement.setAttribute('data-notification-subject', options.subject || '');
                 }
               } catch (error) {
-                console.error('Error setting subject field:', error);
-              }
-            }, 1000); // Wait 1 second after form is ready
-          };
-
-          // Also try to set it on form submit as a final fallback
-          formConfig.onFormSubmit = function ($form: any) {
-            console.log('Form submit, final attempt to set subject:', options.subject);
-            try {
-              // Try to find the subject field by name
-              const subjectField = $form.find('input[name="subject"]');
-              if (subjectField && subjectField.length) {
-                console.log('Found subject field by name on submit, setting value');
-                subjectField.val(options.subject || '');
-              }
-
-              // If that doesn't work, try to find it by a potential ID pattern
-              else {
-                console.log('Looking for subject field by ID pattern on submit');
-                // Look for input fields that might contain 'subject' in their ID
-                const inputs = document.querySelectorAll('input[id*="subject"]');
-                console.log('Found potential subject fields on submit:', inputs.length);
-                if (inputs && inputs.length > 0) {
-                  for (let i = 0; i < inputs.length; i += 1) {
-                    const input = inputs[i] as HTMLInputElement;
-                    console.log('Setting value on field on submit:', input.id);
-                    input.value = options.subject || '';
-                  }
-                }
+                // Ignore errors for data attribute attempts
               }
             } catch (error) {
-              console.error('Error setting subject field on submit:', error);
+              console.error('Error setting subject fields:', error);
+            }
+          };
+
+          // 4. Add onFormSubmit handler to set the subject right before submission
+          formConfig.onFormSubmit = function ($form: any) {
+            try {
+              // Try to find and set any field that might be used for the subject
+              const possibleFieldNames = [
+                'subject',
+                'email_subject',
+                'hs_email_subject',
+                'notification_subject',
+                'form_subject',
+                'message_subject',
+              ];
+
+              possibleFieldNames.forEach((fieldName) => {
+                try {
+                  const field = $form.find(`input[name="${fieldName}"]`);
+                  if (field && field.length) {
+                    field.val(options.subject || '');
+                  }
+                } catch (error) {
+                  // Ignore errors for individual field attempts
+                }
+              });
+
+              // Try to add a custom field to the form data
+              try {
+                // @ts-expect-error - HubSpot types not available
+                if (window.hbspt && window.hbspt.forms && window.hbspt.forms.addCustomField) {
+                  // @ts-expect-error - HubSpot types not available
+                  window.hbspt.forms.addCustomField($form, 'subject', options.subject || '');
+                  // @ts-expect-error - HubSpot types not available
+                  window.hbspt.forms.addCustomField($form, 'email_subject', options.subject || '');
+                  // @ts-expect-error - HubSpot types not available
+                  window.hbspt.forms.addCustomField(
+                    $form,
+                    'hs_email_subject',
+                    options.subject || ''
+                  );
+                  // @ts-expect-error - HubSpot types not available
+                  window.hbspt.forms.addCustomField(
+                    $form,
+                    'notification_subject',
+                    options.subject || ''
+                  );
+                }
+              } catch (error) {
+                // Ignore errors for custom field attempts
+              }
+            } catch (error) {
+              console.error('Error setting subject fields on submit:', error);
             }
           };
         }
@@ -180,52 +196,6 @@ export function useHubspotForm(
         // @ts-expect-error - HubSpot types not available
         formInstance.current = window.hbspt.forms.create(formConfig);
         formInitialized.current = true;
-
-        // If subject is provided, try to set it directly in the DOM after form creation
-        if (options?.subject) {
-          // Wait for the form to be fully rendered
-          setTimeout(() => {
-            try {
-              // Try to find the form element
-              const formElement = document.querySelector(`#${uniqueFormId}`);
-              if (formElement) {
-                console.log('Form element found, looking for subject field');
-
-                // Look for input fields with name="subject"
-                const subjectFields = formElement.querySelectorAll('input[name="subject"]');
-                if (subjectFields && subjectFields.length > 0) {
-                  console.log('Found subject fields by name:', subjectFields.length);
-                  for (let i = 0; i < subjectFields.length; i += 1) {
-                    const field = subjectFields[i] as HTMLInputElement;
-                    console.log('Setting value on subject field:', field.name);
-                    field.value = options.subject || '';
-
-                    // Trigger change event
-                    const event = new Event('change', { bubbles: true });
-                    field.dispatchEvent(event);
-                  }
-                }
-
-                // Look for input fields with id containing "subject"
-                const subjectFieldsById = formElement.querySelectorAll('input[id*="subject"]');
-                if (subjectFieldsById && subjectFieldsById.length > 0) {
-                  console.log('Found subject fields by ID pattern:', subjectFieldsById.length);
-                  for (let i = 0; i < subjectFieldsById.length; i += 1) {
-                    const field = subjectFieldsById[i] as HTMLInputElement;
-                    console.log('Setting value on subject field by ID:', field.id);
-                    field.value = options.subject || '';
-
-                    // Trigger change event
-                    const event = new Event('change', { bubbles: true });
-                    field.dispatchEvent(event);
-                  }
-                }
-              }
-            } catch (error) {
-              console.error('Error setting subject field in DOM:', error);
-            }
-          }, 2000); // Wait 2 seconds after form creation
-        }
       }
     }
 
