@@ -59,7 +59,7 @@ export function useHubspotForm(
       if (window.hbspt) {
         // Prepare form configuration
         const formConfig: Record<string, any> = {
-          portalId: '145849212',
+          portalId: '143729222',
           formId,
           target: `#${uniqueFormId}`,
         };
