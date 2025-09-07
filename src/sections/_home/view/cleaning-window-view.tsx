@@ -35,7 +35,7 @@ export default function CleaningWindowView() {
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm
-              formId="c49169ed-08a4-4d43-a08e-b7dc108c8486"
+              formId="6f82930b-df0a-4486-b25b-294a219aa562"
               subject="Uusi tarjouspyyntö - Ikkunanpesu"
             />
           </Grid>

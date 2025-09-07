@@ -35,7 +35,7 @@ export default function MovingLiftingView() {
         <Grid container columnSpacing={8} rowSpacing={5} direction="row-reverse">
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm
-              formId="dedd85f1-a8ed-4176-a472-f5ec4d967675"
+              formId="c54a34d8-4fa8-4b02-9ec8-d749516800b6"
               subject="Uusi tarjouspyyntö - Kantoapu"
             />
           </Grid>
