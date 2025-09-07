@@ -37,13 +37,6 @@ export default function HomeContactInfo() {
           </Link>
         </Stack>
       </Stack>
-
-      <Stack spacing={2} alignItems="flex-start" direction="row">
-        <Iconify width={28} icon="carbon:home" />
-        <Stack spacing={0.5}>
-          <Typography variant="h6">Y-tunnus: 3346521-8</Typography>
-        </Stack>
-      </Stack>
     </Stack>
   );
 }
