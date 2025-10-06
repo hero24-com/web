@@ -115,7 +115,7 @@ export default function HomeHero() {
                   <Fab size="medium" color="primary" sx={{ mr: 1 }}>
                     <Iconify width={24} icon="carbon:phone" />
                   </Fab>
-                  09 42452538
+                  +358 50 413 2867
                 </Stack>
 
                 <Stack

@@ -25,7 +25,7 @@ export default function HomeContactInfo() {
       <Stack spacing={2} alignItems="flex-start" direction="row">
         <Iconify width={28} icon="carbon:mobile" />
         <Stack spacing={0.5}>
-          <Typography variant="h6">Tel: 09 42452538</Typography>
+          <Typography variant="h6">Tel: +358 50 413 2867</Typography>
         </Stack>
       </Stack>
 
