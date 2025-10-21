@@ -61,18 +61,6 @@ export default function RootLayout({ children }: Props) {
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
           <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
         )}
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_NEW && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_NEW} />
-        )}
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_NEW_2 && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_NEW_2} />
-        )}
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_CRAFTLY && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_CRAFTLY} />
-        )}
-        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_JLO_INVEST && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_JLO_INVEST} />
-        )}
         <LocalizationProvider>
           <SettingsProvider
             defaultSettings={{

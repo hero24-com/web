@@ -23,52 +23,36 @@ const caseStudies = _caseStudies.slice(0, 6);
 export default function JoinRequestSentView() {
   return (
     <>
-      {/* Hero24 / Taltek old ads account - verified */}
+      {/* Google Ads Conversion Tracking */}
       <Script
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
-          gtag('event', 'conversion', {
-            'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
-            'value': 1.0,
-            'currency': 'EUR'
-          });
-        `,
-        }}
-      />
-      {/* Hero24 / Taltek new ads account - not verified */}
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
-          gtag('event', 'conversion', {
-            'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
-            'value': 1.0,
-            'currency': 'EUR'
-          });
-        `,
-        }}
-      />
-      {/* Hero24 / Craftly ads account - track join hero24 event */}
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
-          gtag('event', 'conversion', {
-            'send_to': 'AW-11557325623/DYVVCKuIgYQaELeW-4Yr',
-            'value': 1.0,
-            'currency': 'EUR'
-          });
-        `,
-        }}
-      />
-      {/* Hero24 / JLO Invest account - track join hero24 event */}
-      <Script
-        dangerouslySetInnerHTML={{
-          __html: `
-          gtag('event', 'conversion', {
-            'send_to': 'AW-17476867001/XXXXXXXXXXXXXX',
-            'value': 1.0,
-            'currency': 'EUR'
-          });
-        `,
+            if (typeof gtag !== 'undefined') {
+              // Hero24 / Taltek old ads account - verified
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
+                'value': 1.0,
+                'currency': 'EUR'
+              });
+              
+              // Hero24 / Taltek new ads account - not verified
+              gtag('event', 'conversion', {
+                'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
+                'value': 1.0,
+                'currency': 'EUR'
+              });
+              
+              // Hero24 / Craftly ads account - track join hero24 event
+              gtag('event', 'conversion', {
+                'send_to': 'AW-11557325623/DYVVCKuIgYQaELeW-4Yr',
+                'value': 1.0,
+                'currency': 'EUR'
+              });
+            } else {
+              console.warn('gtag is not available - Google Analytics may not be loaded');
+            }
+          `,
         }}
       />
       <Container
