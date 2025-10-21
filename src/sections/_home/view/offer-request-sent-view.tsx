@@ -49,6 +49,13 @@ export default function OfferRequestSentView() {
                 'value': 1.0,
                 'currency': 'EUR'
               });
+              
+              // Hero24 / JLO Invest ads account - Request quote conversion
+              gtag('event', 'conversion', {
+                'send_to': 'AW-17651305589/JvijCLnKlbEbEPWY5uBB',
+                'value': 1.0,
+                'currency': 'EUR'
+              });
             } else {
               console.warn('gtag is not available - Google Analytics may not be loaded');
             }
