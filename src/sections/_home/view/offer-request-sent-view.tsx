@@ -59,6 +59,18 @@ export default function OfferRequestSentView() {
         `,
         }}
       />
+      {/* Hero24 / JLO Invest account - track join hero24 event */}
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17476867001/XXXXXXXXXXXXXX',
+            'value': 1.0,
+            'currency': 'EUR'
+          });
+        `,
+        }}
+      />
       <Container
         component={MotionContainer}
         sx={{
