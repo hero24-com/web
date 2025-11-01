@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "lines-around-directive": "off",
+    "perfectionist/sort-imports": "warn",
+    "import/order": "warn",
+    "@typescript-eslint/no-shadow": "warn"
+  }
+}

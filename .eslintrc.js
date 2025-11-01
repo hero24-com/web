@@ -37,12 +37,17 @@ module.exports = {
     'no-promise-executor-return': 0,
     'import/prefer-default-export': 0,
     'prefer-destructuring': [1, { object: true, array: false }],
+    'lines-around-directive': 0,
+    'import/no-duplicates': 1,
+    'import/order': 1,
+    'func-names': 0,
     // typescript
     '@typescript-eslint/naming-convention': 0,
     '@typescript-eslint/no-use-before-define': 0,
     '@typescript-eslint/consistent-type-exports': 1,
     '@typescript-eslint/consistent-type-imports': 1,
     '@typescript-eslint/no-unused-vars': [1, { args: 'none' }],
+    '@typescript-eslint/no-shadow': 1,
     // react
     'react/no-children-prop': 0,
     'react/react-in-jsx-scope': 0,
@@ -53,6 +58,8 @@ module.exports = {
     'react/jsx-no-useless-fragment': [1, { allowExpressions: true }],
     'react/no-unstable-nested-components': [1, { allowAsProps: true }],
     'react/jsx-no-duplicate-props': [1, { ignoreCase: false }],
+    'react/jsx-no-constructed-context-values': 1,
+    'react-hooks/exhaustive-deps': 1,
     // jsx-a11y
     'jsx-a11y/anchor-is-valid': 0,
     'jsx-a11y/control-has-associated-label': 0,

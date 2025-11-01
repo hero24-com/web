@@ -9,6 +9,30 @@ import SvgColor from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
 
+const STEPS = [
+  {
+    title: 'Luotettavuus',
+    description: 'Kaikki ammattilaisemme ovat vastuuvakuutettuja.',
+    icon: '/assets/icons/ic_customer_service.svg',
+  },
+  {
+    title: 'Tyytyväisyystakuu',
+    description: 'Tarjoamme 100% tyytyväisyystakuun kaikille palveluille.',
+    icon: '/assets/icons/ic_secure_payment.svg',
+  },
+  {
+    title: 'Joustava maksu',
+    description: 'Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa.',
+    icon: '/assets/icons/ic_transparency.svg',
+  },
+  {
+    title: 'Monikielinen tuki',
+    description: 'Palvelu on saatavilla suomeksi ja englanniksi.',
+    icon: '/assets/icons/ic_reputation.svg',
+  },
+];
+
+// ----------------------------------------------------------------------
 
 export default function HomeOrderStep() {
   const t = useTranslations('home.whyHero24');

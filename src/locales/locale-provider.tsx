@@ -1,8 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-// Context for accessing locale and change function
-import { useContext, createContext } from 'react';
+import { useState, useEffect, useContext, createContext, useMemo } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 
 const fi = require('../messages/fi.json');
@@ -38,9 +36,11 @@ export default function LocaleProvider({ children }: Props) {
     localStorage.setItem('locale', newLocale);
   };
 
+  const contextValue = useMemo(() => ({ locale, changeLocale }), [locale]);
+
   return (
     <NextIntlClientProvider locale={locale} messages={messages[locale]} timeZone="Europe/Helsinki">
-      <LocaleContext.Provider value={{ locale, changeLocale }}>{children}</LocaleContext.Provider>
+      <LocaleContext.Provider value={contextValue}>{children}</LocaleContext.Provider>
     </NextIntlClientProvider>
   );
 }
