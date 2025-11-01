@@ -1,3 +1,5 @@
+'use client';
+
 import type { BoxProps } from '@mui/material/Box';
 
 import Box from '@mui/material/Box';
@@ -5,6 +7,7 @@ import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import SvgColor from 'src/components/svg-color';
 
@@ -12,24 +15,17 @@ import SvgColor from 'src/components/svg-color';
 
 const COLORS = ['primary', 'success'] as const;
 
-const STEPS = [
-  {
-    name: 'Vähennysoikeus',
-    description:
-      ' Vähennysoikeus kattaa osan huoltopalveluiden työosuudesta, ja vuonna 2024 maksimimäärä on 3 500 € per henkilö vuodessa.',
-    icon: '/assets/icons/ic_money.svg',
-  },
-  {
-    name: 'Vähennys',
-    description:
-      'Vähennys on jopa 60 % työn osuudesta, mikä voi merkittävästi pienentää kustannuksia.',
-    icon: '/assets/icons/ic_report.svg',
-  },
-];
+const STEP_ICONS = ['/assets/icons/ic_money.svg', '/assets/icons/ic_report.svg'];
 
 // ----------------------------------------------------------------------
 
 export default function RealEstateMaintenanceProcess({ sx, ...other }: BoxProps) {
+  const t = useTranslations();
+  const STEPS = [0, 1].map((i) => ({
+    name: t(`realEstate.process.steps.${i}.name`),
+    description: t(`realEstate.process.steps.${i}.description`),
+    icon: STEP_ICONS[i],
+  }));
   return (
     <Box
       component="section"
@@ -50,10 +46,10 @@ export default function RealEstateMaintenanceProcess({ sx, ...other }: BoxProps)
             textAlign: { xs: 'center', md: 'unset' },
           }}
         >
-          <Typography variant="h2">Kotitalousvähennys Kiinteistön Huollossa</Typography>
+          <Typography variant="h2">{t('realEstate.process.title')}</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Hyödynnä kotitalousvähennys kiinteistön huoltokustannuksista.
+            {t('realEstate.process.subtitle')}
           </Typography>
         </Stack>
 

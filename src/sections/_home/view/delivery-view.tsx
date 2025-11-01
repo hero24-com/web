@@ -3,6 +3,7 @@
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
+import { useTranslations } from 'next-intl';
 
 import { _services, _caseStudies, _testimonials } from 'src/_mock';
 
@@ -22,11 +23,12 @@ const _mockService = _services[7];
 const caseStudies = _caseStudies.slice(0, 6);
 
 export default function DeliveryView() {
+  const t = useTranslations();
   return (
     <>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
-          links={[{ name: 'Home', href: '/' }, { name: _mockService.slug }]}
+          links={[{ name: t('nav.home'), href: '/' }, { name: _mockService.slug }]}
           sx={{ mt: 3, mb: 5 }}
         />
 
@@ -36,7 +38,7 @@ export default function DeliveryView() {
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm
               formId="39f921b3-83db-4256-82e4-abc39e630e71"
-              subject="Uusi tarjouspyyntö - Kuljetuspalvelut"
+              subject={t('services.subjects.delivery')}
             />
           </Grid>
 

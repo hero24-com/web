@@ -1,0 +1,685 @@
+{
+  "home": {
+    "hero": {
+      "title": "Hero24 - Conecta profesionales y clientes desde un solo lugar",
+      "subtitle1": "Elige profesionales de primer nivel para todas las necesidades de vivienda y gestión de propiedades desde un solo lugar.",
+      "subtitle2": "Garantía de satisfacción del 100% y asegurados - todos los servicios adaptados solo para ti.",
+      "selectService": "Seleccionar servicio",
+      "phone": "+358 50 413 2867",
+      "email": "support@hero24.com",
+      "summary": {
+        "customers": "Clientes",
+        "orders": "Pedidos",
+        "heroes": "Héroes"
+      }
+    },
+    "services": {
+      "title": "Servicios para hogares, propiedades y empresas",
+      "subtitle": "¡Todos los servicios del hogar y la propiedad fácilmente disponibles en toda Finlandia a través de Hero24!"
+    },
+    "whyHero24": {
+      "forCustomers": "Para Clientes",
+      "title": "¿Por qué Hero24?",
+      "steps": {
+        "reliability": {
+          "title": "Confiabilidad",
+          "description": "Todos nuestros profesionales están asegurados con responsabilidad civil."
+        },
+        "satisfaction": {
+          "title": "Garantía de Satisfacción",
+          "description": "Ofrecemos una garantía de satisfacción del 100% para todos los servicios."
+        },
+        "flexiblePayment": {
+          "title": "Pago Flexible",
+          "description": "Múltiples opciones de pago disponibles, y puedes revisar el precio del servicio con anticipación."
+        },
+        "multilingualSupport": {
+          "title": "Soporte Multilingüe",
+          "description": "El servicio está disponible en finlandés e inglés."
+        }
+      }
+    },
+    "downloadApp": {
+      "title": "Descargar la aplicación",
+      "subtitle": "¡Descarga la aplicación Hero24 ahora y encuentra a tus héroes de servicio, o únete a nuestros héroes, hoy mismo!",
+      "qrCodeText": "Escanea el código QR e instala la aplicación en tu teléfono"
+    },
+    "testimonials": {
+      "title": "Miles de reseñas genuinas de clientes, promedio superior a 4.5/5 estrellas",
+      "items": [
+        "El trabajo se completó a tiempo y de manera profesional. ¡Lo recomiendo mucho!",
+        "Excelente servicio de principio a fin. Definitivamente lo usaré de nuevo.",
+        "Todo salió exactamente como se acordó. ¡Gracias!",
+        "Trabajo confiable y de calidad. Muy satisfecho con el resultado.",
+        "Respuesta rápida y programación flexible. ¡Recomendado!",
+        "Operación profesional y buen servicio al cliente.",
+        "El trabajo se realizó con cuidado y de manera ordenada. ¡Gran experiencia!",
+        "Servicio amable y precio razonable. ¡Muchas gracias!",
+        "Ayuda experta y precios claros. Estoy muy satisfecho.",
+        "Todo salió sin problemas y el resultado superó las expectativas.",
+        "¡Realmente buen servicio! Lo usaré de nuevo en el futuro.",
+        "Trabajo rápido y eficiente. ¡Lo recomiendo mucho!",
+        "Socio confiable que hace el trabajo correctamente.",
+        "Excelente calidad y profesionalismo. ¡Gracias por el gran trabajo!",
+        "Fácil de ordenar y comunicación fluida. ¡Gran servicio!"
+      ]
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "top": {
+      "services": "Servicios",
+      "orderHero": "Pide un Héroe",
+      "smartHome": "Vida sin preocupaciones",
+      "realEstateMaintenance": "Servicios de mantenimiento para comunidades",
+      "ownCustomer": "Facturar a tus propios clientes",
+      "contact": "Contacto",
+      "joinHero": "Únete Como Héroe"
+    },
+    "subheaders": {
+      "cleaningHomeHelp": "Limpieza y ayuda en el hogar",
+      "appliances": "Electrodomésticos y dispositivos",
+      "movingAndLifting": "Servicios de mudanza y ayuda de carga",
+      "renovationAndLVIS": "Reformas y climatización/electricidad/fontanería",
+      "yardAndProperty": "Jardín y mantenimiento de propiedad",
+      "other": "Otros"
+    },
+    "links": {
+      "cleaningHome": "Limpieza del hogar",
+      "cleaningOffice": "Limpieza de oficinas",
+      "cleaningMoving": "Limpieza de mudanza",
+      "cleaningRenovation": "Limpieza de reforma",
+      "cleaningWindow": "Limpieza de ventanas",
+      "domesticHelp": "Ayuda doméstica",
+      "homeAppliance": "Reparación de electrodomésticos",
+      "electronicAppliance": "Reparación de electrónica",
+      "refrigerationAppliance": "Equipos de refrigeración",
+      "movingService": "Servicio de mudanza",
+      "movingLifting": "Ayuda de carga",
+      "delivery": "Ayuda de transporte",
+      "installationServices": "Servicios de instalación",
+      "airConditioning": "Servicios de climatización",
+      "renovation": "Reformas y construcción",
+      "electrician": "Trabajos eléctricos",
+      "plumber": "Fontanería",
+      "handyman": "Manitas",
+      "asbestos": "Inspecciones de asbesto",
+      "yardWork": "Trabajo de jardín",
+      "propertyMaintenance": "Mantenimiento de propiedades y administración",
+      "yardModification": "Modificaciones y construcción del jardín",
+      "orderHero": "Pide un Héroe",
+      "joinHero": "Únete como Héroe",
+      "smartHome": "Vida sin preocupaciones",
+      "realEstateMaintenance": "Servicios de mantenimiento para comunidades",
+      "ownCustomer": "Facturar a tus propios clientes",
+      "openOrder": "¿Buscas otro servicio?",
+      "contact": "Contacto"
+    }
+  },
+  "footer": {
+    "description": "Héroes para los desafíos diarios",
+    "howItWorks": {
+      "subtitle": "También ofrecemos muchos otros servicios según sea necesario.",
+      "items": [
+        {
+          "step": "1. Contratos de mantenimiento",
+          "title1": "",
+          "description11": "Precio por contrato: Una tarifa mensual fija que cubre todos los servicios de mantenimiento acordados. Este modelo facilita la presupuestación y ofrece una estructura de costos clara.",
+          "description12": "Precio por tarea: Pagas solo por los trabajos de mantenimiento realizados. Este modelo flexible se adapta a necesidades de mantenimiento variables.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "2. Mantenimiento del inmueble",
+          "title1": "Mantenimiento general",
+          "description11": "Limpieza: Limpieza regular de zonas comunes (pasillos, escaleras, ascensores, áreas exteriores). Limpiezas especiales: estacionales y posteriores a eventos.",
+          "description12": "Gestión de residuos: Recogida y clasificación de basura, vaciado de contenedores, mantenimiento y optimización de puntos de reciclaje.",
+          "description13": "Cuidado de áreas verdes y jardín: Mantenimiento de patios y jardines – cuidado de plantaciones y césped, rastrillado de hojas y mantenimiento estacional. Estructuras del patio – reparaciones y mantenimiento como pavimentación y puertas.",
+          "title2": "Mantenimiento de emergencia",
+          "description21": "Problemas de fontanería: Reparación de fugas, desatasco de desagües, reparación de grifos y sanitarios con fugas.",
+          "description22": "Reparaciones eléctricas: Diagnóstico de fallos en equipos eléctricos, comprobaciones de seguridad eléctrica, resolución de interrupciones.",
+          "description23": "Mantenimiento del sistema de calefacción: Inspección y ajuste de equipos de calefacción, reparaciones del sistema.",
+          "title3": "Retiro de nieve y mantenimiento invernal",
+          "description31": "Retiro de nieve: Limpieza de nieve en patios, accesos y aceras.",
+          "description32": "Medidas antideslizantes: Aplicación de soluciones anticongelantes y control de deslizamiento en áreas exteriores.",
+          "description33": "Mantenimiento invernal: Revisión de equipos de calefacción, prevención de congelaciones y acciones de mantenimiento necesarias."
+        },
+        {
+          "step": "3. Libro de mantenimiento digital",
+          "title1": "",
+          "description11": "Seguimiento del mantenimiento: Seguimiento en tiempo real de las tareas de mantenimiento, documentación de incidencias y acciones realizadas.",
+          "description12": "Informes de inspección: Informes detallados sobre trabajos de mantenimiento, problemas detectados y reparaciones. Ayudan al consejo y al administrador a controlar el estado del inmueble y tomar decisiones informadas.",
+          "description13": "Gestión financiera: Presupuestación, planificación financiera, contabilidad e informes para apoyar el control de costes.",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "4. Servicios de apoyo a residentes",
+          "title1": "",
+          "description11": "Avisos de averías y reparaciones: Coordinación de trabajos y gestión de solicitudes de residentes. Ayuda rápida: Acciones inmediatas para problemas urgentes.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "5. Reformas y reparaciones",
+          "title1": "",
+          "description11": "Reformas pequeñas y grandes: Reformas de baños y cocinas – servicio completo desde la planificación y elección de materiales hasta el acabado. Pintura interior y exterior: Servicios de pintura, reparación de paredes y recubrimientos.",
+          "description12": "Trabajos de construcción y reparación: Reparaciones en el edificio – incluidas mejoras estructurales. Mejoras interiores: Reformas de apartamentos, instalación de suelos, sustitución de puertas y ventanas.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "6. Servicios adicionales",
+          "title1": "",
+          "description11": "Inspecciones de contadores de energía y agua: Revisiones periódicas y mantenimiento para optimizar el consumo de energía y agua.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        }
+      ]
+    },
+    "app": {
+      "title": "Aplicación",
+      "downloadOn": "Descargar en",
+      "intro": "El precio de los servicios de mantenimiento depende de varios factores. Entendemos que estimar los costos puede ser difícil, por eso explicamos qué influye en el precio:",
+      "items": [
+        {
+          "name": "Tamaño y antigüedad del inmueble",
+          "content1": "Tamaño: Las propiedades más pequeñas, como casas adosadas, suelen tener un coste de mantenimiento menor que los grandes edificios y zonas extensas.",
+          "content2": "Antigüedad: Los edificios más antiguos suelen requerir más mantenimiento y reparaciones que los nuevos."
+        },
+        {
+          "name": "Alcance del contrato de mantenimiento",
+          "content1": "Contratos de precio fijo: La mayoría de los contratos son de precio fijo, lo que significa que la tarifa mensual cubre los servicios acordados sin cargos adicionales.",
+          "content2": "Precios según necesidades: En algunos casos, los servicios se facturan según las tareas realizadas."
+        },
+        {
+          "name": "Servicios adicionales",
+          "content1": "Servicios externos: Si el contrato no cubre reformas especiales o mantenimiento extra, esto puede afectar al coste total.",
+          "content2": ""
+        }
+      ]
+    },
+    "regions": {
+      "companyTitle": "Responsabilidades de la comunidad",
+      "shareholder": {
+        "items": [
+          {
+            "title": "Reparaciones y mantenimiento dentro del apartamento",
+            "description": "El propietario es responsable de las partes interiores de su vivienda, excluyendo estructuras portantes y aislamiento. Por ejemplo, pintura, empapelado y renovación de suelos."
+          },
+          {
+            "title": "Zonas húmedas",
+            "description": "El propietario mantiene lavabos, bañeras y mangueras de ducha. La limpieza del desagüe del suelo también es su responsabilidad."
+          },
+          {
+            "title": "Electrodomésticos",
+            "description": "La estufa de sauna, el horno y otros electrodomésticos son responsabilidad del propietario."
+          },
+          {
+            "title": "Elementos eléctricos",
+            "description": "Sustitución de bombillas, fusibles y enchufes corresponde al propietario."
+          },
+          {
+            "title": "Barras de cortina y muebles fijos",
+            "description": "Barras de cortina, armarios y otros muebles fijos son responsabilidad del propietario."
+          },
+          {
+            "title": "Detectores de humo",
+            "description": "El propietario se asegura del funcionamiento de los detectores de humo con batería y del cambio de pilas."
+          }
+        ]
+      },
+      "company": {
+        "items": [
+          {
+            "title": "Partes exteriores del edificio",
+            "description": "La comunidad se encarga de puertas exteriores, marcos exteriores de ventanas, fachadas y la impermeabilización de balcones."
+          },
+          {
+            "title": "Reparaciones de baño y WC",
+            "description": "La comunidad se ocupa de reparaciones de impermeabilización en baños, sustitución de inodoros y limpieza de sifones."
+          },
+          {
+            "title": "Equipos de calefacción y ventilación",
+            "description": "Radiadores fijos y sistemas de ventilación son responsabilidad de la comunidad, incluida la purga de radiadores y el ajuste de válvulas."
+          },
+          {
+            "title": "Áreas exteriores y patio",
+            "description": "La comunidad mantiene las áreas exteriores, como corte de césped y retirada de nieve."
+          },
+          {
+            "title": "Infraestructura eléctrica",
+            "description": "La comunidad mantiene el cableado eléctrico fijo, cuadros de fusibles y equipos de antena."
+          },
+          {
+            "title": "Control de plagas",
+            "description": "La comunidad gestiona la eliminación de plagas como ratas y ratones."
+          }
+        ]
+      },
+      "varsinaisSuomi": "Finlandia Suroccidental",
+      "pirkanmaa": "Pirkanmaa",
+      "keskiSuomi": "Finlandia Central",
+      "subtitle": "Aprovecha la deducción por los costes de mantenimiento.",
+      "steps": [
+        {
+          "name": "Derecho a deducción",
+          "description": "La deducción cubre una parte de la mano de obra de los servicios de mantenimiento; en 2024 el máximo es de 3.500 € por persona al año."
+        },
+        {
+          "name": "Importe",
+          "description": "La deducción es de hasta el 60% de la parte del trabajo, lo que puede reducir significativamente los costes."
+        }
+      ],
+      "costaDelSol": "Costa del Sol (Sur de España)"
+    },
+    "faqs": {
+      "title": "Por qué elegir Hero24",
+      "items": [
+        {
+          "q": "Servicio 24/7",
+          "a": "Hero24 ofrece mantenimiento y atención al cliente las 24 horas. Estamos listos para responder a situaciones urgentes en cualquier momento, garantizando el funcionamiento continuo de tu propiedad."
+        },
+        {
+          "q": "Paquete de servicios integral",
+          "a": "Nuestros servicios cubren todas las necesidades de mantenimiento con un solo contrato. Esto elimina la necesidad de múltiples proveedores y simplifica la gestión."
+        },
+        {
+          "q": "Flexibilidad y personalización",
+          "a": "Ofrecemos contratos de mantenimiento flexibles, adaptados exactamente a tus necesidades. Pagas solo por lo que realmente necesitas."
+        },
+        {
+          "q": "Tecnología innovadora",
+          "a": "Utilizamos un libro de mantenimiento digital que mejora la calidad y eficiencia del servicio, permitiendo seguimiento en tiempo real y documentación precisa."
+        },
+        {
+          "q": "Satisfacción del cliente",
+          "a": "Nuestro objetivo es ofrecer un servicio de alta calidad y la satisfacción de los residentes. Planificamos y ejecutamos el mantenimiento acorde a las expectativas de residentes y junta."
+        },
+        {
+          "q": "Experiencia y conocimiento",
+          "a": "Amplia experiencia en gestión y mantenimiento inmobiliario nos permite actuar de forma eficiente y profesional en distintas situaciones."
+        }
+      ]
+    },
+    "links": {
+      "termsHero": "Términos (Héroe)",
+      "privacyFi": "Privacidad (FI)",
+      "privacyEn": "Privacidad (EN)"
+    },
+    "copyright": "© {year}. Hero24. Todos los derechos reservados."
+  },
+  "services": {
+    "common": {
+      "orderNowPayLater": "Pide ahora"
+    },
+    "payment": {
+      "openDialogButton": "Reserva ahora – tienda online",
+      "choosePackageTitle": "Elige un paquete"
+    },
+    "details": {
+      "descriptionTitle": "Descripción",
+      "includesTitle": "Nuestros servicios incluyen",
+      "whyTitle": "¿Por qué elegir Hero24?",
+      "moreServicesTitle": "Otros servicios"
+    },
+    "pages": {
+      "airConditioning": {
+        "description": "Ofrecemos instalación y mantenimiento fiables de sistemas de ventilación y climatización para mantener el aire interior fresco y saludable.",
+        "includes": [
+          "Instalación de nuevos sistemas de ventilación/climatización",
+          "Mantenimiento periódico para garantizar el mejor rendimiento",
+          "Limpieza de conductos para un aire interior más limpio"
+        ],
+        "reasons": [
+          "Técnicos experimentados y asegurados",
+          "Precios transparentes y programación rápida",
+          "Alta satisfacción del cliente y trabajo garantizado"
+        ]
+      },
+      "asbestos": {
+        "description": "Inspecciones certificadas de asbesto para reformas seguras y cumplimiento normativo.",
+        "includes": [
+          "Inspecciones de asbesto",
+          "Toma de muestras e informe",
+          "Asesoría de seguridad"
+        ],
+        "reasons": ["Expertos certificados", "Documentación clara", "Entrega rápida"]
+      },
+      "cleaningHome": {
+        "description": "Limpieza del hogar a fondo y a tu medida—puntual o recurrente.",
+        "includes": [
+          "Limpieza regular/puntual",
+          "Tareas de limpieza profunda",
+          "Productos ecológicos a solicitud"
+        ],
+        "reasons": ["Personal de confianza", "Horarios flexibles", "Calidad garantizada"]
+      },
+      "cleaningMoving": {
+        "description": "Limpieza de mudanza (salida/entrada) que cumple los requisitos del arrendador y la inspección.",
+        "includes": [
+          "Limpieza profunda de todas las estancias",
+          "Electrodomésticos y zonas difíciles",
+          "Revisión final de control"
+        ],
+        "reasons": ["Lista para inspección", "Precio fijo y transparente", "Resultados confiables"]
+      },
+      "cleaningOffice": {
+        "description": "Limpieza profesional de oficinas que mantiene tu espacio impecable y productivo.",
+        "includes": [
+          "Servicio de conserjería regular",
+          "Zonas comunes y cocinas",
+          "Ventanas/servicios extra a pedido"
+        ],
+        "reasons": ["Equipos confiables", "Disponibilidad fuera de horario", "Calidad consistente"]
+      },
+      "cleaningRenovation": {
+        "description": "Limpieza posterior a reforma para eliminar polvo y residuos de forma segura y exhaustiva.",
+        "includes": [
+          "Eliminación de polvo fino",
+          "Limpieza de superficies y accesorios",
+          "Gestión de residuos"
+        ],
+        "reasons": ["Métodos seguros para obra", "Equipos de protección", "Atención al detalle"]
+      },
+      "cleaningWindow": {
+        "description": "Limpieza de ventanas sin marcas para hogares y oficinas.",
+        "includes": [
+          "Cristales interior/exterior",
+          "Marcos y alféizares",
+          "Escaleras y equipos de seguridad"
+        ],
+        "reasons": ["Personal experimentado", "Brillo garantizado", "Horarios flexibles"]
+      },
+      "delivery": {
+        "description": "Transporte bajo demanda para artículos, compras y pequeñas mudanzas.",
+        "includes": ["Recogida y entrega", "Embalaje protector", "Planificación de rutas"],
+        "reasons": ["Manipulación cuidadosa", "Precio transparente", "Servicio rápido"]
+      },
+      "domesticHelp": {
+        "description": "Ayuda general en el hogar—mandados, organización y apoyo diario.",
+        "includes": ["Mandados y compras", "Tareas ligeras del hogar", "Organización y asistencia"],
+        "reasons": ["Ayudantes amables", "Tareas a medida", "Servicio de confianza"]
+      },
+      "electrician": {
+        "description": "Instalaciones eléctricas certificadas, reparaciones y diagnóstico de fallas.",
+        "includes": ["Enchufes e iluminación", "Tablero de fusibles", "Búsqueda de fallas"],
+        "reasons": ["Electricistas autorizados", "Seguridad ante todo", "Precios claros"]
+      },
+      "plumber": {
+        "description": "Reparaciones, instalaciones y mantenimiento de fontanería para el hogar y la propiedad.",
+        "includes": ["Reparación de fugas", "Reemplazo de grifería y sanitarios", "Desatascos"],
+        "reasons": ["Respuesta rápida", "Repuestos de calidad", "Trabajo limpio"]
+      },
+      "homeAppliance": {
+        "description": "Reparación y mantenimiento de electrodomésticos para prolongar su vida útil.",
+        "includes": ["Diagnóstico", "Reemplazo de repuestos", "Pruebas de funcionamiento"],
+        "reasons": [
+          "Técnicos especializados",
+          "Trabajo compatible con garantía",
+          "Presupuestos honestos"
+        ]
+      },
+      "electronicAppliance": {
+        "description": "Reparación de dispositivos y electrónica de consumo.",
+        "includes": ["Diagnóstico", "Reemplazo de componentes", "Limpieza y pruebas"],
+        "reasons": [
+          "Experiencia en dispositivos",
+          "Manejo seguro de datos",
+          "Cotizaciones transparentes"
+        ]
+      },
+      "refrigerationAppliance": {
+        "description": "Instalación y servicio de equipos de refrigeración y congeladores.",
+        "includes": [
+          "Instalación de equipos",
+          "Revisión de refrigerante",
+          "Servicio de sellos y sensores"
+        ],
+        "reasons": [
+          "Métodos seguros de temperatura",
+          "Técnicos certificados",
+          "Reparaciones rápidas"
+        ]
+      },
+      "installationServices": {
+        "description": "Montaje e instalación de muebles, accesorios y equipos.",
+        "includes": ["Montaje de muebles", "Anclaje e instalación", "Gestión de cables"],
+        "reasons": ["Acabado prolijo", "Herramientas y herrajes incluidos", "Servicio puntual"]
+      },
+      "movingService": {
+        "description": "Servicio de mudanza completo con embalaje cuidadoso y transporte seguro.",
+        "includes": ["Embalaje y materiales", "Carga y transporte", "Descarga y colocación"],
+        "reasons": ["Mudadores asegurados", "Materiales de protección", "Equipos puntuales"]
+      },
+      "movingLifting": {
+        "description": "Mano extra para levantar y transportar objetos pesados.",
+        "includes": ["Movimiento de muebles", "Cargas por escaleras", "Colocación en sitio"],
+        "reasons": ["Manipulación cuidadosa", "Equipo adecuado", "Horarios flexibles"]
+      },
+      "propertyMaintenance": {
+        "description": "Mantenimiento continuo de propiedades y gestión de fincas para comunidades.",
+        "includes": [
+          "Cuidado de áreas comunes",
+          "Trabajos estacionales de jardín",
+          "Mantenimiento de emergencia"
+        ],
+        "reasons": ["Socio confiable", "Reportes claros", "Disponibilidad 24/7"]
+      },
+      "renovation": {
+        "description": "Reformas pequeñas y grandes con gestión profesional del proyecto.",
+        "includes": ["Cocina/baño", "Pintura y acabados", "Trabajos estructurales"],
+        "reasons": ["Alta calidad de obra", "Presupuesto transparente", "Entrega en plazo"]
+      },
+      "yardModification": {
+        "description": "Estructuras y mejoras de jardín para realzar tu espacio exterior.",
+        "includes": ["Terrazas y cercas", "Pavimento y senderos", "Elementos decorativos"],
+        "reasons": ["Materiales duraderos", "Diseño funcional", "Ejecución limpia"]
+      },
+      "yardWork": {
+        "description": "Cuidado del césped, plantación y mantenimiento estacional.",
+        "includes": ["Corte y bordes", "Plantación y poda", "Hojas y nieve (estacional)"],
+        "reasons": ["Horarios confiables", "Resultados prolijos", "Todo el año"]
+      },
+      "openOrder": {
+        "description": "¿No encontraste lo que buscas? Haz un pedido abierto describiendo tu necesidad y te conectamos con el experto adecuado.",
+        "includes": ["Describe tu tarea", "Recibe ofertas a medida", "Elige tu horario preferido"],
+        "reasons": ["Cubrimos cualquier tarea", "Respuestas rápidas", "Un solo pedido sencillo"]
+      }
+    },
+    "reserveForm": {
+      "title": "¡Solicita un presupuesto—posible disponibilidad el mismo día!",
+      "defaultSubject": "Nueva solicitud de presupuesto - Reserva de servicio"
+    },
+    "subjects": {
+      "cleaningHome": "Nueva solicitud de presupuesto - Limpieza del hogar",
+      "cleaningOffice": "Nueva solicitud de presupuesto - Limpieza de oficinas",
+      "cleaningMoving": "Nueva solicitud de presupuesto - Limpieza de mudanza",
+      "cleaningRenovation": "Nueva solicitud de presupuesto - Limpieza de reforma",
+      "cleaningWindow": "Nueva solicitud de presupuesto - Limpieza de ventanas",
+      "homeAppliance": "Nueva solicitud de presupuesto - Reparación de electrodomésticos",
+      "electronicAppliance": "Nueva solicitud de presupuesto - Reparación de electrónica",
+      "refrigerationAppliance": "Nueva solicitud de presupuesto - Equipos de refrigeración",
+      "movingService": "Nueva solicitud de presupuesto - Servicio de mudanza",
+      "movingLifting": "Nueva solicitud de presupuesto - Ayuda de carga",
+      "delivery": "Nueva solicitud de presupuesto - Ayuda de transporte",
+      "airConditioning": "Nueva solicitud de presupuesto - Servicios de climatización",
+      "renovation": "Nueva solicitud de presupuesto - Reformas y construcción",
+      "electrician": "Nueva solicitud de presupuesto - Trabajos eléctricos",
+      "plumber": "Nueva solicitud de presupuesto - Fontanería",
+      "handyman": "Nueva solicitud de presupuesto - Manitas",
+      "asbestos": "Nueva solicitud de presupuesto - Inspecciones de asbesto",
+      "propertyMaintenance": "Nueva solicitud de presupuesto - Mantenimiento de propiedades y administración",
+      "yardWork": "Nueva solicitud de presupuesto - Trabajo de jardín",
+      "yardModification": "Nueva solicitud de presupuesto - Modificaciones y construcción del jardín",
+      "realEstateMaintenance": "Nueva solicitud de presupuesto - Servicios de mantenimiento para comunidades",
+      "domesticHelp": "Nueva solicitud de presupuesto - Ayuda doméstica",
+      "openOrder": "Nueva solicitud de presupuesto - Pedido abierto"
+    }
+  },
+  "smartHome": {
+    "pricing": {
+      "title": "Vida sin preocupaciones con Hero24 – ¿Por qué elegirnos?",
+      "description": "Bienvenido a Hero24, donde la tranquilidad es más que una promesa: es una forma práctica de vivir. Ofrecemos una solución integral que hace que el mantenimiento del hogar sea fácil, eficiente y sin estrés. Nuestro servicio está pensado para quienes valoran una vida cómoda y sin complicaciones de mantenimiento. Como suscriptor Premium, también obtienes beneficios únicos como descuentos, servicio más rápido, seguro ampliado y consultas/visitas de evaluación gratuitas—haciendo tu vida aún más despreocupada.",
+      "ctaOverline": "¡Únete a Hero24 Premium por solo 19,90 € al mes y disfruta de todos los beneficios de una vida sin preocupaciones!",
+      "featureColumnHeader": "Característica",
+      "popular": "POPULAR",
+      "perMonth": "/mes"
+    },
+    "include": {
+      "title": "¿Por qué elegir Hogar Inteligente sin Preocupaciones?",
+      "subtitle": "Bienvenido al mundo del Hogar Inteligente sin Preocupaciones, donde la tecnología y el cuidado se combinan para crear una vida mejor y más cómoda. ¿Por qué elegirnos?",
+      "items": [
+        {
+          "title": "Facilidad y comodidad",
+          "description": "El Hogar Inteligente sin Preocupaciones ofrece una gama completa de servicios que hacen que la gestión del hogar sea sencilla y eficiente. Nos ocupamos de la restauración, el mantenimiento y la conservación para que tú solo disfrutes de tu hogar."
+        },
+        {
+          "title": "Prevención y reparación proactiva",
+          "description": "Nuestros paquetes no solo reaccionan a los problemas: anticipan y previenen necesidades de mantenimiento y reparación. Así ahorras tiempo, esfuerzo y costes a largo plazo."
+        },
+        {
+          "title": "Experiencia profesional y fiabilidad",
+          "description": "Detrás del Hogar Inteligente sin Preocupaciones hay un equipo de profesionales con experiencia en quienes puedes confiar para cuidar tu hogar."
+        },
+        {
+          "title": "Además, ofrecemos 24/7",
+          "description": "Acceso a profesionales cuando lo necesites y nuestros servicios con tarifas reducidas. Al elegir Hogar Inteligente sin Preocupaciones obtienes comodidad y la seguridad de que tu hogar está en buenas manos."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "¿Qué incluyen nuestros paquetes?",
+      "description": "Nuestros paquetes de Hogar Inteligente sin Preocupaciones están diseñados para ofrecer reformas, mantenimiento y conservación integrales y a medida para cada necesidad. Los paquetes incluyen todos los servicios de Hero24, entre ellos:",
+      "items": [
+        "Servicios de conservación del hogar/propiedad",
+        "Trabajos de reparación del hogar",
+        "Mudanzas, ayuda de carga y transporte",
+        "Trabajos de mantenimiento e inspecciones",
+        "Medidas de conservación y reparaciones",
+        "Reparaciones y mantenimiento proactivos"
+      ]
+    },
+    "highlights": {
+      "title": "Servicios",
+      "groups": {
+        "yardAndProperty": "Jardín y mantenimiento de la propiedad",
+        "renovationAndHVAC": "Reformas y climatización/electricidad/fontanería",
+        "movingAndLifting": "Mudanzas y ayuda de carga",
+        "cleaningAndHomeHelp": "Limpieza y ayuda en el hogar",
+        "appliancesAndDevices": "Electrodomésticos y dispositivos"
+      },
+      "group1": [
+        "Trabajo de jardín: Cuidado del césped, plantaciones y mantenimiento estacional",
+        "Mantenimiento y administración de la propiedad",
+        "Modificaciones y construcción del jardín: Estructuras y mejoras"
+      ],
+      "group2": [
+        "Servicios de climatización: Instalación y mantenimiento",
+        "Reformas y construcción: Proyectos grandes y pequeños",
+        "Trabajos eléctricos: Instalaciones y reparaciones",
+        "Fontanería: Reparaciones y mantenimiento",
+        "Manitas: Carpintería y pequeñas reparaciones",
+        "Inspecciones de asbesto: Salud y seguridad"
+      ],
+      "group3": [
+        "Servicio de mudanza: Asistencia para mudanzas",
+        "Ayuda de carga: Transporte de muebles",
+        "Ayuda de transporte: Traslado de objetos"
+      ],
+      "group4": [
+        "Limpieza del hogar: Limpieza regular y especializada",
+        "Limpieza de oficinas: Espacios comerciales y de oficina",
+        "Limpieza de mudanza: Antes y después de la mudanza",
+        "Limpieza de reforma: Limpieza de obra y reformas",
+        "Limpieza de ventanas: Lavado de ventanas",
+        "Ayuda doméstica: Asistencia general en el hogar"
+      ],
+      "group5": [
+        "Reparación de electrodomésticos: Arreglo y mantenimiento",
+        "Reparación de electrónica: Dispositivos electrónicos",
+        "Equipos de refrigeración: Unidades de frío y congelación"
+      ]
+    }
+  },
+  "realEstate": {
+    "hero": {
+      "title": "Hero24 – Servicios integrales y fiables para comunidades",
+      "p1": "Hero24 ofrece servicios completos de mantenimiento y conservación para comunidades, haciendo la gestión de la propiedad lo más sencilla y eficiente posible. Ofrecemos una solución integral que cubre todas las necesidades de gestión 24/7.",
+      "p2": "Somos un socio de confianza para comunidades en todas las necesidades de mantenimiento. Proporcionamos mantenimiento regular, reparaciones urgentes y grandes reformas en Uusimaa, Finlandia Suroccidental, Pirkanmaa, Finlandia Central y Päijät‑Häme. Nuestro equipo experto mantiene las propiedades seguras y cómodas todo el año. Nuestro servicio flexible cubre todo lo que tu comunidad necesita para un día a día fluido.",
+      "p3": "¡Contáctanos y solicita un presupuesto; diseñaremos la solución adecuada para tus necesidades!"
+    },
+    "summary": {
+      "customers": "Clientes",
+      "orders": "Pedidos",
+      "heroes": "Héroes"
+    },
+    "form": {
+      "title": "Contacto",
+      "description": "Ponte en contacto y adaptaremos la mejor solución de mantenimiento de la propiedad para ti. Estaremos encantados de darte más información y hablar en detalle de tus necesidades.",
+      "subject": "Solicitud de contacto - Mantenimiento de propiedades"
+    },
+    "howItWorks": {
+      "title": "Servicios de mantenimiento más comunes de Hero24 para comunidades",
+      "subtitle": "También ofrecemos muchos otros servicios según sea necesario."
+    },
+    "cost": {
+      "title": "Precio del mantenimiento de la propiedad – Cómo se compone",
+      "intro": "El precio de los servicios de mantenimiento de la propiedad varía según varios factores. Sabemos que calcular costes puede ser difícil, por eso explicamos qué influye en el precio:"
+    },
+    "responsibility": {
+      "title": "Responsabilidades del propietario y de la comunidad",
+      "shareholderTitle": "Responsabilidades del propietario",
+      "companyTitle": "Responsabilidades de la comunidad"
+    },
+    "process": {
+      "title": "Deducción fiscal por servicios del hogar en el mantenimiento",
+      "subtitle": "Aprovecha la deducción fiscal por los costes de mantenimiento de la propiedad."
+    },
+    "faqs": {
+      "title": "Por qué elegir Hero24"
+    }
+  },
+  "settings": {
+    "colors": "Colores"
+  }
+}

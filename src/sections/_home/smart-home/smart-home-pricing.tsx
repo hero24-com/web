@@ -5,6 +5,7 @@ import Tooltip from '@mui/material/Tooltip';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -20,6 +21,7 @@ import SmartHomePricingContentDesktop from './smart-home-pricing-content-desktop
 
 export default function SmartHomePricing() {
   const mdUp = useResponsive('up', 'md');
+  const t = useTranslations();
 
   return (
     <Container
@@ -37,22 +39,15 @@ export default function SmartHomePricing() {
         }}
       >
         <Typography variant="h2" paragraph>
-          Huoleton Asuminen Hero24 – Miksi Valita Meidät?
+          {t('smartHome.pricing.title')}
         </Typography>
 
         <Typography align="center" sx={{ color: 'text.secondary' }}>
-          Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se on käytännön tapa
-          elää. Me tarjoamme sinulle kokonaisvaltaisen ratkaisun, joka tekee kodin huollosta ja
-          ylläpidosta vaivatonta, tehokasta ja stressitöntä. Meidän palvelumme on suunniteltu
-          erityisesti sinulle, joka arvostat rauhallista ja mukavaa asumista ilman huoltoa vaativia
-          ongelmia. Premium-tilaajana saat lisäksi ainutlaatuisia etuja, kuten alennuksia, nopeampaa
-          palvelua, laajan vakuutuksen ja ilmaisia konsultaatioita/arviokäyntejä, jotka tekevät
-          asumisestasi vieläkin huolettomampaa.
+          {t('smartHome.pricing.description')}
         </Typography>
 
         <Typography variant="overline" align="center" sx={{ color: 'primary.main' }}>
-          Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti kaikista huolettoman
-          asumisen eduista!
+          {t('smartHome.pricing.ctaOverline')}
         </Typography>
       </Stack>
 
@@ -60,7 +55,7 @@ export default function SmartHomePricing() {
         {mdUp && (
           <Grid xs={12} md={8} sx={{ pb: 5 }}>
             <Typography variant="overline" sx={{ color: 'primary.main' }}>
-              Ominaisuus
+              {t('smartHome.pricing.featureColumnHeader')}
             </Typography>
           </Grid>
         )}

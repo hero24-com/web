@@ -9,6 +9,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { alpha, useTheme } from '@mui/material/styles';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -16,64 +17,7 @@ import { bgGradient } from 'src/theme/css';
 
 // ----------------------------------------------------------------------
 
-const TIMELINES = [
-  {
-    step: '1. Huoltosopimukset',
-    description11:
-      'Urakkahinta: Kiinteä kuukausihinta, joka kattaa kaikki sovitut huoltopalvelut. Tämä malli auttaa budjetoinnissa ja tarjoaa selkeän kustannusrakenteen.',
-    description12:
-      'Työtehtäväkohtainen Hinta: Maksat vain toteutuneista huoltopalveluista. Tämä joustava malli sopii tilanteisiin, joissa huoltotarpeet vaihtelevat.',
-  },
-  {
-    step: '2. Kiinteistön Ylläpito',
-    title1: 'Yleiset Huoltotoimenpiteet',
-    description11:
-      'Siivous: Yhteisten tilojen säännöllinen siivous ja puhtaanapito (käytävät, rappukäytävät, hissit, ulkoalueet). Erikoissiivoukset - Kausittaiset ja tapahtumien jälkeiset siivoukset.',
-    description12:
-      'Jätehuolto: Jätteiden keräys ja lajittelu, Roskakatosten tyhjennys, Kierrätyspisteiden huolto ja jätehuollon optimointi.',
-    description13:
-      'Viherrakentaminen ja Pihatyöt: Pihan ja puutarhan hoito - Istutusten ja nurmikon kunnossapito, lehtien haravointi, kausihuolto. Piharakenteet - Korjaukset ja huollot, kuten laatoitukset ja porttien ylläpito.',
-    title2: 'Hätähuolto',
-    description21:
-      'Putkistohäiriöt: Putkivuotojen korjaus, viemärin tukosten avaaminen, vuotavien hanien ja wc-istuimien korjaus.',
-    description22:
-      'Sähkötöiden Korjaukset: Sähkölaitteiden vianmääritys, sähköturvallisuuden tarkastukset, sähköhäiriöiden selvittäminen.',
-    description23:
-      'Lämmitysjärjestelmän Huolto: Lämmityslaitteiden tarkastus ja säätö, lämmitysjärjestelmän korjaukset.',
-    title3: 'Lumenpoisto ja Talvikunnossapito',
-    description31: 'Lumenpoisto: Lumenauraus ja -sulatus pihalta, ajoteiltä ja kulkuväyliltä.',
-    description32:
-      'Liukkaudenestotoimenpiteet: Jäänestoliuosten levitys, liukkauden torjunta ulkoalueilla.',
-    description33:
-      'Talvihuolto: Lämmityslaitteiden tarkastus, pakastumisen estäminen ja tarvittavat huoltotoimenpiteet.',
-  },
-  {
-    step: '3. Sähköinen Huoltokirja',
-    description11:
-      'Huoltotöiden Seuranta: Reaaliaikainen seuranta huoltotöistä, ongelmien dokumentoinnista ja toimenpiteistä.',
-    description12:
-      'Tarkastusraportit: Yksityiskohtaiset raportit huoltotöistä, havaituista ongelmista ja korjauksista. Raportit auttavat hallitusta ja isännöitsijöitä seuraamaan kiinteistön kuntoa ja tekemään informoituja päätöksiä.',
-    description13:
-      'Talouden Hallinta: Budjetointi, taloussuunnittelu, kirjanpito ja raportointi talouden hallinnan tueksi.',
-  },
-  {
-    step: '4. Asukkaiden Tukipalvelut',
-    description11:
-      'Tukipalvelut Asukkaille: Häiriö- ja Korjausilmoitukset: Huoltotöiden koordinointi ja ilmoitusten käsittely asukkailta. Pika-apu: Nopeat toimenpiteet kiireellisiin ongelmatilanteisiin.',
-  },
-  {
-    step: '5. Remontti- ja Kunnossapitopalvelut',
-    description11:
-      'Pienet ja Suuret Remontit: Kylpyhuone- ja Keittiöremontit: Täydellinen remonttipalvelu alkaen suunnittelusta ja materiaalivalinnoista viimeistelyyn. Sisä- ja Ulkoseinien Maalaus: Maalauspalvelut, seinäkorjaukset ja pinnoitus.',
-    description12:
-      'Rakennus- ja Korjaustyöt: Rakennuskorjaukset: Korjaukset ja parannukset rakennuksessa, mukaan lukien rakenteelliset korjaukset. Sisätilojen Parannukset: Huoneistoremontit, lattian asennus, ovien ja ikkunoiden vaihto.',
-  },
-  {
-    step: '6. Lisäpalvelut',
-    description11:
-      'Energia- ja Vesimittarien Tarkastukset: Säännölliset tarkastukset ja huolto energian ja veden kulutuksen optimointiin.',
-  },
-];
+// content moved to i18n messages
 
 const COLORS = ['primary', 'secondary', 'info', 'success', 'warning', 'error'] as const;
 
@@ -81,6 +25,22 @@ const COLORS = ['primary', 'secondary', 'info', 'success', 'warning', 'error'] a
 
 export default function RealEstateMaintenanceHowItWork() {
   const theme = useTheme();
+  const t = useTranslations();
+  const TIMELINES = [0, 1, 2, 3, 4, 5].map((i) => ({
+    step: t(`realEstate.howItWorks.items.${i}.step`),
+    title1: t(`realEstate.howItWorks.items.${i}.title1`),
+    description11: t(`realEstate.howItWorks.items.${i}.description11`),
+    description12: t(`realEstate.howItWorks.items.${i}.description12`),
+    description13: t(`realEstate.howItWorks.items.${i}.description13`),
+    title2: t(`realEstate.howItWorks.items.${i}.title2`),
+    description21: t(`realEstate.howItWorks.items.${i}.description21`),
+    description22: t(`realEstate.howItWorks.items.${i}.description22`),
+    description23: t(`realEstate.howItWorks.items.${i}.description23`),
+    title3: t(`realEstate.howItWorks.items.${i}.title3`),
+    description31: t(`realEstate.howItWorks.items.${i}.description31`),
+    description32: t(`realEstate.howItWorks.items.${i}.description32`),
+    description33: t(`realEstate.howItWorks.items.${i}.description33`),
+  }));
 
   const mdUp = useResponsive('up', 'md');
 
@@ -104,11 +64,11 @@ export default function RealEstateMaintenanceHowItWork() {
           }}
         >
           <Typography variant="h2" sx={{ textAlign: 'center', mb: { xs: 4 } }}>
-            Hero24 Kiinteistön Yleisimmät Huoltopalvelut Taloyhtiöille.
+            {t('realEstate.howItWorks.title')}
           </Typography>
 
           <Typography sx={{ color: 'text.secondary', textAlign: 'center' }}>
-            Tarjoamme myös monia muita palveluita tarpeen mukaan.
+            {t('realEstate.howItWorks.subtitle')}
           </Typography>
         </Stack>
 

@@ -1,3 +1,4 @@
+import { useTranslations } from 'next-intl';
 import type { ISmartHomeProps } from 'src/types/smart-home';
 
 import Stack from '@mui/material/Stack';
@@ -14,6 +15,7 @@ type Props = {
 
 export default function SmartHomePricingHeader({ plan }: Props) {
   const proLicense = plan.license === 'Gold';
+  const t = useTranslations();
 
   return (
     <Stack
@@ -31,7 +33,7 @@ export default function SmartHomePricingHeader({ plan }: Props) {
     >
       {proLicense && (
         <Label color="info" sx={{ position: 'absolute', top: 16, right: 16 }}>
-          SUOSITTU
+          {t('smartHome.pricing.popular')}
         </Label>
       )}
 
@@ -55,7 +57,7 @@ export default function SmartHomePricingHeader({ plan }: Props) {
         </Typography>
 
         <Typography variant="subtitle2" component="span">
-          /kk
+          {t('smartHome.pricing.perMonth')}
         </Typography>
       </Stack>
 

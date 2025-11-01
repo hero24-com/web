@@ -3,7 +3,7 @@
 export type ITestimonialProps = {
   id: string;
   name: string;
-  review: string;
+  reviewKey: string;
   avatarUrl: string;
   createdAt: Date;
   ratingNumber: number;

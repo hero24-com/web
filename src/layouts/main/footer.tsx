@@ -1,3 +1,4 @@
+'use client';
 import type { StackProps } from '@mui/material/Stack';
 
 import Link from '@mui/material/Link';
@@ -10,6 +11,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, styled } from '@mui/material/styles';
 import Button, { buttonClasses } from '@mui/material/Button';
+import { useTranslations } from 'next-intl';
 
 import { paths } from 'src/routes/paths';
 import { usePathname } from 'src/routes/hooks';
@@ -50,9 +52,10 @@ const StyledAppStoreButton = styled(Button)(({ theme }) => ({
 // ----------------------------------------------------------------------
 
 export default function Footer() {
+  const t = useTranslations();
   const mdUp = useResponsive('up', 'md');
 
-  const mobileTitle = navConfig.find((i) => i.title === 'Palvelut')?.children || [];
+  const mobileTitle = navConfig.find((i) => i.path === paths.services.root)?.children || [];
 
   const mobileList = mobileTitle.sort((listA, listB) => Number(listB.order) - Number(listA.order));
 
@@ -79,13 +82,12 @@ export default function Footer() {
                 <Logo single />
 
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                  Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja räätälöitynä juuri
-                  sinulle Ei enää monimutkaisia tarjouspyyntöjä tai loputtomia puheluita.
+                  {t('footer.taglineLong')}
                 </Typography>
               </Stack>
 
               <Stack spacing={2}>
-                <Typography variant="h6">Sovellus</Typography>
+                <Typography variant="h6">{t('footer.app.title')}</Typography>
                 <AppStoreButton />
               </Stack>
             </Stack>
@@ -115,7 +117,7 @@ export default function Footer() {
         <Grid container spacing={3} justifyContent={{ md: 'space-between' }} sx={{ py: 3 }}>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Uusimaa
+              {t('footer.regions.uusimaa')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -137,7 +139,7 @@ export default function Footer() {
           </Grid>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Varsinais-Suomi
+              {t('footer.regions.varsinaisSuomi')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -159,7 +161,7 @@ export default function Footer() {
           </Grid>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Pirkanmaa
+              {t('footer.regions.pirkanmaa')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -181,7 +183,7 @@ export default function Footer() {
           </Grid>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Keski-Suomi
+              {t('footer.regions.keskiSuomi')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -203,7 +205,7 @@ export default function Footer() {
           </Grid>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Päijät-Häme
+              {t('footer.regions.paijatHame')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -225,7 +227,7 @@ export default function Footer() {
           </Grid>
           <Grid xs={4} md={2}>
             <Typography variant="h6" sx={{ pb: 3 }}>
-              Costa del Sol (Etelä-Espanjassa, Aurinkorannikko)
+              {t('footer.regions.costaDelSol')}
             </Typography>
             {mdUp ? (
               <Masonry columns={1} spacing={2} defaultColumns={4} defaultSpacing={2}>
@@ -258,7 +260,7 @@ export default function Footer() {
           sx={{ py: 3, textAlign: 'center' }}
         >
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            © 2024. Hero24
+            {t('footer.copyright', { year: new Date().getFullYear() })}
           </Typography>
 
           <Stack direction="row" spacing={3} justifyContent="center">
@@ -271,7 +273,7 @@ export default function Footer() {
               variant="caption"
               sx={{ color: 'text.secondary' }}
             >
-              Käyttöehdot (Asiakas)
+              {t('footer.links.termsCustomer')}
             </Link>
 
             <Link
@@ -283,7 +285,7 @@ export default function Footer() {
               variant="caption"
               sx={{ color: 'text.secondary' }}
             >
-              Käyttöehdot (Hero)
+              {t('footer.links.termsHero')}
             </Link>
 
             <Link
@@ -295,7 +297,7 @@ export default function Footer() {
               variant="caption"
               sx={{ color: 'text.secondary' }}
             >
-              Yksityisyys (FI)
+              {t('footer.links.privacyFi')}
             </Link>
 
             <Link
@@ -307,7 +309,7 @@ export default function Footer() {
               variant="caption"
               sx={{ color: 'text.secondary' }}
             >
-              Privacy (EN)
+              {t('footer.links.privacyEn')}
             </Link>
           </Stack>
         </Stack>
@@ -321,11 +323,12 @@ export default function Footer() {
 // ----------------------------------------------------------------------
 
 export function ListDesktop({ list }: { list: NavSubListProps }) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   return (
     <Stack spacing={1.5} alignItems="flex-start">
-      <Typography variant="subtitle2">{list.subheader}</Typography>
+      <Typography variant="subtitle2">{t(list.subheader)}</Typography>
 
       {list.items?.map((link) => {
         const active = pathname === link.path || pathname === `${link.path}/`;
@@ -347,7 +350,7 @@ export function ListDesktop({ list }: { list: NavSubListProps }) {
               }),
             }}
           >
-            {link.title}
+            {t(link.title)}
           </Link>
         );
       })}
@@ -358,6 +361,7 @@ export function ListDesktop({ list }: { list: NavSubListProps }) {
 // ----------------------------------------------------------------------
 
 export function ListMobile({ list }: { list: NavSubListProps }) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   const listExpand = useBoolean();
@@ -373,7 +377,7 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
           alignItems: 'center',
         }}
       >
-        {list.subheader}
+        {t(list.subheader)}
         <Iconify
           width={16}
           icon={listExpand.value ? 'carbon:chevron-down' : 'carbon:chevron-right'}
@@ -400,7 +404,7 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
                 }),
               }}
             >
-              {link.title}
+              {t(link.title)}
             </Link>
           ))}
         </Stack>
@@ -412,17 +416,18 @@ export function ListMobile({ list }: { list: NavSubListProps }) {
 // ----------------------------------------------------------------------
 
 export function AppStoreButton({ ...other }: StackProps) {
+  const t = useTranslations();
   return (
     <Stack direction="row" flexWrap="wrap" spacing={2} {...other}>
       <Link component={RouterLink} href={paths.appStoreLink}>
         <StyledAppStoreButton startIcon={<Iconify icon="ri:apple-fill" width={28} />}>
           <Stack alignItems="flex-start">
             <Typography variant="caption" sx={{ opacity: 0.72 }}>
-              Download on the
+              {t('footer.app.downloadOn')}
             </Typography>
 
             <Typography variant="h6" sx={{ mt: -0.5 }}>
-              Apple Store
+              {t('footer.app.appleStore')}
             </Typography>
           </Stack>
         </StyledAppStoreButton>
@@ -432,11 +437,11 @@ export function AppStoreButton({ ...other }: StackProps) {
         <StyledAppStoreButton startIcon={<Iconify icon="logos:google-play-icon" width={28} />}>
           <Stack alignItems="flex-start">
             <Typography variant="caption" sx={{ opacity: 0.72 }}>
-              Download from
+              {t('footer.app.downloadFrom')}
             </Typography>
 
             <Typography variant="h6" sx={{ mt: -0.5 }}>
-              Google Play
+              {t('footer.app.googlePlay')}
             </Typography>
           </Stack>
         </StyledAppStoreButton>

@@ -4,6 +4,7 @@ import type { ITestimonialProps } from 'src/types/testimonial';
 import Stack from '@mui/material/Stack';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { fDate } from 'src/utils/format-time';
 
@@ -14,6 +15,8 @@ interface Props extends StackProps {
 }
 
 export default function TestimonialItem({ testimonial, sx, ...other }: Props) {
+  const t = useTranslations();
+
   return (
     <Stack
       spacing={1}
@@ -36,7 +39,7 @@ export default function TestimonialItem({ testimonial, sx, ...other }: Props) {
       <Rating size="small" value={testimonial.ratingNumber} readOnly />
 
       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        {testimonial.review}
+        {t(testimonial.reviewKey)}
       </Typography>
     </Stack>
   );

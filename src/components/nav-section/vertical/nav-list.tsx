@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import { useState, useEffect, useCallback } from 'react';
 
 import Collapse from '@mui/material/Collapse';
@@ -12,6 +14,7 @@ import type { NavListProps, NavSubListProps } from '../types';
 // ----------------------------------------------------------------------
 
 export default function NavList({ data, depth, slotProps }: NavListProps) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   const active = useActiveLink(data.path, !!data.children);
@@ -41,7 +44,7 @@ export default function NavList({ data, depth, slotProps }: NavListProps) {
         open={openMenu}
         onClick={handleToggleMenu}
         //
-        title={data.title}
+        title={t(data.title)}
         path={data.path}
         icon={data.icon}
         info={data.info}

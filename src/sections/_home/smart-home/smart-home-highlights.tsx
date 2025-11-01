@@ -1,3 +1,5 @@
+'use client';
+
 import type { BoxProps } from '@mui/material/Box';
 
 import { m } from 'framer-motion';
@@ -7,6 +9,7 @@ import Link from '@mui/material/Link';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { RouterLink } from 'src/routes/components';
 
@@ -15,124 +18,40 @@ import { varFade, MotionViewport } from 'src/components/animate';
 
 // ----------------------------------------------------------------------
 
-const HIGHLIGHT_FEATURES_1 = [
-  {
-    label: 'Pihatyöt: Nurmikon hoito, istutukset ja kausihuollot',
-    icon: '/assets/images/service/service_21.webp',
-    link: '/pihatyot',
-  },
-  {
-    label: 'Kiinteistöhuolto ja Isännöinti: Ylläpito ja hallinta',
-    icon: '/assets/images/service/service_17.webp',
-    link: '/kiinteistohuolto',
-  },
-  {
-    label: 'Pihan Muutos- ja Rakennustyöt: Rakennelmat ja parannukset',
-    icon: '/assets/images/service/service_20.webp',
-    link: '/piha-rakentaminen',
-  },
+const HIGHLIGHT_FEATURES_1_BASE = [
+  { icon: '/assets/images/service/service_21.webp', link: '/pihatyot' },
+  { icon: '/assets/images/service/service_17.webp', link: '/kiinteistohuolto' },
+  { icon: '/assets/images/service/service_20.webp', link: '/piha-rakentaminen' },
 ];
 
-const HIGHLIGHT_FEATURES_2 = [
-  {
-    label: 'Ilmastointipalvelut: Asennus ja huolto',
-    icon: '/assets/images/service/service_1.webp',
-    link: '/ilmastointityot',
-  },
-  {
-    label: 'Remontit ja Rakentaminen: Laajat ja pienet projektit',
-    icon: '/assets/images/service/service_19.webp',
-    link: '/remontti',
-  },
-  {
-    label: 'Sähkötyöt: Asennukset ja korjaukset',
-    icon: '/assets/images/service/service_10.webp',
-    link: '/sahkoasennukset',
-  },
-  {
-    label: 'Putkityöt: Korjaukset ja huollot',
-    icon: '/assets/images/service/service_16.webp',
-    link: '/putkityot',
-  },
-  {
-    label: 'Nikkarointi: Puutyöt ja pienet korjaukset',
-    icon: '/assets/images/service/service_12.webp',
-    link: '/kodinkonehuolto',
-  },
-  {
-    label: 'Asbestikartoitukset: Terveys- ja turvallisuuskartoitus',
-    icon: '/assets/images/service/service_2.webp',
-    link: '/asbestikartoitus',
-  },
+const HIGHLIGHT_FEATURES_2_BASE = [
+  { icon: '/assets/images/service/service_1.webp', link: '/ilmastointityot' },
+  { icon: '/assets/images/service/service_19.webp', link: '/remontti' },
+  { icon: '/assets/images/service/service_10.webp', link: '/sahkoasennukset' },
+  { icon: '/assets/images/service/service_16.webp', link: '/putkityot' },
+  { icon: '/assets/images/service/service_12.webp', link: '/kodinkonehuolto' },
+  { icon: '/assets/images/service/service_2.webp', link: '/asbestikartoitus' },
 ];
 
-const HIGHLIGHT_FEATURES_3 = [
-  {
-    label: 'Muuttopalvelu: Sujuva muuttoapua',
-    icon: '/assets/images/service/service_15.webp',
-    link: '/muutto',
-  },
-  {
-    label: 'Kantoapu: Huonekalujen kantaminen',
-    icon: '/assets/images/service/service_14.webp',
-    link: '/kantoapu',
-  },
-  {
-    label: 'Kuljetusapu: Tavaroiden kuljetus',
-    icon: '/assets/images/service/service_8.webp',
-    link: '/kuljetuspalvelut',
-  },
+const HIGHLIGHT_FEATURES_3_BASE = [
+  { icon: '/assets/images/service/service_15.webp', link: '/muutto' },
+  { icon: '/assets/images/service/service_14.webp', link: '/kantoapu' },
+  { icon: '/assets/images/service/service_8.webp', link: '/kuljetuspalvelut' },
 ];
 
-const HIGHLIGHT_FEATURES_4 = [
-  {
-    label: 'Kotisiivous: Säännöllinen ja erikoissiivous',
-    icon: '/assets/images/service/service_3.webp',
-    link: '/kotisiivous',
-  },
-  {
-    label: 'Toimistosiivous: Liike- ja toimistotilojen siivous',
-    icon: '/assets/images/service/service_5.webp',
-    link: '/toimistosiivous',
-  },
-  {
-    label: 'Muuttosiivous: Siivous ennen ja jälkeen muuton',
-    icon: '/assets/images/service/service_4.webp',
-    link: '/muuttosiivous',
-  },
-  {
-    label: 'Remonttisiivous: Rakennus- ja remonttisiivous',
-    icon: '/assets/images/service/service_6.webp',
-    link: '/remonttisiivous',
-  },
-  {
-    label: 'Ikkunanpesu: Ikkunoiden puhdistus',
-    icon: '/assets/images/service/service_7.webp',
-    link: '/ikkunanpesu',
-  },
-  {
-    label: 'Kotiapu: Yleinen kotiapu ja avustaminen',
-    icon: '/assets/images/service/service_9.webp',
-    link: '/kotiapu',
-  },
+const HIGHLIGHT_FEATURES_4_BASE = [
+  { icon: '/assets/images/service/service_3.webp', link: '/kotisiivous' },
+  { icon: '/assets/images/service/service_5.webp', link: '/toimistosiivous' },
+  { icon: '/assets/images/service/service_4.webp', link: '/muuttosiivous' },
+  { icon: '/assets/images/service/service_6.webp', link: '/remonttisiivous' },
+  { icon: '/assets/images/service/service_7.webp', link: '/ikkunanpesu' },
+  { icon: '/assets/images/service/service_9.webp', link: '/kotiapu' },
 ];
 
-const HIGHLIGHT_FEATURES_5 = [
-  {
-    label: 'Kodinkonehuolto: Koneiden korjaus ja huolto',
-    icon: '/assets/images/service/service_13.webp',
-    link: '/kodinkonehuolto',
-  },
-  {
-    label: 'Elektroniikkahuolto: Elektronisten laitteiden korjaus',
-    icon: '/assets/images/service/service_11.webp',
-    link: '/elektroniikkahuolto',
-  },
-  {
-    label: 'Kylmälaitteet: Jäähdytys- ja pakastinlaitteiden huolto',
-    icon: '/assets/images/service/service_18.webp',
-    link: '/kylmalaitteiden-asennus',
-  },
+const HIGHLIGHT_FEATURES_5_BASE = [
+  { icon: '/assets/images/service/service_13.webp', link: '/kodinkonehuolto' },
+  { icon: '/assets/images/service/service_11.webp', link: '/elektroniikkahuolto' },
+  { icon: '/assets/images/service/service_18.webp', link: '/kylmalaitteiden-asennus' },
 ];
 
 // ----------------------------------------------------------------------
@@ -143,6 +62,29 @@ function AnimatedDiv({ children }: { children: React.ReactNode }) {
 }
 
 export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
+  const t = useTranslations();
+
+  const HIGHLIGHT_FEATURES_1 = HIGHLIGHT_FEATURES_1_BASE.map((item, i) => ({
+    ...item,
+    label: t(`smartHome.highlights.group1.${i}`),
+  }));
+  const HIGHLIGHT_FEATURES_2 = HIGHLIGHT_FEATURES_2_BASE.map((item, i) => ({
+    ...item,
+    label: t(`smartHome.highlights.group2.${i}`),
+  }));
+  const HIGHLIGHT_FEATURES_3 = HIGHLIGHT_FEATURES_3_BASE.map((item, i) => ({
+    ...item,
+    label: t(`smartHome.highlights.group3.${i}`),
+  }));
+  const HIGHLIGHT_FEATURES_4 = HIGHLIGHT_FEATURES_4_BASE.map((item, i) => ({
+    ...item,
+    label: t(`smartHome.highlights.group4.${i}`),
+  }));
+  const HIGHLIGHT_FEATURES_5 = HIGHLIGHT_FEATURES_5_BASE.map((item, i) => ({
+    ...item,
+    label: t(`smartHome.highlights.group5.${i}`),
+  }));
+
   return (
     <Box
       component="section"
@@ -155,7 +97,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
     >
       <Container component={MotionViewport}>
         <Typography variant="h2" sx={{ textAlign: 'center', pb: { xs: 10, md: 15 } }}>
-          Palvelut
+          {t('smartHome.highlights.title')}
         </Typography>
         <Grid
           container
@@ -167,7 +109,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ my: 3 }}>
-                Pihat ja Kiinteistönhuollot
+                {t('smartHome.highlights.groups.yardAndProperty')}
               </Typography>
             </AnimatedDiv>
           </Grid>
@@ -259,7 +201,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'right' } }}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ my: 3 }}>
-                Remontointi ja LVIS
+                {t('smartHome.highlights.groups.renovationAndHVAC')}
               </Typography>
             </AnimatedDiv>
           </Grid>
@@ -275,7 +217,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ my: 3 }}>
-                Muuttopalvelu ja Kantoapu
+                {t('smartHome.highlights.groups.movingAndLifting')}
               </Typography>
             </AnimatedDiv>
           </Grid>
@@ -367,7 +309,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'right' } }}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ my: 3 }}>
-                Siivous ja Kotiapu
+                {t('smartHome.highlights.groups.cleaningAndHomeHelp')}
               </Typography>
             </AnimatedDiv>
           </Grid>
@@ -383,7 +325,7 @@ export default function SmartHomeHighlights({ sx, ...other }: BoxProps) {
           <Grid xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'left' } }}>
             <AnimatedDiv>
               <Typography variant="h2" sx={{ my: 3 }}>
-                Kodinkoneet ja Laitteet
+                {t('smartHome.highlights.groups.appliancesAndDevices')}
               </Typography>
             </AnimatedDiv>
           </Grid>

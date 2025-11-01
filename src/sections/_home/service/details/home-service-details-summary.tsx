@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import type { IServiceProps } from 'src/types/service';
 
 import Box from '@mui/material/Box';
@@ -15,6 +17,7 @@ type Props = {
 };
 
 export default function HomeServiceDetailsSummary({ service }: Props) {
+  const t = useTranslations();
   const {
     services,
     description,
@@ -24,35 +27,42 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
     reasons1,
     reasons2,
     reasons3,
+    slugKey,
   } = service;
+
+  const baseKey = slugKey.replace('nav.links.', 'services.pages.');
+  const tr = (key: string, fallback: string) => {
+    const value = t(key);
+    return value === key ? fallback : value;
+  };
 
   return (
     <Stack spacing={5}>
       <Stack spacing={2}>
-        <Typography variant="h5">Kuvaus</Typography>
-        <Typography>{description}</Typography>
+        <Typography variant="h5">{t('services.details.descriptionTitle')}</Typography>
+        <Typography>{tr(`${baseKey}.description`, description)}</Typography>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h5">Palvelumme sisältävät</Typography>
+        <Typography variant="h5">{t('services.details.includesTitle')}</Typography>
         <ul>
-          <li>{highlights1}</li>
-          <li>{highlights2}</li>
-          <li>{highlights3}</li>
+          <li>{tr(`${baseKey}.includes.0`, highlights1)}</li>
+          <li>{tr(`${baseKey}.includes.1`, highlights2)}</li>
+          <li>{tr(`${baseKey}.includes.2`, highlights3)}</li>
         </ul>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h5">Miksi valita Hero24?</Typography>
+        <Typography variant="h5">{t('services.details.whyTitle')}</Typography>
         <ul>
-          <li>{reasons1}</li>
-          <li>{reasons2}</li>
-          <li>{reasons3}</li>
+          <li>{tr(`${baseKey}.reasons.0`, reasons1)}</li>
+          <li>{tr(`${baseKey}.reasons.1`, reasons2)}</li>
+          <li>{tr(`${baseKey}.reasons.2`, reasons3)}</li>
         </ul>
       </Stack>
 
       <Stack spacing={2}>
-        <Typography variant="h6">Muita palveluita</Typography>
+        <Typography variant="h6">{t('services.details.moreServicesTitle')}</Typography>
 
         <Box
           rowGap={2}
@@ -83,7 +93,7 @@ export default function HomeServiceDetailsSummary({ service }: Props) {
                   }),
                 }}
               />
-              {serviceOption.label}
+              {t(`nav.links.${serviceOption.label}`)}
             </Stack>
           ))}
         </Box>

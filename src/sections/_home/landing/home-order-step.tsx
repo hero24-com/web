@@ -1,6 +1,9 @@
+'use client';
+
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import SvgColor from 'src/components/svg-color';
 
@@ -19,8 +22,7 @@ const STEPS = [
   },
   {
     title: 'Joustava maksu',
-    description:
-      'Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa.',
+    description: 'Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa.',
     icon: '/assets/icons/ic_transparency.svg',
   },
   {
@@ -33,6 +35,31 @@ const STEPS = [
 // ----------------------------------------------------------------------
 
 export default function HomeOrderStep() {
+  const t = useTranslations('home.whyHero24');
+
+  const STEPS = [
+    {
+      title: t('steps.reliability.title'),
+      description: t('steps.reliability.description'),
+      icon: '/assets/icons/ic_customer_service.svg',
+    },
+    {
+      title: t('steps.satisfaction.title'),
+      description: t('steps.satisfaction.description'),
+      icon: '/assets/icons/ic_secure_payment.svg',
+    },
+    {
+      title: t('steps.flexiblePayment.title'),
+      description: t('steps.flexiblePayment.description'),
+      icon: '/assets/icons/ic_transparency.svg',
+    },
+    {
+      title: t('steps.multilingualSupport.title'),
+      description: t('steps.multilingualSupport.description'),
+      icon: '/assets/icons/ic_reputation.svg',
+    },
+  ];
+
   return (
     <Box
       sx={{
@@ -43,11 +70,11 @@ export default function HomeOrderStep() {
     >
       <Container>
         <Typography variant="overline" sx={{ color: 'text.disabled' }}>
-          Asiakkaille
+          {t('forCustomers')}
         </Typography>
 
         <Typography variant="h3" sx={{ my: 3 }}>
-          Miksi Hero24?
+          {t('title')}
         </Typography>
 
         <Box
@@ -75,7 +102,7 @@ export default function HomeOrderStep() {
               <Typography
                 variant="overline"
                 sx={{ mt: 4, display: 'block', color: 'text.disabled' }}
-               />
+              />
 
               <Typography variant="h5" sx={{ mt: 2, mb: 1 }}>
                 {value.title}

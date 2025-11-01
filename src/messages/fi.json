@@ -1,0 +1,519 @@
+{
+  "home": {
+    "hero": {
+      "title": "Hero24 - Yhdistää ammattilaiset ja asiakkaat yhdestä paikasta",
+      "subtitle1": "Valitse huipputason ammattilaisia kaikkiin asumisen ja kiinteistöhallinnan tarpeisiin yhdestä paikasta.",
+      "subtitle2": "100% tyytyväisyystakuu ja vakuutettuina – kaikki palvelut räätälöitynä juuri sinulle.",
+      "selectService": "Valitse palvelu",
+      "phone": "+358 50 413 2867",
+      "email": "support@hero24.com",
+      "summary": {
+        "customers": "Asiakkaita",
+        "orders": "Tilauksia",
+        "heroes": "Sankareita"
+      }
+    },
+    "services": {
+      "title": "Palvelut kotiin, kiinteistöille ja yrityksille",
+      "subtitle": "Hero24 kautta kaikki kodin ja kiinteistön palvelut helposti ympäri Suomea!"
+    },
+    "whyHero24": {
+      "forCustomers": "Asiakkaille",
+      "title": "Miksi Hero24?",
+      "steps": {
+        "reliability": {
+          "title": "Luotettavuus",
+          "description": "Kaikki ammattilaisemme ovat vastuuvakuutettuja."
+        },
+        "satisfaction": {
+          "title": "Tyytyväisyystakuu",
+          "description": "Tarjoamme 100% tyytyväisyystakuun kaikille palveluille."
+        },
+        "flexiblePayment": {
+          "title": "Joustava maksu",
+          "description": "Maksuvaihtoehtoja on useita, ja voit myös tarkastella etukäteen palvelun hintaa."
+        },
+        "multilingualSupport": {
+          "title": "Monikielinen tuki",
+          "description": "Palvelu on saatavilla suomeksi ja englanniksi."
+        }
+      }
+    },
+    "downloadApp": {
+      "title": "Lataa sovellus",
+      "subtitle": "Lataa Hero24-sovellus nyt ja löydä omat palvelusankarisi – tai liity sankareihimme – jo tänään!",
+      "qrCodeText": "Skannaa QR koodi ja asenna sovellus puhelimeen"
+    },
+    "testimonials": {
+      "title": "Tuhansia aitoja arvosteluja asiakkailta, keskiarvo yli 4.5/5 tähteä",
+      "items": [
+        "Työ tehtiin ajallaan ja ammattimaisesti. Suosittelen lämpimästi!",
+        "Erinomainen palvelu alusta loppuun. Tulen varmasti käyttämään uudelleen.",
+        "Kaikki sujui juuri niin kuin oli sovittu. Kiitos!",
+        "Luotettavaa ja laadukasta työtä. Erittäin tyytyväinen tulokseen.",
+        "Nopea vastaus ja joustava aikataulu. Suosittelen!",
+        "Ammattimaista toimintaa ja hyvää asiakaspalvelua.",
+        "Työ tehtiin huolellisesti ja siististi. Loistava kokemus!",
+        "Ystävällinen palvelu ja kohtuullinen hinta. Kiitos paljon!",
+        "Asiantunteva apu ja selkeä hinnoittelu. Olen erittäin tyytyväinen.",
+        "Kaikki sujui mallikkaasti ja lopputulos ylitti odotukset.",
+        "Todella hyvä palvelu! Tulen käyttämään jatkossakin.",
+        "Nopea ja tehokas työskentely. Suosittelen lämpimästi!",
+        "Luotettava kumppani, joka hoitaa homman kuntoon.",
+        "Erinomainen laatu ja ammattitaito. Kiitos hienosta työstä!",
+        "Helppo tilata ja sujuva yhteydenpito. Loistava palvelu!"
+      ]
+    }
+  },
+  "nav": {
+    "home": "Koti",
+    "services": "Palvelut",
+    "about": "Tietoa",
+    "contact": "Yhteystiedot",
+    "top": {
+      "services": "Palvelut",
+      "orderHero": "Tilaa sankari",
+      "smartHome": "Huoleton asuminen",
+      "realEstateMaintenance": "Huoltopalvelut Taloyhtiöille",
+      "ownCustomer": "Laskuta omia asiakkaita",
+      "contact": "Yhteystiedot",
+      "joinHero": "Liity Sankariksi"
+    },
+    "subheaders": {
+      "cleaningHomeHelp": "Siivous ja kotiapu",
+      "appliances": "Kodinkoneet ja laitteet",
+      "movingAndLifting": "Muuttopalvelu ja Kantoapu",
+      "renovationAndLVIS": "Remontointi ja LVIS",
+      "yardAndProperty": "Pihat ja kiinteistöhuollot",
+      "other": "Muuta"
+    },
+    "links": {
+      "cleaningHome": "Kotisiivous",
+      "cleaningOffice": "Toimistosiivous",
+      "cleaningMoving": "Muuttosiivous",
+      "cleaningRenovation": "Remonttisiivous",
+      "cleaningWindow": "Ikkunanpesu",
+      "domesticHelp": "Kotiapu",
+      "homeAppliance": "Kodinkonehuolto",
+      "electronicAppliance": "Elektroniikkahuolto",
+      "refrigerationAppliance": "Kylmälaitteet",
+      "movingService": "Muuttopalvelu",
+      "movingLifting": "Kantoapu",
+      "delivery": "Kuljetusapu",
+      "installationServices": "Asennuspalvelut",
+      "airConditioning": "Ilmastointipalvelut",
+      "renovation": "Remontit ja rakentaminen",
+      "electrician": "Sähkötyöt",
+      "plumber": "Putkityöt",
+      "handyman": "Nikkarointi",
+      "asbestos": "Asbestikartoitukset",
+      "yardWork": "Pihatyöt",
+      "propertyMaintenance": "Kiinteistöhuolto ja isännöintipalvelut",
+      "yardModification": "Pihan muutos- ja rakennustyöt",
+      "orderHero": "Tilaa Sankari",
+      "joinHero": "Liity Sankariksi",
+      "smartHome": "Huoleton asuminen",
+      "realEstateMaintenance": "Huoltopalvelut Taloyhtiöille",
+      "ownCustomer": "Laskuta omia asiakkaita",
+      "openOrder": "Etsitkö muuta palvelua?",
+      "contact": "Yhteystiedot"
+    }
+  },
+  "footer": {
+    "description": "Sankareita arjen haasteisiin",
+    "taglineLong": "Kaikki palvelut yhdessä sovelluksessa – yksinkertaistettuna ja räätälöitynä juuri sinulle. Ei enää monimutkaisia tarjouspyyntöjä tai loputtomia puheluita.",
+    "app": {
+      "title": "Sovellus",
+      "downloadOn": "Lataa",
+      "appleStore": "Apple Store",
+      "downloadFrom": "Lataa",
+      "googlePlay": "Google Play"
+    },
+    "regions": {
+      "uusimaa": "Uusimaa",
+      "varsinaisSuomi": "Varsinais-Suomi",
+      "pirkanmaa": "Pirkanmaa",
+      "keskiSuomi": "Keski-Suomi",
+      "paijatHame": "Päijät-Häme",
+      "costaDelSol": "Costa del Sol (Etelä-Espanjassa, Aurinkorannikko)"
+    },
+    "links": {
+      "termsCustomer": "Käyttöehdot (Asiakas)",
+      "termsHero": "Käyttöehdot (Hero)",
+      "privacyFi": "Yksityisyys (FI)",
+      "privacyEn": "Privacy (EN)"
+    },
+    "copyright": "© {year}. Hero24. Kaikki oikeudet pidätetään."
+  },
+  "services": {
+    "common": {
+      "orderNowPayLater": "Tilaa nyt"
+    },
+    "payment": {
+      "openDialogButton": "Varaa nyt – verkkokauppa",
+      "choosePackageTitle": "Valitse paketti"
+    },
+    "details": {
+      "descriptionTitle": "Kuvaus",
+      "includesTitle": "Palvelumme sisältävät",
+      "whyTitle": "Miksi valita Hero24?",
+      "moreServicesTitle": "Muita palveluita"
+    },
+    "reserveForm": {
+      "title": "Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!",
+      "defaultSubject": "Uusi tarjouspyyntö - Palvelun varaus"
+    },
+    "subjects": {
+      "cleaningHome": "Uusi tarjouspyyntö - Kotisiivous",
+      "cleaningOffice": "Uusi tarjouspyyntö - Toimistosiivouspalvelut",
+      "cleaningMoving": "Uusi tarjouspyyntö - Muuttosiivous",
+      "cleaningRenovation": "Uusi tarjouspyyntö - Remonttisiivous",
+      "cleaningWindow": "Uusi tarjouspyyntö - Ikkunanpesu",
+      "homeAppliance": "Uusi tarjouspyyntö - Kodinkonehuolto",
+      "electronicAppliance": "Uusi tarjouspyyntö - Elektroniikkahuolto",
+      "refrigerationAppliance": "Uusi tarjouspyyntö - Kylmälaitteet",
+      "movingService": "Uusi tarjouspyyntö - Muuttopalvelu",
+      "movingLifting": "Uusi tarjouspyyntö - Kantoapu",
+      "delivery": "Uusi tarjouspyyntö - Kuljetusapu",
+      "airConditioning": "Uusi tarjouspyyntö - Ilmastointipalvelut",
+      "renovation": "Uusi tarjouspyyntö - Remontit ja rakentaminen",
+      "electrician": "Uusi tarjouspyyntö - Sähkötyöt",
+      "plumber": "Uusi tarjouspyyntö - Putkityöt",
+      "handyman": "Uusi tarjouspyyntö - Nikkarointi",
+      "asbestos": "Uusi tarjouspyyntö - Asbestikartoitukset",
+      "propertyMaintenance": "Uusi tarjouspyyntö - Kiinteistöhuolto ja isännöintipalvelut",
+      "yardWork": "Uusi tarjouspyyntö - Pihatyöt",
+      "yardModification": "Uusi tarjouspyyntö - Pihan muutos- ja rakennustyöt",
+      "realEstateMaintenance": "Uusi tarjouspyyntö - Huoltopalvelut Taloyhtiöille",
+      "domesticHelp": "Uusi tarjouspyyntö - Kotiapu",
+      "openOrder": "Uusi tarjouspyyntö - Avoin tilaus"
+    }
+  },
+  "smartHome": {
+    "pricing": {
+      "title": "Huoleton Asuminen Hero24 – Miksi Valita Meidät?",
+      "description": "Tervetuloa Hero24:ään, jossa huolettomuus on enemmän kuin lupaus – se on käytännön tapa elää. Tarjoamme kokonaisratkaisun, joka tekee kodin huollosta ja ylläpidosta vaivatonta, tehokasta ja stressitöntä. Palvelumme on suunniteltu sinulle, joka arvostat rauhallista ja mukavaa asumista ilman huolto-ongelmia. Premium-tilaajana saat lisäksi ainutlaatuisia etuja, kuten alennuksia, nopeampaa palvelua, laajemman vakuutuksen sekä ilmaisia konsultaatioita/arviokäyntejä – asumisesta tulee vieläkin huolettomampaa.",
+      "ctaOverline": "Liity Hero24 Premium -tilaajaksi vain 19,90 € kuukaudessa ja nauti kaikista huolettoman asumisen eduista!",
+      "featureColumnHeader": "Ominaisuus",
+      "popular": "SUOSITTU",
+      "perMonth": "/kk"
+    },
+    "include": {
+      "title": "Miksi valita Älykäs Huoleton koti?",
+      "subtitle": "Tervetuloa Älykkään Huoleton kodin maailmaan, missä teknologia ja huolenpito yhdistyvät luomaan parempaa ja mukavampaa asumista. Miksi valita meidät?",
+      "items": [
+        {
+          "title": "Helppous ja mukavuus",
+          "description": "Älykäs Huoleton koti tarjoaa kattavan valikoiman palveluita, jotka tekevät kodin hallinnasta vaivatonta ja tehokasta. Huolehdimme kodin kunnostuksesta, huollosta ja ylläpidosta puolestasi, jotta voit keskittyä nauttimaan kodistasi."
+        },
+        {
+          "title": "Ennaltaehkäisy ja proaktiivinen korjaaminen",
+          "description": "Palvelupakettimme eivät ainoastaan reagoi ongelmiin, vaan ennakoivat ja ehkäisevät mahdollisia huolto- ja korjaustarpeita. Näin säästät aikaa, vaivaa ja kustannuksia pitkällä aikavälillä."
+        },
+        {
+          "title": "Ammattilaisten osaaminen ja luotettavuus",
+          "description": "Älykkään Huoleton kodin taustalla on joukko kokeneita ammattilaisia, jotka huolehtivat kodistasi – voit luottaa siihen aina."
+        },
+        {
+          "title": "Lisäksi tarjoamme 24/7",
+          "description": "Käyttöön ammattilaisia aina kun tarvitset sekä palvelumme alennetuin hinnoin. Valitsemalla Älykkään Huoleton kodin saat helppoutta ja mukavuutta sekä varmuuden, että kotisi on hyvissä käsissä."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Mitä palvelupakettimme sisältää?",
+      "description": "Älykäs Huoleton koti -palvelupakettimme on suunniteltu tarjoamaan kattavaa ja räätälöityä kodin ja kiinteistön kunnostus-, huolto- ja ylläpitopalvelua jokaiseen tarpeeseen. Paketit sisältävät kaikki Hero24-palvelut, muun muassa:",
+      "items": [
+        "Kodin/kiinteistön ylläpitopalvelut",
+        "Kodin kunnostustyöt",
+        "Muutot, kantoapu ja kuljetuspalvelut",
+        "Huoltotyöt ja tarkastukset",
+        "Ylläpitotoimenpiteet ja korjaustyöt",
+        "Proaktiivinen korjaaminen ja huolto"
+      ]
+    },
+    "highlights": {
+      "title": "Palvelut",
+      "groups": {
+        "yardAndProperty": "Pihat ja Kiinteistönhuollot",
+        "renovationAndHVAC": "Remontointi ja LVIS",
+        "movingAndLifting": "Muuttopalvelu ja Kantoapu",
+        "cleaningAndHomeHelp": "Siivous ja Kotiapu",
+        "appliancesAndDevices": "Kodinkoneet ja Laitteet"
+      },
+      "group1": [
+        "Pihatyöt: Nurmikon hoito, istutukset ja kausihuollot",
+        "Kiinteistöhuolto ja Isännöinti: Ylläpito ja hallinta",
+        "Pihan Muutos- ja Rakennustyöt: Rakennelmat ja parannukset"
+      ],
+      "group2": [
+        "Ilmastointipalvelut: Asennus ja huolto",
+        "Remontit ja Rakentaminen: Laajat ja pienet projektit",
+        "Sähkötyöt: Asennukset ja korjaukset",
+        "Putkityöt: Korjaukset ja huollot",
+        "Nikkarointi: Puutyöt ja pienet korjaukset",
+        "Asbestikartoitukset: Terveys- ja turvallisuuskartoitus"
+      ],
+      "group3": [
+        "Muuttopalvelu: Sujuva muuttoapua",
+        "Kantoapu: Huonekalujen kantaminen",
+        "Kuljetusapu: Tavaroiden kuljetus"
+      ],
+      "group4": [
+        "Kotisiivous: Säännöllinen ja erikoissiivous",
+        "Toimistosiivous: Liike- ja toimistotilojen siivous",
+        "Muuttosiivous: Siivous ennen ja jälkeen muuton",
+        "Remonttisiivous: Rakennus- ja remonttisiivous",
+        "Ikkunanpesu: Ikkunoiden puhdistus",
+        "Kotiapu: Yleinen kotiapu ja avustaminen"
+      ],
+      "group5": [
+        "Kodinkonehuolto: Koneiden korjaus ja huolto",
+        "Elektroniikkahuolto: Elektronisten laitteiden korjaus",
+        "Kylmälaitteet: Jäähdytys- ja pakastinlaitteiden huolto"
+      ]
+    }
+  },
+  "realEstate": {
+    "hero": {
+      "title": "Hero24 – Kattavat ja luotettavat palvelut asunto-osakeyhtiöille",
+      "p1": "Hero24 tarjoaa täydelliset huolto- ja ylläpitopalvelut asunto-osakeyhtiöille, jotta kiinteistön hallinta olisi mahdollisimman vaivatonta ja tehokasta. Tarjoamme kokonaisratkaisun, joka kattaa kaikki kiinteistöhallinnan tarpeet 24/7.",
+      "p2": "Hero24 on luotettava kumppani taloyhtiöille kiinteistönhuollon kaikissa tarpeissa. Tarjoamme säännöllistä huoltoa, kiireellisiä korjauksia sekä suuria remonttiprojekteja Uudellamaalla, Varsinais-Suomessa, Pirkanmaalla, Keski-Suomessa ja Päijät-Hämeessä. Ammattitaitoinen henkilökuntamme varmistaa, että kiinteistöt pysyvät turvallisina ja viihtyisinä ympäri vuoden. Joustava palvelumme kattaa kaiken, mitä taloyhtiösi tarvitsee toimivaan arkeen.",
+      "p3": "Ota yhteyttä ja pyydä tarjous, niin suunnitellaan tarpeisiisi sopiva palveluratkaisu!"
+    },
+    "summary": {
+      "customers": "Asiakkaita",
+      "orders": "Tilauksia",
+      "heroes": "Sankareita"
+    },
+    "form": {
+      "title": "Yhteydenotto",
+      "description": "Ota yhteyttä, niin räätälöimme teille parhaan mahdollisen ratkaisun kiinteistönhuoltoon. Tarjoamme mielellämme lisätietoja ja keskustelemme tarpeistanne tarkemmin.",
+      "subject": "Yhteydenottopyyntö - Kiinteistönhuolto"
+    },
+    "howItWorks": {
+      "title": "Hero24 Kiinteistön yleisimmät huoltopalvelut taloyhtiöille",
+      "subtitle": "Tarjoamme myös monia muita palveluita tarpeen mukaan.",
+      "items": [
+        {
+          "step": "1. Huoltosopimukset",
+          "title1": "",
+          "description11": "Urakkahinta: Kiinteä kuukausihinta, joka kattaa kaikki sovitut huoltopalvelut. Tämä malli auttaa budjetoinnissa ja tarjoaa selkeän kustannusrakenteen.",
+          "description12": "Työtehtäväkohtainen hinta: Maksat vain toteutuneista huoltopalveluista. Tämä joustava malli sopii tilanteisiin, joissa huoltotarpeet vaihtelevat.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "2. Kiinteistön ylläpito",
+          "title1": "Yleiset huoltotoimenpiteet",
+          "description11": "Siivous: Yhteisten tilojen säännöllinen siivous ja puhtaanapito (käytävät, rappukäytävät, hissit, ulkoalueet). Erikoissiivoukset – Kausittaiset ja tapahtumien jälkeiset siivoukset.",
+          "description12": "Jätehuolto: Jätteiden keräys ja lajittelu, roskakatosten tyhjennys, kierrätyspisteiden huolto ja jätehuollon optimointi.",
+          "description13": "Viherrakentaminen ja pihatyöt: Pihan ja puutarhan hoito – istutusten ja nurmikon kunnossapito, lehtien haravointi, kausihuolto. Piharakenteet – korjaukset ja huollot, kuten laatoitukset ja porttien ylläpito.",
+          "title2": "Hätähuolto",
+          "description21": "Putkistohäiriöt: Putkivuotojen korjaus, viemärin tukosten avaaminen, vuotavien hanien ja wc-istuimien korjaus.",
+          "description22": "Sähkötöiden korjaukset: Sähkölaitteiden vianmääritys, sähköturvallisuuden tarkastukset, sähköhäiriöiden selvittäminen.",
+          "description23": "Lämmitysjärjestelmän huolto: Lämmityslaitteiden tarkastus ja säätö, lämmitysjärjestelmän korjaukset.",
+          "title3": "Lumenpoisto ja talvikunnossapito",
+          "description31": "Lumenpoisto: Lumenauraus ja -sulatus pihalta, ajoteiltä ja kulkuväyliltä.",
+          "description32": "Liukkaudenestotoimenpiteet: Jäänestoliuosten levitys, liukkauden torjunta ulkoalueilla.",
+          "description33": "Talvihuolto: Lämmityslaitteiden tarkastus, pakastumisen estäminen ja tarvittavat huoltotoimenpiteet."
+        },
+        {
+          "step": "3. Sähköinen huoltokirja",
+          "title1": "",
+          "description11": "Huoltotöiden seuranta: Reaaliaikainen seuranta huoltotöistä, ongelmien dokumentoinnista ja toimenpiteistä.",
+          "description12": "Tarkastusraportit: Yksityiskohtaiset raportit huoltotöistä, havaituista ongelmista ja korjauksista. Raportit auttavat hallitusta ja isännöitsijöitä seuraamaan kiinteistön kuntoa ja tekemään informoituja päätöksiä.",
+          "description13": "Talouden hallinta: Budjetointi, taloussuunnittelu, kirjanpito ja raportointi talouden hallinnan tueksi.",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "4. Asukkaiden tukipalvelut",
+          "title1": "",
+          "description11": "Häiriö- ja korjausilmoitukset: Huoltotöiden koordinointi ja ilmoitusten käsittely asukkailta. Pika-apu: Nopeat toimenpiteet kiireellisiin ongelmatilanteisiin.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "5. Remontti- ja kunnossapitopalvelut",
+          "title1": "",
+          "description11": "Pienet ja suuret remontit: Kylpyhuone- ja keittiöremontit – täydellinen remonttipalvelu suunnittelusta ja materiaalivalinnoista viimeistelyyn. Sisä- ja ulkoseinien maalaus: Maalauspalvelut, seinäkorjaukset ja pinnoitus.",
+          "description12": "Rakennus- ja korjaustyöt: Rakennuskorjaukset – korjaukset ja parannukset rakennuksessa, mukaan lukien rakenteelliset korjaukset. Sisätilojen parannukset: Huoneistoremontit, lattian asennus, ovien ja ikkunoiden vaihto.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "6. Lisäpalvelut",
+          "title1": "",
+          "description11": "Energia- ja vesimittarien tarkastukset: Säännölliset tarkastukset ja huolto energian ja veden kulutuksen optimointiin.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        }
+      ]
+    },
+    "cost": {
+      "title": "Kiinteistön huoltopalvelujen hinta – näin se muodostuu",
+      "intro": "Kiinteistön huoltopalvelujen hinnoittelu vaihtelee useiden tekijöiden mukaan. Ymmärrämme, että kustannusten arviointi voi olla haastavaa, joten tässä selitämme, mitkä asiat vaikuttavat hintaan:",
+      "items": [
+        {
+          "name": "Kiinteistön koko ja ikä",
+          "content1": "Koko: Pienemmät kiinteistöt, kuten rivitalot, maksavat yleensä vähemmän huoltopalveluista kuin suuret kerrostalot ja laajat alueet.",
+          "content2": "Ikä: Vanhemmat rakennukset saattavat vaatia enemmän huoltoa ja korjauksia verrattuna uusiin rakennuksiin."
+        },
+        {
+          "name": "Huoltosopimuksen sisältö",
+          "content1": "Kiinteähintaiset sopimukset: Suurin osa kiinteistöhuollon sopimuksista on kiinteähintaisia, mikä tarkoittaa, että kuukausihinta kattaa sovitut huolto- ja korjaustoimenpiteet ilman lisäkustannuksia.",
+          "content2": "Tarveperusteinen hinnoittelu: Joissakin tapauksissa huoltopalvelut hinnoitellaan tarveperusteisesti, jolloin maksaminen perustuu tehtyihin toimenpiteisiin."
+        },
+        {
+          "name": "Lisäpalvelut",
+          "content1": "Ulkoiset huoltopalvelut: Jos sopimus ei kata kaikkia tarpeita, kuten erityisiä remontteja tai lisähuoltoja, nämä voivat vaikuttaa kokonaishintaan.",
+          "content2": ""
+        }
+      ]
+    },
+    "responsibility": {
+      "title": "Osakkaan ja yhtiön vastuut taloyhtiössä",
+      "shareholderTitle": "Osakkaan vastuut",
+      "companyTitle": "Yhtiön vastuut",
+      "shareholder": {
+        "items": [
+          {
+            "title": "Sisätilojen korjaukset ja kunnossapito",
+            "description": "Osakas vastaa huoneistonsa sisäosista, lukuun ottamatta kantavia rakenteita ja eristeitä. Esimerkiksi sisäseinien maalaaminen, tapetointi ja lattiapinnoitteiden uusiminen kuuluvat osakkaalle."
+          },
+          {
+            "title": "Märkätilat",
+            "description": "Osakas huolehtii pesualtaiden, ammeiden ja suihkuletkujen kunnossapidosta. Lattiakaivon puhdistus on myös osakkaan vastuulla."
+          },
+          {
+            "title": "Kodinkoneet",
+            "description": "Saunan kiuas, uuni ja muut kodinkoneet ovat osakkaan vastuulla."
+          },
+          {
+            "title": "Sähkötöiden hoito",
+            "description": "Lamppujen, sulakkeiden ja pistorasioiden vaihto on osakkaan tehtävä."
+          },
+          {
+            "title": "Verhotangot ja kalusteet",
+            "description": "Verhotangot, kaapistot ja muut kiinteät kalusteet ovat osakkaan vastuulla."
+          },
+          {
+            "title": "Palovaroittimet",
+            "description": "Osakas huolehtii paristokäyttöisten palovaroittimien toiminnasta ja paristojen vaihdosta."
+          }
+        ]
+      },
+      "company": {
+        "items": [
+          {
+            "title": "Rakennuksen ulko-osat",
+            "description": "Taloyhtiö vastaa rakennuksen ulko-ovista, ikkunoiden ulkopuitteista, julkisivupinnoista ja parvekkeiden vedeneristeistä."
+          },
+          {
+            "title": "Pesuhuoneen ja WC-tilojen korjaukset",
+            "description": "Taloyhtiö huolehtii pesuhuoneen vesieristeiden korjauksista, wc-istuimen vaihdoista ja pesualtaan vesilukkojen puhdistuksesta."
+          },
+          {
+            "title": "Lämmitys- ja ilmastointilaitteet",
+            "description": "Kiinteästi asennetut lämmityspatterit ja ilmanvaihtojärjestelmät ovat taloyhtiön vastuulla, mukaan lukien patterien ilmaus ja venttiilien säätö."
+          },
+          {
+            "title": "Ulkoalueet ja piha",
+            "description": "Taloyhtiö vastaa ulkoalueiden hoidosta, kuten nurmikon leikkuusta ja lumen auraamisesta."
+          },
+          {
+            "title": "Sähkötöiden perusteet",
+            "description": "Taloyhtiö huolehtii kiinteistä sähköjohdoista, sulaketauluista ja antennilaitteista."
+          },
+          {
+            "title": "Tuholaistorjunta",
+            "description": "Taloyhtiö hoitaa tuholaisten, kuten rottien ja hiirien hävityksen."
+          }
+        ]
+      }
+    },
+    "process": {
+      "title": "Kotitalousvähennys kiinteistön huollossa",
+      "subtitle": "Hyödynnä kotitalousvähennys kiinteistön huoltokustannuksista.",
+      "steps": [
+        {
+          "name": "Vähennysoikeus",
+          "description": "Vähennysoikeus kattaa osan huoltopalveluiden työosuudesta, ja vuonna 2024 maksimimäärä on 3 500 € per henkilö vuodessa."
+        },
+        {
+          "name": "Vähennys",
+          "description": "Vähennys on jopa 60 % työn osuudesta, mikä voi merkittävästi pienentää kustannuksia."
+        }
+      ]
+    },
+    "faqs": {
+      "title": "Miksi valita Hero24",
+      "items": [
+        {
+          "q": "24/7 palvelu",
+          "a": "Hero24 tarjoaa ympärivuorokautista huoltoa ja asiakaspalvelua. Olemme valmiina reagoimaan kiireellisiin tilanteisiin milloin tahansa, mikä takaa kiinteistön jatkuvan ja keskeytymättömän toiminnan."
+        },
+        {
+          "q": "Kattava palvelukokonaisuus",
+          "a": "Palvelumme kattavat kaikki kiinteistönhuollon tarpeet yhdellä sopimuksella. Tämä poistaa tarpeen useille eri palveluntarjoajille ja yksinkertaistaa hallintaa."
+        },
+        {
+          "q": "Joustavuus ja räätälöitävyys",
+          "a": "Tarjoamme joustavat huoltosopimusvaihtoehdot, jotka voidaan räätälöidä vastaamaan tarkasti tarpeitanne. Näin maksatte vain siitä, mitä todella tarvitsette."
+        },
+        {
+          "q": "Innovatiivinen teknologia",
+          "a": "Käytämme sähköistä huoltokirjaa, joka parantaa palveluiden laatua ja tehokkuutta. Tämä mahdollistaa huoltotöiden reaaliaikaisen seurannan ja tarkan dokumentoinnin."
+        },
+        {
+          "q": "Asiakastyytyväisyys",
+          "a": "Tavoitteenamme on korkealaatuinen asiakaspalvelu ja asukkaiden tyytyväisyys. Suunnittelemme ja toteutamme huolto- ja ylläpitotoimenpiteet, jotka vastaavat asukkaiden ja hallituksen tarpeita ja odotuksia."
+        },
+        {
+          "q": "Kokemus ja asiantuntemus",
+          "a": "Vankka kokemus kiinteistöhallinnan ja huollon alalla takaa, että tiedämme, miten eri tilanteet ja ongelmat hoidetaan tehokkaasti ja ammattimaisesti."
+        }
+      ]
+    }
+  },
+  "settings": {
+    "colors": "Värit"
+  }
+}

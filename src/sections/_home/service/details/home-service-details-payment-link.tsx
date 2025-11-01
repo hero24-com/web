@@ -1,4 +1,6 @@
+'use client';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 import List from '@mui/material/List';
 import Stack from '@mui/material/Stack';
@@ -26,6 +28,7 @@ type Props = {
 };
 
 export default function HomeServicePaymentLink({ paymentLinks }: Props) {
+  const t = useTranslations();
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -44,10 +47,10 @@ export default function HomeServicePaymentLink({ paymentLinks }: Props) {
   return (
     <Stack spacing={3} direction={{ xs: 'column', md: 'row' }}>
       <Button onClick={handleClickOpen} fullWidth variant="contained" color="inherit" size="large">
-        Varaa nyt - verkkokauppa
+        {t('services.payment.openDialogButton')}
       </Button>
       <Dialog fullWidth open={open} onClose={handleClose}>
-        <DialogTitle>Valitse paketti</DialogTitle>
+        <DialogTitle>{t('services.payment.choosePackageTitle')}</DialogTitle>
         <List sx={{ pt: 0 }}>
           {paymentLinks.map((link) => (
             <ListItem disableGutters key={link.value}>

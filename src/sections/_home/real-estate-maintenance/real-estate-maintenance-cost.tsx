@@ -1,3 +1,5 @@
+'use client';
+
 import type { BoxProps } from '@mui/material/Box';
 
 import Box from '@mui/material/Box';
@@ -5,40 +7,28 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import SvgColor from 'src/components/svg-color';
 
 // ----------------------------------------------------------------------
 
-const SERVICES = [
-  {
-    name: 'Kiinteistön Koko ja Ikä',
-    icon: '/assets/icons/ic_search.svg',
-    content1:
-      'Koko: Pienemmät kiinteistöt, kuten rivitalot, maksavat yleensä vähemmän huoltopalveluista kuin suuret kerrostalot ja laajat alueet.',
-    content2:
-      'Ikä: Vanhemmat rakennukset saattavat vaatia enemmän huoltoa ja korjauksia verrattuna uusiin rakennuksiin.',
-  },
-  {
-    name: 'Huoltosopimuksen Sisältö',
-    icon: '/assets/icons/ic_agreement.svg',
-    content1:
-      'Kiinteähintaiset Sopimukset: Suurin osa kiinteistöhuollon sopimuksista on kiinteähintaisia, mikä tarkoittaa, että kuukausihinta kattaa sovitut huolto- ja korjaustoimenpiteet ilman lisäkustannuksia.',
-    content2:
-      'Tarveperusteinen Hinnoittelu: Joissakin tapauksissa huoltopalvelut hinnoitellaan tarveperusteisesti, jolloin maksaminen perustuu tehtyihin toimenpiteisiin.',
-  },
-  {
-    name: 'Lisäpalvelut',
-    icon: '/assets/icons/ic_optimization.svg',
-    content1:
-      'Ulkoiset Huoltopalvelut: Jos sopimus ei kata kaikkia tarpeita, kuten erityisiä remontteja tai lisähuoltoja, nämä voivat vaikuttaa kokonaishintaan.',
-    content2: '',
-  },
+const SERVICE_ICONS = [
+  '/assets/icons/ic_search.svg',
+  '/assets/icons/ic_agreement.svg',
+  '/assets/icons/ic_optimization.svg',
 ];
 
 // ----------------------------------------------------------------------
 
 export default function RealEstateMaintenanceCost({ sx, ...other }: BoxProps) {
+  const t = useTranslations();
+  const SERVICES = [0, 1, 2].map((i) => ({
+    name: t(`realEstate.cost.items.${i}.name`),
+    icon: SERVICE_ICONS[i],
+    content1: t(`realEstate.cost.items.${i}.content1`),
+    content2: t(`realEstate.cost.items.${i}.content2`),
+  }));
   return (
     <Box
       component="section"
@@ -59,15 +49,9 @@ export default function RealEstateMaintenanceCost({ sx, ...other }: BoxProps) {
             textAlign: { xs: 'center', md: 'unset' },
           }}
         >
-          <Typography variant="h2">
-            Kiinteistön Huoltopalvelujen Hinta – Näin Se Muodostuu
-          </Typography>
+          <Typography variant="h2">{t('realEstate.cost.title')}</Typography>
 
-          <Typography sx={{ color: 'text.secondary' }}>
-            Kiinteistön huoltopalvelujen hinnoittelu vaihtelee useiden tekijöiden mukaan.
-            Ymmärrämme, että kustannusten arviointi voi olla haastavaa, joten tässä selitämme, mitkä
-            asiat vaikuttavat hintaan:
-          </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>{t('realEstate.cost.intro')}</Typography>
         </Stack>
 
         <Box

@@ -1,3 +1,4 @@
+'use client';
 import { useEffect } from 'react';
 
 import List from '@mui/material/List';
@@ -7,6 +8,7 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 
 import { paths } from 'src/routes/paths';
+import { useTranslations } from 'next-intl';
 import { usePathname } from 'src/routes/hooks';
 
 import { useBoolean } from 'src/hooks/use-boolean';
@@ -23,6 +25,7 @@ import type { NavProps } from '../types';
 // ----------------------------------------------------------------------
 
 export default function NavMobile({ data }: NavProps) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   const mobileOpen = useBoolean();
@@ -68,7 +71,7 @@ export default function NavMobile({ data }: NavProps) {
               target="_blank"
               rel="noopener"
             >
-              Liity Sankariksi
+              {t('nav.top.joinHero')}
             </Button>
           </Stack>
         </Scrollbar>

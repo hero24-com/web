@@ -1,3 +1,5 @@
+'use client';
+
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
@@ -8,6 +10,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 import { presetOptions } from 'src/theme/options/presets';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
@@ -53,10 +56,11 @@ type Props = {
 };
 
 export default function PresetsOptions({ value, onChange }: Props) {
+  const t = useTranslations();
   return (
     <Box sx={{ px: 3 }}>
       <Typography variant="subtitle2" sx={{ py: 3 }}>
-        Värit
+        {t('settings.colors')}
       </Typography>
 
       <RadioGroup
@@ -88,12 +92,7 @@ type OptionItemProps = {
   secondaryColor: string;
 };
 
-function OptionItem({
-  colorName,
-  selected,
-  primaryColor,
-  secondaryColor,
-}: OptionItemProps) {
+function OptionItem({ colorName, selected, primaryColor, secondaryColor }: OptionItemProps) {
   return (
     <Paper
       variant={selected ? 'elevation' : 'outlined'}
@@ -106,9 +105,7 @@ function OptionItem({
         }),
       }}
     >
-      <CardActionArea
-        sx={{ borderRadius: BOX_BORDER_RADIUS, color: primaryColor }}
-      >
+      <CardActionArea sx={{ borderRadius: BOX_BORDER_RADIUS, color: primaryColor }}>
         <StyledBoxWrap>
           <StyledBoxPrimary sx={{ bgcolor: primaryColor }}>
             <StyledBoxSecondary

@@ -1,6 +1,7 @@
 export type IServiceProps = {
   id: string;
   slug: string;
+  slugKey: string;
   serviceSlug: string;
   price: number;
   heroUrl: string;

@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useTranslations } from 'next-intl';
 
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
@@ -25,16 +26,15 @@ import Iconify from 'src/components/iconify';
 
 // ----------------------------------------------------------------------
 
-const SUMMARY = [
-  { value: 50000, label: 'Asiakkaita', color: 'warning' },
-  { value: 200000, label: 'Tilauksia', color: 'error' },
-  { value: 500, label: 'Sankareita', color: 'success' },
-] as const;
-
-// ----------------------------------------------------------------------
-
 export default function HomeHero() {
   const theme = useTheme();
+  const t = useTranslations('home.hero');
+
+  const SUMMARY = [
+    { value: 50000, label: t('summary.customers'), color: 'warning' },
+    { value: 200000, label: t('summary.orders'), color: 'error' },
+    { value: 500, label: t('summary.heroes'), color: 'success' },
+  ] as const;
 
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -57,12 +57,7 @@ export default function HomeHero() {
       }}
     >
       <Container sx={{ height: 1 }}>
-        <Grid
-          container
-          columnSpacing={3}
-          alignItems="center"
-          sx={{ height: 1 }}
-        >
+        <Grid container columnSpacing={3} alignItems="center" sx={{ height: 1 }}>
           <Grid xs={12} md={5}>
             <Stack
               spacing={5}
@@ -77,18 +72,12 @@ export default function HomeHero() {
                 <Box component="span" sx={{ color: 'primary.main' }}>
                   {`Hero24 `}
                 </Box>
-                - Yhdistää ammattilaiset ja asiakkaat yhdestä paikasta
+                {t('title').replace('Hero24 ', '')}
               </Typography>
 
-              <Typography variant="h6">
-                Valitse huipputason ammattilaisia kaikkiin asumisen ja
-                kiinteistöhallinnan tarpeisiin yhdestä paikasta.
-              </Typography>
+              <Typography variant="h6">{t('subtitle1')}</Typography>
 
-              <Typography variant="h6">
-                100% tyytyväisyystakuu ja vakuutettuina – kaikki palvelut
-                räätälöitynä juuri sinulle.
-              </Typography>
+              <Typography variant="h6">{t('subtitle2')}</Typography>
 
               <Stack spacing={3} sx={{ mb: 5, width: '100%' }}>
                 <Button
@@ -98,31 +87,19 @@ export default function HomeHero() {
                   size="large"
                   rel="noopener"
                 >
-                  Valitse palvelu
+                  {t('selectService')}
                 </Button>
               </Stack>
 
-              <Stack
-                spacing={3}
-                alignItems="center"
-                direction={{ xs: 'column', md: 'row' }}
-              >
-                <Stack
-                  direction="row"
-                  alignItems="center"
-                  sx={{ typography: 'h6' }}
-                >
+              <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
+                <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
                   <Fab size="medium" color="primary" sx={{ mr: 1 }}>
                     <Iconify width={24} icon="carbon:phone" />
                   </Fab>
                   +358 50 413 2867
                 </Stack>
 
-                <Stack
-                  direction="row"
-                  alignItems="center"
-                  sx={{ typography: 'h6' }}
-                >
+                <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
                   <Fab size="medium" color="info" sx={{ mr: 1 }}>
                     <Iconify width={24} icon="carbon:email" />
                   </Fab>
@@ -138,11 +115,7 @@ export default function HomeHero() {
                 justifyContent={{ xs: 'center', md: 'unset' }}
               >
                 {SUMMARY.map((item) => (
-                  <Stack
-                    key={item.value}
-                    spacing={0.5}
-                    sx={{ position: 'relative' }}
-                  >
+                  <Stack key={item.value} spacing={0.5} sx={{ position: 'relative' }}>
                     <Box
                       sx={{
                         top: 8,
@@ -155,13 +128,8 @@ export default function HomeHero() {
                         bgcolor: `${item.color}.main`,
                       }}
                     />
-                    <Typography variant="h3">
-                      {fShortenNumber(item.value)}+
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      sx={{ color: 'text.secondary' }}
-                    >
+                    <Typography variant="h3">{fShortenNumber(item.value)}+</Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                       {item.label}
                     </Typography>
                   </Stack>

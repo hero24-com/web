@@ -3,6 +3,7 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -17,16 +18,17 @@ import CountUp from 'src/components/count-up';
 
 const IMAGES = [...Array(4)].map((_, index) => _mock.image.service(index + 16));
 
-const SUMMARY = [
-  { name: 'Asiakkaita', number: 50000 },
-  { name: 'Tilauksia', number: 200000 },
-  { name: 'Sankareita', number: 500 },
-];
+const SUMMARY_KEYS = [
+  'realEstate.summary.customers',
+  'realEstate.summary.orders',
+  'realEstate.summary.heroes',
+] as const;
 
 // ----------------------------------------------------------------------
 
 export default function RealEstateMaintenance() {
   const smUp = useResponsive('up', 'sm');
+  const t = useTranslations();
 
   return (
     <Container
@@ -49,25 +51,10 @@ export default function RealEstateMaintenance() {
             textAlign: 'center',
           }}
         >
-          <Typography variant="h2">
-            Hero24 – Kattavat ja Luotettavat Palvelut Asunto-Osakeyhtiöille
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Hero24 tarjoaa täydelliset huolto- ja ylläpitopalvelut asunto-osakeyhtiöille, jotta
-            kiinteistön hallinta olisi mahdollisimman vaivatonta ja tehokasta. Tarjoamme
-            kokonaisratkaisun, joka kattaa kaikki kiinteistöhallinnan tarpeet 24/7.
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Hero24 on luotettava kumppani asunto-osakeyhtiöille kiinteistönhuollon kaikissa
-            tarpeissa. Tarjoamme säännöllistä huoltoa, kiireellisiä korjauksia sekä suuria
-            remonttiprojekteja Uudellamaalla, Varsinais-Suomessa, Pirkanmaalla, Keski-Suomessa ja
-            Päijät-Hämeessä. Ammattitaitoinen henkilökuntamme varmistaa, että kiinteistöt pysyvät
-            turvallisina ja viihtyisinä ympäri vuoden. Joustava palvelumme kattaa kaiken, mitä
-            taloyhtiösi tarvitsee toimivaan arkeen.
-          </Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Ota yhteyttä ja pyydä tarjous, niin suunnitellaan tarpeisiisi sopiva palveluratkaisu!
-          </Typography>
+          <Typography variant="h2">{t('realEstate.hero.title')}</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>{t('realEstate.hero.p1')}</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>{t('realEstate.hero.p2')}</Typography>
+          <Typography sx={{ color: 'text.secondary' }}>{t('realEstate.hero.p3')}</Typography>
         </Stack>
       </Box>
 
@@ -91,12 +78,12 @@ export default function RealEstateMaintenance() {
           pt: { xs: 5, md: 10 },
         }}
       >
-        {SUMMARY.map((value) => (
-          <Stack key={value.name} spacing={1}>
+        {[50000, 200000, 500].map((number, idx) => (
+          <Stack key={SUMMARY_KEYS[idx]} spacing={1}>
             <Typography variant="h2">
               <CountUp
-                start={value.number / 5}
-                end={value.number}
+                start={number / 5}
+                end={number}
                 formattingFn={(newValue: number) => fShortenNumber(newValue)}
               />
 
@@ -108,9 +95,8 @@ export default function RealEstateMaintenance() {
                 +
               </Typography>
             </Typography>
-
             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {value.name}
+              {t(SUMMARY_KEYS[idx])}
             </Typography>
           </Stack>
         ))}

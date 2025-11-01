@@ -1,4 +1,6 @@
+'use client';
 import { useEffect, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
@@ -25,16 +27,19 @@ import type { NavListProps, NavSubListProps } from '../types';
 // ----------------------------------------------------------------------
 
 export default function NavList({ data }: NavListProps) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   const menuOpen = useBoolean();
 
   const active = useActiveLink(data.path, !!data.children);
 
-  const mainList = data.children ? data.children.filter((list) => list.subheader !== 'Muuta') : [];
+  const mainList = data.children
+    ? data.children.filter((list) => list.subheader !== 'nav.subheaders.other')
+    : [];
 
   const commonList = data.children
-    ? data.children.find((list) => list.subheader === 'Muuta')
+    ? data.children.find((list) => list.subheader === 'nav.subheaders.other')
     : null;
 
   useEffect(() => {
@@ -57,7 +62,7 @@ export default function NavList({ data }: NavListProps) {
         onMouseEnter={handleOpenMenu}
         onMouseLeave={menuOpen.onFalse}
         //
-        title={data.title}
+        title={t(data.title)}
         path={data.path}
         showIcon={data.showIcon}
         //
@@ -126,11 +131,12 @@ export default function NavList({ data }: NavListProps) {
 // ----------------------------------------------------------------------
 
 function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
+  const t = useTranslations();
   const pathname = usePathname();
 
   const coverPath = items.length ? items[0].path : '';
 
-  const commonList = subheader === 'Muuta';
+  const commonList = subheader === 'nav.subheaders.other';
 
   return (
     <Stack spacing={2}>
@@ -142,7 +148,7 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
           bgcolor: 'transparent',
         }}
       >
-        {subheader}
+        {t(subheader)}
         {isNew && (
           <Label color="info" sx={{ ml: 1 }}>
             NEW
@@ -176,7 +182,13 @@ function NavSubList({ subheader, isNew, cover, items }: NavSubListProps) {
           const active = pathname === item.path || pathname === `${item.path}/`;
 
           return (
-            <NavItem key={item.title} title={item.title} path={item.path} active={active} subItem />
+            <NavItem
+              key={item.title}
+              title={t(item.title)}
+              path={item.path}
+              active={active}
+              subItem
+            />
           );
         })}
       </Stack>

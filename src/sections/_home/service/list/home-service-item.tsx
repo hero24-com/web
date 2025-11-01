@@ -1,3 +1,5 @@
+'use client';
+
 import type { IServiceProps } from 'src/types/service';
 
 import Box from '@mui/material/Box';
@@ -6,6 +8,7 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
+import { useTranslations } from 'next-intl';
 
 import { RouterLink } from 'src/routes/components';
 
@@ -22,8 +25,9 @@ type Props = {
 };
 
 export default function HomeServiceItem({ service }: Props) {
-  const { slug, serviceSlug, price, priceSale, ratingNumber, coverUrl } =
-    service;
+  const t = useTranslations();
+  const { slugKey, serviceSlug, price, priceSale, ratingNumber, coverUrl } = service;
+  const serviceName = t(slugKey);
 
   return (
     <Card>
@@ -49,8 +53,7 @@ export default function HomeServiceItem({ service }: Props) {
             borderRadius: 0.75,
             typography: 'subtitle2',
             bgcolor: 'text.primary',
-            color: (theme) =>
-              theme.palette.mode === 'light' ? 'common.white' : 'grey.800',
+            color: (theme) => (theme.palette.mode === 'light' ? 'common.white' : 'grey.800'),
           }}
         >
           {priceSale > 0 && (
@@ -69,13 +72,13 @@ export default function HomeServiceItem({ service }: Props) {
       </Stack>
 
       <Link component={RouterLink} href={`/${serviceSlug}`} color="inherit">
-        <Image alt={slug} src={coverUrl} ratio="1/1" />
+        <Image alt={serviceName} src={coverUrl} ratio="1/1" />
       </Link>
 
       <Stack spacing={0.5} sx={{ p: 2.5 }}>
         <Link component={RouterLink} href={`/${serviceSlug}`} color="inherit">
           <TextMaxLine variant="h4" persistent>
-            {slug}
+            {serviceName}
           </TextMaxLine>
         </Link>
       </Stack>
@@ -89,22 +92,15 @@ export default function HomeServiceItem({ service }: Props) {
           alignItems="center"
           sx={{ typography: 'body2', color: 'text.disabled' }}
         >
-          <Button
-            variant="contained"
-            color="inherit"
-            href={`/${serviceSlug}`}
-            rel="noopener"
-          >
-            Varaa nyt
+          <Button variant="contained" color="inherit" href={`/${serviceSlug}`} rel="noopener">
+            {t('services.common.orderNowPayLater')}
           </Button>
         </Stack>
 
         <Stack spacing={0.5} direction="row" alignItems="center">
           <Iconify icon="carbon:star-filled" sx={{ color: 'warning.main' }} />
           <Box sx={{ typography: 'h6' }}>
-            {Number.isInteger(ratingNumber)
-              ? `${ratingNumber}.0`
-              : ratingNumber}
+            {Number.isInteger(ratingNumber) ? `${ratingNumber}.0` : ratingNumber}
           </Box>
         </Stack>
       </Stack>

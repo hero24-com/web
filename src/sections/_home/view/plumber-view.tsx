@@ -3,6 +3,7 @@
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
+import { useTranslations } from 'next-intl';
 
 import { _services, _caseStudies, _testimonials } from 'src/_mock';
 
@@ -22,11 +23,12 @@ const _mockService = _services[15];
 const caseStudies = _caseStudies.slice(0, 6);
 
 export default function PlumberView() {
+  const t = useTranslations();
   return (
     <>
       <Container sx={{ overflow: 'hidden' }}>
         <CustomBreadcrumbs
-          links={[{ name: 'Home', href: '/' }, { name: _mockService.slug }]}
+          links={[{ name: t('nav.home'), href: '/' }, { name: _mockService.slug }]}
           sx={{ mt: 3, mb: 5 }}
         />
 
@@ -36,7 +38,7 @@ export default function PlumberView() {
           <Grid xs={12} md={5} lg={5}>
             <HomeServiceDetailsReserveForm
               formId="ea36aeb4-44c1-41a7-924d-de352d1a4fb3"
-              subject="Uusi tarjouspyyntö - Putkityöt"
+              subject={t('services.subjects.plumber')}
             />
           </Grid>
 

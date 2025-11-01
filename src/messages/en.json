@@ -1,0 +1,450 @@
+{
+  "home": {
+    "hero": {
+      "title": "Hero24 - Connects professionals and customers from one place",
+      "subtitle1": "Choose top-level professionals for all housing and property management needs from one place.",
+      "subtitle2": "100% satisfaction guarantee and insured - all services tailored just for you.",
+      "selectService": "Select service",
+      "phone": "+358 50 413 2867",
+      "email": "support@hero24.com",
+      "summary": {
+        "customers": "Customers",
+        "orders": "Orders",
+        "heroes": "Heroes"
+      }
+    },
+    "services": {
+      "title": "Services for homes, properties and businesses",
+      "subtitle": "All home and property services easily available throughout Finland via Hero24!"
+    },
+    "whyHero24": {
+      "forCustomers": "For Customers",
+      "title": "Why Hero24?",
+      "steps": {
+        "reliability": {
+          "title": "Reliability",
+          "description": "All our professionals are liability insured."
+        },
+        "satisfaction": {
+          "title": "Satisfaction Guarantee",
+          "description": "We offer a 100% satisfaction guarantee for all services."
+        },
+        "flexiblePayment": {
+          "title": "Flexible Payment",
+          "description": "Multiple payment options available, and you can review the service price in advance."
+        },
+        "multilingualSupport": {
+          "title": "Multilingual Support",
+          "description": "Service is available in Finnish and English."
+        }
+      }
+    },
+    "downloadApp": {
+      "title": "Download the app",
+      "subtitle": "Download the Hero24 app now and find your service heroes - or join our heroes - today!",
+      "qrCodeText": "Scan the QR code and install the app on your phone"
+    },
+    "testimonials": {
+      "title": "Thousands of real customer reviews, average over 4.5/5 stars",
+      "items": [
+        "The work was completed on time and professionally. Highly recommend!",
+        "Excellent service from start to finish. Will definitely use again.",
+        "Everything went exactly as agreed. Thank you!",
+        "Reliable and quality work. Very satisfied with the result.",
+        "Quick response and flexible scheduling. Recommend!",
+        "Professional operation and good customer service.",
+        "The work was done carefully and neatly. Great experience!",
+        "Friendly service and reasonable price. Thank you very much!",
+        "Expert help and clear pricing. I am very satisfied.",
+        "Everything went smoothly and the result exceeded expectations.",
+        "Really good service! Will use again in the future.",
+        "Fast and efficient work. Highly recommend!",
+        "Reliable partner who gets the job done right.",
+        "Excellent quality and professionalism. Thanks for the great work!",
+        "Easy to order and smooth communication. Great service!"
+      ]
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "top": {
+      "services": "Services",
+      "orderHero": "Order a Hero",
+      "smartHome": "Carefree Living",
+      "realEstateMaintenance": "Maintenance Services for Housing Companies",
+      "ownCustomer": "Invoice Your Own Customers",
+      "contact": "Contact",
+      "joinHero": "Join As A Hero"
+    },
+    "subheaders": {
+      "cleaningHomeHelp": "Cleaning & Home Help",
+      "appliances": "Appliances & Devices",
+      "movingAndLifting": "Moving Services & Lifting Help",
+      "renovationAndLVIS": "Renovation & HVAC/Electrical/Plumbing",
+      "yardAndProperty": "Yard & Property Maintenance",
+      "other": "Other"
+    },
+    "links": {
+      "cleaningHome": "Home Cleaning",
+      "cleaningOffice": "Office Cleaning",
+      "cleaningMoving": "Moving Cleaning",
+      "cleaningRenovation": "Renovation Cleaning",
+      "cleaningWindow": "Window Cleaning",
+      "domesticHelp": "Domestic Help",
+      "homeAppliance": "Home Appliance Repair",
+      "electronicAppliance": "Electronics Repair",
+      "refrigerationAppliance": "Refrigeration Appliances",
+      "movingService": "Moving Service",
+      "movingLifting": "Lifting Help",
+      "delivery": "Delivery Help",
+      "installationServices": "Installation Services",
+      "airConditioning": "Air Conditioning Services",
+      "renovation": "Renovations & Construction",
+      "electrician": "Electrical Work",
+      "plumber": "Plumbing",
+      "handyman": "Handyman",
+      "asbestos": "Asbestos Surveys",
+      "yardWork": "Yard Work",
+      "propertyMaintenance": "Property Maintenance & Estate Management",
+      "yardModification": "Yard Modification & Construction",
+      "orderHero": "Order a Hero",
+      "joinHero": "Join as a Hero",
+      "smartHome": "Carefree Living",
+      "realEstateMaintenance": "Maintenance Services for Housing Companies",
+      "ownCustomer": "Invoice Your Own Customers",
+      "openOrder": "Looking for another service?",
+      "contact": "Contact"
+    }
+  },
+  "footer": {
+    "description": "Heroes for everyday challenges",
+    "taglineLong": "All services in one app—simplified and tailored just for you. No more complex requests or endless calls.",
+    "app": {
+      "title": "App",
+      "downloadOn": "Download on the",
+      "appleStore": "App Store",
+      "downloadFrom": "Download from",
+      "googlePlay": "Google Play"
+    },
+    "regions": {
+      "uusimaa": "Uusimaa",
+      "varsinaisSuomi": "Southwest Finland",
+      "pirkanmaa": "Pirkanmaa",
+      "keskiSuomi": "Central Finland",
+      "paijatHame": "Päijät-Häme",
+      "costaDelSol": "Costa del Sol (Southern Spain)"
+    },
+    "links": {
+      "termsCustomer": "Terms (Customer)",
+      "termsHero": "Terms (Hero)",
+      "privacyFi": "Privacy (FI)",
+      "privacyEn": "Privacy (EN)"
+    },
+    "copyright": "© {year}. Hero24. All rights reserved."
+  },
+  "services": {
+    "common": {
+      "orderNowPayLater": "Order now"
+    },
+    "payment": {
+      "openDialogButton": "Book now – webshop",
+      "choosePackageTitle": "Choose a package"
+    },
+    "details": {
+      "descriptionTitle": "Description",
+      "includesTitle": "Our services include",
+      "whyTitle": "Why choose Hero24?",
+      "moreServicesTitle": "Other services"
+    },
+    "pages": {
+      "airConditioning": {
+        "description": "We provide reliable installation and maintenance of ventilation and air‑conditioning systems to keep your indoor air fresh and healthy.",
+        "includes": [
+          "Installation of new ventilation/air‑conditioning systems",
+          "Regular maintenance to ensure optimal performance",
+          "Duct cleaning for cleaner indoor air"
+        ],
+        "reasons": [
+          "Experienced, insured professionals",
+          "Transparent pricing and fast scheduling",
+          "High customer satisfaction and guaranteed work"
+        ]
+      },
+      "asbestos": {
+        "description": "Certified asbestos surveys for safe renovations and compliance.",
+        "includes": ["Asbestos inspections", "Sampling and reporting", "Safety guidance"],
+        "reasons": ["Certified experts", "Clear documentation", "Fast turnaround"]
+      },
+      "cleaningHome": {
+        "description": "Thorough home cleaning tailored to your needs—one‑off or recurring.",
+        "includes": [
+          "Regular/one‑off cleaning",
+          "Deep cleaning tasks",
+          "Eco‑friendly supplies on request"
+        ],
+        "reasons": ["Trusted cleaners", "Flexible scheduling", "Quality guaranteed"]
+      },
+      "cleaningMoving": {
+        "description": "Move‑out/Move‑in cleaning that meets landlord and inspection requirements.",
+        "includes": [
+          "All rooms deep‑cleaned",
+          "Appliances and hard‑to‑reach areas",
+          "Final touch checklist"
+        ],
+        "reasons": ["Inspection‑ready", "Fixed transparent pricing", "Reliable results"]
+      },
+      "cleaningOffice": {
+        "description": "Professional office cleaning that keeps your workplace spotless and productive.",
+        "includes": [
+          "Regular janitorial service",
+          "Common areas and kitchens",
+          "Window/extra services on request"
+        ],
+        "reasons": ["Reliable crews", "After‑hours availability", "Consistent quality"]
+      },
+      "cleaningRenovation": {
+        "description": "Post‑renovation cleanup to remove dust and debris safely and thoroughly.",
+        "includes": ["Fine dust removal", "Surface and fixture cleaning", "Waste disposal"],
+        "reasons": ["Construction‑safe methods", "Protective equipment", "Attention to detail"]
+      },
+      "cleaningWindow": {
+        "description": "Streak‑free window cleaning for homes and offices.",
+        "includes": ["Interior/exterior panes", "Frames and sills", "Ladders and safety gear"],
+        "reasons": ["Experienced staff", "Shine guaranteed", "Flexible scheduling"]
+      },
+      "delivery": {
+        "description": "On‑demand transport for items, purchases and small moves.",
+        "includes": ["Pickup and delivery", "Protective packing", "Route planning"],
+        "reasons": ["Careful handling", "Transparent pricing", "Fast service"]
+      },
+      "domesticHelp": {
+        "description": "General home assistance—errands, organizing and day‑to‑day help.",
+        "includes": ["Errands and shopping", "Light household tasks", "Organizing and assistance"],
+        "reasons": ["Friendly helpers", "Tailored tasks", "Trusted service"]
+      },
+      "electrician": {
+        "description": "Certified electrical installations, repairs and troubleshooting.",
+        "includes": ["Sockets and lighting", "Fuse board work", "Fault finding"],
+        "reasons": ["Licensed electricians", "Safety first", "Clear pricing"]
+      },
+      "plumber": {
+        "description": "Plumbing repairs, installations and maintenance for home and property.",
+        "includes": ["Leak fixes", "Fixture replacement", "Drain clearing"],
+        "reasons": ["Fast response", "Quality parts", "Clean workmanship"]
+      },
+      "homeAppliance": {
+        "description": "Repair and maintenance of household appliances to extend their life.",
+        "includes": ["Diagnostics", "Spare parts replacement", "Functional testing"],
+        "reasons": ["Skilled technicians", "Warranty‑friendly work", "Honest estimates"]
+      },
+      "electronicAppliance": {
+        "description": "Repair of consumer electronics and devices.",
+        "includes": ["Diagnostics", "Component replacement", "Cleaning and testing"],
+        "reasons": ["Device expertise", "Data‑safe handling", "Transparent quotes"]
+      },
+      "refrigerationAppliance": {
+        "description": "Installation and service of cooling and freezer units.",
+        "includes": ["Appliance installation", "Coolant checks", "Seal and sensor service"],
+        "reasons": ["Temperature‑safe methods", "Certified techs", "Fast repairs"]
+      },
+      "installationServices": {
+        "description": "Assembly and installation for furniture, fixtures and equipment.",
+        "includes": ["Furniture assembly", "Mounting and anchoring", "Cable management"],
+        "reasons": ["Neat finish", "Tools and hardware included", "On‑time service"]
+      },
+      "movingService": {
+        "description": "Full moving service with careful packing and safe transport.",
+        "includes": ["Packing and materials", "Load and transport", "Unloading and placement"],
+        "reasons": ["Insured movers", "Protective materials", "Punctual crews"]
+      },
+      "movingLifting": {
+        "description": "Extra hands for lifting and carrying heavy items.",
+        "includes": ["Furniture moving", "Stair carries", "On‑site placement"],
+        "reasons": ["Careful handling", "Right equipment", "Flexible hours"]
+      },
+      "propertyMaintenance": {
+        "description": "Ongoing property upkeep and estate management for housing companies.",
+        "includes": ["Common area care", "Seasonal yard work", "Emergency maintenance"],
+        "reasons": ["Reliable partner", "Clear reporting", "24/7 availability"]
+      },
+      "renovation": {
+        "description": "Small and large renovations with professional project management.",
+        "includes": ["Kitchen/bath updates", "Painting and finishes", "Structural work"],
+        "reasons": ["Quality craftsmanship", "Transparent budgeting", "On‑schedule delivery"]
+      },
+      "yardModification": {
+        "description": "Yard structures and improvements to enhance your outdoor space.",
+        "includes": ["Terraces and fences", "Paving and paths", "Garden features"],
+        "reasons": ["Durable materials", "Functional design", "Clean execution"]
+      },
+      "yardWork": {
+        "description": "Regular lawn care, planting and seasonal maintenance.",
+        "includes": ["Mowing and edging", "Planting and pruning", "Leaf and snow work (seasonal)"],
+        "reasons": ["Reliable schedules", "Tidy results", "All seasons covered"]
+      },
+      "openOrder": {
+        "description": "Didn’t find a match? Place an open order describing what you need, and we’ll connect you to the right expert.",
+        "includes": ["Describe your task", "Get tailored offers", "Choose your preferred time"],
+        "reasons": ["Any task covered", "Fast responses", "One simple request"]
+      }
+    },
+    "reserveForm": {
+      "title": "Request a quote—same-day availability possible!",
+      "defaultSubject": "New quote request - Service reservation"
+    },
+    "subjects": {
+      "cleaningHome": "New quote request - Home cleaning",
+      "cleaningOffice": "New quote request - Office cleaning",
+      "cleaningMoving": "New quote request - Moving cleaning",
+      "cleaningRenovation": "New quote request - Renovation cleaning",
+      "cleaningWindow": "New quote request - Window cleaning",
+      "homeAppliance": "New quote request - Home appliance repair",
+      "electronicAppliance": "New quote request - Electronics repair",
+      "refrigerationAppliance": "New quote request - Refrigeration appliances",
+      "movingService": "New quote request - Moving service",
+      "movingLifting": "New quote request - Lifting help",
+      "delivery": "New quote request - Delivery help",
+      "airConditioning": "New quote request - Air conditioning services",
+      "renovation": "New quote request - Renovations & construction",
+      "electrician": "New quote request - Electrical work",
+      "plumber": "New quote request - Plumbing",
+      "handyman": "New quote request - Handyman",
+      "asbestos": "New quote request - Asbestos surveys",
+      "propertyMaintenance": "New quote request - Property maintenance & estate management",
+      "yardWork": "New quote request - Yard work",
+      "yardModification": "New quote request - Yard modification & construction",
+      "realEstateMaintenance": "New quote request - Maintenance services for housing companies",
+      "domesticHelp": "New quote request - Domestic help",
+      "openOrder": "New quote request - Open order"
+    }
+  },
+  "smartHome": {
+    "pricing": {
+      "title": "Carefree Living by Hero24 – Why Choose Us?",
+      "description": "Welcome to Hero24, where peace of mind is more than a promise—it’s a practical way to live. We provide a comprehensive solution that makes home maintenance easy, efficient and stress‑free. Our service is designed for you who value calm, comfortable living without maintenance hassles. As a Premium subscriber you also get unique benefits like discounts, faster service, extended insurance and free consultations/assessments—making life even more carefree.",
+      "ctaOverline": "Join Hero24 Premium for just €19.90 per month and enjoy all the benefits of carefree living!",
+      "featureColumnHeader": "Feature",
+      "popular": "POPULAR",
+      "perMonth": "/mo"
+    },
+    "include": {
+      "title": "Why choose Smart Carefree Home?",
+      "subtitle": "Welcome to the world of Smart Carefree Home, where technology and care combine to create better, more comfortable living. Why choose us?",
+      "items": [
+        {
+          "title": "Ease and convenience",
+          "description": "Smart Carefree Home offers a comprehensive range of services that make managing your home effortless and efficient. We take care of restoration, maintenance and upkeep so you can simply enjoy your home."
+        },
+        {
+          "title": "Prevention and proactive repair",
+          "description": "Our service packages don’t just react to problems—they anticipate and prevent potential maintenance and repair needs. This saves you time, effort and costs in the long run."
+        },
+        {
+          "title": "Professional expertise and reliability",
+          "description": "Behind Smart Carefree Home is a team of experienced professionals you can rely on to care for your home."
+        },
+        {
+          "title": "Plus, we offer 24/7",
+          "description": "Access to professionals whenever you need them, and our services at discounted rates. By choosing Smart Carefree Home you get ease and convenience plus the confidence your home is in good hands."
+        }
+      ]
+    },
+    "benefits": {
+      "title": "What do our packages include?",
+      "description": "Our Smart Carefree Home packages are designed to provide comprehensive, tailored refurbishment, maintenance and upkeep for every need. Packages include all Hero24 services, including:",
+      "items": [
+        "Home/property upkeep services",
+        "Home repair works",
+        "Moving, lifting and transport help",
+        "Maintenance work and inspections",
+        "Upkeep measures and repairs",
+        "Proactive repairs and maintenance"
+      ]
+    },
+    "highlights": {
+      "title": "Services",
+      "groups": {
+        "yardAndProperty": "Yard and Property Care",
+        "renovationAndHVAC": "Renovation and HVAC/Electrical/Plumbing",
+        "movingAndLifting": "Moving Services and Lifting Help",
+        "cleaningAndHomeHelp": "Cleaning and Home Help",
+        "appliancesAndDevices": "Appliances and Devices"
+      },
+      "group1": [
+        "Yard work: Lawn care, planting and seasonal upkeep",
+        "Property maintenance & management",
+        "Yard modification & construction: Structures and improvements"
+      ],
+      "group2": [
+        "Air conditioning services: Installation and maintenance",
+        "Renovations & construction: Large and small projects",
+        "Electrical work: Installations and repairs",
+        "Plumbing: Repairs and maintenance",
+        "Handyman: Carpentry and small repairs",
+        "Asbestos surveys: Health and safety inspections"
+      ],
+      "group3": [
+        "Moving service: Smooth moving assistance",
+        "Lifting help: Carrying furniture",
+        "Delivery help: Transporting items"
+      ],
+      "group4": [
+        "Home cleaning: Regular and specialized cleaning",
+        "Office cleaning: Business and office spaces",
+        "Moving cleaning: Before and after the move",
+        "Renovation cleaning: Construction & renovation cleanup",
+        "Window cleaning: Window washing",
+        "Domestic help: General home assistance"
+      ],
+      "group5": [
+        "Home appliance repair: Fixing and maintenance",
+        "Electronics repair: Electronic devices",
+        "Refrigeration appliances: Cooling and freezer units"
+      ]
+    }
+  },
+  "realEstate": {
+    "hero": {
+      "title": "Hero24 – Comprehensive and reliable services for housing companies",
+      "p1": "Hero24 provides complete maintenance and upkeep services for housing companies, making property management as effortless and efficient as possible. We offer an all‑in‑one solution covering all property management needs 24/7.",
+      "p2": "We are a trusted partner for housing companies in all property maintenance needs. We provide regular maintenance, urgent repairs and large renovation projects across Uusimaa, Southwest Finland, Pirkanmaa, Central Finland and Päijät‑Häme. Our skilled team keeps properties safe and comfortable all year round. Our flexible service covers everything your housing company needs for smooth everyday life.",
+      "p3": "Contact us for a quote and we’ll design a solution tailored to your needs!"
+    },
+    "summary": {
+      "customers": "Customers",
+      "orders": "Orders",
+      "heroes": "Heroes"
+    },
+    "form": {
+      "title": "Contact",
+      "description": "Get in touch and we’ll tailor the best possible property maintenance solution for you. We’re happy to provide more information and discuss your needs in detail.",
+      "subject": "Contact request - Property maintenance"
+    },
+    "howItWorks": {
+      "title": "Hero24’s most common maintenance services for housing companies",
+      "subtitle": "We also offer many other services as needed."
+    },
+    "cost": {
+      "title": "Property maintenance service pricing – How it’s formed",
+      "intro": "The pricing of property maintenance services varies based on several factors. We understand estimating costs can be challenging, so here’s what affects the price:"
+    },
+    "responsibility": {
+      "title": "Shareholder and company responsibilities in a housing company",
+      "shareholderTitle": "Shareholder responsibilities",
+      "companyTitle": "Company responsibilities"
+    },
+    "process": {
+      "title": "Household tax credit in property maintenance",
+      "subtitle": "Take advantage of the household tax credit for your property maintenance costs."
+    },
+    "faqs": {
+      "title": "Why choose Hero24"
+    }
+  },
+  "settings": {
+    "colors": "Colors"
+  }
+}

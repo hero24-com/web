@@ -1,7 +1,10 @@
+'use client';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
@@ -9,37 +12,24 @@ import Image from 'src/components/image';
 
 // ----------------------------------------------------------------------
 
-const BENEFITS = [
-  {
-    title: 'Kodin/kiinteistön ylläpitopalvelut',
-    iconColor: 'primary',
-  },
-  {
-    title: 'Kodin kunnostustyöt',
-    iconColor: 'success',
-  },
-  {
-    title: 'Kodin muutot, kantoapu, tavaroiden kuljetuspalevlut',
-    iconColor: 'secondary',
-  },
-  {
-    title: 'Huoltotyöt ja tarkastukset',
-    iconColor: 'secondary',
-  },
-  {
-    title: 'Ylläpitotoimenpiteet ja korjaustyöt',
-    iconColor: 'success',
-  },
-  {
-    title: 'Proaktiivinen korjaaminen ja huolto',
-    iconColor: 'primary',
-  },
-];
+const BENEFIT_COLORS = [
+  'primary',
+  'success',
+  'secondary',
+  'secondary',
+  'success',
+  'primary',
+] as const;
 
 // ----------------------------------------------------------------------
 
 export default function SmartHomeBenefits() {
   const mdUp = useResponsive('up', 'md');
+  const t = useTranslations();
+  const BENEFITS = [0, 1, 2, 3, 4, 5].map((i) => ({
+    title: t(`smartHome.benefits.items.${i}`),
+    iconColor: BENEFIT_COLORS[i],
+  }));
 
   return (
     <Box
@@ -50,7 +40,7 @@ export default function SmartHomeBenefits() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: 'center' }}>
-          Mitä palvelupakettimme sisältää?
+          {t('smartHome.benefits.title')}
         </Typography>
 
         <Typography
@@ -63,10 +53,7 @@ export default function SmartHomeBenefits() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          Valikoimamme Älykäs Huoleton koti -palvelupaketit on suunniteltu
-          tarjoamaan kattavaa ja räätälöityä kodin ja kiinteistön kunnostus-,
-          huolto- ja ylläpitopalvelua jokaiseen tarpeeseen. Palvelupaketteihimme
-          sisältyy kaikki Hero24 palvelut, muun muassa:
+          {t('smartHome.benefits.description')}
         </Typography>
 
         <Box
@@ -79,12 +66,7 @@ export default function SmartHomeBenefits() {
         >
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(0, 3).map((benefit, index) => (
-              <BenefitItem
-                key={benefit.title}
-                benefit={benefit}
-                index={index}
-                reverse
-              />
+              <BenefitItem key={benefit.title} benefit={benefit} index={index} reverse />
             ))}
           </Stack>
 
@@ -98,11 +80,7 @@ export default function SmartHomeBenefits() {
 
           <Stack spacing={{ xs: 4, md: 10 }}>
             {BENEFITS.slice(-3).map((benefit, index) => (
-              <BenefitItem
-                key={benefit.title}
-                benefit={benefit}
-                index={index}
-              />
+              <BenefitItem key={benefit.title} benefit={benefit} index={index} />
             ))}
           </Stack>
         </Box>

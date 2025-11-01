@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import Collapse from '@mui/material/Collapse';
 
 import { useActiveLink } from 'src/routes/hooks/use-active-link';
@@ -13,6 +15,7 @@ import type { NavListProps } from '../types';
 // ----------------------------------------------------------------------
 
 export default function NavList({ data }: NavListProps) {
+  const t = useTranslations();
   const active = useActiveLink(data.path, !!data.children);
 
   const menuOpen = useBoolean();
@@ -23,7 +26,7 @@ export default function NavList({ data }: NavListProps) {
         open={menuOpen.value}
         onClick={menuOpen.onToggle}
         //
-        title={data.title}
+        title={t(data.title)}
         path={data.path}
         //
         active={active}

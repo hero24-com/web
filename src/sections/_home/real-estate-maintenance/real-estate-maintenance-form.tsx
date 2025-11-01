@@ -1,9 +1,12 @@
+'use client';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { useHubspotForm } from 'src/hooks/use-hubspot-form';
 
@@ -14,8 +17,9 @@ type Props = {
 };
 
 export default function RealEstateMaintenanceForm({ formId }: Props) {
+  const t = useTranslations();
   const uniqueFormId = useHubspotForm(formId, {
-    subject: 'Yhteydenottopyyntö - Kiinteistönhuolto',
+    subject: t('realEstate.form.subject'),
   });
 
   return (
@@ -27,11 +31,10 @@ export default function RealEstateMaintenanceForm({ formId }: Props) {
     >
       <Card>
         <Stack spacing={3} sx={{ p: 3 }}>
-          <Typography variant="h4">Yhteydenotto</Typography>
+          <Typography variant="h4">{t('realEstate.form.title')}</Typography>
 
           <Typography sx={{ color: 'text.secondary' }}>
-            Ota yhteyttä, niin räätälöimme teille parhaan mahdollisen ratkaisun kiinteistönhuoltoon.
-            Tarjoamme mielellämme lisätietoja ja keskustelemme teidän tarpeistanne tarkemmin.
+            {t('realEstate.form.description')}
           </Typography>
         </Stack>
 

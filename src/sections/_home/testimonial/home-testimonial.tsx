@@ -1,3 +1,5 @@
+'use client';
+
 import type { ITestimonialProps } from 'src/types/testimonial';
 
 import Box from '@mui/material/Box';
@@ -5,14 +7,11 @@ import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 
-import Carousel, {
-  useCarousel,
-  CarouselDots,
-  CarouselArrows,
-} from 'src/components/carousel';
+import Carousel, { useCarousel, CarouselDots, CarouselArrows } from 'src/components/carousel';
 
 import TestimonialItem from './home-testimonial-item';
 
@@ -24,6 +23,7 @@ type Props = {
 
 export default function HomeTestimonial({ testimonials }: Props) {
   const theme = useTheme();
+  const t = useTranslations('home.testimonials');
 
   const mdUp = useResponsive('up', 'md');
 
@@ -57,11 +57,8 @@ export default function HomeTestimonial({ testimonials }: Props) {
       }}
     >
       <Stack direction="row" alignItems="center" sx={{ mb: 8 }}>
-        <Typography
-          variant="h3"
-          sx={{ textAlign: { xs: 'center', md: 'unset' }, flexGrow: 1 }}
-        >
-          Tuhansia aitoja arvosteluja asiakkailta, keskiarvo yli 4.5/5 tähteä
+        <Typography variant="h3" sx={{ textAlign: { xs: 'center', md: 'unset' }, flexGrow: 1 }}>
+          {t('title')}
         </Typography>
 
         {mdUp && (

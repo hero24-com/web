@@ -18,7 +18,7 @@ export const _testimonials = [...Array(15)].map((_, index) => ({
   avatarUrl: _mock.image.avatar(index),
   createdAt: _mock.time(index),
   ratingNumber: 5,
-  review: _mock.sentence(index),
+  reviewKey: `home.testimonials.items.${index}`,
 }));
 
 // ----------------------------------------------------------------------

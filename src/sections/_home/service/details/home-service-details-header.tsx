@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import type { IServiceProps } from 'src/types/service';
 
 import Fab from '@mui/material/Fab';
@@ -14,7 +16,8 @@ type Props = {
 };
 
 export default function HomeServiceDetailsHeader({ service }: Props) {
-  const { slug } = service;
+  const t = useTranslations();
+  const { slugKey } = service;
 
   return (
     <>
@@ -27,7 +30,7 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
       >
         <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
           <Typography variant="h4" component="h1" sx={{ flexGrow: 1, pr: { md: 10 } }}>
-            {slug}
+            {t(slugKey)}
           </Typography>
         </Stack>
 
@@ -38,7 +41,7 @@ export default function HomeServiceDetailsHeader({ service }: Props) {
             }}
             severity="info"
           >
-            Tilaa nyt. Maksa miten haluat.
+            {t('services.common.orderNowPayLater')}
           </Alert>
         </Stack>
       </Stack>

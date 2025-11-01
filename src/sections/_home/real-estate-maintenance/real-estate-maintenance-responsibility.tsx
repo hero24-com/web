@@ -1,86 +1,28 @@
+'use client';
+
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 
-const SERVICES_FOR_SHAREHOLDER = [
-  {
-    number: '1',
-    title: 'Sisätilojen Korjaukset ja Kunnossapito',
-    description:
-      'Osakas vastaa huoneistonsa sisäosista, lukuun ottamatta kantavia rakenteita ja eristeitä. Esimerkiksi sisäseinien maalaaminen, tapetointi ja lattiapinnoitteiden uusiminen kuuluvat osakkaalle.',
-  },
-  {
-    number: '2',
-    title: 'Märkätilat',
-    description:
-      'Osakas huolehtii pesualtaiden, ammeiden ja suihkuletkujen kunnossapidosta. Lattiakaivon puhdistus on myös osakkaan vastuulla.',
-  },
-  {
-    number: '3',
-    title: 'Kodinkoneet',
-    description: 'Saunan kiuas, uuni ja muut kodinkoneet ovat osakkaan vastuulla.',
-  },
-  {
-    number: '4',
-    title: 'Sähkötöiden Hoito',
-    description: 'Lamppujen, sulakkeiden ja pistorasioiden vaihto on osakkaan tehtävä.',
-  },
-  {
-    number: '5',
-    title: 'Verhotangot ja Kalusteet',
-    description: 'Verhotangot, kaapistot ja muut kiinteät kalusteet ovat osakkaan vastuulla.',
-  },
-  {
-    number: '6',
-    title: 'Palovaroittimet',
-    description:
-      'Osakas huolehtii paristokäyttöisten palovaroittimien toiminnasta ja paristojen vaihdosta.',
-  },
-];
-
-const SERVICES_FOR_COMPANY = [
-  {
-    number: '1',
-    title: 'Rakennuksen Ulko-osat',
-    description:
-      'Taloyhtiö vastaa rakennuksen ulko-ovista, ikkunoiden ulkopuitteista, julkisivupinnoista ja parvekkeiden vedeneristeistä.',
-  },
-  {
-    number: '2',
-    title: 'Pesuhuoneen ja WC-tilojen Korjaukset',
-    description:
-      'Taloyhtiö huolehtii pesuhuoneen vesieristeiden korjauksista, wc-istuimen vaihdoista ja pesualtaan vesilukkojen puhdistuksesta.',
-  },
-  {
-    number: '3',
-    title: 'Lämmitys- ja Ilmastointilaitteet',
-    description:
-      'Kiinteästi asennetut lämmityspatterit ja ilmanvaihtojärjestelmät ovat taloyhtiön vastuulla, mukaan lukien patterien ilmaus ja venttiilien säätö.',
-  },
-  {
-    number: '4',
-    title: 'Ulkoalueet ja Piha',
-    description:
-      'Taloyhtiö vastaa ulkoalueiden hoidosta, kuten nurmikon leikkuusta ja lumen auraamisesta.',
-  },
-  {
-    number: '5',
-    title: 'Sähkötöiden Perusteet',
-    description:
-      'Taloyhtiö huolehtii kiinteistä sähköjohdoista, sulaketauluista ja antennilaitteista.',
-  },
-  {
-    number: '6',
-    title: 'Tuholaistorjunta',
-    description: 'Taloyhtiö hoitaa tuholaisten, kuten rottien ja hiirien hävityksen.',
-  },
-];
+// items moved to i18n
 
 // ----------------------------------------------------------------------
 
 export default function RealEstateMaintenanceResponsibility() {
+  const t = useTranslations();
+  const SERVICES_FOR_SHAREHOLDER = [0, 1, 2, 3, 4, 5].map((i) => ({
+    number: String(i + 1),
+    title: t(`realEstate.responsibility.shareholder.items.${i}.title`),
+    description: t(`realEstate.responsibility.shareholder.items.${i}.description`),
+  }));
+  const SERVICES_FOR_COMPANY = [0, 1, 2, 3, 4, 5].map((i) => ({
+    number: String(i + 1),
+    title: t(`realEstate.responsibility.company.items.${i}.title`),
+    description: t(`realEstate.responsibility.company.items.${i}.description`),
+  }));
   return (
     <Container
       sx={{
@@ -95,7 +37,7 @@ export default function RealEstateMaintenanceResponsibility() {
           mb: { xs: 8, md: 10 },
         }}
       >
-        Osakkaan ja Yhtiön Vastuut Taloyhtiössä
+        {t('realEstate.responsibility.title')}
       </Typography>
 
       <Typography
@@ -105,7 +47,7 @@ export default function RealEstateMaintenanceResponsibility() {
           color: 'text.secondary',
         }}
       >
-        Osakkaan Vastuut
+        {t('realEstate.responsibility.shareholderTitle')}
       </Typography>
 
       <Box
@@ -140,7 +82,7 @@ export default function RealEstateMaintenanceResponsibility() {
           color: 'text.secondary',
         }}
       >
-        Yhtiön Vastuut
+        {t('realEstate.responsibility.companyTitle')}
       </Typography>
 
       <Box

@@ -1,6 +1,8 @@
+'use client';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { useTranslations } from 'next-intl';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
@@ -21,6 +23,7 @@ import { HEADER } from '../config-layout';
 import { navConfig } from './config-navigation';
 import HeaderShadow from '../common/header-shadow';
 import SettingsButton from '../common/settings-button';
+import LanguagePopover from 'src/components/language-popover';
 
 // ----------------------------------------------------------------------
 
@@ -29,6 +32,7 @@ type Props = {
 };
 
 export default function Header({ headerOnDark }: Props) {
+  const t = useTranslations();
   const theme = useTheme();
 
   const offset = useOffSetTop();
@@ -56,13 +60,9 @@ export default function Header({ headerOnDark }: Props) {
         <Box sx={{ flexGrow: { xs: 1, md: 'unset' } }} />
       </>
 
-      <Stack
-        spacing={2}
-        direction="row"
-        alignItems="center"
-        justifyContent="flex-end"
-      >
+      <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
+          <LanguagePopover />
           <SettingsButton />
         </Stack>
 
@@ -75,7 +75,7 @@ export default function Header({ headerOnDark }: Props) {
             display: { xs: 'none', md: 'inline-flex' },
           }}
         >
-          Liity Sankariksi
+          {t('nav.top.joinHero')}
         </Button>
       </Stack>
 

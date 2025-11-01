@@ -1,6 +1,9 @@
+'use client';
+
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
+import { useTranslations } from 'next-intl';
 
 import { _services } from 'src/_mock';
 
@@ -9,6 +12,8 @@ import HomeServiceList from '../service/list/home-service-list';
 // ----------------------------------------------------------------------
 
 export default function HomeService() {
+  const t = useTranslations('home.services');
+
   return (
     <Container
       sx={{
@@ -16,14 +21,9 @@ export default function HomeService() {
       }}
     >
       <Stack spacing={3} sx={{ textAlign: 'center', py: { xs: 5, md: 10 } }}>
-        <Typography variant="h3">
-          Palvelut kotiin, kiinteistöille ja yrityksille
-        </Typography>
+        <Typography variant="h3">{t('title')}</Typography>
 
-        <Typography sx={{ color: 'text.secondary' }}>
-          Hero24 kautta kaikki kodin ja kiinteistön palvelut helposti ympäri
-          Suomea!
-        </Typography>
+        <Typography sx={{ color: 'text.secondary' }}>{t('subtitle')}</Typography>
       </Stack>
 
       <HomeServiceList services={_services} />

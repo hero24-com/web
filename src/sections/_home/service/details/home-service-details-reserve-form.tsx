@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
 
 import Box from '@mui/material/Box';
@@ -19,15 +21,14 @@ type Props = {
   subject?: string;
 };
 
-export default function HomeServiceDetailsReserveForm({
-  formId,
-  subject = 'Uusi tarjouspyyntö - Palvelun varaus',
-}: Props) {
+export default function HomeServiceDetailsReserveForm({ formId, subject }: Props) {
+  const t = useTranslations();
+  const subjectText = subject ?? t('services.reserveForm.defaultSubject');
   // Initialize the HubSpot form with the custom subject line
   // This will add a hidden field named 'email_subject' to the form
   // The value of this field can be used in HubSpot workflows to set the email subject
   const uniqueFormId = useHubspotForm(formId, {
-    subject,
+    subject: subjectText,
   });
 
   // Try to set a global property that HubSpot might use
@@ -47,12 +48,12 @@ export default function HomeServiceDetailsReserveForm({
     } catch (error) {
       // Ignore errors for global property attempts
     }
-  }, [subject]);
+  }, [subjectText]);
 
   return (
     <Card>
       <Stack spacing={3} sx={{ p: 3 }}>
-        <Typography variant="h4">Pyydä tarjous, vapaita aikoja vaikka samalle päivälle!</Typography>
+        <Typography variant="h4">{t('services.reserveForm.title')}</Typography>
       </Stack>
 
       <Divider sx={{ borderStyle: 'dashed' }} />
@@ -63,18 +64,18 @@ export default function HomeServiceDetailsReserveForm({
           type="hidden"
           id="hs_email_subject"
           name="hs_email_subject"
-          value={subject}
-          data-subject={subject}
-          data-email-subject={subject}
-          data-notification-subject={subject}
+          value={subjectText}
+          data-subject={subjectText}
+          data-email-subject={subjectText}
+          data-notification-subject={subjectText}
         />
 
         {/* This is where the HubSpot form will be rendered */}
         <Box
           id={uniqueFormId}
-          data-subject={subject}
-          data-email-subject={subject}
-          data-notification-subject={subject}
+          data-subject={subjectText}
+          data-email-subject={subjectText}
+          data-notification-subject={subjectText}
         />
       </Stack>
     </Card>

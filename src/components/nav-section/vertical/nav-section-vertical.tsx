@@ -1,3 +1,5 @@
+'use client';
+import { useTranslations } from 'next-intl';
 import { memo, useState, useCallback } from 'react';
 
 import Stack from '@mui/material/Stack';
@@ -11,6 +13,7 @@ import type { NavProps, NavGroupProps } from '../types';
 // ----------------------------------------------------------------------
 
 function NavSectionVertical({ data, slotProps, ...other }: NavProps) {
+  const t = useTranslations();
   return (
     <Stack component="nav" id="nav-section-vertical" {...other}>
       {data.map((group, index) => (
@@ -30,6 +33,7 @@ export default memo(NavSectionVertical);
 // ----------------------------------------------------------------------
 
 function Group({ subheader, items, slotProps }: NavGroupProps) {
+  const t = useTranslations();
   const [open, setOpen] = useState(true);
 
   const handleToggle = useCallback(() => {
@@ -66,7 +70,7 @@ function Group({ subheader, items, slotProps }: NavGroupProps) {
               ...slotProps?.subheader,
             }}
           >
-            {subheader}
+            {t(subheader)}
           </ListSubheader>
 
           <Collapse in={open}>{renderContent}</Collapse>
