@@ -1,6 +1,22 @@
 'use client';
 
-import Script from 'next/script';
+import { useEffect } from 'react';
+
+// ----------------------------------------------------------------------
+
+/**
+ * TypeScript declaration for Google gtag function
+ */
+declare global {
+  interface Window {
+    gtag?: (
+      command: 'config' | 'event' | 'js',
+      targetId: string | Date,
+      config?: Record<string, unknown>
+    ) => void;
+    dataLayer?: unknown[];
+  }
+}
 
 // ----------------------------------------------------------------------
 
@@ -21,7 +37,7 @@ type GoogleAdsConversionProps = {
 
 /**
  * Google Ads Conversion Tracking Component
- * Tracks conversions when the component mounts
+ * Tracks conversions when the component mounts and gtag is available
  */
 const GoogleAdsConversion = ({
   conversionIds,
@@ -33,32 +49,52 @@ const GoogleAdsConversion = ({
     return null;
   }
 
-  // Generate conversion tracking script
-  const conversionScript = conversionIds
-    .map(
-      (conversionId) => `
-              gtag('event', 'conversion', {
-                'send_to': '${conversionId}',
-                'value': ${value},
-                'currency': '${currency}'
-              });`
-    )
-    .join('\n');
+  useEffect(() => {
+    /**
+     * Wait for gtag to be available before firing conversion events
+     * Retries up to 10 times with 100ms delay between attempts
+     */
+    let retries = 0;
+    const maxRetries = 10;
+    const retryInterval = 100; // 100ms
 
-  return (
-    <Script
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: `
-            if (typeof gtag !== 'undefined') {
-              ${conversionScript}
-            } else {
-              console.warn('gtag is not available - Google Analytics may not be loaded');
-            }
-          `,
-      }}
-    />
-  );
+    const fireConversions = () => {
+      if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
+        // gtag is available, fire all conversion events
+        conversionIds.forEach((conversionId) => {
+          window.gtag?.('event', 'conversion', {
+            send_to: conversionId,
+            value,
+            currency,
+          });
+        });
+        return true; // Successfully fired
+      }
+      return false; // gtag not ready yet
+    };
+
+    // Try immediately first
+    if (fireConversions()) {
+      return; // Success, no need to retry
+    }
+
+    // If not ready, retry with interval
+    const checkGtag = setInterval(() => {
+      retries += 1;
+      if (fireConversions()) {
+        clearInterval(checkGtag);
+      } else if (retries >= maxRetries) {
+        clearInterval(checkGtag);
+        console.warn('gtag is not available after retries - Google Analytics may not be loaded');
+      }
+    }, retryInterval);
+
+    return () => {
+      clearInterval(checkGtag);
+    };
+  }, [conversionIds, value, currency]);
+
+  return null;
 };
 
 export default GoogleAdsConversion;

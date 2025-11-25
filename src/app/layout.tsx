@@ -60,7 +60,10 @@ export default function RootLayout({ children }: Props) {
     <html lang="fi" className={primaryFont.className}>
       <body>
         {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS && (
-          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS} />
+          <GoogleAnalytics
+            ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
+            google_ads_id={process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}
+          />
         )}
         <LocaleProvider>
           <LocalizationProvider>
