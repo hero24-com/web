@@ -1,7 +1,6 @@
-"use client";
+'use client';
 
-import Script from "next/script";
-import { CONFIG } from "src/config-global";
+import Script from 'next/script';
 
 // ----------------------------------------------------------------------
 
@@ -27,7 +26,7 @@ type GoogleAdsConversionProps = {
 const GoogleAdsConversion = ({
   conversionIds,
   value = 1.0,
-  currency = "EUR",
+  currency = 'EUR',
 }: GoogleAdsConversionProps) => {
   // Don't render if no conversion IDs provided
   if (!conversionIds || conversionIds.length === 0) {
@@ -44,7 +43,7 @@ const GoogleAdsConversion = ({
                 'currency': '${currency}'
               });`
     )
-    .join("\n");
+    .join('\n');
 
   return (
     <Script
@@ -63,4 +62,3 @@ const GoogleAdsConversion = ({
 };
 
 export default GoogleAdsConversion;
-
