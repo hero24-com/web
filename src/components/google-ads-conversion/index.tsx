@@ -44,12 +44,12 @@ const GoogleAdsConversion = ({
   value = 1.0,
   currency = 'EUR',
 }: GoogleAdsConversionProps) => {
-  // Don't render if no conversion IDs provided
-  if (!conversionIds || conversionIds.length === 0) {
-    return null;
-  }
-
   useEffect(() => {
+    // Don't fire conversions if no conversion IDs provided
+    if (!conversionIds || conversionIds.length === 0) {
+      return undefined;
+    }
+
     /**
      * Wait for gtag to be available before firing conversion events
      * Retries up to 10 times with 100ms delay between attempts
@@ -57,6 +57,7 @@ const GoogleAdsConversion = ({
     let retries = 0;
     const maxRetries = 10;
     const retryInterval = 100; // 100ms
+    let checkGtag: NodeJS.Timeout | null = null;
 
     const fireConversions = () => {
       if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
@@ -75,22 +76,28 @@ const GoogleAdsConversion = ({
 
     // Try immediately first
     if (fireConversions()) {
-      return; // Success, no need to retry
+      return undefined; // Success, no need to retry
     }
 
     // If not ready, retry with interval
-    const checkGtag = setInterval(() => {
+    checkGtag = setInterval(() => {
       retries += 1;
       if (fireConversions()) {
-        clearInterval(checkGtag);
+        if (checkGtag) {
+          clearInterval(checkGtag);
+        }
       } else if (retries >= maxRetries) {
-        clearInterval(checkGtag);
+        if (checkGtag) {
+          clearInterval(checkGtag);
+        }
         console.warn('gtag is not available after retries - Google Analytics may not be loaded');
       }
     }, retryInterval);
 
     return () => {
-      clearInterval(checkGtag);
+      if (checkGtag) {
+        clearInterval(checkGtag);
+      }
     };
   }, [conversionIds, value, currency]);
 
