@@ -38,6 +38,7 @@ const DEFAULT_JOIN_CONVERSIONS = [
   'AW-16739198440/Q5VPCLHP9twZEOjL760-', // Hero24 / Taltek new ads account
   'AW-11557325623/DYVVCKuIgYQaELeW-4Yr', // Hero24 / Craftly ads account - track join hero24 event
   'AW-17651305589/JvijCLnKlbEbEPWY5uBB', // Hero24 / JLO Invest ads account - Join request conversion
+  'AW-17758590818/EXkjCMXuxsYbEOKu-pNC', // Hero Solutions Oy - Submit lead form (Page load www.hero24.com/join-request-sent/)
 ];
 
 // ----------------------------------------------------------------------
