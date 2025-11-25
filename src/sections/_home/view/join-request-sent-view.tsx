@@ -1,20 +1,21 @@
-'use client';
+"use client";
 
-import Script from 'next/script';
-import { m } from 'framer-motion';
+import { m } from "framer-motion";
 
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
 
-import { _caseStudies, _testimonials } from 'src/_mock';
+import { _caseStudies, _testimonials } from "src/_mock";
 
-import { varBounce, MotionContainer } from 'src/components/animate';
+import { varBounce, MotionContainer } from "src/components/animate";
+import GoogleAdsConversion from "src/components/google-ads-conversion";
+import { CONFIG } from "src/config-global";
 
-import HomeService from '../landing/home-service';
-import HomeCaseStudies from '../landing/home-case-studies';
-import HomeTestimonial from '../testimonial/home-testimonial';
+import HomeService from "../landing/home-service";
+import HomeCaseStudies from "../landing/home-case-studies";
+import HomeTestimonial from "../testimonial/home-testimonial";
 
 // ----------------------------------------------------------------------
 
@@ -24,44 +25,7 @@ export default function JoinRequestSentView() {
   return (
     <>
       {/* Google Ads Conversion Tracking */}
-      <Script
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            if (typeof gtag !== 'undefined') {
-              // Hero24 / Taltek old ads account - verified
-              gtag('event', 'conversion', {
-                'send_to': 'AW-16588215507/ka3dCLi1mLUZENOp8OU9',
-                'value': 1.0,
-                'currency': 'EUR'
-              });
-              
-              // Hero24 / Taltek new ads account - not verified
-              gtag('event', 'conversion', {
-                'send_to': 'AW-16739198440/Q5VPCLHP9twZEOjL760-',
-                'value': 1.0,
-                'currency': 'EUR'
-              });
-              
-              // Hero24 / Craftly ads account - track join hero24 event
-              gtag('event', 'conversion', {
-                'send_to': 'AW-11557325623/DYVVCKuIgYQaELeW-4Yr',
-                'value': 1.0,
-                'currency': 'EUR'
-              });
-              
-              // Hero24 / JLO Invest ads account - Join request conversion (using same conversion ID for now)
-              gtag('event', 'conversion', {
-                'send_to': 'AW-17651305589/JvijCLnKlbEbEPWY5uBB',
-                'value': 1.0,
-                'currency': 'EUR'
-              });
-            } else {
-              console.warn('gtag is not available - Google Analytics may not be loaded');
-            }
-          `,
-        }}
-      />
+      <GoogleAdsConversion conversionIds={CONFIG.googleAdsJoinConversions} />
       <Container
         component={MotionContainer}
         sx={{
