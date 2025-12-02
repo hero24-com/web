@@ -31,6 +31,7 @@ const DEFAULT_QUOTE_CONVERSIONS = [
   'AW-11557325623/Rb9LCOXd-oMaELeW-4Yr', // Hero24 / Craftly ads account
   'AW-17651305589/JvijCLnKlbEbEPWY5uBB', // Hero24 / JLO Invest ads account - Request quote conversion
   'AW-17758590818/NpRcCJjvz8YbEOKu-pNC', // Hero Solutions Oy - Request quote conversion (www.hero24.com/)
+  'AW-17772431653/NS7JCOvyksobEKWSx5pC', // Hero24 UK Ltd - Request quote
 ];
 
 const DEFAULT_JOIN_CONVERSIONS = [
