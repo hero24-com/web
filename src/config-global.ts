@@ -32,6 +32,7 @@ const DEFAULT_QUOTE_CONVERSIONS = [
   'AW-17651305589/JvijCLnKlbEbEPWY5uBB', // Hero24 / JLO Invest ads account - Request quote conversion
   'AW-17758590818/NpRcCJjvz8YbEOKu-pNC', // Hero Solutions Oy - Request quote conversion (www.hero24.com/)
   'AW-17772431653/NS7JCOvyksobEKWSx5pC', // Hero24 UK Ltd - Request quote
+  'AW-17942352107/cnaFCOKi2vUbEOuhyutC', // New account - Request quote (offer-request-sent)
 ];
 
 const DEFAULT_JOIN_CONVERSIONS = [
@@ -40,6 +41,7 @@ const DEFAULT_JOIN_CONVERSIONS = [
   'AW-11557325623/DYVVCKuIgYQaELeW-4Yr', // Hero24 / Craftly ads account - track join hero24 event
   'AW-17651305589/JvijCLnKlbEbEPWY5uBB', // Hero24 / JLO Invest ads account - Join request conversion
   'AW-17758590818/EXkjCMXuxsYbEOKu-pNC', // Hero Solutions Oy - Submit lead form (Page load www.hero24.com/join-request-sent/)
+  'AW-17942352107/JudQCJ3g2vUbEOuhyutC', // New account - Submit lead form (join-request-sent)
 ];
 
 // ----------------------------------------------------------------------
