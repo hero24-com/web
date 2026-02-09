@@ -61,7 +61,17 @@ const GoogleAdsConversion = ({
 
     const fireConversions = () => {
       if (typeof window !== 'undefined' && typeof window.gtag !== 'undefined') {
-        // gtag is available, fire all conversion events
+        // Extract unique account IDs from conversion IDs
+        const accountIds = new Set(
+          conversionIds.map((id) => id.split('/')[0]).filter((id) => id.startsWith('AW-'))
+        );
+
+        // Configure each account (no-op if already configured)
+        accountIds.forEach((accountId) => {
+          window.gtag?.('config', accountId);
+        });
+
+        // Fire all conversion events
         conversionIds.forEach((conversionId) => {
           window.gtag?.('event', 'conversion', {
             send_to: conversionId,
