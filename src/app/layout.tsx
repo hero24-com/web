@@ -65,6 +65,9 @@ export default function RootLayout({ children }: Props) {
             google_ads_id={process.env.NEXT_PUBLIC_GOOGLE_ADS_ID}
           />
         )}
+        {process.env.NEXT_PUBLIC_GOOGLE_ADS_ID_HERO_SOLUTIONS_OY_2 && (
+          <GoogleAnalytics ga_id={process.env.NEXT_PUBLIC_GOOGLE_ADS_ID_HERO_SOLUTIONS_OY_2} />
+        )}
         <LocaleProvider>
           <LocalizationProvider>
             <SettingsProvider
