@@ -383,7 +383,11 @@
           "Toma de muestras e informe",
           "Asesoría de seguridad"
         ],
-        "reasons": ["Expertos certificados", "Documentación clara", "Entrega rápida"]
+        "reasons": [
+          "Expertos certificados",
+          "Documentación clara",
+          "Entrega rápida"
+        ]
       },
       "cleaningHome": {
         "description": "Limpieza del hogar a fondo y a tu medida—puntual o recurrente.",
@@ -392,7 +396,11 @@
           "Tareas de limpieza profunda",
           "Productos ecológicos a solicitud"
         ],
-        "reasons": ["Personal de confianza", "Horarios flexibles", "Calidad garantizada"]
+        "reasons": [
+          "Personal de confianza",
+          "Horarios flexibles",
+          "Calidad garantizada"
+        ]
       },
       "cleaningMoving": {
         "description": "Limpieza de mudanza (salida/entrada) que cumple los requisitos del arrendador y la inspección.",
@@ -401,7 +409,11 @@
           "Electrodomésticos y zonas difíciles",
           "Revisión final de control"
         ],
-        "reasons": ["Lista para inspección", "Precio fijo y transparente", "Resultados confiables"]
+        "reasons": [
+          "Lista para inspección",
+          "Precio fijo y transparente",
+          "Resultados confiables"
+        ]
       },
       "cleaningOffice": {
         "description": "Limpieza profesional de oficinas que mantiene tu espacio impecable y productivo.",
@@ -410,7 +422,11 @@
           "Zonas comunes y cocinas",
           "Ventanas/servicios extra a pedido"
         ],
-        "reasons": ["Equipos confiables", "Disponibilidad fuera de horario", "Calidad consistente"]
+        "reasons": [
+          "Equipos confiables",
+          "Disponibilidad fuera de horario",
+          "Calidad consistente"
+        ]
       },
       "cleaningRenovation": {
         "description": "Limpieza posterior a reforma para eliminar polvo y residuos de forma segura y exhaustiva.",
@@ -419,7 +435,11 @@
           "Limpieza de superficies y accesorios",
           "Gestión de residuos"
         ],
-        "reasons": ["Métodos seguros para obra", "Equipos de protección", "Atención al detalle"]
+        "reasons": [
+          "Métodos seguros para obra",
+          "Equipos de protección",
+          "Atención al detalle"
+        ]
       },
       "cleaningWindow": {
         "description": "Limpieza de ventanas sin marcas para hogares y oficinas.",
@@ -428,31 +448,71 @@
           "Marcos y alféizares",
           "Escaleras y equipos de seguridad"
         ],
-        "reasons": ["Personal experimentado", "Brillo garantizado", "Horarios flexibles"]
+        "reasons": [
+          "Personal experimentado",
+          "Brillo garantizado",
+          "Horarios flexibles"
+        ]
       },
       "delivery": {
         "description": "Transporte bajo demanda para artículos, compras y pequeñas mudanzas.",
-        "includes": ["Recogida y entrega", "Embalaje protector", "Planificación de rutas"],
-        "reasons": ["Manipulación cuidadosa", "Precio transparente", "Servicio rápido"]
+        "includes": [
+          "Recogida y entrega",
+          "Embalaje protector",
+          "Planificación de rutas"
+        ],
+        "reasons": [
+          "Manipulación cuidadosa",
+          "Precio transparente",
+          "Servicio rápido"
+        ]
       },
       "domesticHelp": {
         "description": "Ayuda general en el hogar—mandados, organización y apoyo diario.",
-        "includes": ["Mandados y compras", "Tareas ligeras del hogar", "Organización y asistencia"],
-        "reasons": ["Ayudantes amables", "Tareas a medida", "Servicio de confianza"]
+        "includes": [
+          "Mandados y compras",
+          "Tareas ligeras del hogar",
+          "Organización y asistencia"
+        ],
+        "reasons": [
+          "Ayudantes amables",
+          "Tareas a medida",
+          "Servicio de confianza"
+        ]
       },
       "electrician": {
         "description": "Instalaciones eléctricas certificadas, reparaciones y diagnóstico de fallas.",
-        "includes": ["Enchufes e iluminación", "Tablero de fusibles", "Búsqueda de fallas"],
-        "reasons": ["Electricistas autorizados", "Seguridad ante todo", "Precios claros"]
+        "includes": [
+          "Enchufes e iluminación",
+          "Tablero de fusibles",
+          "Búsqueda de fallas"
+        ],
+        "reasons": [
+          "Electricistas autorizados",
+          "Seguridad ante todo",
+          "Precios claros"
+        ]
       },
       "plumber": {
         "description": "Reparaciones, instalaciones y mantenimiento de fontanería para el hogar y la propiedad.",
-        "includes": ["Reparación de fugas", "Reemplazo de grifería y sanitarios", "Desatascos"],
-        "reasons": ["Respuesta rápida", "Repuestos de calidad", "Trabajo limpio"]
+        "includes": [
+          "Reparación de fugas",
+          "Reemplazo de grifería y sanitarios",
+          "Desatascos"
+        ],
+        "reasons": [
+          "Respuesta rápida",
+          "Repuestos de calidad",
+          "Trabajo limpio"
+        ]
       },
       "homeAppliance": {
         "description": "Reparación y mantenimiento de electrodomésticos para prolongar su vida útil.",
-        "includes": ["Diagnóstico", "Reemplazo de repuestos", "Pruebas de funcionamiento"],
+        "includes": [
+          "Diagnóstico",
+          "Reemplazo de repuestos",
+          "Pruebas de funcionamiento"
+        ],
         "reasons": [
           "Técnicos especializados",
           "Trabajo compatible con garantía",
@@ -461,7 +521,11 @@
       },
       "electronicAppliance": {
         "description": "Reparación de dispositivos y electrónica de consumo.",
-        "includes": ["Diagnóstico", "Reemplazo de componentes", "Limpieza y pruebas"],
+        "includes": [
+          "Diagnóstico",
+          "Reemplazo de componentes",
+          "Limpieza y pruebas"
+        ],
         "reasons": [
           "Experiencia en dispositivos",
           "Manejo seguro de datos",
@@ -483,18 +547,42 @@
       },
       "installationServices": {
         "description": "Montaje e instalación de muebles, accesorios y equipos.",
-        "includes": ["Montaje de muebles", "Anclaje e instalación", "Gestión de cables"],
-        "reasons": ["Acabado prolijo", "Herramientas y herrajes incluidos", "Servicio puntual"]
+        "includes": [
+          "Montaje de muebles",
+          "Anclaje e instalación",
+          "Gestión de cables"
+        ],
+        "reasons": [
+          "Acabado prolijo",
+          "Herramientas y herrajes incluidos",
+          "Servicio puntual"
+        ]
       },
       "movingService": {
         "description": "Servicio de mudanza completo con embalaje cuidadoso y transporte seguro.",
-        "includes": ["Embalaje y materiales", "Carga y transporte", "Descarga y colocación"],
-        "reasons": ["Mudadores asegurados", "Materiales de protección", "Equipos puntuales"]
+        "includes": [
+          "Embalaje y materiales",
+          "Carga y transporte",
+          "Descarga y colocación"
+        ],
+        "reasons": [
+          "Mudadores asegurados",
+          "Materiales de protección",
+          "Equipos puntuales"
+        ]
       },
       "movingLifting": {
         "description": "Mano extra para levantar y transportar objetos pesados.",
-        "includes": ["Movimiento de muebles", "Cargas por escaleras", "Colocación en sitio"],
-        "reasons": ["Manipulación cuidadosa", "Equipo adecuado", "Horarios flexibles"]
+        "includes": [
+          "Movimiento de muebles",
+          "Cargas por escaleras",
+          "Colocación en sitio"
+        ],
+        "reasons": [
+          "Manipulación cuidadosa",
+          "Equipo adecuado",
+          "Horarios flexibles"
+        ]
       },
       "propertyMaintenance": {
         "description": "Mantenimiento continuo de propiedades y gestión de fincas para comunidades.",
@@ -503,27 +591,63 @@
           "Trabajos estacionales de jardín",
           "Mantenimiento de emergencia"
         ],
-        "reasons": ["Socio confiable", "Reportes claros", "Disponibilidad 24/7"]
+        "reasons": [
+          "Socio confiable",
+          "Reportes claros",
+          "Disponibilidad 24/7"
+        ]
       },
       "renovation": {
         "description": "Reformas pequeñas y grandes con gestión profesional del proyecto.",
-        "includes": ["Cocina/baño", "Pintura y acabados", "Trabajos estructurales"],
-        "reasons": ["Alta calidad de obra", "Presupuesto transparente", "Entrega en plazo"]
+        "includes": [
+          "Cocina/baño",
+          "Pintura y acabados",
+          "Trabajos estructurales"
+        ],
+        "reasons": [
+          "Alta calidad de obra",
+          "Presupuesto transparente",
+          "Entrega en plazo"
+        ]
       },
       "yardModification": {
         "description": "Estructuras y mejoras de jardín para realzar tu espacio exterior.",
-        "includes": ["Terrazas y cercas", "Pavimento y senderos", "Elementos decorativos"],
-        "reasons": ["Materiales duraderos", "Diseño funcional", "Ejecución limpia"]
+        "includes": [
+          "Terrazas y cercas",
+          "Pavimento y senderos",
+          "Elementos decorativos"
+        ],
+        "reasons": [
+          "Materiales duraderos",
+          "Diseño funcional",
+          "Ejecución limpia"
+        ]
       },
       "yardWork": {
         "description": "Cuidado del césped, plantación y mantenimiento estacional.",
-        "includes": ["Corte y bordes", "Plantación y poda", "Hojas y nieve (estacional)"],
-        "reasons": ["Horarios confiables", "Resultados prolijos", "Todo el año"]
+        "includes": [
+          "Corte y bordes",
+          "Plantación y poda",
+          "Hojas y nieve (estacional)"
+        ],
+        "reasons": [
+          "Horarios confiables",
+          "Resultados prolijos",
+          "Todo el año"
+        ]
       },
       "openOrder": {
         "description": "¿No encontraste lo que buscas? Haz un pedido abierto describiendo tu necesidad y te conectamos con el experto adecuado.",
-        "includes": ["Describe tu tarea", "Recibe ofertas a medida", "Elige tu horario preferido"],
-        "reasons": ["Cubrimos cualquier tarea", "Respuestas rápidas", "Un solo pedido sencillo"]
+        "includes": [
+          "Describe tu tarea",
+          "Recibe ofertas a medida",
+          "Elige tu horario preferido"
+        ],
+        "reasons": [
+          "Cubrimos cualquier tarea",
+          "Respuestas rápidas",
+          "Un solo pedido sencillo"
+        ]
       }
     },
     "reserveForm": {
@@ -681,5 +805,484 @@
   },
   "settings": {
     "colors": "Colores"
+  },
+  "recruits": {
+    "meta": {
+      "title": "Join Hero24 | Careers",
+      "description": "Help build Hero24 — a modern, AI-enabled service platform for homes and properties. Apply for country launch and growth roles."
+    },
+    "hero": {
+      "eyebrow": "Careers at Hero24",
+      "title": "Join Hero24",
+      "subtitle": "Help us build a scalable operating system for home and property services.",
+      "ctaApply": "Apply now",
+      "ctaRoles": "See open roles"
+    },
+    "intro": {
+      "p1": "Hero24 is building a modern, technology-first and AI-enabled service platform for homes, properties and local service operations.",
+      "p2": "We connect customers, property owners, housing companies, landlords, property managers and businesses with reliable local professionals for moving, cleaning, handyman work, renovations, yard work, plumbing, electrical work, maintenance and other property-related services.",
+      "p3": "We are not building a traditional local service company. We are building a scalable operating system for home and property services.",
+      "p4": "We are looking for ambitious people who want to help build an international platform with strong technology, efficient operations and real-world local execution.",
+      "p5": "Hero24 needs builders across multiple areas: market expansion, sales, operations, customer support, finance, product, technology, AI automation and partnerships.",
+      "p6": "The right people for Hero24 are not just employees completing tasks. They are people who take ownership, improve systems, solve practical problems and create measurable long-term value."
+    },
+    "priority": {
+      "title": "Current priority: Country Launch & Growth Roles",
+      "body": "Our current recruitment focus is on entrepreneurial, hands-on and AI-native country builders who can help Hero24 launch and grow in selected markets. These roles are for people who can open markets, recruit local Heroes, build service provider networks, generate customer demand, create B2B property partnerships and help us build scalable launch playbooks with global potential."
+    },
+    "lookingFor": {
+      "title": "What kind of people we are looking for",
+      "intro": "Hero24 is looking for people who combine practical execution with modern technology thinking. We are especially interested in people who can:",
+      "items": [
+        "Take ownership and move fast",
+        "Build from zero when needed",
+        "Solve practical real-world problems",
+        "Improve systems and processes",
+        "Work across local operations, technology and customer needs",
+        "Communicate clearly with customers, partners, service providers and internal teams",
+        "Understand both B2C home services and B2B property services",
+        "Use AI, CRM systems and automation tools to work faster and smarter",
+        "Document what works and turn it into a repeatable operating model",
+        "Create measurable long-term value instead of only completing isolated tasks"
+      ],
+      "launchIntro": "For the current country launch and growth roles, we are especially interested in people who can:",
+      "launchItems": [
+        "Contact customers, service providers and partners directly",
+        "Recruit and onboard local Heroes",
+        "Generate demand in new markets",
+        "Build B2B property and local business partnerships",
+        "Create repeatable country launch playbooks"
+      ],
+      "outro": "The best early team members are not only strong operators. They are people who can create systems, open markets and build long-term value."
+    },
+    "roles": {
+      "title": "Open roles",
+      "subtitle": "Five country launch and growth opportunities",
+      "labelLocation": "Location",
+      "labelCities": "Preferred cities",
+      "labelType": "Type",
+      "labelLanguages": "Languages",
+      "labelWhatYouDo": "What you will do",
+      "labelWhoWeLookFor": "Who we are looking for",
+      "labelIdealProfile": "Ideal profile",
+      "labelWhatWeOffer": "What we offer",
+      "labelImportantNote": "Important note",
+      "list": {
+        "spain": {
+          "id": "spain",
+          "title": "Spain Launch Lead / Country Builder",
+          "location": "Spain",
+          "cities": "Málaga / Costa del Sol, Madrid, Barcelona, Valencia",
+          "type": "Early-stage launch role / partner / contractor / performance-based model",
+          "languages": "Spanish and English",
+          "tagline": "Build Hero24 Spain from the beginning",
+          "summary": "Hero24 is preparing its launch in Spain. We are looking for an entrepreneurial, hands-on and AI-native Spain Launch Lead / Country Builder to help us build the first local Hero network, generate early market demand and create the foundation for Hero24 Spain.",
+          "context": "This is not a traditional corporate role. We are looking for someone who can execute fast, contact people directly, build local relationships and help us prove the market city by city. Hero24 is a modern service platform for homes, properties and local service operations. We connect customers, property owners, housing companies, landlords, property managers and businesses with reliable local professionals for moving, cleaning, handyman work, renovations, yard work, plumbing, electrical work, maintenance and other property-related services.",
+          "whatYouDo": [
+            "Recruit and onboard local service providers / Heroes in Spain",
+            "Build the first active Hero network in selected Spanish cities",
+            "Contact professionals, local companies and potential partners",
+            "Explore B2C home service demand and B2B property service opportunities",
+            "Build relationships with property managers, landlords, real estate operators and local businesses",
+            "Help generate early customer demand",
+            "Support local operations and customer communication",
+            "Test which cities, services and acquisition channels work best",
+            "Use modern tools, AI and automation to improve outreach, onboarding and reporting",
+            "Create a repeatable Spain launch playbook that can later help Hero24 expand into other markets"
+          ],
+          "whoIntro": "You may be a strong fit if you have experience in:",
+          "whoWeLookFor": [
+            "Sales",
+            "Business development",
+            "Recruitment",
+            "Marketplace platforms",
+            "Startup operations",
+            "Local service businesses",
+            "Home services",
+            "Property management",
+            "Facility services",
+            "Housing associations / condominiums",
+            "Real estate",
+            "Landlords / rental property operations",
+            "Construction / renovation",
+            "Cleaning services",
+            "Moving services",
+            "Maintenance services",
+            "Local contractor networks",
+            "Local partnerships",
+            "AI tools, CRM systems or sales/marketing automation"
+          ],
+          "whoOutro": "You do not need to have experience in all of these areas. What matters most is execution, ownership and the ability to build momentum.",
+          "idealProfile": [
+            "Speaks fluent Spanish and good English",
+            "Understands the Spanish market",
+            "Is comfortable contacting people by phone, WhatsApp, email and LinkedIn",
+            "Can work independently without constant supervision",
+            "Is commercially minded and results-oriented",
+            "Has strong communication and people skills",
+            "Is AI-native and comfortable using modern tools to work faster and smarter",
+            "Wants to build systems, not just complete tasks"
+          ],
+          "whatWeOffer": [
+            "Opportunity to build Hero24 Spain from the beginning",
+            "Direct collaboration with Hero24 leadership",
+            "Flexible partner / contractor-based starting model",
+            "Performance-based earning potential",
+            "Possibility to grow into a long-term country lead role",
+            "A chance to be part of an international platform from an early stage"
+          ],
+          "importantNote": "This is an early-stage launch opportunity, not a traditional fixed corporate position. We are looking for someone who wants to help build the Spanish market together with us and create measurable results from the beginning. The role can develop into a broader long-term country lead role as Hero24 Spain grows."
+        },
+        "finland": {
+          "id": "finland",
+          "title": "Finland Growth Lead / Operations Builder",
+          "location": "Finland",
+          "cities": "Helsinki, Espoo, Vantaa, Tampere, Turku",
+          "type": "Growth / operations / partner / contractor model",
+          "languages": "Finnish and English",
+          "tagline": "Scale Hero24 in Finland",
+          "summary": "Hero24 is already active in Finland, and we are looking for a strong Finland Growth Lead / Operations Builder to help increase sales, improve operations, grow the Hero network and build scalable processes.",
+          "context": "This role is for someone who understands the Finnish market and can combine practical execution with growth thinking. Hero24 serves both private customers and property-related customers, including housing companies, property managers, landlords, real estate operators and businesses.",
+          "whatYouDo": [
+            "Help grow Hero24's customer demand in Finland",
+            "Recruit and activate new Heroes / service providers",
+            "Support local sales and customer communication",
+            "Build partnerships with housing associations, property managers, landlords, businesses and local service providers",
+            "Improve operational processes and service quality",
+            "Support both B2C home services and B2B property service opportunities",
+            "Use AI, CRM and automation tools to make growth more efficient",
+            "Help turn Hero24 Finland into a scalable model for other markets"
+          ],
+          "whoIntro": "Strong backgrounds may include:",
+          "whoWeLookFor": [
+            "Sales",
+            "B2B sales",
+            "Operations",
+            "Recruitment",
+            "Home services",
+            "Property management",
+            "Facility services",
+            "Housing associations",
+            "Real estate",
+            "Construction / renovation",
+            "Cleaning / moving services",
+            "Maintenance services",
+            "Local business development",
+            "Startup growth",
+            "AI tools, CRM systems or sales/marketing automation"
+          ],
+          "idealProfile": [
+            "Fluent Finnish and good English",
+            "Strong understanding of Finnish customers and service providers",
+            "Practical, commercial and fast-moving",
+            "Comfortable with phone, WhatsApp, email and LinkedIn outreach",
+            "Strong ownership mindset",
+            "Interested in using AI and automation to scale operations"
+          ],
+          "whatWeOffer": [
+            "Opportunity to grow an already active market",
+            "Direct collaboration with Hero24 leadership",
+            "Flexible starting model depending on profile and responsibilities",
+            "Performance-based earning potential",
+            "Possibility to grow into a long-term growth or country lead role",
+            "A chance to help build the operational model for Hero24's international expansion"
+          ]
+        },
+        "estonia": {
+          "id": "estonia",
+          "title": "Estonia Launch Lead / Country Builder",
+          "location": "Estonia",
+          "cities": "Tallinn, Tartu",
+          "type": "Early-stage launch role / partner / contractor / performance-based model",
+          "languages": "Estonian and English. Finnish and Russian are a plus.",
+          "tagline": "Build Hero24 Estonia from the beginning",
+          "summary": "Hero24 is looking for an entrepreneurial, hands-on and AI-native Estonia Launch Lead / Country Builder to help us explore and build the first Hero24 operations in Estonia.",
+          "context": "This role focuses first on Estonia, with potential to later support expansion into Latvia, Lithuania and the wider Baltic region. Estonia can be a strong early international market for Hero24 because of its digital culture, local service needs and close connection to the Finnish market.",
+          "whatYouDo": [
+            "Recruit and onboard the first local service providers / Heroes in Estonia",
+            "Build the first active Hero network in selected Estonian cities",
+            "Contact local professionals, companies and potential partners",
+            "Explore B2C home service demand and B2B property service opportunities",
+            "Build relationships with property managers, housing associations, landlords and real estate operators",
+            "Support local market research and launch planning",
+            "Test early customer acquisition channels",
+            "Use AI and modern tools to make outreach, onboarding and reporting scalable",
+            "Help create an Estonia launch model that can later support wider Baltic expansion"
+          ],
+          "whoIntro": "Strong backgrounds may include:",
+          "whoWeLookFor": [
+            "Sales",
+            "Business development",
+            "Recruitment",
+            "Marketplace platforms",
+            "Local operations",
+            "Home services",
+            "Property management",
+            "Facility services",
+            "Real estate",
+            "Construction / renovation",
+            "Cleaning / moving services",
+            "Maintenance services",
+            "Startup growth",
+            "AI-enabled growth or automation"
+          ],
+          "idealProfile": [
+            "Strong local market knowledge",
+            "Fluent Estonian and good English",
+            "Finnish and Russian are a plus",
+            "Practical, entrepreneurial and independent",
+            "Strong communication and outreach ability",
+            "Comfortable building from zero",
+            "Interested in using technology and AI to scale local operations"
+          ],
+          "whatWeOffer": [
+            "Opportunity to build Hero24 Estonia from the beginning",
+            "Direct collaboration with Hero24 leadership",
+            "Flexible partner / contractor-based starting model",
+            "Performance-based earning potential",
+            "Possibility to grow into a long-term country lead role",
+            "Potential to support wider Baltic expansion later"
+          ]
+        },
+        "sweden": {
+          "id": "sweden",
+          "title": "Sweden Launch Lead / Country Builder",
+          "location": "Sweden",
+          "cities": "Stockholm, Gothenburg, Malmö",
+          "type": "Early-stage launch role / partner / contractor / performance-based model",
+          "languages": "Swedish and English",
+          "tagline": "Build Hero24 Sweden from the beginning",
+          "summary": "Hero24 is preparing international expansion and is looking for a Sweden Launch Lead / Country Builder to explore and build the Swedish market.",
+          "context": "We are looking for someone who understands the Swedish service market, can recruit local providers, create early partnerships and help Hero24 generate early demand. Hero24 serves both private customers and property-related customers, including property owners, housing companies, landlords, real estate operators, property managers and businesses.",
+          "whatYouDo": [
+            "Recruit and onboard Swedish service providers / Heroes",
+            "Build the first local Hero network in selected cities",
+            "Contact local companies, professionals and possible partners",
+            "Explore B2C home service demand and B2B property service opportunities",
+            "Build relationships with property managers, landlords, housing companies, real estate operators and local businesses",
+            "Help generate early customer demand",
+            "Support local operations and customer communication",
+            "Test channels, cities and service categories",
+            "Use AI and automation tools to improve outreach, onboarding and reporting"
+          ],
+          "whoIntro": "Strong backgrounds may include:",
+          "whoWeLookFor": [
+            "Sales",
+            "Business development",
+            "Recruitment",
+            "Local operations",
+            "Home services",
+            "Property management",
+            "Facility services",
+            "Real estate",
+            "Construction / renovation",
+            "Cleaning / moving services",
+            "Maintenance services",
+            "Marketplace platforms",
+            "Startup growth",
+            "AI tools, CRM systems or sales/marketing automation"
+          ],
+          "idealProfile": [
+            "Fluent Swedish and good English",
+            "Strong understanding of the Swedish market",
+            "Comfortable with direct outreach",
+            "Practical, independent and commercially driven",
+            "Interested in building a scalable launch model",
+            "Comfortable using modern tools, AI and automation to work faster and smarter"
+          ],
+          "whatWeOffer": [
+            "Opportunity to build Hero24 Sweden from the beginning",
+            "Direct collaboration with Hero24 leadership",
+            "Flexible partner / contractor-based starting model",
+            "Performance-based earning potential",
+            "Possibility to grow into a long-term country lead role",
+            "A chance to help build Hero24's Nordic expansion model"
+          ]
+        },
+        "english": {
+          "id": "english",
+          "title": "English-Speaking Markets Launch Lead",
+          "location": "Remote / selected English-speaking markets",
+          "cities": "UK, Ireland, US, Canada, Australia, UAE / English-speaking expat markets",
+          "type": "Early-stage launch role / partner / contractor / performance-based model",
+          "languages": "English",
+          "tagline": "Help Hero24 explore English-speaking markets",
+          "summary": "Hero24 is looking for an entrepreneurial English-Speaking Markets Launch Lead to help identify, test and open selected English-speaking markets.",
+          "context": "This role is for someone who can combine market research, sales, provider recruitment, local partnerships, property service opportunities and hands-on execution. Hero24 is building a technology-first and AI-enabled service platform for homes, properties and local service operations.",
+          "whatYouDo": [
+            "Identify the most attractive early English-speaking markets for Hero24",
+            "Recruit and onboard local service providers / Heroes",
+            "Test early customer acquisition channels",
+            "Contact potential partners and local companies",
+            "Explore B2C home service demand and B2B property service opportunities",
+            "Build relationships with property managers, landlords, real estate operators and local businesses",
+            "Support market validation and launch planning",
+            "Build repeatable outreach and onboarding systems",
+            "Use AI and automation to make growth faster and more scalable"
+          ],
+          "whoIntro": "Strong backgrounds may include:",
+          "whoWeLookFor": [
+            "Sales",
+            "Business development",
+            "Market expansion",
+            "Startup growth",
+            "Recruitment",
+            "Marketplace platforms",
+            "Home services",
+            "Property management",
+            "Facility services",
+            "Local operations",
+            "Real estate",
+            "Maintenance services",
+            "AI-enabled growth or automation"
+          ],
+          "idealProfile": [
+            "Fluent English",
+            "Strong commercial mindset",
+            "Experience with international growth or local market launches",
+            "Comfortable working independently",
+            "Strong research, outreach and execution skills",
+            "Interested in building scalable systems from early-stage market tests",
+            "Comfortable using AI, CRM systems and automation tools"
+          ],
+          "whatWeOffer": [
+            "Opportunity to help Hero24 identify and open new international markets",
+            "Direct collaboration with Hero24 leadership",
+            "Flexible partner / contractor-based starting model",
+            "Performance-based earning potential",
+            "Possibility to grow into a long-term international expansion role",
+            "A chance to be part of an international platform from an early stage"
+          ]
+        }
+      }
+    },
+    "form": {
+      "title": "Apply to join Hero24",
+      "subtitle": "Please fill in the application form below. We are especially interested in people who can build, execute, communicate clearly and use modern tools to create scalable results.",
+      "required": "Required",
+      "optional": "Optional",
+      "sections": {
+        "role": "Role",
+        "basic": "Basic information",
+        "languages": "Languages",
+        "market": "Market knowledge",
+        "experience": "Experience",
+        "execution": "Execution and growth thinking",
+        "availability": "Availability and compensation",
+        "documents": "Documents and final field"
+      },
+      "fields": {
+        "role": "Role you are applying for",
+        "rolePlaceholder": "Select a role",
+        "fullName": "Full name",
+        "email": "Email",
+        "phone": "Phone / WhatsApp",
+        "location": "Country and city",
+        "linkedin": "LinkedIn profile",
+        "linkedinPlaceholder": "https://linkedin.com/in/...",
+        "spanishLevel": "Spanish level",
+        "englishLevel": "English level",
+        "otherLanguages": "Other languages",
+        "otherLanguagesHelper": "List any other languages and your level",
+        "marketKnowledge": "Which markets, cities or regions do you know best?",
+        "experienceAreas": "Which areas do you have experience in?",
+        "experienceDescription": "Tell us briefly about your relevant experience",
+        "recruitedBefore": "Have you recruited service providers, freelancers, contractors or local businesses before?",
+        "recruitedDescription": "If yes, please describe briefly",
+        "first100": "How would you recruit the first 100 local Heroes in your market?",
+        "channels": "Which channels would you use first to find service providers and customers?",
+        "aiTools": "What AI tools, CRM tools or automation tools have you used before?",
+        "processImproved": "Give an example of a process you have improved, automated or scaled",
+        "thirtyDayPlan": "If you had 30 days to prove traction for Hero24 in your market, what would you do first?",
+        "startDate": "When could you start?",
+        "timeCommitment": "How much time could you commit in the beginning?",
+        "compensation": "Preferred compensation model",
+        "cv": "Upload CV / portfolio",
+        "cvHelper": "PDF, DOC, or DOCX. Max 10MB.",
+        "anythingElse": "Anything else you want to add?"
+      },
+      "options": {
+        "roles": {
+          "spain": "Spain Launch Lead / Country Builder",
+          "finland": "Finland Growth Lead / Operations Builder",
+          "estonia": "Estonia Launch Lead / Country Builder",
+          "sweden": "Sweden Launch Lead / Country Builder",
+          "english": "English-Speaking Markets Launch Lead",
+          "open": "Open application"
+        },
+        "level": {
+          "native": "Native",
+          "fluent": "Fluent",
+          "professional": "Professional",
+          "basic": "Basic",
+          "na": "Not applicable"
+        },
+        "experience": {
+          "sales": "Sales",
+          "businessDevelopment": "Business development",
+          "recruitment": "Recruitment",
+          "marketplacePlatforms": "Marketplace platforms",
+          "startupOperations": "Startup operations",
+          "localOperations": "Local operations",
+          "homeServices": "Home services",
+          "propertyManagement": "Property management",
+          "facilityServices": "Facility services",
+          "housingAssociations": "Housing associations / condominiums",
+          "realEstate": "Real estate",
+          "landlords": "Landlords / rental property operations",
+          "cleaning": "Cleaning",
+          "movingServices": "Moving services",
+          "constructionRenovation": "Construction / renovation",
+          "maintenanceServices": "Maintenance services",
+          "localContractorNetworks": "Local contractor networks",
+          "partnerships": "Partnerships",
+          "aiTools": "AI tools",
+          "crm": "CRM",
+          "salesMarketingAutomation": "Sales/marketing automation",
+          "other": "Other"
+        },
+        "recruited": {
+          "yes": "Yes",
+          "no": "No",
+          "somewhat": "Somewhat"
+        },
+        "startDate": {
+          "immediately": "Immediately",
+          "twoWeeks": "Within 2 weeks",
+          "oneMonth": "Within 1 month",
+          "later": "Later"
+        },
+        "timeCommitment": {
+          "fullTime": "Full-time",
+          "partTime": "Part-time",
+          "projectBased": "Project-based",
+          "flexible": "Flexible"
+        },
+        "compensation": {
+          "commission": "Commission / performance-based",
+          "monthlyRetainer": "Monthly retainer",
+          "contractor": "Contractor model",
+          "partner": "Partner model",
+          "combination": "Combination",
+          "openToDiscussion": "Open to discussion"
+        }
+      },
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "url": "Please enter a valid URL",
+        "minOne": "Please select at least one option",
+        "fileSize": "File must be smaller than 10MB",
+        "fileType": "File must be PDF, DOC, or DOCX"
+      },
+      "submit": "Submit application",
+      "submitting": "Submitting...",
+      "errorTitle": "Something went wrong",
+      "errorBody": "Your application could not be submitted. Please try again, or email support@hero24.com directly.",
+      "uploadError": "CV upload failed. You can still submit without it.",
+      "thankYouTitle": "Thank you for your application.",
+      "thankYouBody1": "We have received your information and will review it carefully. If your background and approach match what we are looking for, we will contact you for the next step.",
+      "thankYouBody2": "Hero24 is looking for builders who can create real impact. Thank you for your interest in joining our journey."
+    }
   }
 }
