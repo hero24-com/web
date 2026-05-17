@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
+import { useEffect, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';

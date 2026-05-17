@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect, useContext, createContext, useMemo } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
+import { useMemo, useState, useEffect, useContext, createContext } from 'react';
 
 const fi = require('../messages/fi.json');
 const en = require('../messages/en.json');

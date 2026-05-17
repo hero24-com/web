@@ -1,5 +1,6 @@
-import { useTranslations } from 'next-intl';
 import type { ISmartHomeProps } from 'src/types/smart-home';
+
+import { useTranslations } from 'next-intl';
 
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';

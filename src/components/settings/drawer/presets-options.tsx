@@ -1,5 +1,7 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Radio from '@mui/material/Radio';
 import Paper from '@mui/material/Paper';
@@ -10,7 +12,6 @@ import CardActionArea from '@mui/material/CardActionArea';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
 import { presetOptions } from 'src/theme/options/presets';
-import { useTranslations } from 'next-intl';
 
 // ----------------------------------------------------------------------
 

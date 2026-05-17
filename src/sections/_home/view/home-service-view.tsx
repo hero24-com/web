@@ -1,9 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import { _services, _caseStudies, _testimonials } from 'src/_mock';
 

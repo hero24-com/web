@@ -1,9 +1,10 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
-import { useTranslations } from 'next-intl';
 
 import { _services, _caseStudies, _testimonials } from 'src/_mock';
 

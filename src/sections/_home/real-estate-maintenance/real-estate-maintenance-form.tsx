@@ -1,12 +1,13 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import { useHubspotForm } from 'src/hooks/use-hubspot-form';
 

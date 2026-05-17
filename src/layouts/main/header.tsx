@@ -1,8 +1,9 @@
 'use client';
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { useTranslations } from 'next-intl';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
@@ -16,6 +17,7 @@ import { useResponsive } from 'src/hooks/use-responsive';
 import { bgBlur } from 'src/theme/css';
 
 import Logo from 'src/components/logo';
+import LanguagePopover from 'src/components/language-popover';
 
 import NavMobile from './nav/mobile';
 import NavDesktop from './nav/desktop';
@@ -23,7 +25,6 @@ import { HEADER } from '../config-layout';
 import { navConfig } from './config-navigation';
 import HeaderShadow from '../common/header-shadow';
 import SettingsButton from '../common/settings-button';
-import LanguagePopover from 'src/components/language-popover';
 
 // ----------------------------------------------------------------------
 

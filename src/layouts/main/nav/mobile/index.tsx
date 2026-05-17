@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 import List from '@mui/material/List';
 import Stack from '@mui/material/Stack';
@@ -8,7 +9,6 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 
 import { paths } from 'src/routes/paths';
-import { useTranslations } from 'next-intl';
 import { usePathname } from 'src/routes/hooks';
 
 import { useBoolean } from 'src/hooks/use-boolean';

@@ -2,12 +2,13 @@
 
 import type { BoxProps } from '@mui/material/Box';
 
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import SvgColor from 'src/components/svg-color';
 

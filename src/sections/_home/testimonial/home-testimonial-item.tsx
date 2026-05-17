@@ -1,10 +1,11 @@
 import type { StackProps } from '@mui/material/Stack';
 import type { ITestimonialProps } from 'src/types/testimonial';
 
+import { useTranslations } from 'next-intl';
+
 import Stack from '@mui/material/Stack';
 import Rating from '@mui/material/Rating';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import { fDate } from 'src/utils/format-time';
 

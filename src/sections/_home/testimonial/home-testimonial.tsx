@@ -2,12 +2,13 @@
 
 import type { ITestimonialProps } from 'src/types/testimonial';
 
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 

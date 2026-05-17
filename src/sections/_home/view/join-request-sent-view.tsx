@@ -7,11 +7,11 @@ import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
+import { CONFIG } from "src/config-global";
 import { _caseStudies, _testimonials } from "src/_mock";
 
 import { varBounce, MotionContainer } from "src/components/animate";
 import GoogleAdsConversion from "src/components/google-ads-conversion";
-import { CONFIG } from "src/config-global";
 
 import HomeService from "../landing/home-service";
 import HomeCaseStudies from "../landing/home-case-studies";

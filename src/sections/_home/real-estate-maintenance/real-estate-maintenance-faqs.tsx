@@ -3,6 +3,7 @@
 import type { BoxProps } from '@mui/material/Box';
 
 import { m } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { useState, useCallback } from 'react';
 
 import Box from '@mui/material/Box';
@@ -12,7 +13,6 @@ import Accordion from '@mui/material/Accordion';
 import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import { useTranslations } from 'next-intl';
 
 import { TrianglePattern } from 'src/assets/illustrations/components/shape-pattern';
 

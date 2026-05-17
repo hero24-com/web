@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+
 import Collapse from '@mui/material/Collapse';
 
 import { useActiveLink } from 'src/routes/hooks/use-active-link';

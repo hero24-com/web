@@ -1,11 +1,12 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
+
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import { useTranslations } from 'next-intl';
 
 import { AppStoreButton } from 'src/layouts/main/footer';
 

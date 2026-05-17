@@ -1,3 +1,5 @@
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Timeline from '@mui/lab/Timeline';
@@ -9,7 +11,6 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { alpha, useTheme } from '@mui/material/styles';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import { useTranslations } from 'next-intl';
 
 import { useResponsive } from 'src/hooks/use-responsive';
 

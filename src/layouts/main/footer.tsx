@@ -1,6 +1,8 @@
 'use client';
 import type { StackProps } from '@mui/material/Stack';
 
+import { useTranslations } from 'next-intl';
+
 import Link from '@mui/material/Link';
 import Masonry from '@mui/lab/Masonry';
 import Stack from '@mui/material/Stack';
@@ -11,7 +13,6 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Typography from '@mui/material/Typography';
 import { alpha, styled } from '@mui/material/styles';
 import Button, { buttonClasses } from '@mui/material/Button';
-import { useTranslations } from 'next-intl';
 
 import { paths } from 'src/routes/paths';
 import { usePathname } from 'src/routes/hooks';

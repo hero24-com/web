@@ -1,6 +1,6 @@
 'use client';
-import { useTranslations } from 'next-intl';
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';

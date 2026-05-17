@@ -1,6 +1,7 @@
 'use client';
-import { useTranslations } from 'next-intl';
 import type { IServiceProps } from 'src/types/service';
+
+import { useTranslations } from 'next-intl';
 
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';

@@ -2,13 +2,14 @@
 
 import type { IServiceProps } from 'src/types/service';
 
+import { useTranslations } from 'next-intl';
+
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
-import { useTranslations } from 'next-intl';
 
 import { RouterLink } from 'src/routes/components';
 
