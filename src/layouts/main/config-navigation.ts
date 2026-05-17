@@ -80,6 +80,7 @@ export const serviceLinks = [
       },
       { title: 'nav.links.ownCustomer', path: paths.ownCustomer },
       { title: 'nav.links.openOrder', path: paths.services.openOrder },
+      { title: 'nav.links.recruits', path: paths.recruits },
       { title: 'nav.links.contact', path: paths.contact },
     ],
   },

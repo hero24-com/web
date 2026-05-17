@@ -38,6 +38,7 @@ export const paths = {
   joinHero24: '/liity-sankariksi',
   ownCustomer: '/laskuta-omia-asiakkaita',
   realEstateMaintenance: '/kiinteiston-huoltopalvelut-taloyhtioille',
+  recruits: '/recruits',
   contact: '/yhteystiedot',
   appStoreLink: 'https://apps.apple.com/us/app/hero24/id1642167956',
   googlePlayLink:

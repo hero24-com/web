@@ -77,7 +77,8 @@
       "realEstateMaintenance": "Huoltopalvelut Taloyhtiöille",
       "ownCustomer": "Laskuta omia asiakkaita",
       "contact": "Yhteystiedot",
-      "joinHero": "Liity Sankariksi"
+      "joinHero": "Liity Sankariksi",
+      "recruits": "Urat"
     },
     "subheaders": {
       "cleaningHomeHelp": "Siivous ja kotiapu",
@@ -116,7 +117,8 @@
       "realEstateMaintenance": "Huoltopalvelut Taloyhtiöille",
       "ownCustomer": "Laskuta omia asiakkaita",
       "openOrder": "Etsitkö muuta palvelua?",
-      "contact": "Yhteystiedot"
+      "contact": "Yhteystiedot",
+      "recruits": "Urat — Liity Hero24:lle"
     }
   },
   "footer": {

@@ -77,7 +77,8 @@
       "realEstateMaintenance": "Maintenance Services for Housing Companies",
       "ownCustomer": "Invoice Your Own Customers",
       "contact": "Contact",
-      "joinHero": "Join As A Hero"
+      "joinHero": "Join As A Hero",
+      "recruits": "Careers"
     },
     "subheaders": {
       "cleaningHomeHelp": "Cleaning & Home Help",
@@ -116,7 +117,8 @@
       "realEstateMaintenance": "Maintenance Services for Housing Companies",
       "ownCustomer": "Invoice Your Own Customers",
       "openOrder": "Looking for another service?",
-      "contact": "Contact"
+      "contact": "Contact",
+      "recruits": "Careers — Join Hero24"
     }
   },
   "footer": {

@@ -1,5 +1,10 @@
 module.exports = {
   trailingSlash: true,
+  async redirects() {
+    return [
+      { source: '/careers', destination: '/recruits', permanent: true },
+    ];
+  },
   modularizeImports: {
     '@mui/icons-material': {
       transform: '@mui/icons-material/{{member}}',

@@ -77,7 +77,8 @@
       "realEstateMaintenance": "Servicios de mantenimiento para comunidades",
       "ownCustomer": "Facturar a tus propios clientes",
       "contact": "Contacto",
-      "joinHero": "Únete Como Héroe"
+      "joinHero": "Únete Como Héroe",
+      "recruits": "Empleo"
     },
     "subheaders": {
       "cleaningHomeHelp": "Limpieza y ayuda en el hogar",
@@ -116,7 +117,8 @@
       "realEstateMaintenance": "Servicios de mantenimiento para comunidades",
       "ownCustomer": "Facturar a tus propios clientes",
       "openOrder": "¿Buscas otro servicio?",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "recruits": "Empleo — Únete a Hero24"
     }
   },
   "footer": {
