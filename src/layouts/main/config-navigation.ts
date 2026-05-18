@@ -103,5 +103,6 @@ export const navConfig = [
   { title: 'nav.top.smartHome', path: paths.smartHome, showIcon: true },
   { title: 'nav.top.realEstateMaintenance', path: paths.realEstateMaintenance },
   { title: 'nav.top.ownCustomer', path: paths.ownCustomer },
+  { title: 'nav.top.recruits', path: paths.recruits },
   { title: 'nav.top.contact', path: paths.contact },
 ];
