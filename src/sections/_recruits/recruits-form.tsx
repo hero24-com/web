@@ -45,7 +45,7 @@ import {
 const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
 const ACCEPTED_TYPES = ['.pdf', '.doc', '.docx'];
 
-type SubmitStatus = 'idle' | 'submitting' | 'success' | 'error';
+type SubmitStatus = 'idle' | 'submitting' | 'success' | 'error' | 'invalid';
 
 export default function RecruitsForm() {
   const t = useTranslations('recruits.form');
@@ -94,6 +94,21 @@ export default function RecruitsForm() {
     } catch (err) {
       setSubmitStatus('error');
     }
+  };
+
+  const onInvalid = (formErrors: Record<string, unknown>) => {
+    setSubmitStatus('invalid');
+    const firstErrorField = Object.keys(formErrors)[0];
+    if (!firstErrorField) return;
+    requestAnimationFrame(() => {
+      const el =
+        document.querySelector<HTMLElement>(`[name="${firstErrorField}"]`) ??
+        document.querySelector<HTMLElement>(`[data-field="${firstErrorField}"]`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        if (typeof el.focus === 'function') el.focus({ preventScroll: true });
+      }
+    });
   };
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -147,7 +162,7 @@ export default function RecruitsForm() {
           </Typography>
         </Stack>
 
-        <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <form onSubmit={handleSubmit(onSubmit, onInvalid)} noValidate>
           <Stack spacing={5}>
             {/* ROLE */}
             <FormSection title={tSections('role')}>
@@ -549,6 +564,13 @@ export default function RecruitsForm() {
                 />
               </Stack>
             </FormSection>
+
+            {submitStatus === 'invalid' && (
+              <Alert severity="warning">
+                <Typography variant="subtitle2">{t('validationErrorTitle')}</Typography>
+                <Typography variant="body2">{t('validationErrorBody')}</Typography>
+              </Alert>
+            )}
 
             {submitStatus === 'error' && (
               <Alert severity="error">

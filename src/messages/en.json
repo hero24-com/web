@@ -177,8 +177,16 @@
       },
       "asbestos": {
         "description": "Certified asbestos surveys for safe renovations and compliance.",
-        "includes": ["Asbestos inspections", "Sampling and reporting", "Safety guidance"],
-        "reasons": ["Certified experts", "Clear documentation", "Fast turnaround"]
+        "includes": [
+          "Asbestos inspections",
+          "Sampling and reporting",
+          "Safety guidance"
+        ],
+        "reasons": [
+          "Certified experts",
+          "Clear documentation",
+          "Fast turnaround"
+        ]
       },
       "cleaningHome": {
         "description": "Thorough home cleaning tailored to your needs—one‑off or recurring.",
@@ -187,7 +195,11 @@
           "Deep cleaning tasks",
           "Eco‑friendly supplies on request"
         ],
-        "reasons": ["Trusted cleaners", "Flexible scheduling", "Quality guaranteed"]
+        "reasons": [
+          "Trusted cleaners",
+          "Flexible scheduling",
+          "Quality guaranteed"
+        ]
       },
       "cleaningMoving": {
         "description": "Move‑out/Move‑in cleaning that meets landlord and inspection requirements.",
@@ -196,7 +208,11 @@
           "Appliances and hard‑to‑reach areas",
           "Final touch checklist"
         ],
-        "reasons": ["Inspection‑ready", "Fixed transparent pricing", "Reliable results"]
+        "reasons": [
+          "Inspection‑ready",
+          "Fixed transparent pricing",
+          "Reliable results"
+        ]
       },
       "cleaningOffice": {
         "description": "Professional office cleaning that keeps your workplace spotless and productive.",
@@ -205,92 +221,232 @@
           "Common areas and kitchens",
           "Window/extra services on request"
         ],
-        "reasons": ["Reliable crews", "After‑hours availability", "Consistent quality"]
+        "reasons": [
+          "Reliable crews",
+          "After‑hours availability",
+          "Consistent quality"
+        ]
       },
       "cleaningRenovation": {
         "description": "Post‑renovation cleanup to remove dust and debris safely and thoroughly.",
-        "includes": ["Fine dust removal", "Surface and fixture cleaning", "Waste disposal"],
-        "reasons": ["Construction‑safe methods", "Protective equipment", "Attention to detail"]
+        "includes": [
+          "Fine dust removal",
+          "Surface and fixture cleaning",
+          "Waste disposal"
+        ],
+        "reasons": [
+          "Construction‑safe methods",
+          "Protective equipment",
+          "Attention to detail"
+        ]
       },
       "cleaningWindow": {
         "description": "Streak‑free window cleaning for homes and offices.",
-        "includes": ["Interior/exterior panes", "Frames and sills", "Ladders and safety gear"],
-        "reasons": ["Experienced staff", "Shine guaranteed", "Flexible scheduling"]
+        "includes": [
+          "Interior/exterior panes",
+          "Frames and sills",
+          "Ladders and safety gear"
+        ],
+        "reasons": [
+          "Experienced staff",
+          "Shine guaranteed",
+          "Flexible scheduling"
+        ]
       },
       "delivery": {
         "description": "On‑demand transport for items, purchases and small moves.",
-        "includes": ["Pickup and delivery", "Protective packing", "Route planning"],
-        "reasons": ["Careful handling", "Transparent pricing", "Fast service"]
+        "includes": [
+          "Pickup and delivery",
+          "Protective packing",
+          "Route planning"
+        ],
+        "reasons": [
+          "Careful handling",
+          "Transparent pricing",
+          "Fast service"
+        ]
       },
       "domesticHelp": {
         "description": "General home assistance—errands, organizing and day‑to‑day help.",
-        "includes": ["Errands and shopping", "Light household tasks", "Organizing and assistance"],
-        "reasons": ["Friendly helpers", "Tailored tasks", "Trusted service"]
+        "includes": [
+          "Errands and shopping",
+          "Light household tasks",
+          "Organizing and assistance"
+        ],
+        "reasons": [
+          "Friendly helpers",
+          "Tailored tasks",
+          "Trusted service"
+        ]
       },
       "electrician": {
         "description": "Certified electrical installations, repairs and troubleshooting.",
-        "includes": ["Sockets and lighting", "Fuse board work", "Fault finding"],
-        "reasons": ["Licensed electricians", "Safety first", "Clear pricing"]
+        "includes": [
+          "Sockets and lighting",
+          "Fuse board work",
+          "Fault finding"
+        ],
+        "reasons": [
+          "Licensed electricians",
+          "Safety first",
+          "Clear pricing"
+        ]
       },
       "plumber": {
         "description": "Plumbing repairs, installations and maintenance for home and property.",
-        "includes": ["Leak fixes", "Fixture replacement", "Drain clearing"],
-        "reasons": ["Fast response", "Quality parts", "Clean workmanship"]
+        "includes": [
+          "Leak fixes",
+          "Fixture replacement",
+          "Drain clearing"
+        ],
+        "reasons": [
+          "Fast response",
+          "Quality parts",
+          "Clean workmanship"
+        ]
       },
       "homeAppliance": {
         "description": "Repair and maintenance of household appliances to extend their life.",
-        "includes": ["Diagnostics", "Spare parts replacement", "Functional testing"],
-        "reasons": ["Skilled technicians", "Warranty‑friendly work", "Honest estimates"]
+        "includes": [
+          "Diagnostics",
+          "Spare parts replacement",
+          "Functional testing"
+        ],
+        "reasons": [
+          "Skilled technicians",
+          "Warranty‑friendly work",
+          "Honest estimates"
+        ]
       },
       "electronicAppliance": {
         "description": "Repair of consumer electronics and devices.",
-        "includes": ["Diagnostics", "Component replacement", "Cleaning and testing"],
-        "reasons": ["Device expertise", "Data‑safe handling", "Transparent quotes"]
+        "includes": [
+          "Diagnostics",
+          "Component replacement",
+          "Cleaning and testing"
+        ],
+        "reasons": [
+          "Device expertise",
+          "Data‑safe handling",
+          "Transparent quotes"
+        ]
       },
       "refrigerationAppliance": {
         "description": "Installation and service of cooling and freezer units.",
-        "includes": ["Appliance installation", "Coolant checks", "Seal and sensor service"],
-        "reasons": ["Temperature‑safe methods", "Certified techs", "Fast repairs"]
+        "includes": [
+          "Appliance installation",
+          "Coolant checks",
+          "Seal and sensor service"
+        ],
+        "reasons": [
+          "Temperature‑safe methods",
+          "Certified techs",
+          "Fast repairs"
+        ]
       },
       "installationServices": {
         "description": "Assembly and installation for furniture, fixtures and equipment.",
-        "includes": ["Furniture assembly", "Mounting and anchoring", "Cable management"],
-        "reasons": ["Neat finish", "Tools and hardware included", "On‑time service"]
+        "includes": [
+          "Furniture assembly",
+          "Mounting and anchoring",
+          "Cable management"
+        ],
+        "reasons": [
+          "Neat finish",
+          "Tools and hardware included",
+          "On‑time service"
+        ]
       },
       "movingService": {
         "description": "Full moving service with careful packing and safe transport.",
-        "includes": ["Packing and materials", "Load and transport", "Unloading and placement"],
-        "reasons": ["Insured movers", "Protective materials", "Punctual crews"]
+        "includes": [
+          "Packing and materials",
+          "Load and transport",
+          "Unloading and placement"
+        ],
+        "reasons": [
+          "Insured movers",
+          "Protective materials",
+          "Punctual crews"
+        ]
       },
       "movingLifting": {
         "description": "Extra hands for lifting and carrying heavy items.",
-        "includes": ["Furniture moving", "Stair carries", "On‑site placement"],
-        "reasons": ["Careful handling", "Right equipment", "Flexible hours"]
+        "includes": [
+          "Furniture moving",
+          "Stair carries",
+          "On‑site placement"
+        ],
+        "reasons": [
+          "Careful handling",
+          "Right equipment",
+          "Flexible hours"
+        ]
       },
       "propertyMaintenance": {
         "description": "Ongoing property upkeep and estate management for housing companies.",
-        "includes": ["Common area care", "Seasonal yard work", "Emergency maintenance"],
-        "reasons": ["Reliable partner", "Clear reporting", "24/7 availability"]
+        "includes": [
+          "Common area care",
+          "Seasonal yard work",
+          "Emergency maintenance"
+        ],
+        "reasons": [
+          "Reliable partner",
+          "Clear reporting",
+          "24/7 availability"
+        ]
       },
       "renovation": {
         "description": "Small and large renovations with professional project management.",
-        "includes": ["Kitchen/bath updates", "Painting and finishes", "Structural work"],
-        "reasons": ["Quality craftsmanship", "Transparent budgeting", "On‑schedule delivery"]
+        "includes": [
+          "Kitchen/bath updates",
+          "Painting and finishes",
+          "Structural work"
+        ],
+        "reasons": [
+          "Quality craftsmanship",
+          "Transparent budgeting",
+          "On‑schedule delivery"
+        ]
       },
       "yardModification": {
         "description": "Yard structures and improvements to enhance your outdoor space.",
-        "includes": ["Terraces and fences", "Paving and paths", "Garden features"],
-        "reasons": ["Durable materials", "Functional design", "Clean execution"]
+        "includes": [
+          "Terraces and fences",
+          "Paving and paths",
+          "Garden features"
+        ],
+        "reasons": [
+          "Durable materials",
+          "Functional design",
+          "Clean execution"
+        ]
       },
       "yardWork": {
         "description": "Regular lawn care, planting and seasonal maintenance.",
-        "includes": ["Mowing and edging", "Planting and pruning", "Leaf and snow work (seasonal)"],
-        "reasons": ["Reliable schedules", "Tidy results", "All seasons covered"]
+        "includes": [
+          "Mowing and edging",
+          "Planting and pruning",
+          "Leaf and snow work (seasonal)"
+        ],
+        "reasons": [
+          "Reliable schedules",
+          "Tidy results",
+          "All seasons covered"
+        ]
       },
       "openOrder": {
         "description": "Didn’t find a match? Place an open order describing what you need, and we’ll connect you to the right expert.",
-        "includes": ["Describe your task", "Get tailored offers", "Choose your preferred time"],
-        "reasons": ["Any task covered", "Fast responses", "One simple request"]
+        "includes": [
+          "Describe your task",
+          "Get tailored offers",
+          "Choose your preferred time"
+        ],
+        "reasons": [
+          "Any task covered",
+          "Fast responses",
+          "One simple request"
+        ]
       }
     },
     "reserveForm": {
@@ -925,7 +1081,9 @@
       "uploadError": "CV upload failed. You can still submit without it.",
       "thankYouTitle": "Thank you for your application.",
       "thankYouBody1": "We have received your information and will review it carefully. If your background and approach match what we are looking for, we will contact you for the next step.",
-      "thankYouBody2": "Hero24 is looking for builders who can create real impact. Thank you for your interest in joining our journey."
+      "thankYouBody2": "Hero24 is looking for builders who can create real impact. Thank you for your interest in joining our journey.",
+      "validationErrorBody": "Please fix the highlighted fields and try again.",
+      "validationErrorTitle": "Some fields need attention"
     }
   }
 }

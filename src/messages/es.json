@@ -1284,7 +1284,9 @@
       "uploadError": "CV upload failed. You can still submit without it.",
       "thankYouTitle": "Thank you for your application.",
       "thankYouBody1": "We have received your information and will review it carefully. If your background and approach match what we are looking for, we will contact you for the next step.",
-      "thankYouBody2": "Hero24 is looking for builders who can create real impact. Thank you for your interest in joining our journey."
+      "thankYouBody2": "Hero24 is looking for builders who can create real impact. Thank you for your interest in joining our journey.",
+      "validationErrorBody": "Por favor corrige los campos resaltados e inténtalo de nuevo.",
+      "validationErrorTitle": "Algunos campos requieren atención"
     }
   }
 }
