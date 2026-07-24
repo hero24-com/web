@@ -151,7 +151,7 @@ export async function POST(request: Request) {
     }
 
     const recipient = process.env.RECRUITS_TO_EMAIL ?? 'support@hero24.com';
-    const sender = process.env.RECRUITS_FROM_EMAIL ?? 'Hero24 Recruits <careers@hero24.com>';
+    const sender = process.env.RECRUITS_FROM_EMAIL ?? 'Hero24 Recruits <no-reply@hero24.com>';
 
     const subject = `New application: ${ROLE_LABELS[data.role]} — ${data.fullName}`;
 
