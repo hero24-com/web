@@ -1,10 +1,12 @@
 'use client';
 
+import { Suspense } from 'react';
+
+import RecruitsWho from '../recruits-who';
 import RecruitsHero from '../recruits-hero';
-import RecruitsForm from '../recruits-form';
-import RecruitsIntro from '../recruits-intro';
 import RecruitsRoles from '../recruits-roles';
-import RecruitsLookingFor from '../recruits-looking-for';
+import RecruitsBuild from '../recruits-build';
+import QuickApplyForm from '../quick-apply-form';
 
 // ----------------------------------------------------------------------
 
@@ -12,10 +14,13 @@ export default function RecruitsView() {
   return (
     <>
       <RecruitsHero />
-      <RecruitsIntro />
-      <RecruitsLookingFor />
+      <RecruitsBuild />
       <RecruitsRoles />
-      <RecruitsForm />
+      <RecruitsWho />
+      {/* The form reads `?role=` and UTM params via useSearchParams. */}
+      <Suspense fallback={null}>
+        <QuickApplyForm />
+      </Suspense>
     </>
   );
 }

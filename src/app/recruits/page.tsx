@@ -4,9 +4,9 @@ import RecruitsView from 'src/sections/_recruits/view/recruits-view';
 
 // ----------------------------------------------------------------------
 
-const TITLE = 'Join Hero24 | Careers';
+const TITLE = 'Careers at Hero24 | Build Hero24 in your market';
 const DESCRIPTION =
-  'Help build Hero24 — a modern, AI-enabled service platform for homes and properties. Apply for country launch and growth roles in Spain, Finland, Estonia, Sweden, and English-speaking markets.';
+  'Hero24 connects customers with local professionals for moving, cleaning, repairs, renovations, installations, plumbing, electrical work and property maintenance. We are expanding across selected European and English-speaking markets and looking for commercially driven people who can build local operations.';
 const URL = 'https://www.hero24.com/recruits';
 
 export const metadata: Metadata = {

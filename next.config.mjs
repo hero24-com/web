@@ -7,6 +7,11 @@ const nextConfig = {
   async redirects() {
     return [
       { source: '/careers', destination: '/recruits', permanent: true },
+      {
+        source: '/careers/assessment',
+        destination: '/recruits/assessment',
+        permanent: true,
+      },
     ];
   },
   modularizeImports: {

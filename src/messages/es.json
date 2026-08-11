@@ -810,17 +810,210 @@
   },
   "recruits": {
     "meta": {
-      "title": "Join Hero24 | Careers",
-      "description": "Help build Hero24 — a modern, AI-enabled service platform for homes and properties. Apply for country launch and growth roles."
+      "title": "Empleo en Hero24 | Construye Hero24 en tu mercado",
+      "description": "Hero24 conecta a clientes con profesionales locales para mudanzas, limpieza, reparaciones, reformas, instalaciones, fontanería, trabajos eléctricos y mantenimiento de propiedades. Estamos expandiéndonos a mercados europeos y anglófonos seleccionados y buscamos personas con visión comercial capaces de construir operaciones locales.",
+      "assessmentTitle": "Evaluación de mercado | Empleo en Hero24",
+      "assessmentDescription": "Evaluación de mercado de segunda fase para candidaturas preseleccionadas de Hero24."
     },
     "hero": {
-      "eyebrow": "Careers at Hero24",
-      "title": "Join Hero24",
-      "subtitle": "Help us build a scalable operating system for home and property services.",
-      "ctaApply": "Apply now",
-      "ctaRoles": "See open roles"
+      "eyebrow": "Empleo en Hero24",
+      "title": "Construye Hero24 en tu mercado.",
+      "body1": "Hero24 conecta a clientes con profesionales locales para mudanzas, limpieza, reparaciones, reformas, instalaciones, fontanería, trabajos eléctricos, mantenimiento de propiedades y otros servicios que la gente necesita en su día a día.",
+      "body2": "Estamos expandiéndonos a mercados europeos y anglófonos seleccionados y buscamos personas con visión comercial capaces de construir operaciones locales.",
+      "tagline": "Una plataforma de confianza para todos los servicios locales del día a día.",
+      "ctaRoles": "Ver puestos abiertos",
+      "ctaApply": "Solicitud rápida"
     },
-    "intro": {
+    "build": {
+      "title": "Lo que vas a construir",
+      "intro": "Hero24 se encarga de la plataforma, la marca y la captación digital centralizada de clientes a medida que se abren los mercados.",
+      "listLabel": "Los responsables de crecimiento y de país se centran en:",
+      "items": [
+        "Construir y activar la red local de Heroes y proveedores de servicios",
+        "Crear alianzas B2B con administradores de fincas, propietarios, inmobiliarias y otras empresas",
+        "Asegurar que la demanda de los clientes se pueda atender realmente y con calidad",
+        "Mejorar las operaciones locales, los precios, las categorías y los procesos",
+        "Construir un manual de lanzamiento de mercado replicable",
+        "Usar CRM, datos, IA y automatización allí donde mejoren de verdad la ejecución"
+      ],
+      "importantLabel": "Importante",
+      "important": "Estos son puestos emprendedores de lanzamiento y crecimiento. El modelo inicial es de contratista o socio, con una remuneración fuertemente ligada a resultados, en lugar de un puesto corporativo tradicional con salario fijo."
+    },
+    "roles": {
+      "title": "Puestos abiertos",
+      "subtitle": "Elige un mercado y presenta tu solicitud en unos dos minutos.",
+      "apply": "Solicitud rápida",
+      "preferredLabel": "Ubicación preferida",
+      "list": {
+        "spain": {
+          "title": "Responsable de Crecimiento de País — España",
+          "meta": "España · español + inglés",
+          "summary": "Construye la red española de Heroes de Hero24, las alianzas B2B y las operaciones locales. Inicialmente centrado en las ciudades y categorías de servicio más fuertes, con la oportunidad de asumir el crecimiento de toda España.",
+          "preferred": "Málaga / Costa del Sol, Madrid, Barcelona, Valencia — aunque la persona puede residir en otro punto de España."
+        },
+        "finland": {
+          "title": "Responsable de Crecimiento y Operaciones — Finlandia",
+          "meta": "Finlandia · finés + inglés",
+          "summary": "Hero24 ya opera en Finlandia. Escala la red de Heroes, construye relaciones B2B, mejora las operaciones y crea procesos que después puedan replicarse internacionalmente."
+        },
+        "estonia": {
+          "title": "Responsable de Crecimiento de País — Estonia",
+          "meta": "Estonia · estonio + inglés",
+          "summary": "Construye la primera red activa de Heroes y las alianzas B2B en Estonia. Un buen desempeño puede llevar a asumir la responsabilidad de la expansión báltica."
+        },
+        "sweden": {
+          "title": "Responsable de Crecimiento de País — Suecia",
+          "meta": "Suecia · sueco + inglés",
+          "summary": "Construye la red sueca de proveedores de Hero24, las alianzas y la base operativa, y ayuda a establecer los primeros mercados suecos escalables."
+        },
+        "english": {
+          "title": "Responsable de Expansión — Mercados Anglófonos",
+          "meta": "En remoto · mercados anglófonos",
+          "summary": "Construye y lanza Hero24 en mercados anglófonos seleccionados. Es un puesto de expansión multimercado para alguien capaz de probar y abrir más de un mercado con un manual de lanzamiento compartido.",
+          "detail": "Los mercados iniciales pueden incluir EE. UU., Reino Unido, Irlanda, Canadá, Australia y Nueva Zelanda, añadiendo más mercados según los resultados. La persona no necesita operar personalmente cada ciudad para siempre. El objetivo es construir el modelo, validar mercados y establecer operadores locales a medida que crece el volumen."
+        }
+      }
+    },
+    "who": {
+      "title": "A quién buscamos",
+      "p1": "Los perfiles relevantes pueden venir de ventas, desarrollo de negocio, operaciones, selección de personal, marketplaces, servicios inmobiliarios, servicios para el hogar, negocios locales, emprendimiento y expansión internacional.",
+      "p2": "Nos importa más la evidencia de ejecución que los títulos corporativos.",
+      "p3": "Debes sentirte cómodo contactando directamente con personas, construyendo relaciones, midiendo resultados y asumiendo responsabilidad sin esperar a tener una gran organización alrededor."
+    },
+    "quickApply": {
+      "title": "Solicitud rápida",
+      "subtitle": "Unos dos minutos. El CV es opcional.",
+      "submit": "Enviar solicitud a Hero24",
+      "submitting": "Enviando…",
+      "thankYouTitle": "Gracias — revisaremos tu perfil.",
+      "thankYouBody": "Las personas preseleccionadas serán invitadas a una entrevista y podrán recibir una breve evaluación de mercado de segunda fase.",
+      "errorTitle": "Algo ha ido mal",
+      "errorBody": "No se ha podido enviar tu solicitud. Inténtalo de nuevo o escribe a support@hero24.com.",
+      "validationErrorTitle": "Revisa los campos marcados",
+      "validationErrorBody": "Falta información obligatoria o está incompleta.",
+      "fields": {
+        "role": "Puesto",
+        "fullName": "Nombre completo",
+        "email": "Correo electrónico",
+        "phone": "Teléfono / WhatsApp",
+        "location": "País y ciudad",
+        "linkedin": "URL de tu perfil de LinkedIn",
+        "linkedinPlaceholder": "https://linkedin.com/in/…",
+        "languages": "Idiomas",
+        "languagesPlaceholder": "p. ej. español (nativo), inglés (fluido)",
+        "experienceAreas": "Experiencia relevante",
+        "tractionPlan": "En 3–5 frases, ¿qué harías primero para generar tracción para Hero24 en este mercado?",
+        "startDate": "Disponibilidad de inicio",
+        "timeCommitment": "Dedicación",
+        "consent": "Entiendo que esta oportunidad comienza como un rol de contratista o socio, con una remuneración fuertemente ligada al desempeño y a los resultados.",
+        "cv": "Subir CV",
+        "cvHelper": "Opcional. PDF, DOC o DOCX, hasta 10 MB.",
+        "cvChange": "Cambiar archivo"
+      },
+      "options": {
+        "roles": {
+          "spain": "Responsable de Crecimiento de País — España",
+          "finland": "Responsable de Crecimiento y Operaciones — Finlandia",
+          "estonia": "Responsable de Crecimiento de País — Estonia",
+          "sweden": "Responsable de Crecimiento de País — Suecia",
+          "english": "Responsable de Expansión — Mercados Anglófonos",
+          "open": "Candidatura abierta"
+        },
+        "experience": {
+          "sales": "Ventas",
+          "businessDevelopment": "Desarrollo de negocio",
+          "operations": "Operaciones",
+          "recruitment": "Selección de personal",
+          "marketplace": "Marketplace",
+          "propertyServices": "Servicios inmobiliarios",
+          "homeServices": "Servicios para el hogar",
+          "entrepreneurship": "Emprendimiento",
+          "partnerships": "Alianzas",
+          "other": "Otro"
+        },
+        "startDate": {
+          "immediately": "De inmediato",
+          "twoWeeks": "2 semanas",
+          "oneMonth": "1 mes",
+          "later": "Más adelante"
+        },
+        "timeCommitment": {
+          "fullTime": "Jornada completa",
+          "partTime": "Media jornada",
+          "flexible": "Flexible"
+        }
+      },
+      "validation": {
+        "required": "Este campo es obligatorio",
+        "email": "Introduce una dirección de correo válida",
+        "url": "Introduce una URL válida",
+        "minOne": "Selecciona al menos una opción",
+        "consentRequired": "Confirma esto para continuar",
+        "fileSize": "El archivo debe pesar menos de 10 MB",
+        "fileType": "El archivo debe ser PDF, DOC o DOCX"
+      }
+    },
+    "assessment": {
+      "eyebrow": "Segunda fase",
+      "title": "Evaluación de mercado de Hero24",
+      "intro": "Gracias por llegar a nuestra preselección. Esta evaluación nos ayuda a entender cómo construirías el mercado en la práctica. Tómate tu tiempo: no hay preguntas trampa, y el detalle importa más que la rapidez.",
+      "submit": "Enviar evaluación",
+      "submitting": "Enviando…",
+      "thankYouTitle": "Evaluación recibida",
+      "thankYouBody": "Gracias por el detalle. Revisaremos tus respuestas y te contaremos los siguientes pasos.",
+      "errorTitle": "Algo ha ido mal",
+      "errorBody": "No se ha podido enviar tu evaluación. Inténtalo de nuevo o escribe a support@hero24.com.",
+      "validationErrorTitle": "Revisa los campos marcados",
+      "validationErrorBody": "Falta información obligatoria o está incompleta.",
+      "sections": {
+        "identity": "Tus datos",
+        "market": "Mercado",
+        "experience": "Experiencia",
+        "execution": "Ejecución",
+        "commercial": "Condiciones comerciales"
+      },
+      "fields": {
+        "role": "Puesto al que te presentas",
+        "fullName": "Nombre completo",
+        "email": "Correo electrónico",
+        "emailHelper": "Usa el mismo correo que en tu solicitud para que podamos vincular tus respuestas.",
+        "marketKnowledge": "¿Qué sabes de este mercado: sus ciudades, la demanda de servicios, los competidores y cómo encuentra la gente hoy a profesionales locales?",
+        "experienceDescription": "Describe tu experiencia más relevante y qué conseguiste personalmente.",
+        "recruitedBefore": "¿Has captado o incorporado antes proveedores de servicios, contratistas o socios?",
+        "recruitedDescription": "Cuéntanos más sobre ello.",
+        "first100": "¿Cómo encontrarías y activarías a los primeros 100 Heroes (proveedores) en este mercado?",
+        "channels": "¿Qué canales y tácticas usarías para llegar tanto a proveedores como a clientes?",
+        "aiTools": "¿Qué herramientas de CRM, datos, IA o automatización usas, y para qué?",
+        "processImproved": "Describe un proceso que mejoraste y el resultado medible.",
+        "thirtyDayPlan": "¿Cómo serían tus primeros 30 días, semana a semana?",
+        "compensation": "¿Qué modelos de remuneración te funcionarían?",
+        "anythingElse": "¿Algo más que debamos saber?"
+      },
+      "options": {
+        "recruited": {
+          "yes": "Sí",
+          "no": "No",
+          "somewhat": "En parte"
+        },
+        "compensation": {
+          "commission": "Comisión / según resultados",
+          "monthlyRetainer": "Fijo mensual",
+          "contractor": "Modelo de contratista",
+          "partner": "Modelo de socio",
+          "combination": "Combinación",
+          "openToDiscussion": "Abierto a negociar"
+        },
+        "roles": {
+          "spain": "Responsable de Crecimiento de País — España",
+          "finland": "Responsable de Crecimiento y Operaciones — Finlandia",
+          "estonia": "Responsable de Crecimiento de País — Estonia",
+          "sweden": "Responsable de Crecimiento de País — Suecia",
+          "english": "Responsable de Expansión — Mercados Anglófonos",
+          "open": "Candidatura abierta"
+        }
+      }
+    },
+    "legacyIntro": {
       "p1": "Hero24 is building a modern, technology-first and AI-enabled service platform for homes, properties and local service operations.",
       "p2": "We connect customers, property owners, housing companies, landlords, property managers and businesses with reliable local professionals for moving, cleaning, handyman work, renovations, yard work, plumbing, electrical work, maintenance and other property-related services.",
       "p3": "We are not building a traditional local service company. We are building a scalable operating system for home and property services.",
@@ -828,11 +1021,7 @@
       "p5": "Hero24 needs builders across multiple areas: market expansion, sales, operations, customer support, finance, product, technology, AI automation and partnerships.",
       "p6": "The right people for Hero24 are not just employees completing tasks. They are people who take ownership, improve systems, solve practical problems and create measurable long-term value."
     },
-    "priority": {
-      "title": "Current priority: Country Launch & Growth Roles",
-      "body": "Our current recruitment focus is on entrepreneurial, hands-on and AI-native country builders who can help Hero24 launch and grow in selected markets. These roles are for people who can open markets, recruit local Heroes, build service provider networks, generate customer demand, create B2B property partnerships and help us build scalable launch playbooks with global potential."
-    },
-    "lookingFor": {
+    "legacyLookingFor": {
       "title": "What kind of people we are looking for",
       "intro": "Hero24 is looking for people who combine practical execution with modern technology thinking. We are especially interested in people who can:",
       "items": [
@@ -857,7 +1046,7 @@
       ],
       "outro": "The best early team members are not only strong operators. They are people who can create systems, open markets and build long-term value."
     },
-    "roles": {
+    "legacyRoles": {
       "title": "Open roles",
       "subtitle": "Five country launch and growth opportunities",
       "labelLocation": "Location",
@@ -1158,7 +1347,7 @@
         }
       }
     },
-    "form": {
+    "legacyForm": {
       "title": "Apply to join Hero24",
       "subtitle": "Please fill in the application form below. We are especially interested in people who can build, execute, communicate clearly and use modern tools to create scalable results.",
       "required": "Required",
