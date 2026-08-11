@@ -41,3 +41,15 @@ tsconfig.tsbuildinfo
 # local agent tooling
 .claude
 .omc
+
+# Competing lockfiles.
+#
+# Vercel selects its package manager from whichever lockfile is committed. A
+# stray bun.lock or package-lock.json (easily created by a local `bunx`/`npx`)
+# switches the build away from yarn, and a lockfile migrated from yarn v1 pins
+# dependencies to tarball URLs that bun does not link binaries for — so
+# `next build` fails with "next: command not found".
+bun.lock
+bun.lockb
+package-lock.json
+pnpm-lock.yaml
