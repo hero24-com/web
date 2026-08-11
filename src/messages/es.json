@@ -123,230 +123,27 @@
   },
   "footer": {
     "description": "Héroes para los desafíos diarios",
-    "howItWorks": {
-      "subtitle": "También ofrecemos muchos otros servicios según sea necesario.",
-      "items": [
-        {
-          "step": "1. Contratos de mantenimiento",
-          "title1": "",
-          "description11": "Precio por contrato: Una tarifa mensual fija que cubre todos los servicios de mantenimiento acordados. Este modelo facilita la presupuestación y ofrece una estructura de costos clara.",
-          "description12": "Precio por tarea: Pagas solo por los trabajos de mantenimiento realizados. Este modelo flexible se adapta a necesidades de mantenimiento variables.",
-          "description13": "",
-          "title2": "",
-          "description21": "",
-          "description22": "",
-          "description23": "",
-          "title3": "",
-          "description31": "",
-          "description32": "",
-          "description33": ""
-        },
-        {
-          "step": "2. Mantenimiento del inmueble",
-          "title1": "Mantenimiento general",
-          "description11": "Limpieza: Limpieza regular de zonas comunes (pasillos, escaleras, ascensores, áreas exteriores). Limpiezas especiales: estacionales y posteriores a eventos.",
-          "description12": "Gestión de residuos: Recogida y clasificación de basura, vaciado de contenedores, mantenimiento y optimización de puntos de reciclaje.",
-          "description13": "Cuidado de áreas verdes y jardín: Mantenimiento de patios y jardines – cuidado de plantaciones y césped, rastrillado de hojas y mantenimiento estacional. Estructuras del patio – reparaciones y mantenimiento como pavimentación y puertas.",
-          "title2": "Mantenimiento de emergencia",
-          "description21": "Problemas de fontanería: Reparación de fugas, desatasco de desagües, reparación de grifos y sanitarios con fugas.",
-          "description22": "Reparaciones eléctricas: Diagnóstico de fallos en equipos eléctricos, comprobaciones de seguridad eléctrica, resolución de interrupciones.",
-          "description23": "Mantenimiento del sistema de calefacción: Inspección y ajuste de equipos de calefacción, reparaciones del sistema.",
-          "title3": "Retiro de nieve y mantenimiento invernal",
-          "description31": "Retiro de nieve: Limpieza de nieve en patios, accesos y aceras.",
-          "description32": "Medidas antideslizantes: Aplicación de soluciones anticongelantes y control de deslizamiento en áreas exteriores.",
-          "description33": "Mantenimiento invernal: Revisión de equipos de calefacción, prevención de congelaciones y acciones de mantenimiento necesarias."
-        },
-        {
-          "step": "3. Libro de mantenimiento digital",
-          "title1": "",
-          "description11": "Seguimiento del mantenimiento: Seguimiento en tiempo real de las tareas de mantenimiento, documentación de incidencias y acciones realizadas.",
-          "description12": "Informes de inspección: Informes detallados sobre trabajos de mantenimiento, problemas detectados y reparaciones. Ayudan al consejo y al administrador a controlar el estado del inmueble y tomar decisiones informadas.",
-          "description13": "Gestión financiera: Presupuestación, planificación financiera, contabilidad e informes para apoyar el control de costes.",
-          "title2": "",
-          "description21": "",
-          "description22": "",
-          "description23": "",
-          "title3": "",
-          "description31": "",
-          "description32": "",
-          "description33": ""
-        },
-        {
-          "step": "4. Servicios de apoyo a residentes",
-          "title1": "",
-          "description11": "Avisos de averías y reparaciones: Coordinación de trabajos y gestión de solicitudes de residentes. Ayuda rápida: Acciones inmediatas para problemas urgentes.",
-          "description12": "",
-          "description13": "",
-          "title2": "",
-          "description21": "",
-          "description22": "",
-          "description23": "",
-          "title3": "",
-          "description31": "",
-          "description32": "",
-          "description33": ""
-        },
-        {
-          "step": "5. Reformas y reparaciones",
-          "title1": "",
-          "description11": "Reformas pequeñas y grandes: Reformas de baños y cocinas – servicio completo desde la planificación y elección de materiales hasta el acabado. Pintura interior y exterior: Servicios de pintura, reparación de paredes y recubrimientos.",
-          "description12": "Trabajos de construcción y reparación: Reparaciones en el edificio – incluidas mejoras estructurales. Mejoras interiores: Reformas de apartamentos, instalación de suelos, sustitución de puertas y ventanas.",
-          "description13": "",
-          "title2": "",
-          "description21": "",
-          "description22": "",
-          "description23": "",
-          "title3": "",
-          "description31": "",
-          "description32": "",
-          "description33": ""
-        },
-        {
-          "step": "6. Servicios adicionales",
-          "title1": "",
-          "description11": "Inspecciones de contadores de energía y agua: Revisiones periódicas y mantenimiento para optimizar el consumo de energía y agua.",
-          "description12": "",
-          "description13": "",
-          "title2": "",
-          "description21": "",
-          "description22": "",
-          "description23": "",
-          "title3": "",
-          "description31": "",
-          "description32": "",
-          "description33": ""
-        }
-      ]
-    },
+    "taglineLong": "Todos los servicios en una sola app: simplificados y adaptados a ti. Sin solicitudes complicadas ni llamadas interminables.",
     "app": {
       "title": "Aplicación",
       "downloadOn": "Descargar en",
-      "intro": "El precio de los servicios de mantenimiento depende de varios factores. Entendemos que estimar los costos puede ser difícil, por eso explicamos qué influye en el precio:",
-      "items": [
-        {
-          "name": "Tamaño y antigüedad del inmueble",
-          "content1": "Tamaño: Las propiedades más pequeñas, como casas adosadas, suelen tener un coste de mantenimiento menor que los grandes edificios y zonas extensas.",
-          "content2": "Antigüedad: Los edificios más antiguos suelen requerir más mantenimiento y reparaciones que los nuevos."
-        },
-        {
-          "name": "Alcance del contrato de mantenimiento",
-          "content1": "Contratos de precio fijo: La mayoría de los contratos son de precio fijo, lo que significa que la tarifa mensual cubre los servicios acordados sin cargos adicionales.",
-          "content2": "Precios según necesidades: En algunos casos, los servicios se facturan según las tareas realizadas."
-        },
-        {
-          "name": "Servicios adicionales",
-          "content1": "Servicios externos: Si el contrato no cubre reformas especiales o mantenimiento extra, esto puede afectar al coste total.",
-          "content2": ""
-        }
-      ]
+      "appleStore": "App Store",
+      "downloadFrom": "Disponible en",
+      "googlePlay": "Google Play"
     },
     "regions": {
-      "companyTitle": "Responsabilidades de la comunidad",
-      "shareholder": {
-        "items": [
-          {
-            "title": "Reparaciones y mantenimiento dentro del apartamento",
-            "description": "El propietario es responsable de las partes interiores de su vivienda, excluyendo estructuras portantes y aislamiento. Por ejemplo, pintura, empapelado y renovación de suelos."
-          },
-          {
-            "title": "Zonas húmedas",
-            "description": "El propietario mantiene lavabos, bañeras y mangueras de ducha. La limpieza del desagüe del suelo también es su responsabilidad."
-          },
-          {
-            "title": "Electrodomésticos",
-            "description": "La estufa de sauna, el horno y otros electrodomésticos son responsabilidad del propietario."
-          },
-          {
-            "title": "Elementos eléctricos",
-            "description": "Sustitución de bombillas, fusibles y enchufes corresponde al propietario."
-          },
-          {
-            "title": "Barras de cortina y muebles fijos",
-            "description": "Barras de cortina, armarios y otros muebles fijos son responsabilidad del propietario."
-          },
-          {
-            "title": "Detectores de humo",
-            "description": "El propietario se asegura del funcionamiento de los detectores de humo con batería y del cambio de pilas."
-          }
-        ]
-      },
-      "company": {
-        "items": [
-          {
-            "title": "Partes exteriores del edificio",
-            "description": "La comunidad se encarga de puertas exteriores, marcos exteriores de ventanas, fachadas y la impermeabilización de balcones."
-          },
-          {
-            "title": "Reparaciones de baño y WC",
-            "description": "La comunidad se ocupa de reparaciones de impermeabilización en baños, sustitución de inodoros y limpieza de sifones."
-          },
-          {
-            "title": "Equipos de calefacción y ventilación",
-            "description": "Radiadores fijos y sistemas de ventilación son responsabilidad de la comunidad, incluida la purga de radiadores y el ajuste de válvulas."
-          },
-          {
-            "title": "Áreas exteriores y patio",
-            "description": "La comunidad mantiene las áreas exteriores, como corte de césped y retirada de nieve."
-          },
-          {
-            "title": "Infraestructura eléctrica",
-            "description": "La comunidad mantiene el cableado eléctrico fijo, cuadros de fusibles y equipos de antena."
-          },
-          {
-            "title": "Control de plagas",
-            "description": "La comunidad gestiona la eliminación de plagas como ratas y ratones."
-          }
-        ]
-      },
       "varsinaisSuomi": "Finlandia Suroccidental",
       "pirkanmaa": "Pirkanmaa",
       "keskiSuomi": "Finlandia Central",
-      "subtitle": "Aprovecha la deducción por los costes de mantenimiento.",
-      "steps": [
-        {
-          "name": "Derecho a deducción",
-          "description": "La deducción cubre una parte de la mano de obra de los servicios de mantenimiento; en 2024 el máximo es de 3.500 € por persona al año."
-        },
-        {
-          "name": "Importe",
-          "description": "La deducción es de hasta el 60% de la parte del trabajo, lo que puede reducir significativamente los costes."
-        }
-      ],
-      "costaDelSol": "Costa del Sol (Sur de España)"
-    },
-    "faqs": {
-      "title": "Por qué elegir Hero24",
-      "items": [
-        {
-          "q": "Servicio 24/7",
-          "a": "Hero24 ofrece mantenimiento y atención al cliente las 24 horas. Estamos listos para responder a situaciones urgentes en cualquier momento, garantizando el funcionamiento continuo de tu propiedad."
-        },
-        {
-          "q": "Paquete de servicios integral",
-          "a": "Nuestros servicios cubren todas las necesidades de mantenimiento con un solo contrato. Esto elimina la necesidad de múltiples proveedores y simplifica la gestión."
-        },
-        {
-          "q": "Flexibilidad y personalización",
-          "a": "Ofrecemos contratos de mantenimiento flexibles, adaptados exactamente a tus necesidades. Pagas solo por lo que realmente necesitas."
-        },
-        {
-          "q": "Tecnología innovadora",
-          "a": "Utilizamos un libro de mantenimiento digital que mejora la calidad y eficiencia del servicio, permitiendo seguimiento en tiempo real y documentación precisa."
-        },
-        {
-          "q": "Satisfacción del cliente",
-          "a": "Nuestro objetivo es ofrecer un servicio de alta calidad y la satisfacción de los residentes. Planificamos y ejecutamos el mantenimiento acorde a las expectativas de residentes y junta."
-        },
-        {
-          "q": "Experiencia y conocimiento",
-          "a": "Amplia experiencia en gestión y mantenimiento inmobiliario nos permite actuar de forma eficiente y profesional en distintas situaciones."
-        }
-      ]
+      "costaDelSol": "Costa del Sol (Sur de España)",
+      "uusimaa": "Uusimaa",
+      "paijatHame": "Päijät-Häme"
     },
     "links": {
       "termsHero": "Términos (Héroe)",
       "privacyFi": "Privacidad (FI)",
-      "privacyEn": "Privacidad (EN)"
+      "privacyEn": "Privacidad (EN)",
+      "termsCustomer": "Términos (Cliente)"
     },
     "copyright": "© {year}. Hero24. Todos los derechos reservados."
   },
@@ -785,24 +582,225 @@
       "subject": "Solicitud de contacto - Mantenimiento de propiedades"
     },
     "howItWorks": {
-      "title": "Servicios de mantenimiento más comunes de Hero24 para comunidades",
-      "subtitle": "También ofrecemos muchos otros servicios según sea necesario."
+      "subtitle": "También ofrecemos muchos otros servicios según sea necesario.",
+      "items": [
+        {
+          "step": "1. Contratos de mantenimiento",
+          "title1": "",
+          "description11": "Precio por contrato: Una tarifa mensual fija que cubre todos los servicios de mantenimiento acordados. Este modelo facilita la presupuestación y ofrece una estructura de costos clara.",
+          "description12": "Precio por tarea: Pagas solo por los trabajos de mantenimiento realizados. Este modelo flexible se adapta a necesidades de mantenimiento variables.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "2. Mantenimiento del inmueble",
+          "title1": "Mantenimiento general",
+          "description11": "Limpieza: Limpieza regular de zonas comunes (pasillos, escaleras, ascensores, áreas exteriores). Limpiezas especiales: estacionales y posteriores a eventos.",
+          "description12": "Gestión de residuos: Recogida y clasificación de basura, vaciado de contenedores, mantenimiento y optimización de puntos de reciclaje.",
+          "description13": "Cuidado de áreas verdes y jardín: Mantenimiento de patios y jardines – cuidado de plantaciones y césped, rastrillado de hojas y mantenimiento estacional. Estructuras del patio – reparaciones y mantenimiento como pavimentación y puertas.",
+          "title2": "Mantenimiento de emergencia",
+          "description21": "Problemas de fontanería: Reparación de fugas, desatasco de desagües, reparación de grifos y sanitarios con fugas.",
+          "description22": "Reparaciones eléctricas: Diagnóstico de fallos en equipos eléctricos, comprobaciones de seguridad eléctrica, resolución de interrupciones.",
+          "description23": "Mantenimiento del sistema de calefacción: Inspección y ajuste de equipos de calefacción, reparaciones del sistema.",
+          "title3": "Retiro de nieve y mantenimiento invernal",
+          "description31": "Retiro de nieve: Limpieza de nieve en patios, accesos y aceras.",
+          "description32": "Medidas antideslizantes: Aplicación de soluciones anticongelantes y control de deslizamiento en áreas exteriores.",
+          "description33": "Mantenimiento invernal: Revisión de equipos de calefacción, prevención de congelaciones y acciones de mantenimiento necesarias."
+        },
+        {
+          "step": "3. Libro de mantenimiento digital",
+          "title1": "",
+          "description11": "Seguimiento del mantenimiento: Seguimiento en tiempo real de las tareas de mantenimiento, documentación de incidencias y acciones realizadas.",
+          "description12": "Informes de inspección: Informes detallados sobre trabajos de mantenimiento, problemas detectados y reparaciones. Ayudan al consejo y al administrador a controlar el estado del inmueble y tomar decisiones informadas.",
+          "description13": "Gestión financiera: Presupuestación, planificación financiera, contabilidad e informes para apoyar el control de costes.",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "4. Servicios de apoyo a residentes",
+          "title1": "",
+          "description11": "Avisos de averías y reparaciones: Coordinación de trabajos y gestión de solicitudes de residentes. Ayuda rápida: Acciones inmediatas para problemas urgentes.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "5. Reformas y reparaciones",
+          "title1": "",
+          "description11": "Reformas pequeñas y grandes: Reformas de baños y cocinas – servicio completo desde la planificación y elección de materiales hasta el acabado. Pintura interior y exterior: Servicios de pintura, reparación de paredes y recubrimientos.",
+          "description12": "Trabajos de construcción y reparación: Reparaciones en el edificio – incluidas mejoras estructurales. Mejoras interiores: Reformas de apartamentos, instalación de suelos, sustitución de puertas y ventanas.",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        },
+        {
+          "step": "6. Servicios adicionales",
+          "title1": "",
+          "description11": "Inspecciones de contadores de energía y agua: Revisiones periódicas y mantenimiento para optimizar el consumo de energía y agua.",
+          "description12": "",
+          "description13": "",
+          "title2": "",
+          "description21": "",
+          "description22": "",
+          "description23": "",
+          "title3": "",
+          "description31": "",
+          "description32": "",
+          "description33": ""
+        }
+      ]
     },
     "cost": {
       "title": "Precio del mantenimiento de la propiedad – Cómo se compone",
-      "intro": "El precio de los servicios de mantenimiento de la propiedad varía según varios factores. Sabemos que calcular costes puede ser difícil, por eso explicamos qué influye en el precio:"
+      "intro": "El precio de los servicios de mantenimiento depende de varios factores. Entendemos que estimar los costos puede ser difícil, por eso explicamos qué influye en el precio:",
+      "items": [
+        {
+          "name": "Tamaño y antigüedad del inmueble",
+          "content1": "Tamaño: Las propiedades más pequeñas, como casas adosadas, suelen tener un coste de mantenimiento menor que los grandes edificios y zonas extensas.",
+          "content2": "Antigüedad: Los edificios más antiguos suelen requerir más mantenimiento y reparaciones que los nuevos."
+        },
+        {
+          "name": "Alcance del contrato de mantenimiento",
+          "content1": "Contratos de precio fijo: La mayoría de los contratos son de precio fijo, lo que significa que la tarifa mensual cubre los servicios acordados sin cargos adicionales.",
+          "content2": "Precios según necesidades: En algunos casos, los servicios se facturan según las tareas realizadas."
+        },
+        {
+          "name": "Servicios adicionales",
+          "content1": "Servicios externos: Si el contrato no cubre reformas especiales o mantenimiento extra, esto puede afectar al coste total.",
+          "content2": ""
+        }
+      ]
     },
     "responsibility": {
       "title": "Responsabilidades del propietario y de la comunidad",
       "shareholderTitle": "Responsabilidades del propietario",
-      "companyTitle": "Responsabilidades de la comunidad"
+      "companyTitle": "Responsabilidades de la comunidad",
+      "shareholder": {
+        "items": [
+          {
+            "title": "Reparaciones y mantenimiento dentro del apartamento",
+            "description": "El propietario es responsable de las partes interiores de su vivienda, excluyendo estructuras portantes y aislamiento. Por ejemplo, pintura, empapelado y renovación de suelos."
+          },
+          {
+            "title": "Zonas húmedas",
+            "description": "El propietario mantiene lavabos, bañeras y mangueras de ducha. La limpieza del desagüe del suelo también es su responsabilidad."
+          },
+          {
+            "title": "Electrodomésticos",
+            "description": "La estufa de sauna, el horno y otros electrodomésticos son responsabilidad del propietario."
+          },
+          {
+            "title": "Elementos eléctricos",
+            "description": "Sustitución de bombillas, fusibles y enchufes corresponde al propietario."
+          },
+          {
+            "title": "Barras de cortina y muebles fijos",
+            "description": "Barras de cortina, armarios y otros muebles fijos son responsabilidad del propietario."
+          },
+          {
+            "title": "Detectores de humo",
+            "description": "El propietario se asegura del funcionamiento de los detectores de humo con batería y del cambio de pilas."
+          }
+        ]
+      },
+      "company": {
+        "items": [
+          {
+            "title": "Partes exteriores del edificio",
+            "description": "La comunidad se encarga de puertas exteriores, marcos exteriores de ventanas, fachadas y la impermeabilización de balcones."
+          },
+          {
+            "title": "Reparaciones de baño y WC",
+            "description": "La comunidad se ocupa de reparaciones de impermeabilización en baños, sustitución de inodoros y limpieza de sifones."
+          },
+          {
+            "title": "Equipos de calefacción y ventilación",
+            "description": "Radiadores fijos y sistemas de ventilación son responsabilidad de la comunidad, incluida la purga de radiadores y el ajuste de válvulas."
+          },
+          {
+            "title": "Áreas exteriores y patio",
+            "description": "La comunidad mantiene las áreas exteriores, como corte de césped y retirada de nieve."
+          },
+          {
+            "title": "Infraestructura eléctrica",
+            "description": "La comunidad mantiene el cableado eléctrico fijo, cuadros de fusibles y equipos de antena."
+          },
+          {
+            "title": "Control de plagas",
+            "description": "La comunidad gestiona la eliminación de plagas como ratas y ratones."
+          }
+        ]
+      },
+      "subtitle": "Aprovecha la deducción por los costes de mantenimiento.",
+      "steps": [
+        {
+          "name": "Derecho a deducción",
+          "description": "La deducción cubre una parte de la mano de obra de los servicios de mantenimiento; en 2024 el máximo es de 3.500 € por persona al año."
+        },
+        {
+          "name": "Importe",
+          "description": "La deducción es de hasta el 60% de la parte del trabajo, lo que puede reducir significativamente los costes."
+        }
+      ]
     },
     "process": {
       "title": "Deducción fiscal por servicios del hogar en el mantenimiento",
       "subtitle": "Aprovecha la deducción fiscal por los costes de mantenimiento de la propiedad."
     },
     "faqs": {
-      "title": "Por qué elegir Hero24"
+      "title": "Por qué elegir Hero24",
+      "items": [
+        {
+          "q": "Servicio 24/7",
+          "a": "Hero24 ofrece mantenimiento y atención al cliente las 24 horas. Estamos listos para responder a situaciones urgentes en cualquier momento, garantizando el funcionamiento continuo de tu propiedad."
+        },
+        {
+          "q": "Paquete de servicios integral",
+          "a": "Nuestros servicios cubren todas las necesidades de mantenimiento con un solo contrato. Esto elimina la necesidad de múltiples proveedores y simplifica la gestión."
+        },
+        {
+          "q": "Flexibilidad y personalización",
+          "a": "Ofrecemos contratos de mantenimiento flexibles, adaptados exactamente a tus necesidades. Pagas solo por lo que realmente necesitas."
+        },
+        {
+          "q": "Tecnología innovadora",
+          "a": "Utilizamos un libro de mantenimiento digital que mejora la calidad y eficiencia del servicio, permitiendo seguimiento en tiempo real y documentación precisa."
+        },
+        {
+          "q": "Satisfacción del cliente",
+          "a": "Nuestro objetivo es ofrecer un servicio de alta calidad y la satisfacción de los residentes. Planificamos y ejecutamos el mantenimiento acorde a las expectativas de residentes y junta."
+        },
+        {
+          "q": "Experiencia y conocimiento",
+          "a": "Amplia experiencia en gestión y mantenimiento inmobiliario nos permite actuar de forma eficiente y profesional en distintas situaciones."
+        }
+      ]
     }
   },
   "settings": {

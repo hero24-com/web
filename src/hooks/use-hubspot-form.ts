@@ -1,15 +1,6 @@
 import { useRef, useMemo, useEffect } from 'react';
 
 /**
- * Type definition for HubSpot form jQuery object
- */
-interface HubSpotFormObject {
-  find: (selector: string) => {
-    val: (value: string) => void;
-  };
-}
-
-/**
  * Custom hook to manage HubSpot form initialization
  * @param formId - The HubSpot form ID
  * @param options - Additional options for the form

@@ -18,6 +18,58 @@ const messages = {
 };
 
 /**
+ * Reads a dot-separated message key out of the Finnish catalogue.
+ *
+ * @param key - Dot-separated message key, e.g. `realEstate.cost.items.0.name`.
+ * @returns The Finnish string at that key, or undefined when absent.
+ */
+function readFinnishMessage(key: string): string | undefined {
+  const node = key
+    .split('.')
+    .reduce<unknown>(
+      (acc, part) =>
+        typeof acc === 'object' && acc !== null
+          ? (acc as Record<string, unknown>)[part]
+          : undefined,
+      fi
+    );
+
+  return typeof node === 'string' ? node : undefined;
+}
+
+/**
+ * Supplies the text to render when a message is missing from the active locale.
+ *
+ * Some pages describe Finland-only products and only ever had Finnish copy, so
+ * next-intl's default — rendering the key itself — leaked strings like
+ * `realEstate.cost.items.0.name` onto the page. Falling back to Finnish keeps
+ * untranslated sections readable and makes missing copy a content task rather
+ * than a visible defect.
+ *
+ * @param options - The missing message's namespace and key.
+ * @returns Finnish copy when available, otherwise the final key segment.
+ */
+function getMessageFallback({ key, namespace }: { key: string; namespace?: string }): string {
+  const fullKey = namespace ? `${namespace}.${key}` : key;
+
+  // Last resort: the trailing segment reads far better than the full path.
+  return readFinnishMessage(fullKey) ?? key.split('.').pop() ?? key;
+}
+
+/**
+ * Swallows missing-message reports.
+ *
+ * Missing keys are handled by {@link getMessageFallback}; without this, every
+ * fallback also logs an error, which buries genuine problems in the console.
+ */
+function onIntlError(error: unknown): void {
+  const code = (error as { code?: string })?.code;
+  if (code === 'MISSING_MESSAGE') return;
+
+  console.error(error);
+}
+
+/**
  * Paths that default to English instead of Finnish.
  *
  * Recruitment traffic arrives from LinkedIn across Spain, Estonia, Sweden and
@@ -73,7 +125,13 @@ export default function LocaleProvider({ children }: Props) {
   const contextValue = useMemo(() => ({ locale, changeLocale }), [locale, changeLocale]);
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages[locale]} timeZone="Europe/Helsinki">
+    <NextIntlClientProvider
+      locale={locale}
+      messages={messages[locale]}
+      timeZone="Europe/Helsinki"
+      getMessageFallback={getMessageFallback}
+      onError={onIntlError}
+    >
       <LocaleContext.Provider value={contextValue}>{children}</LocaleContext.Provider>
     </NextIntlClientProvider>
   );

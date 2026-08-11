@@ -39,11 +39,11 @@ export default function HomeServiceDetailsReserveForm({ formId, subject }: Props
         // @ts-expect-error - HubSpot types not available
         window.hbspt.forms.defaults = window.hbspt.forms.defaults || {};
         // @ts-expect-error - HubSpot types not available
-        window.hbspt.forms.defaults.subject = subject;
+        window.hbspt.forms.defaults.subject = subjectText;
         // @ts-expect-error - HubSpot types not available
-        window.hbspt.forms.defaults.emailSubject = subject;
+        window.hbspt.forms.defaults.emailSubject = subjectText;
         // @ts-expect-error - HubSpot types not available
-        window.hbspt.forms.defaults.notificationSubject = subject;
+        window.hbspt.forms.defaults.notificationSubject = subjectText;
       }
     } catch (error) {
       // Ignore errors for global property attempts
