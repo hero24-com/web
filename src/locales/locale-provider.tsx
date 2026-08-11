@@ -1,7 +1,7 @@
 'use client';
 
 import { NextIntlClientProvider } from 'next-intl';
-import { useMemo, useState, useEffect, useContext, createContext } from 'react';
+import { useMemo, useState, useEffect, useContext, useCallback, createContext } from 'react';
 
 const fi = require('../messages/fi.json');
 const en = require('../messages/en.json');
@@ -17,6 +17,40 @@ const messages = {
   es,
 };
 
+/**
+ * Paths that default to English instead of Finnish.
+ *
+ * Recruitment traffic arrives from LinkedIn across Spain, Estonia, Sweden and
+ * English-speaking markets, and every open role requires English — so Finnish
+ * is the wrong first impression there. An explicit language choice still wins.
+ */
+const ENGLISH_FIRST_PATHS = ['/recruits'];
+
+/**
+ * Resolves the locale to use before the first paint.
+ *
+ * Reading the stored preference here (rather than in an effect) avoids
+ * rendering one language and then swapping to another.
+ *
+ * @returns The locale to render initially.
+ */
+function getInitialLocale(): Locale {
+  if (typeof window === 'undefined') return defaultLocale;
+
+  try {
+    const stored = localStorage.getItem('locale') as Locale;
+    if (stored && locales.includes(stored)) return stored;
+  } catch {
+    // Private browsing modes can deny storage access; fall through to defaults.
+  }
+
+  const isEnglishFirst = ENGLISH_FIRST_PATHS.some((path) =>
+    window.location.pathname.startsWith(path)
+  );
+
+  return isEnglishFirst ? 'en' : defaultLocale;
+}
+
 type Props = {
   children: React.ReactNode;
 };
@@ -24,19 +58,19 @@ type Props = {
 export default function LocaleProvider({ children }: Props) {
   const [locale, setLocale] = useState<Locale>(defaultLocale);
 
+  // Resolved after mount rather than during state initialisation: the server
+  // renders `defaultLocale`, so reading storage or the URL any earlier would
+  // produce markup that does not match and break hydration.
   useEffect(() => {
-    // Load locale from localStorage
-    const stored = localStorage.getItem('locale') as Locale;
-    const currentLocale = stored && locales.includes(stored) ? stored : defaultLocale;
-    setLocale(currentLocale);
+    setLocale(getInitialLocale());
   }, []);
 
-  const changeLocale = (newLocale: Locale) => {
+  const changeLocale = useCallback((newLocale: Locale) => {
     setLocale(newLocale);
     localStorage.setItem('locale', newLocale);
-  };
+  }, []);
 
-  const contextValue = useMemo(() => ({ locale, changeLocale }), [locale]);
+  const contextValue = useMemo(() => ({ locale, changeLocale }), [locale, changeLocale]);
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages[locale]} timeZone="Europe/Helsinki">
