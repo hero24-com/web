@@ -1,194 +1,153 @@
 'use client';
 
+import { useRef, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
-import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
-import Accordion from '@mui/material/Accordion';
 import Typography from '@mui/material/Typography';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
+
+import { track } from 'src/utils/track';
 
 import Iconify from 'src/components/iconify';
 
+import { ROLE_KEYS, type RoleKey } from './recruits-form-schema';
+
 // ----------------------------------------------------------------------
 
-export const ROLE_KEYS = ['spain', 'finland', 'estonia', 'sweden', 'english'] as const;
-export type RoleKey = (typeof ROLE_KEYS)[number];
+/**
+ * Reports each role card the first time it becomes visible.
+ *
+ * Roles are unobserved once reported so a candidate scrolling up and down does
+ * not inflate the view count, keeping `role_view` comparable to
+ * `application_start`.
+ *
+ * @param containerRef - Element wrapping the role cards.
+ */
+function useRoleViewTracking(containerRef: React.RefObject<HTMLDivElement>) {
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || typeof IntersectionObserver === 'undefined') return undefined;
 
-type BulletListProps = {
-  label: string;
-  items: string[];
-  iconColor?: string;
-};
+    const cards = Array.from(container.querySelectorAll<HTMLElement>('[data-role]'));
+    if (cards.length === 0) return undefined;
 
-function BulletList({ label, items, iconColor = 'primary.main' }: BulletListProps) {
-  return (
-    <Stack spacing={1.5}>
-      <Typography variant="subtitle1">{label}</Typography>
-      <Stack spacing={1}>
-        {items.map((item) => (
-          <Stack key={item} direction="row" spacing={1.5} sx={{ alignItems: 'flex-start' }}>
-            <Iconify
-              icon="solar:check-circle-bold"
-              width={18}
-              sx={{ color: iconColor, flexShrink: 0, mt: 0.4 }}
-            />
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {item}
-            </Typography>
-          </Stack>
-        ))}
-      </Stack>
-    </Stack>
-  );
+    const reported = new Set<string>();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const role = entry.target.getAttribute('data-role');
+          if (!role || reported.has(role)) return;
+
+          reported.add(role);
+          track('role_view', { role });
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, [containerRef]);
 }
 
-type RoleAccordionProps = {
+// ----------------------------------------------------------------------
+
+type RoleCardProps = {
   roleKey: RoleKey;
-  applyLabel: string;
 };
 
-function RoleAccordion({ roleKey, applyLabel }: RoleAccordionProps) {
+function RoleCard({ roleKey }: RoleCardProps) {
   const t = useTranslations(`recruits.roles.list.${roleKey}`);
   const labels = useTranslations('recruits.roles');
 
-  const whatYouDo = t.raw('whatYouDo') as string[];
-  const whoWeLookFor = t.raw('whoWeLookFor') as string[];
-  const idealProfile = t.raw('idealProfile') as string[];
-  const whatWeOffer = t.raw('whatWeOffer') as string[];
-
-  const hasWhoOutro = t.has('whoOutro');
-  const hasImportantNote = t.has('importantNote');
+  const hasPreferred = t.has('preferred');
+  const hasDetail = t.has('detail');
 
   return (
-    <Accordion
+    <Card
+      data-role={roleKey}
       id={`role-${roleKey}`}
-      sx={{
-        borderRadius: 2,
-        '&:before': { display: 'none' },
-      }}
+      sx={{ p: { xs: 2.5, md: 3 }, height: 1, display: 'flex', flexDirection: 'column' }}
     >
-      <AccordionSummary
-        expandIcon={<Iconify icon="eva:arrow-ios-downward-fill" />}
-        sx={{ px: { xs: 2, md: 3 }, py: 1.5 }}
+      <Stack spacing={1.5} sx={{ flexGrow: 1 }}>
+        <Typography variant="h5">{t('title')}</Typography>
+
+        <Chip
+          size="small"
+          variant="outlined"
+          icon={<Iconify icon="solar:map-point-bold" width={14} />}
+          label={t('meta')}
+          sx={{ alignSelf: 'flex-start' }}
+        />
+
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          {t('summary')}
+        </Typography>
+
+        {hasDetail && (
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            {t('detail')}
+          </Typography>
+        )}
+
+        {hasPreferred && (
+          <Typography variant="caption" sx={{ color: 'text.disabled' }}>
+            <strong>{labels('preferredLabel')}:</strong> {t('preferred')}
+          </Typography>
+        )}
+      </Stack>
+
+      <Button
+        variant="contained"
+        color="primary"
+        href={`/recruits/?role=${roleKey}#apply`}
+        sx={{ alignSelf: 'flex-start', mt: 2.5 }}
       >
-        <Stack spacing={1} sx={{ width: 1 }}>
-          <Typography variant="h5">{t('title')}</Typography>
-          <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
-            <Chip
-              size="small"
-              icon={<Iconify icon="solar:map-point-bold" width={14} />}
-              label={t('location')}
-            />
-            <Chip size="small" variant="outlined" label={t('languages')} />
-          </Stack>
-        </Stack>
-      </AccordionSummary>
-
-      <AccordionDetails sx={{ px: { xs: 2, md: 3 }, pb: 3 }}>
-        <Stack spacing={3}>
-          <Stack spacing={1}>
-            <Typography variant="h6" sx={{ color: 'primary.main' }}>
-              {t('tagline')}
-            </Typography>
-            <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-              {t('summary')}
-            </Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {t('context')}
-            </Typography>
-          </Stack>
-
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            spacing={2}
-            divider={<Divider orientation="vertical" flexItem />}
-            sx={{ color: 'text.secondary' }}
-          >
-            <Box>
-              <Typography variant="caption" sx={{ color: 'text.disabled' }}>
-                {labels('labelCities')}
-              </Typography>
-              <Typography variant="body2">{t('cities')}</Typography>
-            </Box>
-            <Box>
-              <Typography variant="caption" sx={{ color: 'text.disabled' }}>
-                {labels('labelType')}
-              </Typography>
-              <Typography variant="body2">{t('type')}</Typography>
-            </Box>
-          </Stack>
-
-          <Divider sx={{ borderStyle: 'dashed' }} />
-
-          <BulletList label={labels('labelWhatYouDo')} items={whatYouDo} />
-
-          <Stack spacing={1.5}>
-            <Typography variant="subtitle1">{labels('labelWhoWeLookFor')}</Typography>
-            <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-              {t('whoIntro')}
-            </Typography>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
-              {whoWeLookFor.map((item) => (
-                <Chip key={item} label={item} size="small" variant="outlined" />
-              ))}
-            </Box>
-            {hasWhoOutro && (
-              <Typography variant="body2" sx={{ color: 'text.secondary', fontStyle: 'italic' }}>
-                {t('whoOutro')}
-              </Typography>
-            )}
-          </Stack>
-
-          <BulletList label={labels('labelIdealProfile')} items={idealProfile} />
-
-          <BulletList
-            label={labels('labelWhatWeOffer')}
-            items={whatWeOffer}
-            iconColor="success.main"
-          />
-
-          {hasImportantNote && (
-            <Stack spacing={1} sx={{ p: 2, borderRadius: 1, bgcolor: 'background.neutral' }}>
-              <Typography variant="subtitle2">{labels('labelImportantNote')}</Typography>
-              <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                {t('importantNote')}
-              </Typography>
-            </Stack>
-          )}
-
-          <Button variant="contained" color="primary" href="#apply" sx={{ alignSelf: 'flex-start' }}>
-            {applyLabel}
-          </Button>
-        </Stack>
-      </AccordionDetails>
-    </Accordion>
+        {labels('apply')}
+      </Button>
+    </Card>
   );
 }
 
+// ----------------------------------------------------------------------
+
 export default function RecruitsRoles() {
   const t = useTranslations('recruits.roles');
-  const hero = useTranslations('recruits.hero');
-  const applyLabel = hero('ctaApply');
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useRoleViewTracking(containerRef);
 
   return (
-    <Container id="roles" sx={{ py: { xs: 8, md: 12 } }}>
-      <Stack spacing={5}>
-        <Stack spacing={1} sx={{ textAlign: 'center', maxWidth: 700, mx: 'auto' }}>
-          <Typography variant="h2">{t('title')}</Typography>
+    <Container component="section" id="roles" sx={{ py: { xs: 6, md: 10 } }}>
+      <Stack spacing={4}>
+        <Stack spacing={1} sx={{ textAlign: 'center', maxWidth: 640, mx: 'auto' }}>
+          <Typography variant="h2" sx={{ fontSize: { xs: '1.75rem', md: '2.5rem' } }}>
+            {t('title')}
+          </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>
             {t('subtitle')}
           </Typography>
         </Stack>
 
-        <Stack spacing={2}>
+        <Stack
+          ref={containerRef}
+          sx={{
+            display: 'grid',
+            gap: 2.5,
+            gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
+          }}
+        >
           {ROLE_KEYS.map((roleKey) => (
-            <RoleAccordion key={roleKey} roleKey={roleKey} applyLabel={applyLabel} />
+            <RoleCard key={roleKey} roleKey={roleKey} />
           ))}
         </Stack>
       </Stack>

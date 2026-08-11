@@ -520,17 +520,210 @@
   },
   "recruits": {
     "meta": {
-      "title": "Join Hero24 | Careers",
-      "description": "Help build Hero24 — a modern, AI-enabled service platform for homes and properties. Apply for country launch and growth roles."
+      "title": "Työpaikat Hero24:lla | Rakenna Hero24 omalle markkinallesi",
+      "description": "Hero24 yhdistää asiakkaat paikallisiin ammattilaisiin muutoissa, siivouksessa, korjauksissa, remonteissa, asennuksissa, putki- ja sähkötöissä sekä kiinteistönhuollossa. Laajenemme valituille Euroopan ja englanninkielisille markkinoille ja etsimme kaupallisesti ajattelevia tekijöitä rakentamaan paikallista toimintaa.",
+      "assessmentTitle": "Markkina-arviointi | Hero24 työpaikat",
+      "assessmentDescription": "Toisen vaiheen markkina-arviointi Hero24:n jatkoon valituille hakijoille."
     },
     "hero": {
-      "eyebrow": "Careers at Hero24",
-      "title": "Join Hero24",
-      "subtitle": "Help us build a scalable operating system for home and property services.",
-      "ctaApply": "Apply now",
-      "ctaRoles": "See open roles"
+      "eyebrow": "Työpaikat Hero24:lla",
+      "title": "Rakenna Hero24 omalle markkinallesi.",
+      "body1": "Hero24 yhdistää asiakkaat paikallisiin ammattilaisiin muutoissa, siivouksessa, korjauksissa, remonteissa, asennuksissa, putkitöissä, sähkötöissä, kiinteistönhuollossa ja muissa arjen palveluissa.",
+      "body2": "Laajenemme valituille Euroopan ja englanninkielisille markkinoille ja etsimme kaupallisesti ajattelevia tekijöitä, jotka pystyvät rakentamaan paikallista toimintaa.",
+      "tagline": "Yksi luotettava alusta kaikille arjen paikallisille palveluille.",
+      "ctaRoles": "Katso avoimet tehtävät",
+      "ctaApply": "Pikahaku"
     },
-    "intro": {
+    "build": {
+      "title": "Mitä tulet rakentamaan",
+      "intro": "Hero24 vastaa alustasta, brändistä ja keskitetystä digitaalisesta asiakashankinnasta markkinoiden avautuessa.",
+      "listLabel": "Paikalliset kasvu- ja maajohtajat keskittyvät seuraaviin:",
+      "items": [
+        "Paikallisen Hero- ja palveluntarjoajaverkoston rakentaminen ja aktivointi",
+        "B2B-kumppanuuksien luominen isännöitsijöiden, vuokranantajien, kiinteistöalan yritysten ja muiden yritysten kanssa",
+        "Sen varmistaminen, että asiakaskysyntä pystytään täyttämään laadukkaasti",
+        "Paikallisen toiminnan, hinnoittelun, kategorioiden ja prosessien kehittäminen",
+        "Toistettavan markkinoiden avaamisen pelikirjan rakentaminen",
+        "CRM:n, datan, tekoälyn ja automaation hyödyntäminen siellä missä ne aidosti parantavat tekemistä"
+      ],
+      "importantLabel": "Tärkeää",
+      "important": "Nämä ovat yrittäjämäisiä käynnistys- ja kasvutehtäviä. Alkuvaiheen malli perustuu sopimuskumppanuuteen ja vahvasti tuloksiin sidottuun korvaukseen, ei perinteiseen kiinteäpalkkaiseen työsuhteeseen."
+    },
+    "roles": {
+      "title": "Avoimet tehtävät",
+      "subtitle": "Valitse markkina ja hae noin kahdessa minuutissa.",
+      "apply": "Pikahaku",
+      "preferredLabel": "Toivottu sijainti",
+      "list": {
+        "spain": {
+          "title": "Espanjan maajohtaja (kasvu)",
+          "meta": "Espanja · espanja + englanti",
+          "summary": "Rakenna Hero24:n espanjalainen Hero-verkosto, B2B-kumppanuudet ja paikallinen toiminta. Aluksi painopiste on vahvimmissa kaupungeissa ja palvelukategorioissa, ja mahdollisuutena on ottaa vastuu koko Espanjan kasvusta.",
+          "preferred": "Málaga / Costa del Sol, Madrid, Barcelona, Valencia — hakija voi kuitenkin asua muuallakin Espanjassa."
+        },
+        "finland": {
+          "title": "Suomen kasvu- ja operaatiojohtaja",
+          "meta": "Suomi · suomi + englanti",
+          "summary": "Hero24 toimii jo Suomessa. Kasvata Hero-verkostoa, rakenna B2B-suhteita, kehitä toimintaa ja luo prosesseja, jotka voidaan myöhemmin monistaa kansainvälisesti."
+        },
+        "estonia": {
+          "title": "Viron maajohtaja (kasvu)",
+          "meta": "Viro · viro + englanti",
+          "summary": "Rakenna Viroon ensimmäinen aktiivinen Hero-verkosto ja B2B-kumppanuudet. Vahvat tulokset voivat johtaa vastuuseen laajemmasta Baltian kasvusta."
+        },
+        "sweden": {
+          "title": "Ruotsin maajohtaja (kasvu)",
+          "meta": "Ruotsi · ruotsi + englanti",
+          "summary": "Rakenna Hero24:n ruotsalainen palveluntarjoajaverkosto, kumppanuudet ja operatiivinen perusta sekä auta avaamaan ensimmäiset skaalautuvat Ruotsin markkinat."
+        },
+        "english": {
+          "title": "Englanninkielisten markkinoiden laajentumisjohtaja",
+          "meta": "Etätyö · englanninkieliset markkinat",
+          "summary": "Rakenna ja avaa Hero24 valituilla englanninkielisillä markkinoilla. Tämä on usean markkinan laajentumistehtävä henkilölle, joka kykenee testaamaan ja avaamaan useampia markkinoita yhteisen pelikirjan avulla.",
+          "detail": "Ensimmäisiä markkinoita voivat olla Yhdysvallat, Britannia, Irlanti, Kanada, Australia ja Uusi-Seelanti, ja lisää markkinoita avataan tulosten perusteella. Tehtävässä ei tarvitse itse operoida jokaista kaupunkia pysyvästi. Tavoitteena on rakentaa malli, validoida markkinat ja lopulta nimittää paikalliset operaattorit volyymin kasvaessa."
+        }
+      }
+    },
+    "who": {
+      "title": "Ketä etsimme",
+      "p1": "Sopiva tausta voi olla esimerkiksi myynnistä, liiketoiminnan kehityksestä, operaatioista, rekrytoinnista, markkinapaikoista, kiinteistöpalveluista, kotipalveluista, paikallisesta yritystoiminnasta, yrittäjyydestä tai kansainvälisestä laajentumisesta.",
+      "p2": "Meille näyttö tekemisestä merkitsee enemmän kuin tittelit.",
+      "p3": "Sinun tulee olla valmis ottamaan yhteyttä ihmisiin suoraan, rakentamaan suhteita, mittaamaan tuloksia ja kantamaan vastuuta ilman suurta organisaatiota ympärilläsi."
+    },
+    "quickApply": {
+      "title": "Pikahaku",
+      "subtitle": "Noin kaksi minuuttia. CV on vapaaehtoinen.",
+      "submit": "Hae Hero24:lle",
+      "submitting": "Lähetetään…",
+      "thankYouTitle": "Kiitos — käymme profiilisi läpi.",
+      "thankYouBody": "Jatkoon valitut kutsutaan haastatteluun ja he voivat saada lyhyen toisen vaiheen markkina-arvioinnin.",
+      "errorTitle": "Jotain meni vikaan",
+      "errorBody": "Hakemustasi ei voitu lähettää. Yritä uudelleen tai lähetä sähköpostia osoitteeseen support@hero24.com.",
+      "validationErrorTitle": "Tarkista korostetut kentät",
+      "validationErrorBody": "Joitakin pakollisia tietoja puuttuu tai ne ovat puutteellisia.",
+      "fields": {
+        "role": "Tehtävä",
+        "fullName": "Koko nimi",
+        "email": "Sähköposti",
+        "phone": "Puhelin / WhatsApp",
+        "location": "Maa ja kaupunki",
+        "linkedin": "LinkedIn-profiilin osoite",
+        "linkedinPlaceholder": "https://linkedin.com/in/…",
+        "languages": "Kielitaito",
+        "languagesPlaceholder": "esim. suomi (äidinkieli), englanti (sujuva)",
+        "experienceAreas": "Relevantti kokemus",
+        "tractionPlan": "Kerro 3–5 lauseella, mitä tekisit ensin saadakseen Hero24:lle vetoa tällä markkinalla?",
+        "startDate": "Aloitusvalmius",
+        "timeCommitment": "Ajankäyttö",
+        "consent": "Ymmärrän, että tämä mahdollisuus alkaa sopimus- tai kumppanuusroolina, jossa korvaus on vahvasti sidottu suoriutumiseen ja tuloksiin.",
+        "cv": "Lataa CV",
+        "cvHelper": "Vapaaehtoinen. PDF, DOC tai DOCX, enintään 10 MB.",
+        "cvChange": "Vaihda tiedosto"
+      },
+      "options": {
+        "roles": {
+          "spain": "Espanjan maajohtaja (kasvu)",
+          "finland": "Suomen kasvu- ja operaatiojohtaja",
+          "estonia": "Viron maajohtaja (kasvu)",
+          "sweden": "Ruotsin maajohtaja (kasvu)",
+          "english": "Englanninkielisten markkinoiden laajentumisjohtaja",
+          "open": "Avoin hakemus"
+        },
+        "experience": {
+          "sales": "Myynti",
+          "businessDevelopment": "Liiketoiminnan kehitys",
+          "operations": "Operaatiot",
+          "recruitment": "Rekrytointi",
+          "marketplace": "Markkinapaikat",
+          "propertyServices": "Kiinteistöpalvelut",
+          "homeServices": "Kotipalvelut",
+          "entrepreneurship": "Yrittäjyys",
+          "partnerships": "Kumppanuudet",
+          "other": "Muu"
+        },
+        "startDate": {
+          "immediately": "Heti",
+          "twoWeeks": "2 viikkoa",
+          "oneMonth": "1 kuukausi",
+          "later": "Myöhemmin"
+        },
+        "timeCommitment": {
+          "fullTime": "Kokoaikainen",
+          "partTime": "Osa-aikainen",
+          "flexible": "Joustava"
+        }
+      },
+      "validation": {
+        "required": "Tämä kenttä on pakollinen",
+        "email": "Anna kelvollinen sähköpostiosoite",
+        "url": "Anna kelvollinen verkko-osoite",
+        "minOne": "Valitse vähintään yksi vaihtoehto",
+        "consentRequired": "Vahvista tämä jatkaaksesi",
+        "fileSize": "Tiedoston on oltava alle 10 MB",
+        "fileType": "Tiedoston on oltava PDF, DOC tai DOCX"
+      }
+    },
+    "assessment": {
+      "eyebrow": "Toinen vaihe",
+      "title": "Hero24:n markkina-arviointi",
+      "intro": "Kiitos, että pääsit jatkoon. Tämä arviointi auttaa meitä ymmärtämään, miten todella rakentaisit markkinan. Käytä aikasi — kysymyksissä ei ole ansoja, ja perusteellisuus on tärkeämpää kuin nopeus.",
+      "submit": "Lähetä arviointi",
+      "submitting": "Lähetetään…",
+      "thankYouTitle": "Arviointi vastaanotettu",
+      "thankYouBody": "Kiitos perusteellisista vastauksista. Käymme ne läpi ja palaamme sinulle jatkosta.",
+      "errorTitle": "Jotain meni vikaan",
+      "errorBody": "Arviointiasi ei voitu lähettää. Yritä uudelleen tai lähetä sähköpostia osoitteeseen support@hero24.com.",
+      "validationErrorTitle": "Tarkista korostetut kentät",
+      "validationErrorBody": "Joitakin pakollisia tietoja puuttuu tai ne ovat puutteellisia.",
+      "sections": {
+        "identity": "Tietosi",
+        "market": "Markkina",
+        "experience": "Kokemus",
+        "execution": "Toteutus",
+        "commercial": "Kaupalliset ehdot"
+      },
+      "fields": {
+        "role": "Tehtävä, jota haet",
+        "fullName": "Koko nimi",
+        "email": "Sähköposti",
+        "emailHelper": "Käytä samaa sähköpostia kuin hakemuksessasi, jotta voimme yhdistää vastauksesi.",
+        "marketKnowledge": "Mitä tiedät tästä markkinasta — sen kaupungeista, palvelukysynnästä, kilpailijoista ja siitä, miten ihmiset nykyään löytävät paikallisia ammattilaisia?",
+        "experienceDescription": "Kuvaa relevanteinta kokemustasi ja mitä sait henkilökohtaisesti aikaan.",
+        "recruitedBefore": "Oletko aiemmin rekrytoinut tai perehdyttänyt palveluntarjoajia, alihankkijoita tai kumppaneita?",
+        "recruitedDescription": "Kerro tästä tarkemmin.",
+        "first100": "Miten löytäisit ja aktivoisit ensimmäiset 100 Heroa (palveluntarjoajaa) tällä markkinalla?",
+        "channels": "Mitä kanavia ja taktiikoita käyttäisit tavoittaaksesi sekä palveluntarjoajat että asiakkaat?",
+        "aiTools": "Mitä CRM-, data-, tekoäly- tai automaatiotyökaluja käytät ja mihin?",
+        "processImproved": "Kuvaa prosessi, jota paransit, ja mitattava tulos.",
+        "thirtyDayPlan": "Miltä ensimmäiset 30 päivääsi näyttäisivät viikko viikolta?",
+        "compensation": "Mitkä korvausmallit toimisivat sinulle?",
+        "anythingElse": "Muuta, mitä meidän pitäisi tietää?"
+      },
+      "options": {
+        "recruited": {
+          "yes": "Kyllä",
+          "no": "Ei",
+          "somewhat": "Jossain määrin"
+        },
+        "compensation": {
+          "commission": "Provisio / tulospohjainen",
+          "monthlyRetainer": "Kuukausittainen kiinteä osuus",
+          "contractor": "Sopimuskumppanimalli",
+          "partner": "Kumppanuusmalli",
+          "combination": "Yhdistelmä",
+          "openToDiscussion": "Avoin keskustelulle"
+        },
+        "roles": {
+          "spain": "Espanjan maajohtaja (kasvu)",
+          "finland": "Suomen kasvu- ja operaatiojohtaja",
+          "estonia": "Viron maajohtaja (kasvu)",
+          "sweden": "Ruotsin maajohtaja (kasvu)",
+          "english": "Englanninkielisten markkinoiden laajentumisjohtaja",
+          "open": "Avoin hakemus"
+        }
+      }
+    },
+    "legacyIntro": {
       "p1": "Hero24 is building a modern, technology-first and AI-enabled service platform for homes, properties and local service operations.",
       "p2": "We connect customers, property owners, housing companies, landlords, property managers and businesses with reliable local professionals for moving, cleaning, handyman work, renovations, yard work, plumbing, electrical work, maintenance and other property-related services.",
       "p3": "We are not building a traditional local service company. We are building a scalable operating system for home and property services.",
@@ -538,11 +731,7 @@
       "p5": "Hero24 needs builders across multiple areas: market expansion, sales, operations, customer support, finance, product, technology, AI automation and partnerships.",
       "p6": "The right people for Hero24 are not just employees completing tasks. They are people who take ownership, improve systems, solve practical problems and create measurable long-term value."
     },
-    "priority": {
-      "title": "Current priority: Country Launch & Growth Roles",
-      "body": "Our current recruitment focus is on entrepreneurial, hands-on and AI-native country builders who can help Hero24 launch and grow in selected markets. These roles are for people who can open markets, recruit local Heroes, build service provider networks, generate customer demand, create B2B property partnerships and help us build scalable launch playbooks with global potential."
-    },
-    "lookingFor": {
+    "legacyLookingFor": {
       "title": "What kind of people we are looking for",
       "intro": "Hero24 is looking for people who combine practical execution with modern technology thinking. We are especially interested in people who can:",
       "items": [
@@ -567,7 +756,7 @@
       ],
       "outro": "The best early team members are not only strong operators. They are people who can create systems, open markets and build long-term value."
     },
-    "roles": {
+    "legacyRoles": {
       "title": "Open roles",
       "subtitle": "Five country launch and growth opportunities",
       "labelLocation": "Location",
@@ -868,7 +1057,7 @@
         }
       }
     },
-    "form": {
+    "legacyForm": {
       "title": "Apply to join Hero24",
       "subtitle": "Please fill in the application form below. We are especially interested in people who can build, execute, communicate clearly and use modern tools to create scalable results.",
       "required": "Required",

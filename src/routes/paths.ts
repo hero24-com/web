@@ -39,6 +39,7 @@ export const paths = {
   ownCustomer: '/laskuta-omia-asiakkaita',
   realEstateMaintenance: '/kiinteiston-huoltopalvelut-taloyhtioille',
   recruits: '/recruits',
+  recruitsAssessment: '/recruits/assessment',
   contact: '/yhteystiedot',
   appStoreLink: 'https://apps.apple.com/us/app/hero24/id1642167956',
   googlePlayLink:

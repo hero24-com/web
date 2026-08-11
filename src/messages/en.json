@@ -607,17 +607,210 @@
   },
   "recruits": {
     "meta": {
-      "title": "Join Hero24 | Careers",
-      "description": "Help build Hero24 — a modern, AI-enabled service platform for homes and properties. Apply for country launch and growth roles."
+      "title": "Careers at Hero24 | Build Hero24 in your market",
+      "description": "Hero24 connects customers with local professionals for moving, cleaning, repairs, renovations, installations, plumbing, electrical work and property maintenance. We are expanding across European and English-speaking markets and looking for commercially driven people who can build local operations.",
+      "assessmentTitle": "Market Assessment | Hero24 Careers",
+      "assessmentDescription": "Second-stage market assessment for shortlisted Hero24 candidates."
     },
     "hero": {
       "eyebrow": "Careers at Hero24",
-      "title": "Join Hero24",
-      "subtitle": "Help us build a scalable operating system for home and property services.",
-      "ctaApply": "Apply now",
-      "ctaRoles": "See open roles"
+      "title": "Build Hero24 in your market.",
+      "body1": "Hero24 connects customers with local professionals for moving, cleaning, repairs, renovations, installations, plumbing, electrical work, property maintenance and other services people need in everyday life.",
+      "body2": "We are expanding across selected European and English-speaking markets and looking for commercially driven people who can build local operations.",
+      "tagline": "One trusted platform for every local service people need in everyday life.",
+      "ctaRoles": "View open roles",
+      "ctaApply": "Quick apply"
     },
-    "intro": {
+    "build": {
+      "title": "What you will build",
+      "intro": "Hero24 handles the platform, brand and centralized digital customer acquisition as markets go live.",
+      "listLabel": "Local Growth and Country Leads focus on:",
+      "items": [
+        "Building and activating the local Hero / service-provider network",
+        "Creating B2B partnerships with property managers, landlords, real-estate companies and other businesses",
+        "Making sure customer demand can actually be fulfilled with good quality",
+        "Improving local operations, pricing, categories and processes",
+        "Building a repeatable market-launch playbook",
+        "Using CRM, data, AI and automation where they genuinely improve execution"
+      ],
+      "importantLabel": "Important",
+      "important": "These are entrepreneurial launch and growth roles. The initial model is contractor / partner based and strongly performance-based, rather than a traditional fixed-salary corporate position."
+    },
+    "roles": {
+      "title": "Open roles",
+      "subtitle": "Choose a market and apply in about two minutes.",
+      "apply": "Quick apply",
+      "preferredLabel": "Preferred",
+      "list": {
+        "spain": {
+          "title": "Spain Country Growth Lead",
+          "meta": "Spain · Spanish + English",
+          "summary": "Build Hero24’s Spanish Hero network, B2B partnerships and local operations. Initially focused on the strongest cities and service categories, with the opportunity to own wider Spanish growth.",
+          "preferred": "Málaga / Costa del Sol, Madrid, Barcelona, Valencia — but candidates can be based elsewhere in Spain."
+        },
+        "finland": {
+          "title": "Finland Growth & Operations Lead",
+          "meta": "Finland · Finnish + English",
+          "summary": "Hero24 already operates in Finland. Scale the Hero network, build B2B relationships, improve operations and create processes that can later be replicated internationally."
+        },
+        "estonia": {
+          "title": "Estonia Country Growth Lead",
+          "meta": "Estonia · Estonian + English",
+          "summary": "Build the first active Hero network and B2B partnerships in Estonia. Strong performance can lead to responsibility for wider Baltic expansion."
+        },
+        "sweden": {
+          "title": "Sweden Country Growth Lead",
+          "meta": "Sweden · Swedish + English",
+          "summary": "Build Hero24’s Swedish provider network, partnerships and operational foundation and help establish the first scalable Swedish markets."
+        },
+        "english": {
+          "title": "English-Speaking Markets Expansion Lead",
+          "meta": "Remote · English-speaking markets",
+          "summary": "Build and launch Hero24 across selected English-speaking markets. This is a multi-market expansion role for someone capable of testing and opening more than one market using a shared launch playbook.",
+          "detail": "Initial markets may include the USA, UK, Ireland, Canada, Australia and New Zealand, with additional markets added based on results. The person does not need to personally operate every city forever. The objective is to build the model, validate markets and eventually establish local operators as volume grows."
+        }
+      }
+    },
+    "who": {
+      "title": "Who we want",
+      "p1": "Relevant backgrounds can include sales, business development, operations, recruitment, marketplaces, property services, home services, local businesses, entrepreneurship and international expansion.",
+      "p2": "We care more about evidence of execution than corporate titles.",
+      "p3": "You should be comfortable contacting people directly, building relationships, measuring results and taking responsibility without waiting for a large organization around you."
+    },
+    "quickApply": {
+      "title": "Quick apply",
+      "subtitle": "About two minutes. A CV is optional.",
+      "submit": "Apply to Hero24",
+      "submitting": "Sending…",
+      "thankYouTitle": "Thanks — we’ll review your profile.",
+      "thankYouBody": "Shortlisted candidates will be invited to an interview and may receive a short second-stage market assessment.",
+      "errorTitle": "Something went wrong",
+      "errorBody": "Your application could not be sent. Please try again, or email support@hero24.com.",
+      "validationErrorTitle": "Please check the highlighted fields",
+      "validationErrorBody": "Some required information is missing or incomplete.",
+      "fields": {
+        "role": "Role",
+        "fullName": "Full name",
+        "email": "Email",
+        "phone": "Phone / WhatsApp",
+        "location": "Country and city",
+        "linkedin": "LinkedIn profile URL",
+        "linkedinPlaceholder": "https://linkedin.com/in/…",
+        "languages": "Languages",
+        "languagesPlaceholder": "e.g. Spanish (native), English (fluent)",
+        "experienceAreas": "Relevant experience",
+        "tractionPlan": "In 3–5 sentences, what would you do first to build traction for Hero24 in this market?",
+        "startDate": "Start availability",
+        "timeCommitment": "Time commitment",
+        "consent": "I understand that this opportunity starts as a contractor / partner role with compensation strongly linked to performance and results.",
+        "cv": "Upload CV",
+        "cvHelper": "Optional. PDF, DOC or DOCX, up to 10MB.",
+        "cvChange": "Change file"
+      },
+      "options": {
+        "roles": {
+          "spain": "Spain Country Growth Lead",
+          "finland": "Finland Growth & Operations Lead",
+          "estonia": "Estonia Country Growth Lead",
+          "sweden": "Sweden Country Growth Lead",
+          "english": "English-Speaking Markets Expansion Lead",
+          "open": "Open application"
+        },
+        "experience": {
+          "sales": "Sales",
+          "businessDevelopment": "Business development",
+          "operations": "Operations",
+          "recruitment": "Recruitment",
+          "marketplace": "Marketplace",
+          "propertyServices": "Property services",
+          "homeServices": "Home services",
+          "entrepreneurship": "Entrepreneurship",
+          "partnerships": "Partnerships",
+          "other": "Other"
+        },
+        "startDate": {
+          "immediately": "Immediately",
+          "twoWeeks": "2 weeks",
+          "oneMonth": "1 month",
+          "later": "Later"
+        },
+        "timeCommitment": {
+          "fullTime": "Full-time",
+          "partTime": "Part-time",
+          "flexible": "Flexible"
+        }
+      },
+      "validation": {
+        "required": "This field is required",
+        "email": "Please enter a valid email address",
+        "url": "Please enter a valid URL",
+        "minOne": "Please select at least one option",
+        "consentRequired": "Please confirm this to continue",
+        "fileSize": "File must be smaller than 10MB",
+        "fileType": "File must be PDF, DOC, or DOCX"
+      }
+    },
+    "assessment": {
+      "eyebrow": "Second stage",
+      "title": "Hero24 market assessment",
+      "intro": "Thanks for making our shortlist. This assessment helps us understand how you would actually build the market. Take your time — there are no trick questions, and detail beats speed.",
+      "submit": "Submit assessment",
+      "submitting": "Sending…",
+      "thankYouTitle": "Assessment received",
+      "thankYouBody": "Thanks for the detail. We’ll review your answers and come back to you about next steps.",
+      "errorTitle": "Something went wrong",
+      "errorBody": "Your assessment could not be sent. Please try again, or email support@hero24.com.",
+      "validationErrorTitle": "Please check the highlighted fields",
+      "validationErrorBody": "Some required information is missing or incomplete.",
+      "sections": {
+        "identity": "Your details",
+        "market": "Market",
+        "experience": "Experience",
+        "execution": "Execution",
+        "commercial": "Commercial"
+      },
+      "fields": {
+        "role": "Role you applied for",
+        "fullName": "Full name",
+        "email": "Email",
+        "emailHelper": "Use the same email as your application so we can match your answers.",
+        "marketKnowledge": "What do you know about this market — its cities, service demand, competitors and how people currently find local professionals?",
+        "experienceDescription": "Describe your most relevant experience and what you personally delivered.",
+        "recruitedBefore": "Have you recruited or onboarded service providers, contractors or partners before?",
+        "recruitedDescription": "Tell us more about that.",
+        "first100": "How would you find and activate the first 100 Heroes (service providers) in this market?",
+        "channels": "Which channels and tactics would you use to reach both providers and customers?",
+        "aiTools": "Which CRM, data, AI or automation tools do you use, and what for?",
+        "processImproved": "Describe a process you improved and the measurable result.",
+        "thirtyDayPlan": "What would your first 30 days look like, week by week?",
+        "compensation": "Which compensation models would work for you?",
+        "anythingElse": "Anything else we should know?"
+      },
+      "options": {
+        "roles": {
+          "spain": "Spain Country Growth Lead",
+          "finland": "Finland Growth & Operations Lead",
+          "estonia": "Estonia Country Growth Lead",
+          "sweden": "Sweden Country Growth Lead",
+          "english": "English-Speaking Markets Expansion Lead",
+          "open": "Open application"
+        },
+        "recruited": {
+          "yes": "Yes",
+          "no": "No",
+          "somewhat": "Somewhat"
+        },
+        "compensation": {
+          "commission": "Commission / performance-based",
+          "monthlyRetainer": "Monthly retainer",
+          "contractor": "Contractor model",
+          "partner": "Partner model",
+          "combination": "Combination",
+          "openToDiscussion": "Open to discussion"
+        }
+      }
+    },
+    "legacyIntro": {
       "p1": "Hero24 is building a modern, technology-first and AI-enabled service platform for homes, properties and local service operations.",
       "p2": "We connect customers, property owners, housing companies, landlords, property managers and businesses with reliable local professionals for moving, cleaning, handyman work, renovations, yard work, plumbing, electrical work, maintenance and other property-related services.",
       "p3": "We are not building a traditional local service company. We are building a scalable operating system for home and property services.",
@@ -625,11 +818,7 @@
       "p5": "Hero24 needs builders across multiple areas: market expansion, sales, operations, customer support, finance, product, technology, AI automation and partnerships.",
       "p6": "The right people for Hero24 are not just employees completing tasks. They are people who take ownership, improve systems, solve practical problems and create measurable long-term value."
     },
-    "priority": {
-      "title": "Current priority: Country Launch & Growth Roles",
-      "body": "Our current recruitment focus is on entrepreneurial, hands-on and AI-native country builders who can help Hero24 launch and grow in selected markets. These roles are for people who can open markets, recruit local Heroes, build service provider networks, generate customer demand, create B2B property partnerships and help us build scalable launch playbooks with global potential."
-    },
-    "lookingFor": {
+    "legacyLookingFor": {
       "title": "What kind of people we are looking for",
       "intro": "Hero24 is looking for people who combine practical execution with modern technology thinking. We are especially interested in people who can:",
       "items": [
@@ -654,7 +843,7 @@
       ],
       "outro": "The best early team members are not only strong operators. They are people who can create systems, open markets and build long-term value."
     },
-    "roles": {
+    "legacyRoles": {
       "title": "Open roles",
       "subtitle": "Five country launch and growth opportunities",
       "labelLocation": "Location",
@@ -955,7 +1144,7 @@
         }
       }
     },
-    "form": {
+    "legacyForm": {
       "title": "Apply to join Hero24",
       "subtitle": "Please fill in the application form below. We are especially interested in people who can build, execute, communicate clearly and use modern tools to create scalable results.",
       "required": "Required",

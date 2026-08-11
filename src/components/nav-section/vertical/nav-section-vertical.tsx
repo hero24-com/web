@@ -13,7 +13,6 @@ import type { NavProps, NavGroupProps } from '../types';
 // ----------------------------------------------------------------------
 
 function NavSectionVertical({ data, slotProps, ...other }: NavProps) {
-  const t = useTranslations();
   return (
     <Stack component="nav" id="nav-section-vertical" {...other}>
       {data.map((group, index) => (
